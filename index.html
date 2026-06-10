@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="PaulX WorldCup2026 — AI-powered FIFA World Cup 2026 match predictor. Live analysis, squad intelligence, and match predictions for all 48 teams."/>
+  <meta name="keywords" content="World Cup 2026, FIFA 2026, football predictions, Coupe du Monde 2026, PaulX, AI predictor, World Cup groups"/>
+  <meta property="og:title" content="🐙 PaulX — WorldCup2026 Intelligence"/>
+  <meta property="og:description" content="AI-powered FIFA World Cup 2026 predictor. 48 teams. 12 groups. Real-time intelligence."/>
+  <title>🐙 PaulX — WorldCup2026 Intelligence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --deep:    #04080F;
+      --ink:     #0A0F1E;
+      --ink2:    #111827;
+      --paul:    #7C3AED;
+      --paul2:   #A78BFA;
+      --gold:    #F59E0B;
+      --cyan:    #06B6D4;
+      --white:   #F8FAFC;
+      --muted:   #94A3B8;
+      --border:  rgba(124,58,237,0.18);
+      --glass:   rgba(124,58,237,0.07);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--deep);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* TENTACLE BG */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 10%, rgba(124,58,237,0.13) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 85% 90%, rgba(6,182,212,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .paul-logo {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .paul-logo svg {
+      width: 90px;
+      height: 90px;
+      filter: drop-shadow(0 0 24px rgba(124,58,237,0.7));
+      animation: breathe 3s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 24px rgba(124,58,237,0.7)); }
+      50%       { transform: scale(1.06); filter: drop-shadow(0 0 40px rgba(124,58,237,1)); }
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 9vw, 5.5rem);
+      letter-spacing: 0.04em;
+      line-height: 0.95;
+      background: linear-gradient(135deg, var(--paul2) 0%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+
+    .badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--glass);
+      color: var(--paul2);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── NAV TABS ── */
+    nav {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 1.2rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover,
+    .tab-btn.active {
+      background: var(--paul);
+      color: var(--white);
+      border-color: var(--paul);
+    }
+
+    /* ── MAIN ── */
+    main {
+      position: relative;
+      z-index: 10;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem 4rem;
+    }
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* ── GROUPS GRID ── */
+    .groups-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .group-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .group-card:hover {
+      border-color: var(--paul);
+      transform: translateY(-2px);
+    }
+
+    .group-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--paul2);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .group-label span {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+    }
+
+    .team-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      cursor: pointer;
+      transition: padding-left 0.15s;
+    }
+
+    .team-row:last-child { border-bottom: none; }
+    .team-row:hover { padding-left: 4px; }
+
+    .team-name {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .team-flag { font-size: 1.2rem; }
+
+    .rank-badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+    }
+
+    /* ── PREDICT SECTION ── */
+    .predict-box {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .predict-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--paul2);
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.05em;
+    }
+
+    .select-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .vs-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      text-align: center;
+    }
+
+    select {
+      width: 100%;
+      background: var(--ink2);
+      color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.8rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+    }
+
+    select:focus { border-color: var(--paul); }
+
+    .predict-btn {
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(135deg, var(--paul) 0%, #5B21B6 100%);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .predict-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+    .predict-btn:active { transform: translateY(0); }
+
+    /* ── RESULT CARD ── */
+    .result-card {
+      margin-top: 1.2rem;
+      background: var(--ink2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+      display: none;
+      animation: fadeUp 0.3s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-teams {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+    }
+
+    .result-score {
+      font-size: 2rem;
+      color: var(--gold);
+      background: rgba(245,158,11,0.1);
+      padding: 0.2rem 0.8rem;
+      border-radius: 8px;
+    }
+
+    .proba-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .proba-cell {
+      text-align: center;
+      padding: 0.8rem 0.4rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .proba-cell .pct {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      display: block;
+    }
+
+    .proba-cell .lbl {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.58rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .win  { background: rgba(124,58,237,0.12); }
+    .win .pct  { color: var(--paul2); }
+    .draw { background: rgba(245,158,11,0.08); }
+    .draw .pct { color: var(--gold); }
+    .lose { background: rgba(6,182,212,0.08); }
+    .lose .pct { color: var(--cyan); }
+
+    .radar-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+
+    .radar-col { }
+
+    .radar-title {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .stat-bar {
+      margin-bottom: 0.45rem;
+    }
+
+    .stat-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .bar-track {
+      height: 5px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--paul) 0%, var(--cyan) 100%);
+      transition: width 0.6s ease;
+    }
+
+    /* ── DOSSIER SECTION ── */
+    .dossier-search {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .dossier-search input {
+      flex: 1;
+      background: var(--ink2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    .dossier-search input:focus { border-color: var(--paul); }
+
+    .dossier-search button {
+      padding: 0.65rem 1.2rem;
+      background: var(--paul);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+    }
+
+    .dossier-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+      display: none;
+      animation: fadeUp 0.3s ease;
+    }
+
+    .dossier-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .dossier-flag { font-size: 3rem; }
+
+    .dossier-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      color: var(--paul2);
+    }
+
+    .dossier-meta {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    .dossier-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+
+    .dossier-block {
+      background: var(--ink2);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+    }
+
+    .dossier-block-title {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--paul2);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .dossier-block p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+    }
+
+    footer a { color: var(--paul2); text-decoration: none; }
+
+    /* ── LOADING ── */
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    .loading::after {
+      content: '';
+      animation: dots 1.2s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+      0%   { content: '.'; }
+      33%  { content: '..'; }
+      66%  { content: '...'; }
+      100% { content: ''; }
+    }
+
+    @media (max-width: 500px) {
+      .select-row { grid-template-columns: 1fr; }
+      .vs-label { display: none; }
+      .radar-row { grid-template-columns: 1fr; }
+      .dossier-grid { grid-template-columns: 1fr; }
+      .proba-row { gap: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="paul-logo">
+    <!-- Paul the Octopus SVG -->
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Body -->
+      <ellipse cx="50" cy="38" rx="24" ry="22" fill="#7C3AED" opacity="0.95"/>
+      <!-- Head sheen -->
+      <ellipse cx="43" cy="30" rx="8" ry="6" fill="#A78BFA" opacity="0.35"/>
+      <!-- Eyes -->
+      <circle cx="42" cy="34" r="5" fill="#0A0F1E"/>
+      <circle cx="58" cy="34" r="5" fill="#0A0F1E"/>
+      <circle cx="43" cy="33" r="2" fill="white"/>
+      <circle cx="59" cy="33" r="2" fill="white"/>
+      <circle cx="44" cy="33" r="1" fill="#06B6D4"/>
+      <circle cx="60" cy="33" r="1" fill="#06B6D4"/>
+      <!-- Tentacles -->
+      <path d="M30 55 Q22 68 18 80 Q22 85 26 80 Q28 70 34 60" fill="#6D28D9" opacity="0.9"/>
+      <path d="M36 58 Q30 72 28 86 Q33 89 36 84 Q37 72 42 62" fill="#7C3AED" opacity="0.9"/>
+      <path d="M44 60 Q42 75 42 90 Q47 92 50 88 Q50 74 50 62" fill="#6D28D9" opacity="0.9"/>
+      <path d="M56 60 Q58 75 58 90 Q53 92 50 88 Q50 74 50 62" fill="#7C3AED" opacity="0.85"/>
+      <path d="M64 58 Q70 72 72 86 Q67 89 64 84 Q63 72 58 62" fill="#6D28D9" opacity="0.9"/>
+      <path d="M70 55 Q78 68 82 80 Q78 85 74 80 Q72 70 66 60" fill="#7C3AED" opacity="0.9"/>
+      <!-- Suction cups -->
+      <circle cx="20" cy="79" r="2.5" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="29" cy="85" r="2" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="42" cy="89" r="2.5" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="50" cy="91" r="2" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="58" cy="89" r="2.5" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="71" cy="85" r="2" fill="#A78BFA" opacity="0.6"/>
+      <circle cx="80" cy="79" r="2.5" fill="#A78BFA" opacity="0.6"/>
+      <!-- Football on top -->
+      <circle cx="50" cy="12" r="9" fill="white" opacity="0.95"/>
+      <path d="M50 4 L52 8 L50 12 L48 8 Z" fill="#1a1a2e"/>
+      <path d="M41 9 L45 10 L46 14 L42 14 Z" fill="#1a1a2e"/>
+      <path d="M59 9 L55 10 L54 14 L58 14 Z" fill="#1a1a2e"/>
+      <path d="M44 18 L46 14 L50 16 L54 14 L56 18 L50 21 Z" fill="#1a1a2e"/>
+    </svg>
+  </div>
+
+  <h1>PaulX<br/>WorldCup2026</h1>
+  <p class="tagline">AI Football Intelligence · 48 Nations · 12 Groups</p>
+
+  <div class="badge-row">
+    <span class="badge">🇺🇸 USA</span>
+    <span class="badge">🇨🇦 CANADA</span>
+    <span class="badge">🇲🇽 MEXICO</span>
+    <span class="badge">11 JUN — 19 JUL 2026</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <button class="tab-btn active" onclick="showTab('groups')">⚽ GROUPS</button>
+  <button class="tab-btn" onclick="showTab('predict')">🐙 PREDICT</button>
+  <button class="tab-btn" onclick="showTab('dossier')">🔍 DOSSIER</button>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+  <!-- GROUPS TAB -->
+  <section id="tab-groups" class="section active">
+    <div class="groups-grid" id="groups-grid">
+      <div class="loading">Loading groups</div>
+    </div>
+  </section>
+
+  <!-- PREDICT TAB -->
+  <section id="tab-predict" class="section">
+    <div class="predict-box">
+      <div class="predict-title">🐙 Paul's Prediction</div>
+
+      <div class="select-row">
+        <select id="team-a"></select>
+        <div class="vs-label">VS</div>
+        <select id="team-b"></select>
+      </div>
+
+      <button class="predict-btn" onclick="runPrediction()">
+        🐙 ORACLE — PREDICT THIS MATCH
+      </button>
+
+      <div class="result-card" id="result-card">
+        <div class="result-teams">
+          <span id="res-team-a">—</span>
+          <span class="result-score" id="res-score">?—?</span>
+          <span id="res-team-b">—</span>
+        </div>
+
+        <div class="proba-row">
+          <div class="proba-cell win">
+            <span class="pct" id="pct-win">—</span>
+            <span class="lbl">WIN A</span>
+          </div>
+          <div class="proba-cell draw">
+            <span class="pct" id="pct-draw">—</span>
+            <span class="lbl">DRAW</span>
+          </div>
+          <div class="proba-cell lose">
+            <span class="pct" id="pct-lose">—</span>
+            <span class="lbl">WIN B</span>
+          </div>
+        </div>
+
+        <div class="radar-row">
+          <div class="radar-col">
+            <div class="radar-title" id="radar-a-title">TEAM A</div>
+            <div id="radar-a-bars"></div>
+          </div>
+          <div class="radar-col">
+            <div class="radar-title" id="radar-b-title">TEAM B</div>
+            <div id="radar-b-bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOSSIER TAB -->
+  <section id="tab-dossier" class="section">
+    <div class="dossier-search">
+      <input id="dossier-input" type="text" placeholder="Search a nation... ex: France, Brazil, Morocco"/>
+      <button onclick="openDossier()">OPEN</button>
+    </div>
+    <div class="dossier-card" id="dossier-card">
+      <div class="dossier-header">
+        <span class="dossier-flag" id="dos-flag">🌍</span>
+        <div>
+          <div class="dossier-name" id="dos-name">—</div>
+          <div class="dossier-meta" id="dos-meta">—</div>
+        </div>
+      </div>
+      <div class="dossier-grid">
+        <div class="dossier-block">
+          <div class="dossier-block-title">⚔️ Attack</div>
+          <p id="dos-attack">—</p>
+        </div>
+        <div class="dossier-block">
+          <div class="dossier-block-title">🛡️ Defense</div>
+          <p id="dos-defense">—</p>
+        </div>
+        <div class="dossier-block">
+          <div class="dossier-block-title">🔥 Form</div>
+          <p id="dos-form">—</p>
+        </div>
+        <div class="dossier-block">
+          <div class="dossier-block-title">🧠 Mental</div>
+          <p id="dos-mental">—</p>
+        </div>
+        <div class="dossier-block">
+          <div class="dossier-block-title">📋 Coach</div>
+          <p id="dos-coach">—</p>
+        </div>
+        <div class="dossier-block">
+          <div class="dossier-block-title">🏆 History</div>
+          <p id="dos-history">—</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  🐙 PaulX-WorldCup2026 · AI Football Oracle · Not affiliated with FIFA ·
+  <a href="https://github.com/PaulX-WorldCup2026" target="_blank">GitHub</a>
+</footer>
+
+<script>
+// ── DATA ──
+const TEAMS_DATA = {
+  "A": [
+    {name:"Mexico",flag:"🇲🇽",rank:15},
+    {name:"South Korea",flag:"🇰🇷",rank:25},
+    {name:"Czechia",flag:"🇨🇿",rank:41},
+    {name:"South Africa",flag:"🇿🇦",rank:60}
+  ],
+  "B": [
+    {name:"Switzerland",flag:"🇨🇭",rank:19},
+    {name:"Canada",flag:"🇨🇦",rank:30},
+    {name:"Qatar",flag:"🇶🇦",rank:55},
+    {name:"Bosni
