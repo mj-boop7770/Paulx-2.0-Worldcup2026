@@ -34,6 +34,4 @@ const TEAMS_DATA ={"A":[{name:"Mexico",flag:"🇲🇽",rank:15},{name:"South Kor
 "japan":{flag:"🇯🇵",group:"F",rank:18,attack:76,defense:75,form:78,mental:78,experience:76,stability:80,coach:"Hajime Moriyasu",history:"4× Asian champion. QF 2022."},
 "croatia":{flag:"🇭🇷",group:"L",rank:11,attack:78,defense:77,form:73,mental:82,experience:82,stability:76,coach:"Zlatko Dalić",history:"Runner-up 2018. 3rd place 2022."},
 "uruguay":{flag:"🇺🇾",group:"H",rank:17,attack:76,defense:78,form:74,mental:80,experience:84,stability:74,coach:"Marcelo Bielsa",history:"2× WC winners. SF 2010."},};function getAllTeams(){return Object.entries(TEAMS_DATA).flatMap(([g, teams]) =>
-teams.map(t => ({...t, group:g}))
-);}function getScore(rank){return Math.max(30, Math.round(95 - (rank - 1) * 0.9));}function calcStats(name){const key = name.toLowerCase().replace(/\s+/g,'');const d = DOSSIERS[key];if (d) return d;const all = getAllTeams();const t = all.find(x => x.name.toLowerCase() === name.toLowerCase());const rank = t ? t.rank:50;const base = getScore(rank);return{attack:base, defense:base - 3, form:base - 5,
-mental:base - 2, experience:base - 4, stability:base - 6};}function showTab(id){document.querySelecto
+teams.map(t => ({...t, group:g} Math.max(30, Math.round(95 - (rank - 1) * 0.9));}function calcStats(name){const key = name.toLowerCase().replace(/
