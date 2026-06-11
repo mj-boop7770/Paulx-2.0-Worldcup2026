@@ -1,16 +1,21 @@
+// Navigation entre les sections
+function tab(name, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById(name).classList.add('active');
+    el.classList.add('active');
+}
+
+// Recherche de dossier
 function dos() {
-    // On récupère la valeur brute
     const val = document.getElementById('di').value;
-    
-    // On transforme uniquement la première lettre en majuscule pour correspondre à tes clés (ex: "france" -> "France")
     const input = val.charAt(0).toUpperCase() + val.slice(1).toLowerCase();
-    
     const dCard = document.getElementById('dc');
-    
-    // On vérifie que la variable globale "dossiers" existe et qu'elle contient bien ta clé
-    if (typeof dossiers !== 'undefined' && dossiers[input]) {
-        const data = dossiers[input];
-        
+
+    // On vérifie si la variable 'dossiers' existe et contient ton objet imbriqué
+    if (typeof dossiers !== 'undefined' && dossiers.dossiers && dossiers.dossiers[input]) {
+        const data = dossiers.dossiers[input];
+
         document.getElementById('dn').innerText = data.name;
         document.getElementById('dm').innerText = data.meta;
         document.getElementById('da').innerText = data.attack;
@@ -24,7 +29,7 @@ function dos() {
         
         dCard.style.display = 'block';
     } else {
-        alert("Dossier introuvable. Vérifie le nom (ex: France, Brazil).");
+        alert("Dossier introuvable. Vérifie le nom.");
         dCard.style.display = 'none';
     }
 }
