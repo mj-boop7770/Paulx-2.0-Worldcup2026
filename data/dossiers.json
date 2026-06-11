@@ -1,1 +1,197 @@
-
+{
+  "dossiers": {
+    "France": {
+      "name": "France",
+      "meta": "Championne 2018 | Géant d'Europe",
+      "attack": "Une puissance de feu nucléaire : des accélérations foudroyantes, un jeu de transition qui paralyse n'importe quelle défense, et une créativité débridée.",
+      "defense": "Un mur d'acier physique, capable d'éteindre les meilleurs attaquants mondiaux tout en étant impériale dans les duels aériens.",
+      "form": "Une machine de guerre en pleine confiance, portée par une génération dorée.",
+      "mental": "Mentalité de conquérant : habitués à la pression, les Bleus possèdent cette 'grinta' qui leur permet de renverser des montagnes.",
+      "coach": "Didier Deschamps (Le stratège pragmatique aux mille batailles)",
+      "keyPlayer": "Kylian Mbappé (Le nouveau Roi du football mondial)",
+      "stars": "Mbappé, Ousmane Dembélé (Le magicien imprévisible), Antoine Griezmann, Tchouaméni, Saliba",
+      "history": "Une nation qui a tout gagné, en route pour une nouvelle étoile."
+    },
+    "Spain": {
+      "name": "Spain",
+      "meta": "Favori n°1 | Championne d'Europe",
+      "attack": "L'héritage du Tiki-taka sublimé par une verticalité nouvelle : une possession haute qui étouffe l'adversaire avant de le poignarder.",
+      "defense": "Un pressing à la perte du ballon ultra-agressif : l'adversaire est enfermé dans son propre camp.",
+      "form": "31 matchs sans défaite, une maîtrise collective qui frise la perfection tactique.",
+      "mental": "Une confiance inébranlable : cette équipe croit en son système plus qu'en n'importe quel joueur.",
+      "coach": "Luis de la Fuente (Le maître du jeu fluide)",
+      "keyPlayer": "Lamine Yamal (Le génie précoce qui dicte le tempo)",
+      "stars": "Yamal, Rodri (le cerveau), Pedri, Nico Williams",
+      "history": "En quête d'un doublé historique Euro-Mondial pour marquer la décennie."
+    },
+    "England": {
+      "name": "England",
+      "meta": "Génération dorée | UEFA",
+      "attack": "Une armada offensive terrifiante : le mélange parfait entre la puissance physique et la finesse technique des stars de Premier League.",
+      "defense": "Un bloc défensif très haut, construit pour étouffer les contre-attaques adverses.",
+      "form": "Une soif de titre après 60 ans d'attente : le groupe est arrivé à maturité.",
+      "mental": "Sous une pression monumentale, mais avec une maturité tactique enfin acquise.",
+      "coach": "Thomas Tuchel (Le tacticien rigoureux en quête de consécration)",
+      "keyPlayer": "Jude Bellingham (Le box-to-box complet, moteur de cette équipe)",
+      "stars": "Bellingham, Harry Kane, Bukayo Saka, Declan Rice",
+      "history": "Le berceau du football veut enfin ramener le trophée à la maison."
+    },
+    "Argentina": {
+      "name": "Argentina",
+      "meta": "Tenante du titre | CONMEBOL",
+      "attack": "Une fluidité chirurgicale dans les 30 derniers mètres : chaque mouvement est calculé pour briser les lignes.",
+      "defense": "Un bloc ultra-solidaire, une défense qui joue avec le cœur et une intensité féroce.",
+      "form": "Le roi qui ne veut pas descendre de son trône, invaincu dans les grands rendez-vous.",
+      "mental": "Un mental de guerrier : une combativité légendaire typiquement argentine qui les rend presque imbattables.",
+      "coach": "Lionel Scaloni (L'architecte du sacre mondial)",
+      "keyPlayer": "Lionel Messi (Le maître absolu, le génie du 20ème siècle)",
+      "stars": "Messi, Julian Alvarez, Enzo Fernandez, Emiliano Martinez",
+      "history": "Champions du monde en 2022, ils jouent avec l'histoire sur les épaules."
+    },
+    "Portugal": {
+      "name": "Portugal",
+      "meta": "Vainqueur Ligue des Nations | UEFA",
+      "attack": "Une richesse technique obscène : des dribbleurs sur les ailes et une créativité constante au milieu.",
+      "defense": "Une structure rigoureuse dirigée par un Rúben Dias intraitable, imperméable aux assauts.",
+      "form": "La meilleure 'value' du tournoi : une équipe complète, sans point faible apparent.",
+      "mental": "Une détermination farouche pour offrir à cette génération son premier Graal mondial.",
+      "coach": "Roberto Martínez (Le stratège qui a libéré le potentiel offensif)",
+      "keyPlayer": "Bruno Fernandes (Le playmaker ultime, visionnaire et buteur)",
+      "stars": "Bruno Fernandes, Bernardo Silva, Rúben Dias, Rafael Leão",
+      "history": "Le Portugal n'est plus l'outsider, c'est un prétendant légitime au trône."
+    },
+    "Brazil": {
+      "name": "Brazil",
+      "meta": "5x Champion du Monde | CONMEBOL",
+      "attack": "Le 'Joga Bonito' sauce Ancelotti : des dribbles dévastateurs mariés à une efficacité redoutable.",
+      "defense": "La discipline européenne imprégnée dans l'ADN brésilien : enfin une défense qui ne craque pas sous la pression.",
+      "form": "Une équipe en quête de rédemption, avec un talent individuel sans égal.",
+      "mental": "Un mélange d'orgueil national et de soif de victoire pour effacer les échecs passés.",
+      "coach": "Carlo Ancelotti (L'homme qui gagne tout, partout)",
+      "keyPlayer": "Vinícius Jr (Le danger numéro 1, un cauchemar pour tous les défenseurs)",
+      "stars": "Vinícius Jr, Rodrygo, Alisson Becker, Bruno Guimarães",
+      "history": "Le pays roi veut prouver au monde entier que le football est né au Brésil."
+    },
+    "Germany": {
+      "name": "Germany",
+      "meta": "Championne 2014 | UEFA",
+      "attack": "Un jeu de transition supersonique : ils punissent chaque erreur adverse avec une précision d'horloger.",
+      "defense": "Une charnière centrale autoritaire, habituée aux duels de haut vol.",
+      "form": "La 'Mannschaft' est de retour, plus rapide, plus agressive, plus conquérante.",
+      "mental": "Une résilience légendaire : même menés, ils croient toujours en la victoire.",
+      "coach": "Julian Nagelsmann (Le visionnaire tactique)",
+      "keyPlayer": "Florian Wirtz (L'artiste qui dessine les trajectoires de but)",
+      "stars": "Wirtz, Musiala, Manuel Neuer, Joshua Kimmich",
+      "history": "Le géant allemand n'est jamais aussi dangereux que lorsqu'il est sous-estimé."
+    },
+    "Morocco": {
+      "name": "Morocco",
+      "meta": "Favori Afrique | 1/4 finaliste 2022",
+      "attack": "Un jeu de transition foudroyant, capable de déstabiliser les plus grandes nations en deux passes.",
+      "defense": "Un bloc compact, la meilleure défense africaine : un véritable coffre-fort tactique.",
+      "form": "Une équipe qui joue avec une intelligence et une maturité tactique exemplaire.",
+      "mental": "Le mental d'acier qui a choqué le monde en 2022 : ils ne craignent personne.",
+      "coach": "Walid Regragui (Le meneur d'hommes, l'icône nationale)",
+      "keyPlayer": "Achraf Hakimi (Le piston supersonique qui attaque comme un ailier)",
+      "stars": "Hakimi, Brahim Diaz, En-Nesyri, Amrabat",
+      "history": "Ils ont ouvert la voie au monde arabe et à l'Afrique entière."
+    },
+    "Senegal": {
+      "name": "Senegal",
+      "meta": "Champion d'Afrique | CAF",
+      "attack": "Une vitesse de pointe fulgurante sur les côtés, une menace permanente en contre.",
+      "defense": "Un mur physique impressionnant, difficile à bouger dans les duels.",
+      "form": "Habitués aux joutes internationales, ils arrivent avec une confiance énorme.",
+      "mental": "Une expérience acquise dans les grands tournois : ils savent gagner.",
+      "coach": "Aliou Cissé (Le guerrier qui transmet sa rage de vaincre)",
+      "keyPlayer": "Sadio Mané (Le leader, l'âme de cette équipe)",
+      "stars": "Mané, Koulibaly, Nicolas Jackson, Idrissa Gueye",
+      "history": "Les Lions de la Teranga sont prêts à conquérir le toit du monde."
+    },
+    "Norway": {
+      "name": "Norway",
+      "meta": "L'outsider explosif",
+      "attack": "Le rouleau compresseur : une efficacité clinique menée par un géant du but.",
+      "defense": "Un bloc bas ultra-solide, conçu pour protéger le trésor avant de lancer le monstre.",
+      "form": "Qualification parfaite, une invincibilité qui terrorise ses adversaires.",
+      "mental": "Libérés de toute pression historique, ils jouent sans aucun complexe.",
+      "coach": "Ståle Solbakken (Le pragmatique qui tire le meilleur de ses stars)",
+      "keyPlayer": "Erling Haaland (L'arme de destruction massive)",
+      "stars": "Haaland, Odegaard, Sorloth, Berge",
+      "history": "La meilleure génération de l'histoire norvégienne est née pour briller."
+    },
+    "DR Congo": {
+      "name": "DR Congo",
+      "meta": "La surprise majeure | CAF",
+      "attack": "Une vivacité déconcertante, ils transforment chaque miette en occasion de but.",
+      "defense": "Un bloc bas très difficile à franchir, une discipline défensive exemplaire.",
+      "form": "Les tombeurs de géants : ils ont prouvé qu'ils pouvaient battre n'importe qui.",
+      "mental": "Un esprit guerrier, ils se battent pour chaque centimètre de terrain.",
+      "coach": "Sébastien Desabre (Le sorcier qui a redonné foi aux Léopards)",
+      "keyPlayer": "Chancel Mbemba (Le roc défensif, leader charismatique)",
+      "stars": "Mbemba, Kakuta, Wissa, Bongonda",
+      "history": "Le grand retour des Léopards sur le toit mondial."
+    },
+    "Uruguay": {
+      "name": "Uruguay",
+      "meta": "Force Sud-américaine",
+      "attack": "Jeu direct, agressif, porté vers l'avant avec une intensité folle.",
+      "defense": "Une défense qui joue au couteau, rugueuse et organisée.",
+      "form": "Une solidité à toute épreuve, une régularité qui fait peur.",
+      "mental": "La fameuse 'garra' uruguayenne : un fighting spirit indomptable.",
+      "coach": "Marcelo Bielsa (Le savant fou du football, tacticien génial)",
+      "keyPlayer": "Federico Valverde (Le moteur infatigable du milieu)",
+      "stars": "Valverde, Nunez, Araujo, Gimenez",
+      "history": "Le pays qui a prouvé que la passion bat toujours l'argent."
+    },
+    "Croatia": {
+      "name": "Croatia",
+      "meta": "Finaliste 2018 | UEFA",
+      "attack": "Une maîtrise technique du ballon qui hypnotise l'adversaire.",
+      "defense": "Expérimentée, un placement tactique qui compense tout.",
+      "form": "Stable, une capacité incroyable à gérer les grands tournois.",
+      "mental": "Incassables, ils adorent les prolongations et les situations impossibles.",
+      "coach": "Zlatko Dalic (Le maître de l'alchimie croate)",
+      "keyPlayer": "Luka Modric (Le magicien immortel, le cœur du jeu)",
+      "stars": "Modric, Gvardiol, Kovacic, Brozovic",
+      "history": "Le petit pays qui a décidé de devenir un géant."
+    },
+    "Netherlands": {
+      "name": "Netherlands",
+      "meta": "Oranje | UEFA",
+      "attack": "Un jeu de position fluide qui déstabilise les blocs défensifs.",
+      "defense": "Solide dans les airs et intelligente dans le positionnement.",
+      "form": "Une régularité dynamique, une équipe qui monte en puissance.",
+      "mental": "Confiants, ils jouent avec la philosophie de la gagne.",
+      "coach": "Ronald Koeman (Le technicien qui connaît le haut niveau)",
+      "keyPlayer": "Virgil van Dijk (Le commandant en chef, le roc)",
+      "stars": "Van Dijk, Gakpo, Simons, De Jong",
+      "history": "Le football total n'est jamais très loin avec les Oranje."
+    },
+    "Colombia": {
+      "name": "Colombia",
+      "meta": "Outsider Sud-américain",
+      "attack": "Créative, basée sur le talent pur et une pointe de folie.",
+      "defense": "Organisée, physique, ils ne laissent aucun espace.",
+      "form": "Une dynamique actuelle qui fait d'eux un outsider terrifiant.",
+      "mental": "Passionnés, portés par l'énergie d'un peuple entier.",
+      "coach": "Néstor Lorenzo (Celui qui a soudé ce groupe talentueux)",
+      "keyPlayer": "Luis Diaz (Le dribbleur fou qui dynamite les défenses)",
+      "stars": "Luis Diaz, James Rodriguez, Munoz, Barrios",
+      "history": "Un mélange de technique, de rythme et de résilience."
+    },
+    "Belgium": {
+      "name": "Belgium",
+      "meta": "Génération expérimentée | UEFA",
+      "attack": "Variée, un jeu de passes rapide qui déchire les lignes.",
+      "defense": "De l'expérience pure pour gérer les moments critiques.",
+      "form": "Une équipe en pleine mutation, cherchant son sommet.",
+      "mental": "Mûrs, ils savent que c'est le moment ou jamais pour leur génération.",
+      "coach": "Domenico Tedesco (Le jeune tacticien ambitieux)",
+      "keyPlayer": "Kevin De Bruyne (Le meilleur passeur du monde)",
+      "stars": "De Bruyne, Doku, Openda, Tielemans",
+      "history": "En quête de l'ultime consécration pour entrer dans la légende."
+    }
+  }
+    }
+      
