@@ -1,0 +1,36 @@
+{
+  "stage": "Group Stage",
+  "matches": [
+    {"id":1,"date":"2026-06-11","time":"21:00","group":"A","home":"Mexico","away":"South Africa","venue":"Estadio Azteca, Mexico City","result":null},
+    {"id":2,"date":"2026-06-11","time":"04:00","group":"A","home":"South Korea","away":"Czechia","venue":"Estadio Akron, Guadalajara","result":null},
+    {"id":3,"date":"2026-06-12","time":"03:00","group":"B","home":"Canada","away":"Bosnia Herzegovina","venue":"BMO Field, Toronto","result":null},
+    {"id":4,"date":"2026-06-12","time":"03:00","group":"B","home":"Qatar","away":"Switzerland","venue":"BC Place, Vancouver","result":null},
+    {"id":5,"date":"2026-06-13","time":"21:00","group":"C","home":"Brazil","away":"Haiti","venue":"Lincoln Financial, Philadelphia","result":null},
+    {"id":6,"date":"2026-06-13","time":"21:00","group":"C","home":"Morocco","away":"Scotland","venue":"Gillette Stadium, Boston","result":null},
+    {"id":7,"date":"2026-06-14","time":"21:00","group":"F","home":"Netherlands","away":"Japan","venue":"AT&T Stadium, Dallas","result":null},
+    {"id":8,"date":"2026-06-14","time":"02:00","group":"F","home":"Tunisia","away":"Sweden","venue":"Estadio Akron, Guadalajara","result":null},
+    {"id":9,"date":"2026-06-15","time":"21:00","group":"H","home":"Spain","away":"Uruguay","venue":"Estadio Akron, Guadalajara","result":null},
+    {"id":10,"date":"2026-06-15","time":"21:00","group":"H","home":"Cape Verde","away":"Saudi Arabia","venue":"NRG Stadium, Houston","result":null},
+    {"id":11,"date":"2026-06-16","time":"21:00","group":"G","home":"Belgium","away":"New Zealand","venue":"Lumen Field, Seattle","result":null},
+    {"id":12,"date":"2026-06-16","time":"21:00","group":"G","home":"Iran","away":"Egypt","venue":"Levi's Stadium, Santa Clara","result":null},
+    {"id":13,"date":"2026-06-17","time":"21:00","group":"L","home":"England","away":"Croatia","venue":"AT&T Stadium, Dallas","result":null},
+    {"id":14,"date":"2026-06-17","time":"21:00","group":"L","home":"Panama","away":"Ghana","venue":"BMO Field, Toronto","result":null},
+    {"id":15,"date":"2026-06-18","time":"21:00","group":"E","home":"Germany","away":"Ivory Coast","venue":"BMO Field, Toronto","result":null},
+    {"id":16,"date":"2026-06-18","time":"21:00","group":"E","home":"Ecuador","away":"Curacao","venue":"Arrowhead, Kansas City","result":null},
+    {"id":17,"date":"2026-06-19","time":"21:00","group":"D","home":"USA","away":"Australia","venue":"Lumen Field, Seattle","result":null},
+    {"id":18,"date":"2026-06-19","time":"21:00","group":"D","home":"Turkey","away":"Paraguay","venue":"Levi's Stadium, Santa Clara","result":null},
+    {"id":19,"date":"2026-06-20","time":"21:00","group":"K","home":"Portugal","away":"Uzbekistan","venue":"NRG Stadium, Houston","result":null},
+    {"id":20,"date":"2026-06-20","time":"21:00","group":"K","home":"Colombia","away":"DR Congo","venue":"Estadio Akron, Guadalajara","result":null},
+    {"id":21,"date":"2026-06-21","time":"21:00","group":"J","home":"Argentina","away":"Austria","venue":"AT&T Stadium, Dallas","result":null},
+    {"id":22,"date":"2026-06-21","time":"21:00","group":"J","home":"Algeria","away":"Jordan","venue":"Levi's Stadium, Santa Clara","result":null},
+    {"id":23,"date":"2026-06-22","time":"21:00","group":"I","home":"France","away":"Iraq","venue":"Lincoln Financial, Philadelphia","result":null},
+    {"id":24,"date":"2026-06-22","time":"21:00","group":"I","home":"Norway","away":"Senegal","venue":"MetLife Stadium, New Jersey","result":null},
+    {"id":25,"date":"2026-06-23","time":"21:00","group":"A","home":"Mexico","away":"South Korea","venue":"Estadio Akron, Guadalajara","result":null},
+    {"id":26,"date":"2026-06-23","time":"21:00","group":"A","home":"Czechia","away":"South Africa","venue":"Mercedes-Benz, Atlanta","result":null},
+    {"id":27,"date":"2026-06-24","time":"21:00","group":"B","home":"Switzerland","away":"Canada","venue":"BC Place, Vancouver","result":null},
+    {"id":28,"date":"2026-06-24","time":"21:00","group":"B","home":"Bosnia Herzegovina","away":"Qatar","venue":"Lumen Field, Seattle","result":null},
+    {"id":29,"date":"2026-06-24","time":"21:00","group":"C","home":"Brazil","away":"Scotland","venue":"Hard Rock, Miami","result":null},
+    {"id":30,"date":"2026-06-24","time":"21:00","group":"C","home":"Morocco","away":"Haiti","venue":"Mercedes-Benz, Atlanta","result":null}
+  ]
+    }
+      
