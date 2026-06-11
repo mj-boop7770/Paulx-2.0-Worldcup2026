@@ -1,5 +1,4 @@
-{
-  "dossiers": {
+const dossiers = {
     "France": {
       "name": "France",
       "meta": "Championne 2018 | Géant d'Europe",
@@ -192,6 +191,5 @@
       "stars": "De Bruyne, Doku, Openda, Tielemans",
       "history": "En quête de l'ultime consécration pour entrer dans la légende."
     }
-  }
-    }
+};
       
