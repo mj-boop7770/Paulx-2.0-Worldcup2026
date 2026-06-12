@@ -48,7 +48,7 @@ function rechercherPaysDepuisGroupe(countryName) {
 }
 
 // ==========================================
-// 3. ONGLET SCHEDULE : CALENDRIER VIA OPENFOOTBALL (GITHUB)
+// 3. ONGLET SCHEDULE : CALENDRIER LOCAL SECURISE
 // ==========================================
 let filtreActuel = "ALL";
 
@@ -81,46 +81,35 @@ async function afficherMatchs() {
     const listContainer = document.getElementById('matchlist');
     if (!listContainer) return;
     
-    listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Synchronisation avec le calendrier GitHub libre...</p>";
+    listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Chargement du calendrier...</p>";
 
-    const url = "https://raw.githubusercontent.com/openfootball/world-cup/master/2026/2026.json";
+    // On cible le fichier local directement
+    const url = "./2026.json";
 
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error("Impossible de joindre GitHub");
+        if (!response.ok) throw new Error("Fichier local introuvable");
         
         const data = await response.json();
         listContainer.innerHTML = "";
 
         let matches = [];
         
-        // Extraction sécurisée depuis la structure "rounds" d'OpenFootball
         if (data.rounds && Array.isArray(data.rounds)) {
             data.rounds.forEach(round => {
                 if (round.matches && Array.isArray(round.matches)) {
                     round.matches.forEach(m => {
-                        // Extraction et nettoyage de la lettre du groupe
                         let groupLetter = "A";
                         if (m.group) {
                             groupLetter = m.group.toString().replace("Group ", "").trim();
-                        } else if (round.name && round.name.includes("Group")) {
-                            groupLetter = round.name.toString().replace("Group ", "").trim();
                         }
                         m.cleanGroup = groupLetter; 
                         matches.push(m);
                     });
                 }
             });
-        } else if (data.matches && Array.isArray(data.matches)) {
-            matches = data.matches.map(m => {
-                let groupLetter = "A";
-                if (m.group) groupLetter = m.group.toString().replace("Group ", "").trim();
-                m.cleanGroup = groupLetter;
-                return m;
-            });
         }
 
-        // Filtrage strict basé sur la lettre nettoyée du groupe
         const matchesFiltrés = matches.filter(m => filtreActuel === "ALL" || m.cleanGroup === filtreActuel);
 
         if (matchesFiltrés.length === 0) {
@@ -153,7 +142,7 @@ async function afficherMatchs() {
                         <span>${awayName}</span>
                     </div>
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;">
-                        <div class="mvenue">${m.stadium || m.venue || "Stade Officiel"}</div>
+                        <div class="mvenue">${m.stadium || "Stade Officiel"}</div>
                         ${statusBadge}
                     </div>
                 </div>
@@ -162,7 +151,7 @@ async function afficherMatchs() {
 
     } catch (error) {
         console.error(error);
-        listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Erreur de connexion au calendrier libre.</p>";
+        listContainer.innerHTML = "<p style='color:#EF4444; padding: 2rem;'>Erreur locale : Vérifiez que 2026.json existe à la racine.</p>";
     }
 }
 
@@ -268,4 +257,4 @@ window.onload = function() {
     initGroups();
     initPredictSelectors();
 };
-                
+    
