@@ -1,0 +1,27 @@
+{
+  "rounds": [
+    {
+      "name": "Group Stage - Matchday 1",
+      "matches": [
+        {
+          "date": "2026-06-11",
+          "team1": "Mexique",
+          "team2": "USA",
+          "score1": 2,
+          "score2": 1,
+          "group": "Group A",
+          "stadium": "Estadio Azteca"
+        },
+        {
+          "date": "2026-06-11",
+          "team1": "Canada",
+          "team2": "Nouvelle-Zélande",
+          "score1": 1,
+          "score2": 1,
+          "group": "Group B",
+          "stadium": "BMO Field"
+        }
+      ]
+    }
+  ]
+}
