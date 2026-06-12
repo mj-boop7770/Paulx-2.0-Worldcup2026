@@ -3,21 +3,21 @@ function dos() {
     const input = val.charAt(0).toUpperCase() + val.slice(1).toLowerCase();
     const dCard = document.getElementById('dc');
 
-    // 1. Vérification simple : le fichier est-il bien là ?
+    // Vérification : le fichier est-il chargé ?
     if (typeof dossiers === 'undefined') {
         alert("Erreur : Le fichier dossiers.js n'est pas chargé.");
         return;
     }
 
-    // 2. On cherche directement dans l'objet 'dossiers' 
-    // (Puisque ton fichier commence par "const dossiers = { ... }")
+    // Correction : on cherche directement le pays dans l'objet 'dossiers'
+    // On retire la vérification inutile !dossiers.dossiers
     if (!dossiers[input]) {
         alert("Erreur : Impossible de trouver le pays '" + input + "' dans la liste.");
         dCard.style.display = 'none';
         return;
     }
 
-    // 3. Si on est ici, tout est bon ! On affiche.
+    // Affichage des données
     const data = dossiers[input];
     document.getElementById('dn').innerText = data.name;
     document.getElementById('dm').innerText = data.meta;
