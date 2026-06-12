@@ -1,4 +1,4 @@
-{
+const worldCupData = {
   "tournament": "FIFA World Cup 2026",
   "hosts": ["USA", "Canada", "Mexico"],
   "dates": {
@@ -81,5 +81,5 @@
       {"name": "Ghana", "fifa_rank": 74}
     ]
   }
-      }
-    
+};
+        
