@@ -83,7 +83,6 @@ async function afficherMatchs() {
     
     listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Synchronisation avec le calendrier GitHub libre...</p>";
 
-    // Lien direct vers le dépôt public OpenFootball
     const url = "https://raw.githubusercontent.com/openfootball/world-cup/master/2026/2026.json";
 
     try {
@@ -93,43 +92,52 @@ async function afficherMatchs() {
         const data = await response.json();
         listContainer.innerHTML = "";
 
-        // Extraction des matchs structurés par "rounds" (journées) dans OpenFootball
         let matches = [];
-        if (data.rounds) {
+        
+        // Extraction sécurisée depuis la structure "rounds" d'OpenFootball
+        if (data.rounds && Array.isArray(data.rounds)) {
             data.rounds.forEach(round => {
-                if (round.matches) {
+                if (round.matches && Array.isArray(round.matches)) {
                     round.matches.forEach(m => {
-                        // Sécurité si le groupe n'est pas écrit, on extrait ou met une valeur par défaut
-                        m.group = m.group || "A"; 
+                        // Extraction et nettoyage de la lettre du groupe
+                        let groupLetter = "A";
+                        if (m.group) {
+                            groupLetter = m.group.toString().replace("Group ", "").trim();
+                        } else if (round.name && round.name.includes("Group")) {
+                            groupLetter = round.name.toString().replace("Group ", "").trim();
+                        }
+                        m.cleanGroup = groupLetter; 
                         matches.push(m);
                     });
                 }
             });
-        } else if (data.matches) {
-            matches = data.matches;
+        } else if (data.matches && Array.isArray(data.matches)) {
+            matches = data.matches.map(m => {
+                let groupLetter = "A";
+                if (m.group) groupLetter = m.group.toString().replace("Group ", "").trim();
+                m.cleanGroup = groupLetter;
+                return m;
+            });
         }
 
-        // Filtrage dynamique selon le bouton cliqué (TOUT ou un groupe spécifique)
-        const matchesFiltrés = matches.filter(m => filtreActuel === "ALL" || m.group.includes(filtreActuel));
+        // Filtrage strict basé sur la lettre nettoyée du groupe
+        const matchesFiltrés = matches.filter(m => filtreActuel === "ALL" || m.cleanGroup === filtreActuel);
 
         if (matchesFiltrés.length === 0) {
             listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Aucun match trouvé pour ce groupe.</p>";
             return;
         }
 
-        // Génération des cartes de match
         matchesFiltrés.forEach(m => {
             const dateMatch = m.date ? new Date(m.date) : new Date();
             const dateOption = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
             const dateLocale = dateMatch.toLocaleDateString('fr-FR', dateOption);
 
-            // Traduction des clés spécifiques de OpenFootball (team1 / team2)
             const homeName = m.team1 || "À déterminer";
             const awayName = m.team2 || "À déterminer";
             
-            // Affichage des scores s'ils sont enregistrés dans le fichier libre
             let scoreHTML = `<span class="mresult">VS</span>`;
-            let statusBadge = `<span class="mgroup">GROUPE ${m.group}</span>`;
+            let statusBadge = `<span class="mgroup">GROUPE ${m.cleanGroup}</span>`;
             
             if (m.score1 !== undefined && m.score1 !== null) {
                 statusBadge = `<span class="mgroup" style="background:#06B6D422; color:#06B6D4;">TERMINÉ</span>`;
@@ -153,6 +161,7 @@ async function afficherMatchs() {
         });
 
     } catch (error) {
+        console.error(error);
         listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Erreur de connexion au calendrier libre.</p>";
     }
 }
@@ -259,4 +268,4 @@ window.onload = function() {
     initGroups();
     initPredictSelectors();
 };
-                              
+                
