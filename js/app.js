@@ -48,7 +48,7 @@ function rechercherPaysDepuisGroupe(countryName) {
 }
 
 // ==========================================
-// 3. ONGLET SCHEDULE : CALENDRIER EN DIRECT VIA GITHUB
+// 3. ONGLET SCHEDULE : CALENDRIER VIA OPENFOOTBALL (GITHUB)
 // ==========================================
 let filtreActuel = "ALL";
 
@@ -81,74 +81,80 @@ async function afficherMatchs() {
     const listContainer = document.getElementById('matchlist');
     if (!listContainer) return;
     
-    listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Récupération des scores réels depuis GitHub...</p>";
+    listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Synchronisation avec le calendrier GitHub libre...</p>";
 
-    const sources = [
-        "https://raw.githubusercontent.com/openfootball/world-cup/master/2026/2026.json",
-        "https://raw.githubusercontent.com/jokecamp/FootballData/master/world-cup-2026.json"
-    ];
+    // Lien direct vers le dépôt public OpenFootball
+    const url = "https://raw.githubusercontent.com/openfootball/world-cup/master/2026/2026.json";
 
-    let data = null;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Impossible de joindre GitHub");
+        
+        const data = await response.json();
+        listContainer.innerHTML = "";
 
-    for (let url of sources) {
-        try {
-            const response = await fetch(url);
-            if (response.ok) {
-                data = await response.json();
-                break;
+        // Extraction des matchs structurés par "rounds" (journées) dans OpenFootball
+        let matches = [];
+        if (data.rounds) {
+            data.rounds.forEach(round => {
+                if (round.matches) {
+                    round.matches.forEach(m => {
+                        // Sécurité si le groupe n'est pas écrit, on extrait ou met une valeur par défaut
+                        m.group = m.group || "A"; 
+                        matches.push(m);
+                    });
+                }
+            });
+        } else if (data.matches) {
+            matches = data.matches;
+        }
+
+        // Filtrage dynamique selon le bouton cliqué (TOUT ou un groupe spécifique)
+        const matchesFiltrés = matches.filter(m => filtreActuel === "ALL" || m.group.includes(filtreActuel));
+
+        if (matchesFiltrés.length === 0) {
+            listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Aucun match trouvé pour ce groupe.</p>";
+            return;
+        }
+
+        // Génération des cartes de match
+        matchesFiltrés.forEach(m => {
+            const dateMatch = m.date ? new Date(m.date) : new Date();
+            const dateOption = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const dateLocale = dateMatch.toLocaleDateString('fr-FR', dateOption);
+
+            // Traduction des clés spécifiques de OpenFootball (team1 / team2)
+            const homeName = m.team1 || "À déterminer";
+            const awayName = m.team2 || "À déterminer";
+            
+            // Affichage des scores s'ils sont enregistrés dans le fichier libre
+            let scoreHTML = `<span class="mresult">VS</span>`;
+            let statusBadge = `<span class="mgroup">GROUPE ${m.group}</span>`;
+            
+            if (m.score1 !== undefined && m.score1 !== null) {
+                statusBadge = `<span class="mgroup" style="background:#06B6D422; color:#06B6D4;">TERMINÉ</span>`;
+                scoreHTML = `<span class="mresult" style="color:#F59E0B;">${m.score1} - ${m.score2}</span>`;
             }
-        } catch (e) {
-            console.log("Source échouée, tentative suivante...");
-        }
-    }
 
-    if (!data || !data.matches) {
-        listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Aucun calendrier réel trouvé sur les dépôts GitHub actuellement.</p>";
-        return;
-    }
-
-    listContainer.innerHTML = "";
-
-    const matchesFiltrés = data.matches.filter(m => filtreActuel === "ALL" || m.group === filtreActuel);
-
-    if (matchesFiltrés.length === 0) {
-        listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Aucun match trouvé pour ce groupe.</p>";
-        return;
-    }
-
-    matchesFiltrés.forEach(m => {
-        const dateOption = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        const dateLocale = new Date(m.datetime || m.date).toLocaleDateString('fr-FR', dateOption);
-
-        let statusBadge = `<span class="mgroup">GROUPE ${m.group}</span>`;
-        let scoreHTML = `<span class="mresult">VS</span>`;
-
-        if (m.status === "completed" || (m.home_team && m.home_team.goals !== null && m.home_team.goals !== undefined)) {
-            statusBadge = `<span class="mgroup" style="background:#06B6D422; color:#06B6D4;">TERMINÉ</span>`;
-            scoreHTML = `<span class="mresult" style="color:#F59E0B;">${m.home_team.goals} - ${m.away_team.goals}</span>`;
-        } else if (m.status === "in_progress" || m.status === "live") {
-            statusBadge = `<span class="mgroup" style="background:#EF444422; color:#EF4444;">LIVE</span>`;
-            scoreHTML = `<span class="mresult" style="color:#EF4444;">${m.home_team.goals} - ${m.away_team.goals}</span>`;
-        }
-
-        const homeName = m.home_team ? (m.home_team.name || m.home_team.country) : "À déterminer";
-        const awayName = m.away_team ? (m.away_team.name || m.away_team.country) : "À déterminer";
-
-        listContainer.innerHTML += `
-            <div class="mcard">
-                <div class="mdate">${dateLocale.toUpperCase()}</div>
-                <div class="mteams">
-                    <span>${homeName}</span>
-                    ${scoreHTML}
-                    <span>${awayName}</span>
+            listContainer.innerHTML += `
+                <div class="mcard">
+                    <div class="mdate">${dateLocale.toUpperCase()}</div>
+                    <div class="mteams">
+                        <span>${homeName}</span>
+                        ${scoreHTML}
+                        <span>${awayName}</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;">
+                        <div class="mvenue">${m.stadium || m.venue || "Stade Officiel"}</div>
+                        ${statusBadge}
+                    </div>
                 </div>
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;">
-                    <div class="mvenue">${m.stadium || "Stade"} · ${m.venue || "Ville"}</div>
-                    ${statusBadge}
-                </div>
-            </div>
-        `;
-    });
+            `;
+        });
+
+    } catch (error) {
+        listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Erreur de connexion au calendrier libre.</p>";
+    }
 }
 
 // ==========================================
@@ -253,3 +259,4 @@ window.onload = function() {
     initGroups();
     initPredictSelectors();
 };
+                              
