@@ -1,1 +1,188 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width,initial-scale=1.0"/> <title>PaulX WorldCup2026</title> <style> *{margin:0;padding:0;box-sizing:border-box} body{background:#04080F;color:#F8FAFC;font-family:sans-serif;text-align:center} header{padding:2rem 1rem;border-bottom:1px solid #7C3AED44} h1{font-size:2.5rem;font-weight:900;letter-spacing:2px;color:#A78BFA} p.sub{font-size:.75rem;color:#94A3B8;letter-spacing:.2em;margin-top:.4rem} .badges{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:1rem} .badge{font-size:.65rem;padding:.3rem .8rem;border-radius:999px;border:1px solid #7C3AED44;color:#A78BFA} nav{display:flex;justify-content:center;gap:.5rem;padding:1rem;flex-wrap:wrap} button{padding:.5rem 1rem;border-radius:8px;border:1px solid #7C3AED44;background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem} button.active,button:hover{background:#7C3AED;color:#fff;border-color:#7C3AED} .section{display:none;max-width:900px;margin:0 auto;padding:1rem} .section.active{display:block} .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem} .card{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1rem;text-align:left} .glabel{font-size:1.3rem;font-weight:900;color:#A78BFA;margin-bottom:.6rem} .trow{display:flex;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid #ffffff08;font-size:.85rem;cursor:pointer} .trow:hover{color:#A78BFA}.trow:last-child{border:none} .rk{font-size:.6rem;color:#94A3B8;background:#ffffff08;padding:.1rem .4rem;border-radius:4px} .box{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;margin-top:.5rem;text-align:left} select{width:100%;background:#111827;color:#F8FAFC;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;font-size:.82rem;margin-bottom:.8rem} .pbtn{width:100%;padding:.9rem;background:#7C3AED;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer} .result{display:none;margin-top:1rem;background:#111827;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem} .score{font-size:2rem;font-weight:900;color:#F59E0B;text-align:center;display:block;margin:.5rem 0} .prow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin:.8rem 0} .pc{text-align:center;padding:.7rem .3rem;border-radius:10px;border:1px solid #7C3AED33} .pc span{display:block;font-size:1.6rem;font-weight:900} .pc small{font-size:.55rem;color:#94A3B8} .w span{color:#A78BFA}.d span{color:#F59E0B}.l span{color:#06B6D4} .bars{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.8rem} .bl{display:flex;justify-content:space-between;font-size:.7rem;color:#94A3B8;margin-bottom:.15rem} .btr{height:4px;background:#ffffff08;border-radius:4px;overflow:hidden;margin-bottom:.35rem} .bf{height:100%;background:linear-gradient(90deg,#7C3AED,#06B6D4);border-radius:4px} .dsearch{display:flex;gap:.5rem;margin-bottom:1rem} .dsearch input{flex:1;background:#111827;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;color:#F8FAFC;font-size:.85rem;outline:none} .dsearch button{padding:.6rem 1rem;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer} .dcard{display:none;background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;text-align:left} .dname{font-size:1.8rem;font-weight:900;color:#A78BFA} .dmeta{font-size:.65rem;color:#94A3B8;margin-bottom:1rem} .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem} .db{background:#111827;border-radius:8px;padding:.8rem} .dbt{font-size:.58rem;color:#A78BFA;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem} .db p{font-size:.78rem;color:#94A3B8;line-height:1.5} .mcard{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:10px;padding:.9rem;margin-bottom:.6rem;text-align:left} .mdate{font-size:.6rem;color:#94A3B8;margin-bottom:.4rem} .mteams{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.95rem} .mgroup{font-size:.6rem;color:#A78BFA;background:#7C3AED22;padding:.2rem .5rem;border-radius:4px} .mvenue{font-size:.62rem;color:#64748B;margin-top:.3rem} .mresult{font-size:1.2rem;font-weight:900;color:#F59E0B} .mfilter{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;justify-content:center} .mfilter button{font-size:.65rem;padding:.3rem .7rem} footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid #7C3AED22;margin-top:2rem} @media(max-width:480px){.bars,.dgrid{grid-template-columns:1fr}} </style> </head> <body> <header> <svg width="70" height="70" viewBox="0 0 100 100" fill="none"> <ellipse cx="50" cy="38" rx="24" ry="22" fill="#7C3AED"/> <ellipse cx="43" cy="30" rx="8" ry="6" fill="#A78BFA" opacity=".35"/> <circle cx="42" cy="34" r="5" fill="#04080F"/><circle cx="58" cy="34" r="5" fill="#04080F"/> <circle cx="43" cy="33" r="2" fill="white"/><circle cx="59" cy="33" r="2" fill="white"/> <circle cx="44" cy="33" r="1" fill="#06B6D4"/><circle cx="60" cy="33" r="1" fill="#06B6D4"/> <path d="M30 55 Q22 68 18 80 Q22 85 26 80 Q28 70 34 60" fill="#6D28D9"/> <path d="M38 58 Q32 72 30 86 Q35 89 37 84 Q38 72 43 62" fill="#7C3AED"/> <path d="M46 60 Q44 75 44 90 Q48 92 50 88 Q50 74 50 62" fill="#6D28D9"/> <path d="M54 60 Q56 75 56 90 Q52 92 50 88 Q50 74 50 62" fill="#7C3AED"/> <path d="M62 58 Q68 72 70 86 Q65 89 63 84 Q62 72 57 62" fill="#6D28D9"/> <path d="M70 55 Q78 68 82 80 Q78 85 74 80 Q72 70 66 60" fill="#7C3AED"/> <circle cx="50" cy="12" r="9" fill="white"/> <path d="M50 4 L52 8 L50 12 L48 8 Z" fill="#04080F"/> <path d="M44 18 L46 14 L50 16 L54 14 L56 18 L50 21 Z" fill="#04080F"/> </svg> <h1>PAULX WORLDCUP2026</h1> <p class="sub">AI FOOTBALL INTELLIGENCE · 48 NATIONS · 12 GROUPS</p> <div class="badges"><span class="badge">USA</span><span class="badge">CANADA</span><span class="badge">MEXICO</span><span class="badge">11 JUN - 19 JUL 2026</span></div> </header> <nav> <button class="active" onclick="tab('groups',this)">GROUPS</button> <button onclick="tab('schedule',this)">SCHEDULE</button> <button onclick="tab('predict',this)">PREDICT</button> <button onclick="tab('dossier',this)">DOSSIER</button> </nav> <div id="groups" class="section active"><div class="grid" id="gg"></div></div> <div id="schedule" class="section"><div class="mfilter" id="mfilter"></div><div id="matchlist"></div></div> <div id="predict" class="section"><div class="box"><select id="ta"></select><select id="tb"></select><button class="pbtn" onclick="predict()">ORACLE - PREDICT MATCH</button><div class="result" id="rc"><div style="display:flex;justify-content:space-between;font-weight:700"><span id="rta"></span><span class="score" id="rs"></span><span id="rtb"></span></div><div class="prow"><div class="pc w"><span id="pw"></span><small>WIN A</small></div><div class="pc d"><span id="pd"></span><small>DRAW</small></div><div class="pc l"><span id="pl"></span><small>WIN B</small></div></div><div class="bars"><div><p style="font-size:.6rem;color:#94A3B8;margin-bottom:.4rem" id="bat"></p><div id="bab"></div></div><div><p style="font-size:.6rem;color:#94A3B8;margin-bottom:.4rem" id="bbt"></p><div id="bbb"></div></div></div></div></div></div> <div id="dossier" class="section"><div class="dsearch"><input id="di" placeholder="France, Brazil, Morocco..."/><button onclick="dos()">OPEN</button></div><div class="dcard" id="dc"><div class="dname" id="dn"></div><div class="dmeta" id="dm"></div><div class="dgrid"><div class="db"><div class="dbt">ATTACK</div><p id="da"></p></div><div class="db"><div class="dbt">DEFENSE</div><p id="dd"></p></div><div class="db"><div class="dbt">FORM</div><p id="df"></p></div><div class="db"><div class="dbt">MENTAL</div><p id="dme"></p></div><div class="db"><div class="dbt">COACH</div><p id="dc2"></p></div><div class="db"><div class="dbt">KEY PLAYER</div><p id="dkp"></p></div><div class="db"><div class="dbt">STARS</div><p id="dsp"></p></div><div class="db"><div class="dbt">HISTORY</div><p id="dh"></p></div></div></div></div> <footer>PaulX-WorldCup2026 · AI Football Oracle · Not affiliated with FIFA</footer> <script src="js/teams.js"></script><script src="js/dossiers.js"></script><script src="js/app.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    
+    <!-- TITRE ET CONFIGURATION SEO POUR GOOGLE -->
+    <title>WORLDCUP2026 · MUJOS OCTOPUS - AI Oracle</title>
+    <meta name="description" content="MUJOS Octopus 🐙 - L'Oracle IA ultime pour prédire les scores de la Coupe du Monde 2026, suivre les matchs en direct et analyser les 48 nations." />
+    <meta name="keywords" content="MUJOS Octopus, MUJOSpoulpe, coupe du monde 2026, scores en direct, pronostics ia football, oracle football, live scores world cup, simulateur match" />
+    <meta name="author" content="Léandre Ngendakuriyo" />
+
+    <!-- Partage WhatsApp / Réseaux Sociaux -->
+    <meta property="og:title" content="WORLDCUP2026 · MUJOS OCTOPUS" />
+    <meta property="og:description" content="Scores en direct et prédictions IA avec l'Oracle légendaire." />
+    <meta property="og:type" content="website" />
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#04080F;color:#F8FAFC;font-family:sans-serif;text-align:center}
+        header{padding:2rem 1rem;border-bottom:1px solid #7C3AED44}
+        h1{font-size:2.1rem;font-weight:900;letter-spacing:1px;color:#A78BFA;margin-top:1rem}
+        p.sub{font-size:.75rem;color:#94A3B8;letter-spacing:.2em;margin-top:.4rem}
+        .badges{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+        .badge{font-size:.65rem;padding:.3rem .8rem;border-radius:999px;border:1px solid #7C3AED44;color:#A78BFA}
+        nav{display:flex;justify-content:center;gap:.5rem;padding:1rem;flex-wrap:wrap}
+        button{padding:.5rem 1rem;border-radius:8px;border:1px solid #7C3AED44;background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem}
+        button.active,button:hover{background:#7C3AED;color:#fff;border-color:#7C3AED}
+        .section{display:none;max-width:900px;margin:0 auto;padding:1rem}
+        .section.active{display:block}
+        .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+        .card{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1rem;text-align:left}
+        .glabel{font-size:1.3rem;font-weight:900;color:#A78BFA;margin-bottom:.6rem}
+        .trow{display:flex;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid #ffffff08;font-size:.85rem;cursor:pointer}
+        .trow:hover{color:#A78BFA}.trow:last-child{border:none}
+        .rk{font-size:.6rem;color:#94A3B8;background:#ffffff08;padding:.1rem .4rem;border-radius:4px}
+        .box{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;margin-top:.5rem;text-align:left}
+        select{width:100%;background:#111827;color:#F8FAFC;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;font-size:.82rem;margin-bottom:.8rem}
+        .pbtn{width:100%;padding:.9rem;background:#7C3AED;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer}
+        .result{display:none;margin-top:1rem;background:#111827;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem}
+        .score{font-size:2rem;font-weight:900;color:#F59E0B;text-align:center;display:block;margin:.5rem 0}
+        .prow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin:.8rem 0}
+        .pc{text-align:center;padding:.7rem .3rem;border-radius:10px;border:1px solid #7C3AED33}
+        .pc span{display:block;font-size:1.6rem;font-weight:900}
+        .pc small{font-size:.55rem;color:#94A3B8}
+        .w span{color:#A78BFA}.d span{color:#F59E0B}.l span{color:#06B6D4}
+        .bars{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.8rem}
+        .bl{display:flex;justify-content:space-between;font-size:.7rem;color:#94A3B8;margin-bottom:.15rem}
+        .btr{height:4px;background:#ffffff08;border-radius:4px;overflow:hidden;margin-bottom:.35rem}
+        .bf{height:100%;background:linear-gradient(90deg,#7C3AED,#06B6D4);border-radius:4px}
+        .dsearch{display:flex;gap:.5rem;margin-bottom:1rem}
+        .dsearch input{flex:1;background:#111827;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;color:#F8FAFC;font-size:.85rem;outline:none}
+        .dsearch button{padding:.6rem 1rem;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
+        .dcard{display:none;background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;text-align:left}
+        .dname{font-size:1.8rem;font-weight:900;color:#A78BFA}
+        .dmeta{font-size:.65rem;color:#94A3B8;margin-bottom:1rem}
+        .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+        .db{background:#111827;border-radius:8px;padding:.8rem}
+        .dbt{font-size:.58rem;color:#A78BFA;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem}
+        .db p{font-size:.78rem;color:#94A3B8;line-height:1.5}
+        .mcard{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:10px;padding:.9rem;margin-bottom:.6rem;text-align:left}
+        .mdate{font-size:.6rem;color:#94A3B8;margin-bottom:.4rem}
+        .mteams{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.95rem}
+        .mgroup{font-size:.6rem;color:#A78BFA;background:#7C3AED22;padding:.2rem .5rem;border-radius:4px}
+        .mvenue{font-size:.62rem;color:#64748B;margin-top:.3rem}
+        .mresult{font-size:1.2rem;font-weight:900;color:#F59E0B}
+        .mfilter{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;justify-content:center}
+        .mfilter button{font-size:.65rem;padding:.3rem .7rem}
+        footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid #7C3AED22;margin-top:2rem}
+        @media(max-width:480px){.bars,.dgrid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- LOGO DE L'OCTOPUS MUJOS (RESTE EN PREMIER) -->
+        <svg width="70" height="70" viewBox="0 0 100 100" fill="none">
+            <ellipse cx="50" cy="38" rx="24" ry="22" fill="#7C3AED"/>
+            <ellipse cx="43" cy="30" rx="8" ry="6" fill="#A78BFA" opacity=".35"/>
+            <circle cx="42" cy="34" r="5" fill="#04080F"/><circle cx="58" cy="34" r="5" fill="#04080F"/>
+            <circle cx="43" cy="33" r="2" fill="white"/><circle cx="59" cy="33" r="2" fill="white"/>
+            <circle cx="44" cy="33" r="1" fill="#06B6D4"/><circle cx="60" cy="33" r="1" fill="#06B6D4"/>
+            <path d="M30 55 Q22 68 18 80 Q22 85 26 80 Q28 70 34 60" fill="#6D28D9"/>
+            <path d="M38 58 Q32 72 30 86 Q35 89 37 84 Q38 72 43 62" fill="#7C3AED"/>
+            <path d="M46 60 Q44 75 44 90 Q48 92 50 88 Q50 74 50 62" fill="#6D28D9"/>
+            <path d="M54 60 Q56 75 56 90 Q52 92 50 88 Q50 74 50 62" fill="#7C3AED"/>
+            <path d="M62 58 Q68 72 70 86 Q65 89 63 84 Q62 72 57 62" fill="#6D28D9"/>
+            <path d="M70 55 Q78 68 82 80 Q78 85 74 80 Q72 70 66 60" fill="#7C3AED"/>
+            <circle cx="50" cy="12" r="9" fill="white"/>
+            <path d="M50 4 L52 8 L50 12 L48 8 Z" fill="#04080F"/>
+            <path d="M44 18 L46 14 L50 16 L54 14 L56 18 L50 21 Z" fill="#04080F"/>
+        </svg>
+
+        <!-- TON NOUVEAU TITRE OFFICIEL ET INTERNATIONAL -->
+        <h1>WORLDCUP2026 · MUJOS OCTOPUS</h1>
+        <p class="sub">AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES</p>
+        
+        <div class="badges">
+            <span class="badge">USA</span>
+            <span class="badge">CANADA</span>
+            <span class="badge">MEXICO</span>
+            <span class="badge">11 JUN - 19 JUL 2026</span>
+        </div>
+    </header>
+
+    <nav>
+        <button class="active" onclick="tab('groups',this)">GROUPS</button>
+        <button onclick="tab('schedule',this)">SCHEDULE</button>
+        <button onclick="tab('predict',this)">PREDICT</button>
+        <button onclick="tab('dossier',this)">DOSSIER</button>
+    </nav>
+
+    <!-- SECTION : GROUPS -->
+    <div id="groups" class="section active">
+        <div class="grid" id="gg"></div>
+    </div>
+
+    <!-- SECTION : SCHEDULE (CALENDRIER AUTOMATIQUE VIA API) -->
+    <div id="schedule" class="section">
+        <div class="mfilter" id="mfilter"></div>
+        <div id="matchlist"></div>
+    </div>
+
+    <!-- SECTION : PREDICT (L'ORACLE DE LA PIEUVRE) -->
+    <div id="predict" class="section">
+        <div class="box">
+            <select id="ta"></select>
+            <select id="tb"></select>
+            <button class="pbtn" onclick="predict()">ORACLE - PREDICT MATCH</button>
+            
+            <div class="result" id="rc">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-weight:700">
+                    <span id="rta"></span>
+                    <span class="score" id="rs"></span>
+                    <span id="rtb"></span>
+                </div>
+                <div class="prow">
+                    <div class="pc w"><span id="pw"></span><small>WIN A</small></div>
+                    <div class="pc d"><span id="pd"></span><small>DRAW</small></div>
+                    <div class="pc l"><span id="pl"></span><small>WIN B</small></div>
+                </div>
+                <div class="bars">
+                    <div>
+                        <p style="font-size:.6rem;color:#94A3B8;margin-bottom:.4rem" id="bat"></p>
+                        <div id="bab"></div>
+                    </div>
+                    <div>
+                        <p style="font-size:.6rem;color:#94A3B8;margin-bottom:.4rem" id="bbt"></p>
+                        <div id="bbb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION : DOSSIER (RECHERCHE PAYS) -->
+    <div id="dossier" class="section">
+        <div class="dsearch">
+            <input id="di" placeholder="France, Spain, Germany..."/>
+            <button onclick="dos()">OPEN</button>
+        </div>
+        <div class="dcard" id="dc">
+            <div class="dname" id="dn"></div>
+            <div class="dmeta" id="dm"></div>
+            <div class="dgrid">
+                <div class="db"><div class="dbt">ATTACK</div><p id="da"></p></div>
+                <div class="db"><div class="dbt">DEFENSE</div><p id="dd"></p></div>
+                <div class="db"><div class="dbt">FORM</div><p id="df"></p></div>
+                <div class="db"><div class="dbt">MENTAL</div><p id="dme"></p></div>
+                <div class="db"><div class="dbt">COACH</div><p id="dc2"></p></div>
+                <div class="db"><div class="dbt">KEY PLAYER</div><p id="dkp"></p></div>
+                <div class="db"><div class="dbt">STARS</div><p id="dsp"></p></div>
+                <div class="db"><div class="dbt">HISTORY</div><p id="dh"></p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>MUJOS Octopus · AI Football Oracle · Not affiliated with FIFA</footer>
+
+    <!-- LIAISON DES SCRIPTS DANS LE BON ORDRE DE SÉCURITÉ -->
+    <script src="js/teams.js"></script>
+    <script src="js/matches.js"></script>
+    <script src="js/dossiers.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+  </html>
+              
