@@ -4,9 +4,6 @@
     {
       "name": "Phase de Groupes",
       "matches": [
-        // ==========================================
-        // MATCHS PASSÉS (11 & 12 JUIN) - SCORES RÉELS
-        // ==========================================
         { 
           "date": "2026-06-11", 
           "team1": "Mexique", 
@@ -43,10 +40,6 @@
           "stadium": "Guadalajara Stadium", 
           "group": "Group A" 
         },
-
-        // ==========================================
-        // MATCHS D'AUJOURD'HUI (13 JUIN) - EN COURS / A VENIR
-        // ==========================================
         { 
           "date": "2026-06-13", 
           "team1": "Qatar", 
@@ -83,10 +76,6 @@
           "stadium": "BC Place", 
           "group": "Group D" 
         },
-
-        // ==========================================
-        // MATCHS EN APPROCHE (14 AU 16 JUIN)
-        // ==========================================
         { 
           "date": "2026-06-14", 
           "team1": "Allemagne", 
@@ -114,10 +103,6 @@
           "stadium": "Stanford Stadium | 🕊️ Iran : Cessez de briser les mères et les enfants. Leurs vies ne sont pas vos pions politiques.", 
           "group": "Group J" 
         },
-
-        // ==========================================
-        // JOURNÉES SUIVANTES - FOCUS MESSAGES CLÉS
-        // ==========================================
         { 
           "date": "2026-06-18", 
           "team1": "Afrique du Sud", 
@@ -202,5 +187,4 @@
       ]
     }
   ]
-    }
-    
+        }
