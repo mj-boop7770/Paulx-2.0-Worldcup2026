@@ -1,27 +1,100 @@
 {
+  "name": "Coupe du Monde 2026",
   "rounds": [
     {
-      "name": "Group Stage - Matchday 1",
+      "name": "Phase de Groupes",
       "matches": [
-        {
-          "date": "2026-06-11",
-          "team1": "Mexique",
-          "team2": "USA",
-          "score1": 2,
-          "score2": 1,
-          "group": "Group A",
-          "stadium": "Estadio Azteca"
-        },
-        {
-          "date": "2026-06-11",
-          "team1": "Canada",
-          "team2": "Nouvelle-Zélande",
-          "score1": 1,
-          "score2": 1,
-          "group": "Group B",
-          "stadium": "BMO Field"
-        }
+        { "date": "2026-06-11", "team1": "Mexique", "team2": "Afrique du Sud", "score1": 2, "score2": 0, "stadium": "Mexico City Stadium", "group": "Group A" },
+        { "date": "2026-06-11", "team1": "Corée du Sud", "team2": "Tchéquie", "score1": 2, "score2": 1, "stadium": "Guadalajara Stadium", "group": "Group A" },
+        { "date": "2026-06-12", "team1": "Canada", "team2": "Bosnie-Herzégovine", "score1": 1, "score2": 1, "stadium": "Toronto Stadium", "group": "Group B" },
+        { "date": "2026-06-12", "team1": "États-Unis", "team2": "Paraguay", "score1": 4, "score2": 1, "stadium": "Los Angeles Stadium", "group": "Group D" },
+        
+        { "date": "2026-06-13", "team1": "Qatar", "team2": "Suisse", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group B" },
+        { "date": "2026-06-13", "team1": "Brésil", "team2": "Maroc", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group C" },
+        { "date": "2026-06-13", "team1": "Haïti", "team2": "Écosse", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group C" },
+        { "date": "2026-06-13", "team1": "Australie", "team2": "Turquie", "score1": null, "score2": null, "stadium": "Vancouver Stadium", "group": "Group D" },
+        
+        { "date": "2026-06-14", "team1": "Allemagne", "team2": "Curaçao", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group E" },
+        { "date": "2026-06-14", "team1": "Côte d'Ivoire", "team2": "Équateur", "score1": null, "score2": null, "stadium": "Philadelphia Stadium", "group": "Group E" },
+        { "date": "2026-06-14", "team1": "Pays-Bas", "team2": "Japon", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group F" },
+        { "date": "2026-06-14", "team1": "Suède", "team2": "Tunisie", "score1": null, "score2": null, "stadium": "Monterrey Stadium", "group": "Group F" },
+        
+        { "date": "2026-06-15", "team1": "Italie", "team2": "Chili", "score1": null, "score2": null, "stadium": "Atlanta Stadium", "group": "Group G" },
+        { "date": "2026-06-15", "team1": "Espagne", "team2": "Corée du Nord", "score1": null, "score2": null, "stadium": "Seattle Stadium", "group": "Group G" },
+        { "date": "2026-06-15", "team1": "Sénégal", "team2": "Norvège", "score1": null, "score2": null, "stadium": "Los Angeles Stadium", "group": "Group H" },
+        { "date": "2026-06-15", "team1": "Roumanie", "team2": "Algérie", "score1": null, "score2": null, "stadium": "Miami Stadium", "group": "Group H" },
+        
+        { "date": "2026-06-16", "team1": "France", "team2": "Jamaïque", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group I" },
+        { "date": "2026-06-16", "team1": "Nigeria", "team2": "Honduras", "score1": null, "score2": null, "stadium": "Atlanta Stadium", "group": "Group I" },
+        { "date": "2026-06-16", "team1": "Angleterre", "team2": "Pérou", "score1": null, "score2": null, "stadium": "Los Angeles Stadium", "group": "Group J" },
+        { "date": "2026-06-16", "team1": "Iran", "team2": "Ukraine", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group J" },
+        
+        { "date": "2026-06-17", "team1": "Portugal", "team2": "Cameroun", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group K" },
+        { "date": "2026-06-17", "team1": "Costa Rica", "team2": "Ouzbékistan", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group K" },
+        { "date": "2026-06-17", "team1": "Argentine", "team2": "Australie", "score1": null, "score2": null, "stadium": "Mexico City Stadium", "group": "Group L" },
+        { "date": "2026-06-17", "team1": "Arabie Saoudite", "team2": "Panama", "score1": null, "score2": null, "stadium": "Guadalajara Stadium", "group": "Group L" },
+        
+        { "date": "2026-06-18", "team1": "Mexique", "team2": "Tchéquie", "score1": null, "score2": null, "stadium": "Atlanta Stadium", "group": "Group A" },
+        { "date": "2026-06-18", "team1": "Afrique du Sud", "team2": "Corée du Sud", "score1": null, "score2": null, "stadium": "Los Angeles Stadium", "group": "Group A" },
+        { "date": "2026-06-18", "team1": "Canada", "team2": "Suisse", "score1": null, "score2": null, "stadium": "Atlanta Stadium", "group": "Group B" },
+        { "date": "2026-06-18", "team1": "Bosnie-Herzégovine", "team2": "Qatar", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group B" },
+        
+        { "date": "2026-06-19", "team1": "Brésil", "team2": "Écosse", "score1": null, "score2": null, "stadium": "Seattle Stadium", "group": "Group C" },
+        { "date": "2026-06-19", "team1": "Maroc", "team2": "Haïti", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group C" },
+        { "date": "2026-06-19", "team1": "États-Unis", "team2": "Turquie", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group D" },
+        { "date": "2026-06-19", "team1": "Paraguay", "team2": "Australie", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group D" },
+        
+        { "date": "2026-06-20", "team1": "Allemagne", "team2": "Équateur", "score1": null, "score2": null, "stadium": "Toronto Stadium", "group": "Group E" },
+        { "date": "2026-06-20", "team1": "Curaçao", "team2": "Côte d'Ivoire", "score1": null, "score2": null, "stadium": "Philadelphia Stadium", "group": "Group E" },
+        { "date": "2026-06-20", "team1": "Pays-Bas", "team2": "Tunisie", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group F" },
+        { "date": "2026-06-20", "team1": "Japon", "team2": "Suède", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group F" },
+        
+        { "date": "2026-06-21", "team1": "Italie", "team2": "Corée du Nord", "score1": null, "score2": null, "stadium": "Miami Stadium", "group": "Group G" },
+        { "date": "2026-06-21", "team1": "Chili", "team2": "Espagne", "score1": null, "score2": null, "stadium": "Vancouver Stadium", "group": "Group G" },
+        { "date": "2026-06-21", "team1": "Sénégal", "team2": "Algérie", "score1": null, "score2": null, "stadium": "Monterrey Stadium", "group": "Group H" },
+        { "date": "2026-06-21", "team1": "Norvège", "team2": "Roumanie", "score1": null, "score2": null, "stadium": "Guadalajara Stadium", "group": "Group H" },
+        
+        { "date": "2026-06-22", "team1": "France", "team2": "Honduras", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group I" },
+        { "date": "2026-06-22", "team1": "Jamaïque", "team2": "Nigeria", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group I" },
+        { "date": "2026-06-22", "team1": "Angleterre", "team2": "Ukraine", "score1": null, "score2": null, "stadium": "Seattle Stadium", "group": "Group J" },
+        { "date": "2026-06-22", "team1": "Pérou", "team2": "Iran", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group J" },
+        
+        { "date": "2026-06-23", "team1": "Portugal", "team2": "Ouzbékistan", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group K" },
+        { "date": "2026-06-23", "team1": "Cameroun", "team2": "Costa Rica", "score1": null, "score2": null, "stadium": "Toronto Stadium", "group": "Group K" },
+        { "date": "2026-06-23", "team1": "Argentine", "team2": "Panama", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group L" },
+        { "date": "2026-06-23", "team1": "Australie", "team2": "Arabie Saoudite", "score1": null, "score2": null, "stadium": "Philadelphia Stadium", "group": "Group L" },
+        
+        { "date": "2026-06-24", "team1": "Mexique", "team2": "Corée du Sud", "score1": null, "score2": null, "stadium": "Mexico City Stadium", "group": "Group A" },
+        { "date": "2026-06-24", "team1": "Tchéquie", "team2": "Afrique du Sud", "score1": null, "score2": null, "stadium": "Guadalajara Stadium", "group": "Group A" },
+        { "date": "2026-06-24", "team1": "Canada", "team2": "Qatar", "score1": null, "score2": null, "stadium": "Toronto Stadium", "group": "Group B" },
+        { "date": "2026-06-24", "team1": "Suisse", "team2": "Bosnie-Herzégovine", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group B" },
+        
+        { "date": "2026-06-25", "team1": "Brésil", "team2": "Haïti", "score1": null, "score2": null, "stadium": "Miami Stadium", "group": "Group C" },
+        { "date": "2026-06-25", "team1": "Écosse", "team2": "Maroc", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group C" },
+        { "date": "2026-06-25", "team1": "États-Unis", "team2": "Australie", "score1": null, "score2": null, "stadium": "Los Angeles Stadium", "group": "Group D" },
+        { "date": "2026-06-25", "team1": "Turquie", "team2": "Paraguay", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group D" },
+        
+        { "date": "2026-06-26", "team1": "Allemagne", "team2": "Côte d'Ivoire", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group E" },
+        { "date": "2026-06-26", "team1": "Équateur", "team2": "Curaçao", "score1": null, "score2": null, "stadium": "Atlanta Stadium", "group": "Group E" },
+        { "date": "2026-06-26", "team1": "Pays-Bas", "team2": "Suède", "score1": null, "score2": null, "stadium": "Seattle Stadium", "group": "Group F" },
+        { "date": "2026-06-26", "team1": "Tunisie", "team2": "Japon", "score1": null, "score2": null, "stadium": "Vancouver Stadium", "group": "Group F" },
+        
+        { "date": "2026-06-27", "team1": "Italie", "team2": "Espagne", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group G" },
+        { "date": "2026-06-27", "team1": "Corée du Nord", "team2": "Chili", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group G" },
+        { "date": "2026-06-27", "team1": "Sénégal", "team2": "Roumanie", "score1": null, "score2": null, "stadium": "Philadelphia Stadium", "group": "Group H" },
+        { "date": "2026-06-27", "team1": "Algérie", "team2": "Norvège", "score1": null, "score2": null, "stadium": "Monterrey Stadium", "group": "Group H" },
+        
+        { "date": "2026-06-28", "team1": "France", "team2": "Nigeria", "score1": null, "score2": null, "stadium": "New York Stadium", "group": "Group I" },
+        { "date": "2026-06-28", "team1": "Honduras", "team2": "Jamaïque", "score1": null, "score2": null, "stadium": "Boston Stadium", "group": "Group I" },
+        { "date": "2026-06-28", "team1": "Angleterre", "team2": "Iran", "score1": null, "score2": null, "stadium": "Los Angeles Stadium", "group": "Group J" },
+        { "date": "2026-06-28", "team1": "Ukraine", "team2": "Pérou", "score1": null, "score2": null, "stadium": "San Francisco Stadium", "group": "Group J" },
+        
+        { "date": "2026-06-29", "team1": "Portugal", "team2": "Costa Rica", "score1": null, "score2": null, "stadium": "Seattle Stadium", "group": "Group K" },
+        { "date": "2026-06-29", "team1": "Ouzbékistan", "team2": "Cameroun", "score1": null, "score2": null, "stadium": "Vancouver Stadium", "group": "Group K" },
+        { "date": "2026-06-29", "team1": "Argentine", "team2": "Arabie Saoudite", "score1": null, "score2": null, "stadium": "Dallas Stadium", "group": "Group L" },
+        { "date": "2026-06-29", "team1": "Panama", "team2": "Australie", "score1": null, "score2": null, "stadium": "Houston Stadium", "group": "Group L" }
       ]
     }
   ]
-}
+        }
+          
