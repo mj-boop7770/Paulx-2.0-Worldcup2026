@@ -6,6 +6,7 @@
       "matches": [
         { 
           "date": "2026-06-11", 
+          "time": "19:00",
           "team1": "Mexique", 
           "team2": "Afrique du Sud", 
           "score1": 2, 
@@ -15,6 +16,7 @@
         },
         { 
           "date": "2026-06-11", 
+          "time": "19:00",
           "team1": "États-Unis", 
           "team2": "Paraguay", 
           "score1": 4, 
@@ -24,6 +26,7 @@
         },
         { 
           "date": "2026-06-12", 
+          "time": "19:00",
           "team1": "Canada", 
           "team2": "Bosnie-Herzégovine", 
           "score1": 1, 
@@ -33,6 +36,7 @@
         },
         { 
           "date": "2026-06-12", 
+          "time": "19:00",
           "team1": "Corée du Sud", 
           "team2": "Tchéquie", 
           "score1": 2, 
@@ -42,6 +46,7 @@
         },
         { 
           "date": "2026-06-13", 
+          "time": "19:00",
           "team1": "Qatar", 
           "team2": "Suisse", 
           "score1": null, 
@@ -51,6 +56,7 @@
         },
         { 
           "date": "2026-06-13", 
+          "time": "20:00",
           "team1": "Brésil", 
           "team2": "Maroc", 
           "score1": null, 
@@ -60,6 +66,7 @@
         },
         { 
           "date": "2026-06-13", 
+          "time": "21:00",
           "team1": "Haïti", 
           "team2": "Écosse", 
           "score1": null, 
@@ -69,6 +76,7 @@
         },
         { 
           "date": "2026-06-13", 
+          "time": "23:00",
           "team1": "Australie", 
           "team2": "Turquie", 
           "score1": null, 
@@ -78,6 +86,7 @@
         },
         { 
           "date": "2026-06-14", 
+          "time": "19:00",
           "team1": "Allemagne", 
           "team2": "Curaçao", 
           "score1": null, 
@@ -87,6 +96,7 @@
         },
         { 
           "date": "2026-06-14", 
+          "time": "21:00",
           "team1": "Côte d'Ivoire", 
           "team2": "Équateur", 
           "score1": null, 
@@ -96,6 +106,7 @@
         },
         { 
           "date": "2026-06-16", 
+          "time": "20:00",
           "team1": "Iran", 
           "team2": "Ukraine", 
           "score1": null, 
@@ -105,6 +116,7 @@
         },
         { 
           "date": "2026-06-18", 
+          "time": "01:00",
           "team1": "Afrique du Sud", 
           "team2": "Corée du Sud", 
           "score1": null, 
@@ -114,6 +126,7 @@
         },
         { 
           "date": "2026-06-19", 
+          "time": "00:00",
           "team1": "États-Unis", 
           "team2": "Turquie", 
           "score1": null, 
@@ -123,6 +136,7 @@
         },
         { 
           "date": "2026-06-22", 
+          "time": "02:00",
           "team1": "Pérou", 
           "team2": "Iran", 
           "score1": null, 
@@ -132,6 +146,7 @@
         },
         { 
           "date": "2026-06-24", 
+          "time": "01:00",
           "team1": "Mexique", 
           "team2": "Corée du Sud", 
           "score1": null, 
@@ -141,6 +156,7 @@
         },
         { 
           "date": "2026-06-25", 
+          "time": "00:00",
           "team1": "États-Unis", 
           "team2": "Australie", 
           "score1": null, 
@@ -150,6 +166,7 @@
         },
         { 
           "date": "2026-06-27", 
+          "time": "20:00",
           "team1": "Portugal", 
           "team2": "Costa Rica", 
           "score1": null, 
@@ -159,6 +176,7 @@
         },
         { 
           "date": "2026-06-27", 
+          "time": "22:00",
           "team1": "Argentine", 
           "team2": "Arabie Saoudite", 
           "score1": null, 
@@ -168,6 +186,7 @@
         },
         { 
           "date": "2026-06-28", 
+          "time": "01:00",
           "team1": "Angleterre", 
           "team2": "Iran", 
           "score1": null, 
@@ -177,6 +196,7 @@
         },
         { 
           "date": "2026-06-28", 
+          "time": "21:00",
           "team1": "Panama", 
           "team2": "Australie", 
           "score1": null, 
