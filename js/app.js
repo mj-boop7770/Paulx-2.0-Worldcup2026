@@ -125,13 +125,30 @@ async function afficherMatchs() {
 
         matchesFiltrés.forEach(m => {
             let scoreHTML = `<span class="mresult">VS</span>`;
+            let dateEtHeureAffichee = m.date || "";
+
             if (m.score1 !== undefined && m.score1 !== null) {
+                // Match joué : On affiche le score et la mention Terminé
                 scoreHTML = `<span class="mresult" style="color:#F59E0B;">${m.score1} - ${m.score2}</span>`;
+                dateEtHeureAffichee += " | Terminé";
+            } else if (m.time) {
+                // Match à venir : Calcul automatique de l'heure locale selon le téléphone du fan
+                try {
+                    const dateMatch = new Date(`${m.date}T${m.time}:00Z`);
+                    const heureLocale = dateMatch.toLocaleTimeString(navigator.language, {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    dateEtHeureAffichee += ` à ${heureLocale}`;
+                } catch (e) {
+                    // Sécurité en cas de mauvaise date
+                    dateEtHeureAffichee += ` (${m.time})`;
+                }
             }
 
             listContainer.innerHTML += `
                 <div class="mcard">
-                    <div class="mdate">${m.date || ""}</div>
+                    <div class="mdate">${dateEtHeureAffichee}</div>
                     <div class="mteams">
                         <span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team1}')">${m.team1}</span>
                         ${scoreHTML}
