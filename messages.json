@@ -1,55 +1,25 @@
-=======================================================================
-           DOSSIER : LES TENDANCES ET INFOS VIRALES DU MOMENT
-=======================================================================
-
-1. TECH & BUSINESS : L'ÈRE DES RECORDS
------------------------------------------------------------------------
-* Entrée en bourse de SpaceX & Fortune d'Elon Musk : 
-  L'introduction en bourse (IPO) historique de SpaceX propulse la 
-  fortune d'Elon Musk vers des sommets inédits (premier "trillionnaire"). 
-  Le sujet s'est emparé de X (Twitter) et LinkedIn, relançant les 
-  débats sur la puissance des entreprises tech privées dans le spatial.
-
-* L'explosion de l'Agentic AI et de la Vidéo IA : 
-  Sur le web créatif et pro, la tendance est aux "agents IA autonomes" 
-  (qui exécutent des tâches complexes en arrière-plan) et aux outils 
-  génératifs vidéo ultra-réalistes. C'est le sujet central des 
-  créateurs de contenu et des développeurs.
-
------------------------------------------------------------------------
-2. SPORT & ÉVÉNEMENTS : L'EFFET COUPE DU MONDE
------------------------------------------------------------------------
-* Coup d'envoi de la Coupe du Monde de la FIFA (Amérique du Nord) : 
-  Le plus grand tournoi de football vient de commencer. Sur TikTok, 
-  Snapchat et Instagram, l'événement s'accompagne d'une explosion 
-  de filtres interactifs, de vidéos des coulisses des équipes et 
-  de partages massifs de l'ambiance dans les stades par les supporters.
-
------------------------------------------------------------------------
-3. LES FORMATS & SONS VIRAUX (TIKTOK / REELS / SHORTS)
------------------------------------------------------------------------
-* Trend Format : "Plan A, B, C..."
-  - Concept : Un format carrousel (images) ou vidéo courte très direct. 
-    Les utilisateurs comparent avec humour ou philosophie les différents 
-    choix d'une vie, d'une carrière ou d'un projet (Le plan safe, 
-    le plan fou, celui dont on ne parle pas).
-  - Idéal pour : Créer de la proximité avec une audience.
-
-* Trend Audio : "Cambiar" – 305WillyBeatz ("The saxophone's getting louder")
-  - Concept : Une musique utilisée pour illustrer une situation de 
-    "crise imminente" ou un problème majeur qui approche, tandis que 
-    la personne choisit de l'ignorer complètement pour faire une action 
-    totalement futile ou absurde.
-
------------------------------------------------------------------------
-4. SOCIÉTÉ & ÉMOTION : L'IMAGE QUI SÉMOUVOIR LE WEB
------------------------------------------------------------------------
-* La bénédiction du Pape Leo XIV à Barcelone : 
-  Une photo virale montrant le Pape en train de bénir un jeune garçon 
-  dans les rues de Barcelone a déclenché une immense vague d'émotion. 
-  La communauté en ligne s'est mobilisée en masse pour retrouver la 
-  famille de l'enfant.
-
-=======================================================================
-                      FIN DU DOSSIER TENDANCES
-=======================================================================
+{
+  "date": "14 JUIN 2026",
+  "articles": [
+    {
+      "badge": "Mondial · Crise",
+      "titre": "Droits humains et tensions géopolitiques dans les stades",
+      "texte": "Les faits : La FIFA fait face à une crisis majeure de contrôle de ses enceintes. Lors du match d'ouverture au Stade Azteca de Mexico, puis au MetLife Stadium (New Jersey) lors de Brésil-Maroc, des failles de sécurité ont permis l'introduction massive de banderoles politiques. Le scandale : Les instances juridiques de la FIFA et le Tribunal Arbitral du Sport (TAS) sont sous pression maximale. Des groupes d'activistes et de supporters coordonnent des actions en tribune pour braver l'interdiction stricte des messages politiques. Plus grave encore, des ONG de défense des droits des immigrés (comme l'ACLU) se mobilisent massivement dans les villes hôtes américaines pour dénoncer les opérations de contrôle renforcées de l'ICE (Immigration and Customs Enforcement) aux abords des fan-zones, créant un climat de haute tension en marge de la fête sportive."
+    },
+    {
+      "badge": "Mondial · Logistique",
+      "titre": "Le calvaire logistique et thermique dénoncé par la FIFPRO",
+      "texte": "Les faits : Le syndicat international des joueurs (FIFPRO) a officiellement déposé une plainte auprès de la FIFA concernant la planification des déplacements. Le scandale : Le format à 48 équipes réparti sur trois pays géants (USA, Canada, Mexique) vire au cauchemar physique. L'exemple type qui choque les staffs médicaux cette semaine est le cas de sélections obligées d'enchaîner un match sous le dôme climatisé et frais de Vancouver avant de devoir s'envoler immédiatement pour Monterrey (Mexique) pour y jouer par 38°C en moins de 72 heures. La FIFPRO dénonce une mise en danger de la santé des athlètes pour des impératifs commerciaux de diffusion télévisée."
+    },
+    {
+      "badge": "Top Web · Rébellion",
+      "titre": "Mobilisation historique : Les manifestations nationales 'No Kings'",
+      "texte": "Les faits : C'est la news qui sature absolument tous les réseaux sociaux (TikTok, X, YouTube) aujourd'hui, dimanche 14 juin. Le mouvement citoyen 'No Kings', soutenu par un collectif massif d'artistes et de figures culturelles (la Committee for the First Amendment, incluant Patti Smith ou Jane Fonda), organise une journée de mobilisation historique à travers les États-Unis. Le choc : Conçu comme une contre-programmation frontale aux politiques de l'administration Trump, ce mouvement d'opposition dénonce les dérives autoritaires. Aujourd'hui même, ils lancent un grand concert et des rassemblements majeurs intitulés 'Rise Up, Sing Out' à New York pour s'opposer aux célébrations officielles du gouvernement. C'est l'un des plus grands mouvements de contestation civile de l'histoire moderne du pays."
+    },
+    {
+      "badge": "Top Web · Choc",
+      "titre": "Historique et surréaliste : L'UFC 'Freedom 250' à la Maison Blanche",
+      "texte": "Les faits : Pour la toute première fois de l'histoire des États-Unis, la pelouse sud de la Maison Blanche a été transformée en arène de combat. Ce soir même, l'organisation de Dana White y produit l'événement UFC Freedom 250, pour marquer le 250e anniversaire de la déclaration d'indépendance et coïncider pile avec les 80 ans de Donald Trump. Le choc : Une structure métallique monumentale de 28 mètres de haut nommée 'The Claw' a été érigée sur la pelouse présidentielle pour enfermer l'Octogone de l'UFC. Le combat principal oppose l'hispano-géorgien Ilia Topuria à l'américain Justin Gaethje pour le titre incontesté des poids légers devant 5 000 invités triés sur le volet. L'événement crée un tollé juridique (deux citoyens ont intenté un procès pour l'utilisation privée de la Maison Blanche) et un buzz planétaire colossal sur le web, mêlant sport de combat, politique-spectacle et censure visuelle en plein cœur de Washington."
+    }
+  ]
+}
