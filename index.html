@@ -22,10 +22,21 @@
         h1{font-size:2.1rem;font-weight:900;letter-spacing:1px;color:#A78BFA;margin-top:1rem}
         p.sub{font-size:.75rem;color:#94A3B8;letter-spacing:.2em;margin-top:.4rem}
         .badges{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
-        .badge{font-size:.65rem;padding:.3rem .8rem;border-radius:999px;border:1px solid #7C3AED44;color:#A78BFA}
+        .badge{font-size:.65rem;padding:.3rem .8rem;border-radius999px;border:1px solid #7C3AED44;color:#A78BFA}
+        
+        /* BARRE DE SELECTION DES LANGUES ULTRA VISIBLE */
+        .lang-selector{display:flex;justify-content:center;gap:.4rem;margin-top:1.2rem;flex-wrap:wrap}
+        .lang-btn{padding:.3rem .6rem;font-size:.65rem;border-radius:6px;border:1px solid #7C3AED33;background:#111827;color:#94A3B8;cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:all 0.2s}
+        .lang-btn.active,.lang-btn:hover{border-color:#7C3AED;color:#fff;background:#7C3AED32}
+
         nav{display:flex;justify-content:center;gap:.5rem;padding:1rem;flex-wrap:wrap}
-        button{padding:.5rem 1rem;border-radius:8px;border:1px solid #7C3AED44;background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem}
+        button{padding:.5rem 1rem;border-radius:8px;border:1px solid #7C3AED44;background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem;position:relative}
         button.active,button:hover{background:#7C3AED;color:#fff;border-color:#7C3AED}
+        
+        /* PASTILLE NOTIFICATION FLASH CLIGNOTANTE SUR NEWS */
+        .live-dot{width:6px;height:6px;background:#EF4444;border-radius:50%;display:inline-block;margin-left:4px;vertical-align:middle;box-shadow:0 0 8px #EF4444;animation:blink 1.2s infinite}
+        @keyframes blink{0%{opacity:0.2}50%{opacity:1}100%{opacity:0.2}}
+
         .section{display:none;max-width:900px;margin:0 auto;padding:1rem}
         .section.active{display:block}
         .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
@@ -56,7 +67,7 @@
         .dmeta{font-size:.65rem;color:#94A3B8;margin-bottom:1rem}
         .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
         .db{background:#111827;border-radius:8px;padding:.8rem}
-        .dbt{font-size:.58rem;color:#A78BFA;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem}
+        .dgrid .db p{white-space: pre-wrap;}
         .db p{font-size:.78rem;color:#94A3B8;line-height:1.5}
         .mcard{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:10px;padding:.9rem;margin-bottom:.6rem;text-align:left}
         .mdate{font-size:.6rem;color:#94A3B8;margin-bottom:.4rem}
@@ -73,7 +84,7 @@
 <body>
 
     <header>
-        <!-- LOGO DE L'OCTOPUS MUJOS (RESTE EN PREMIER) -->
+        <!-- LOGO DE L'OCTOPUS MUJOS -->
         <svg width="70" height="70" viewBox="0 0 100 100" fill="none">
             <ellipse cx="50" cy="38" rx="24" ry="22" fill="#7C3AED"/>
             <ellipse cx="43" cy="30" rx="8" ry="6" fill="#A78BFA" opacity=".35"/>
@@ -91,23 +102,32 @@
             <path d="M44 18 L46 14 L50 16 L54 14 L56 18 L50 21 Z" fill="#04080F"/>
         </svg>
 
-        <!-- TON NOUVEAU TITRE OFFICIEL ET INTERNATIONAL -->
-        <h1>WORLDCUP2026 · MUJOS OCTOPUS</h1>
-        <p class="sub">AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES</p>
+        <h1 id="main-title">WORLDCUP2026 · MUJOS OCTOPUS</h1>
+        <p class="sub" id="main-sub">AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES</p>
         
         <div class="badges">
             <span class="badge">USA</span>
             <span class="badge">CANADA</span>
             <span class="badge">MEXICO</span>
-            <span class="badge">11 JUN - 19 JUL 2026</span>
+            <span class="badge" id="badge-dates">11 JUN - 19 JUL 2026</span>
+        </div>
+
+        <!-- SÉLECTEUR DE LANGUES TRÈS VISIBLE -->
+        <div class="lang-selector">
+            <button class="lang-btn active" onclick="changerLangue('fr', this)">🇫🇷 FR</button>
+            <button class="lang-btn" onclick="changerLangue('en', this)">🇬🇧 EN</button>
+            <button class="lang-btn" onclick="changerLangue('pt', this)">🇵🇹 PT</button>
+            <button class="lang-btn" onclick="changerLangue('sw', this)">🇹🇿 SW</button>
+            <button class="lang-btn" onclick="changerLangue('ar', this)">🇦🇪 AR</button>
         </div>
     </header>
 
     <nav>
-        <button class="active" onclick="tab('groups',this)">GROUPS</button>
-        <button onclick="tab('schedule',this)">SCHEDULE</button>
-        <button onclick="tab('predict',this)">PREDICT</button>
-        <button onclick="tab('dossier',this)">DOSSIER</button>
+        <button class="active" id="btn-groups" onclick="tab('groups',this)">GROUPS</button>
+        <button id="btn-schedule" onclick="tab('schedule',this)">SCHEDULE</button>
+        <button id="btn-predict" onclick="tab('predict',this)">PREDICT</button>
+        <button id="btn-dossier" onclick="tab('dossier',this)">DOSSIER</button>
+        <button id="btn-news" onclick="tab('news',this)">NEWS<span class="live-dot"></span></button> <!-- Point clignotant ajouté -->
     </nav>
 
     <!-- SECTION : GROUPS -->
@@ -115,18 +135,18 @@
         <div class="grid" id="gg"></div>
     </div>
 
-    <!-- SECTION : SCHEDULE (CALENDRIER AUTOMATIQUE VIA API) -->
+    <!-- SECTION : SCHEDULE -->
     <div id="schedule" class="section">
         <div class="mfilter" id="mfilter"></div>
         <div id="matchlist"></div>
     </div>
 
-    <!-- SECTION : PREDICT (L'ORACLE DE LA PIEUVRE) -->
+    <!-- SECTION : PREDICT -->
     <div id="predict" class="section">
         <div class="box">
             <select id="ta"></select>
             <select id="tb"></select>
-            <button class="pbtn" onclick="predict()">ORACLE - PREDICT MATCH</button>
+            <button class="pbtn" id="btn-oracle-predict" onclick="predict()">ORACLE - PREDICT MATCH</button>
             
             <div class="result" id="rc">
                 <div style="display:flex;justify-content:space-between;align-items:center;font-weight:700">
@@ -135,9 +155,9 @@
                     <span id="rtb"></span>
                 </div>
                 <div class="prow">
-                    <div class="pc w"><span id="pw"></span><small>WIN A</small></div>
-                    <div class="pc d"><span id="pd"></span><small>DRAW</small></div>
-                    <div class="pc l"><span id="pl"></span><small>WIN B</small></div>
+                    <div class="pc w"><span id="pw"></span><small id="lbl-winA">WIN A</small></div>
+                    <div class="pc d"><span id="pd"></span><small id="lbl-draw">DRAW</small></div>
+                    <div class="pc l"><span id="pl"></span><small id="lbl-winB">WIN B</small></div>
                 </div>
                 <div class="bars">
                     <div>
@@ -153,36 +173,41 @@
         </div>
     </div>
 
-    <!-- SECTION : DOSSIER (RECHERCHE PAYS) -->
+    <!-- SECTION : DOSSIER -->
     <div id="dossier" class="section">
         <div class="dsearch">
             <input id="di" placeholder="France, Spain, Germany..."/>
-            <button onclick="dos()">OPEN</button>
+            <button onclick="dos()" id="btn-open-dossier">OPEN</button>
         </div>
         <div class="dcard" id="dc">
             <div class="dname" id="dn"></div>
             <div class="dmeta" id="dm"></div>
             <div class="dgrid">
-                <div class="db"><div class="dbt">ATTACK</div><p id="da"></p></div>
-                <div class="db"><div class="dbt">DEFENSE</div><p id="dd"></p></div>
-                <div class="db"><div class="dbt">FORM</div><p id="df"></p></div>
-                <div class="db"><div class="dbt">MENTAL</div><p id="dme"></p></div>
-                <div class="db"><div class="dbt">COACH</div><p id="dc2"></p></div>
-                <div class="db"><div class="dbt">KEY PLAYER</div><p id="dkp"></p></div>
-                <div class="db"><div class="dbt">STARS</div><p id="dsp"></p></div>
-                <div class="db"><div class="dbt">HISTORY</div><p id="dh"></p></div>
+                <div class="db"><div class="dbt" id="lbl-attack">ATTACK</div><p id="da"></p></div>
+                <div class="db"><div class="dbt" id="lbl-defense">DEFENSE</div><p id="dd"></p></div>
+                <div class="db"><div class="dbt" id="lbl-form">FORM</div><p id="df"></p></div>
+                <div class="db"><div class="dbt" id="lbl-mental">MENTAL</div><p id="dme"></p></div>
+                <div class="db"><div class="dbt" id="lbl-coach">COACH</div><p id="dc2"></p></div>
+                <div class="db"><div class="dbt" id="lbl-keyplayer">KEY PLAYER</div><p id="dkp"></p></div>
+                <div class="db"><div class="dbt" id="lbl-stars">STARS</div><p id="dsp"></p></div>
+                <div class="db"><div class="dbt" id="lbl-history">HISTORY</div><p id="dh"></p></div>
             </div>
         </div>
     </div>
 
-    <footer>MUJOS Octopus · AI Football Oracle · Not affiliated with FIFA</footer>
+    <!-- SECTION : NEWS -->
+    <div id="news" class="section">
+        <div id="news-list" style="padding: 0.5rem 0;"></div>
+    </div>
 
-    <!-- LIAISON DES SCRIPTS DANS LE BON ORDRE DE SÉCURITÉ -->
+    <footer id="main-footer">MUJOS Octopus · AI Football Oracle · Not affiliated with FIFA</footer>
+
+    <!-- LIAISON DES SCRIPTS -->
     <script src="js/teams.js"></script>
     <script src="js/matches.js"></script>
     <script src="js/dossiers.js"></script>
     <script src="js/app.js"></script>
 
 </body>
-  </html>
-              
+                </html>
+                                    
