@@ -1,5 +1,5 @@
 // ==========================================
-// 1. SYSTEME MULTILINGUE (5 LANGUES)
+// 1. SYSTEME MULTILINGUE (6 LANGUES)
 // ==========================================
 let langueActuelle = 'fr', filtreActuel = "ALL";
 
@@ -8,7 +8,8 @@ const traductions = {
     en: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GROUPS", schedule: "SCHEDULE", predict: "PREDICT", dossier: "DOSSIER", news: "NEWS", oracleBtn: "ORACLE - PREDICT MATCH", winA: "WIN A", draw: "DRAW", winB: "WIN B", attack: "ATTACK", defense: "DEFENSE", form: "FORM", mental: "MENTAL", coach: "COACH", keyplayer: "KEY PLAYER", stars: "STARS", history: "HISTORY", open: "OPEN", placeholder: "France, Spain, Germany...", loadingNews: "Updating flash news...", noNews: "No news for now.", errorNews: "⚠️ Display error: Check messages.json format.", all: "ALL", grp: "GRP ", loadingMatch: "Loading matches from hub...", noMatch: "No matches for this group.", done: "Finished", at: "at", stadium: "Stadium", diffTeams: "Select two different teams." },
     pt: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GRUPOS", schedule: "CALENDÁRIO", predict: "PREVISÕES", dossier: "DOSSIÊ", news: "NOTÍCIAS", oracleBtn: "ORÁCULO - PREVER JOGO", winA: "VITÓRIA A", draw: "EMPATE", winB: "VITÓRIA B", attack: "ATAQUE", defense: "DEFESA", form: "FORMA", mental: "MENTAL", coach: "TREINADOR", keyplayer: "JOGADOR CHAVE", stars: "ESTRELAS", history: "HISTÓRIA", open: "ABRIR", placeholder: "França, Espanha, Alemanha...", loadingNews: "Atualizando as últimas notícias...", noNews: "Nenhuma notícia no momento.", errorNews: "⚠️ Erro de exibição: Verifique o formato do messages.json.", all: "TODOS", grp: "GRP ", loadingMatch: "Carregando jogos do hub...", noMatch: "Nenhum jogo para este grupo.", done: "Terminado", at: "as", stadium: "Estádio", diffTeams: "Selecione duas equipes diferentes." },
     sw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUNI - 19 JULAI 2026", groups: "MAKUNDI", schedule: "RATIBA", predict: "UTABIRI", dossier: "FAILI", news: "HABARI", oracleBtn: "ORACLE - TABIRI MECHI", winA: "USHINDI A", draw: "SULUHisho", winB: "USHINDI B", attack: "MASHAMBULIZI", defense: "ULINZI", form: "FOMU", mental: "AKILI", coach: "KOCHA", keyplayer: "MCHEZAJI MUHIMU", stars: "NYOTA", history: "HISTORIA", open: "FUNGUA", placeholder: "Ufaransa, Hispania, Ujerumani...", loadingNews: "Inasasisha habari za dharura...", noNews: "Hakuna habari kwa sasa.", errorNews: "⚠️ Hitilafu ya kuonyesha: Angalia muundo wa messages.json.", all: "ZOTE", grp: "KUNDI ", loadingMatch: "Inapakia mechi kutoka kwenye kitovu...", noMatch: "Hakuna mechi kwenye kundi hili.", done: "Imeisha", at: "saa", stadium: "Uwanja", diffTeams: "Chagua timu mbili tofauti." },
-    ar: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 يونيو - 19 يوليو 2026", groups: "المجموعات", schedule: "جدول المباريات", predict: "التوقعات", dossier: "الملفات", news: "الأخبار", oracleBtn: "الأوراكل - توقع المباراة", winA: "فوز أ", draw: "تعادل", winB: "فوز ب", attack: "الهجوم", defense: "الدفاع", form: "المستوى الحالي", mental: "الذهنية", coach: "المدرب", keyplayer: "اللاعب النجم", stars: "النجوم", history: "التاريخ", open: "افتح", placeholder: "فرنسا، إسبانيا، ألمانيا...", loadingNews: "جاري تحديث الأخبار العاجلة...", noNews: "لا توجد أخبار في الوقت الحالي.", errorNews: "⚠️ خطأ في العرض: تحقق من صيغة ملف messages.json.", all: "الكل", grp: "المجموعة ", loadingMatch: "جاري تحميل المباريات...", noMatch: "لا توجد مباريات لهذه المجموعة.", done: "انتهت", at: "على الساعة", stadium: "الملعب", diffTeams: "اختر فريقين مختلفين." }
+    ar: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 يونيو - 19 يوليو 2026", groups: "المجموعات", schedule: "جدول المباريات", predict: "التوقعات", dossier: "الملفات", news: "الأخبار", oracleBtn: "الأوراكل - توقع المباراة", winA: "فوز أ", draw: "تعادل", winB: "فوز ب", attack: "الهجوم", defense: "الدفاع", form: "المستوى الحالي", mental: "الذهنية", coach: "المدرب", keyplayer: "اللاعب النجم", stars: "النجوم", history: "التاريخ", open: "افتح", placeholder: "فرنسا، إسبانيا، ألمانيا...", loadingNews: "جاري تحديث الأخبار العاجلة...", noNews: "لا توجد أخبار في الوقت الحالي.", errorNews: "⚠️ خطأ في العرض: تحقق من صيغة ملف messages.json.", all: "الكل", grp: "المجموعة ", loadingMatch: "جاري تحميل المباريات...", noMatch: "لا توجد مباريات لهذه المجموعة.", done: "انتهت", at: "على الساعة", stadium: "الملعب", diffTeams: "اختر فريقين مختلفين." },
+    rw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 Kamena - 19 Nyakanga 2026", groups: "AMATSINDA", schedule: "GAHUNDA", predict: "IBITEKEREZO", dossier: "DOSSIYE", news: "AMAKURU", oracleBtn: "ORACLE - TABIRA UMUKINO", winA: "INTSINZI A", draw: "AMAYOBERANE", winB: "INTSINZI B", attack: "GUTERA", defense: "KWIRWANIRIRA", form: "IMITERERE", mental: "IMITEKEREREZE", coach: "UMUTOZA", keyplayer: "UMUKINNYI W'INGIRAKAMARO", stars: "INYENYERI", history: "AMATEKA", open: "FUNGURA", placeholder: "Ubufaransa, Espanye, Ubudage...", loadingNews: "Guhugura amakuru...", noNews: "Nta makuru ahari.", errorNews: "⚠️ Ikosa ryagaragaye.", all: "BYOSE", grp: "ITSINDA ", loadingMatch: "Gupakurura imikino...", noMatch: "Nta mikino.", done: "Birarangiye", at: "saa", stadium: "Sitade", diffTeams: "Hitamo amakipe abiri atandukanye." }
 };
 
 function changerLangue(code, btn) {
@@ -34,11 +35,9 @@ function changerLangue(code, btn) {
     const act = document.querySelector('.section.active').id;
     if (act === 'schedule') { document.getElementById('mfilter').innerHTML = ""; initFilters(); afficherMatchs(); }
     else if (act === 'news') afficherMessagesQuotidiens();
+    else if (act === 'dossier') dos();
 }
 
-// ==========================================
-// 2. GESTION DES ONGLETS (NAVIGATION)
-// ==========================================
 function tab(secId, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
@@ -58,9 +57,6 @@ function extraireToutesLesEquipes() {
     return eq.sort();
 }
 
-// ==========================================
-// 3. ONGLET GROUPS : AFFICHAGE DYNAMIQUE
-// ==========================================
 function initGroups() {
     const c = document.getElementById('gg'); if (!c) return; c.innerHTML = "";
     if (typeof worldCupData === 'undefined' || !worldCupData.groups) return;
@@ -76,9 +72,6 @@ function rechercherPaysDepuisGroupe(n) {
     if (i) i.value = n; tab('dossier', b); dos();
 }
 
-// ==========================================
-// 4. ONGLET SCHEDULE : CALENDRIER LOCAL
-// ==========================================
 function initSchedule() { initFilters(); afficherMatchs(); }
 function initFilters() {
     const container = document.getElementById('mfilter'); if (!container || container.children.length > 0) return;
@@ -113,9 +106,6 @@ async function afficherMatchs() {
     } catch (e) { c.innerHTML = `<p style='color:#EF4444; padding:2rem;'>⚠️ Erreur Calendrier</p>`; }
 }
 
-// ==========================================
-// 5. ONGLET PREDICT : LES SELECTEURS
-// ==========================================
 function initPredictSelectors() {
     const a = document.getElementById('ta'), b = document.getElementById('tb'); if (!a || !b || a.children.length > 0) return;
     a.innerHTML = ""; b.innerHTML = "";
@@ -136,25 +126,27 @@ function predict() {
     document.getElementById('rc').style.display = 'block';
 }
 
-// ==========================================
-// 6. ONGLET DOSSIER : RECHERCHE PAYS
-// ==========================================
 function dos() {
     const s = document.getElementById('di'); if (!s || !s.value.trim()) return;
     const v = s.value.trim(), input = v.charAt(0).toUpperCase() + v.slice(1).toLowerCase();
     if (typeof dossiers === 'undefined' || !dossiers[input]) { alert("Données introuvables pour : " + input); return; }
-    const d = dossiers[input];
-    document.getElementById('dn').innerText = d.name || input; document.getElementById('dm').innerText = d.meta || "Nations Cup";
-    document.getElementById('da').innerText = d.attack || "-"; document.getElementById('dd').innerText = d.defense || "-";
-    document.getElementById('df').innerText = d.form || "-"; document.getElementById('dme').innerText = d.mental || "-";
-    document.getElementById('dc2').innerText = d.coach || "-"; document.getElementById('dkp').innerText = d.keyPlayer || "-";
-    document.getElementById('dsp').innerText = d.stars || "-"; document.getElementById('dh').innerText = d.history || "-";
+    
+    // Utilisation de la langue active pour chercher dans les dossiers
+    const d = dossiers[input][langueActuelle] || dossiers[input]['fr'];
+
+    document.getElementById('dn').innerText = d.name || input;
+    document.getElementById('dm').innerText = d.meta || "Nations Cup";
+    document.getElementById('da').innerText = d.attack || "-";
+    document.getElementById('dd').innerText = d.defense || "-";
+    document.getElementById('df').innerText = d.form || "-";
+    document.getElementById('dme').innerText = d.mental || "-";
+    document.getElementById('dc2').innerText = d.coach || "-";
+    document.getElementById('dkp').innerText = d.keyPlayer || "-";
+    document.getElementById('dsp').innerText = d.stars || "-";
+    document.getElementById('dh').innerText = d.history || "-";
     document.getElementById('dc').style.display = 'block';
 }
 
-// ==========================================
-// 7. ONGLET NEWS : CHARGEMENT DE MESSAGES.JSON
-// ==========================================
 async function afficherMessagesQuotidiens() {
     const c = document.getElementById('news-list'); if (!c) return;
     const t = traductions[langueActuelle]; c.innerHTML = `<p style='color:#94A3B8; text-align:center; padding:2rem;'>${t.loadingNews}</p>`;
@@ -168,8 +160,5 @@ async function afficherMessagesQuotidiens() {
     } catch (e) { c.innerHTML = `<p style='color:#EF4444; text-align:center; padding:2rem;'>${t.errorNews}</p>`; }
 }
 
-// ==========================================
-// 8. INITIALISATION AU CHARGEMENT DE LA PAGE
-// ==========================================
 window.onload = function() { initGroups(); };
          
