@@ -1,259 +1,143 @@
-// ==========================================
-// 1. GESTION DES ONGLETS (NAVIGATION)
-// ==========================================
-function tab(sectionId, btn) {
-    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
-    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-    
-    document.getElementById(sectionId).classList.add('active');
+let langueActuelle = 'fr', filtreActuel = "ALL";
+const traductions = {
+    fr: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUIN - 19 JUIL 2026", groups: "GROUPES", schedule: "CALENDRIER", predict: "PRÉDICTIONS", dossier: "DOSSIERS", news: "NEWS", oracleBtn: "ORACLE - PRÉDIRE LE MATCH", winA: "VICTOIRE A", draw: "NUL", winB: "VICTOIRE B", attack: "ATTAQUE", defense: "DÉFENSE", form: "FORME", mental: "MENTAL", coach: "SÉLECTIONNEUR", keyplayer: "JOUEUR CLÉ", stars: "ÉTOILES", history: "HISTOIRE", open: "OUVRIR", placeholder: "France, Espagne, Allemagne...", loadingNews: "Mise à jour des flashs infos...", noNews: "Aucun message pour le moment.", errorNews: "⚠️ Erreur d'affichage : Vérifie le format de messages.json.", all: "TOUT", grp: "GRP ", loadingMatch: "Chargement des matchs depuis le hub...", noMatch: "Aucun match pour ce groupe.", done: "Terminé", at: "à", stadium: "Stade", diffTeams: "Sélectionnez deux équipes différentes." },
+    en: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GROUPS", schedule: "SCHEDULE", predict: "PREDICT", dossier: "DOSSIER", news: "NEWS", oracleBtn: "ORACLE - PREDICT MATCH", winA: "WIN A", draw: "DRAW", winB: "WIN B", attack: "ATTACK", defense: "DEFENSE", form: "FORM", mental: "MENTAL", coach: "COACH", keyplayer: "KEY PLAYER", stars: "STARS", history: "HISTORY", open: "OPEN", placeholder: "France, Spain, Germany...", loadingNews: "Updating flash news...", noNews: "No news for now.", errorNews: "⚠️ Display error: Check messages.json format.", all: "ALL", grp: "GRP ", loadingMatch: "Loading matches from hub...", noMatch: "No matches for this group.", done: "Finished", at: "at", stadium: "Stadium", diffTeams: "Select two different teams." },
+    pt: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GRUPOS", schedule: "CALENDÁRIO", predict: "PREVISÕES", dossier: "DOSSIÊ", news: "NOTÍCIAS", oracleBtn: "ORÁCULO - PREVER JOGO", winA: "VITÓRIA A", draw: "EMPATE", winB: "VITÓRIA B", attack: "ATAQUE", defense: "DEFESA", form: "FORMA", mental: "MENTAL", coach: "TREINADOR", keyplayer: "JOGADOR CHAVE", stars: "ESTRELAS", history: "HISTÓRIA", open: "ABRIR", placeholder: "França, Espanha, Alemanha...", loadingNews: "Atualizando as últimas notícias...", noNews: "Nenhuma notícia no momento.", errorNews: "⚠️ Erro de exibição: Verifique o formato do messages.json.", all: "TODOS", grp: "GRP ", loadingMatch: "Carregando jogos do hub...", noMatch: "Nenhum jogo para este grupo.", done: "Terminado", at: "as", stadium: "Estádio", diffTeams: "Selecione duas equipes diferentes." },
+    sw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUNI - 19 JULAI 2026", groups: "MAKUNDI", schedule: "RATIBA", predict: "UTABIRI", dossier: "FAILI", news: "HABARI", oracleBtn: "ORACLE - TABIRI MECHI", winA: "USHINDI A", draw: "SULUHisho", winB: "USHINDI B", attack: "MASHAMBULIZI", defense: "ULINZI", form: "FOMU", mental: "AKILI", coach: "KOCHA", keyplayer: "MCHEZAJI MUHIMU", stars: "NYOTA", history: "HISTORIA", open: "FUNGUA", placeholder: "Ufaransa, Hispania, Ujerumani...", loadingNews: "Inasasisha habari za dharura...", noNews: "Hakuna habari kwa sasa.", errorNews: "⚠️ Hitilafu ya kuonyesha: Angalia muundo wa messages.json.", all: "ZOTE", grp: "KUNDI ", loadingMatch: "Inapakia mechi kutoka kwenye kitovu...", noMatch: "Hakuna mechi kwenye kundi hili.", done: "Imeisha", at: "saa", stadium: "Uwanja", diffTeams: "Chagua timu mbili tofauti." },
+    ar: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 يونيو - 19 يوليو 2026", groups: "المجموعات", schedule: "جدول المباريات", predict: "التوقعات", dossier: "الملفات", news: "الأخبار", oracleBtn: "الأوراكل - توقع المباراة", winA: "فوز أ", draw: "تعادل", winB: "فوز ب", attack: "الهجوم", defense: "الدفاع", form: "المستوى الحالي", mental: "الذهنية", coach: "المدرب", keyplayer: "اللاعب النجم", stars: "النجوم", history: "التاريخ", open: "افتح", placeholder: "فرنسا، إسبانيا، ألمانيا...", loadingNews: "جاري تحديث الأخبار العاجلة...", noNews: "لا توجد أخبار في الوقت الحالي.", errorNews: "⚠️ خطأ في العرض: تحقق من صيغة ملف messages.json.", all: "الكل", grp: "المجموعة ", loadingMatch: "جاري تحميل المباريات...", noMatch: "لا توجد مباريات لهذه المجموعة.", done: "انتهت", at: "على الساعة", stadium: "الملعب", diffTeams: "اختر فريقين مختلفين." }
+};
+
+function changerLangue(code, btn) {
+    langueActuelle = code;
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
-
-    if (sectionId === 'groups') initGroups();
-    if (sectionId === 'schedule') initSchedule();
-    if (sectionId === 'predict') initPredictSelectors();
+    const t = traductions[code];
+    document.getElementById('main-title').innerText = t.title;
+    document.getElementById('main-sub').innerText = t.sub;
+    document.getElementById('badge-dates').innerText = t.dates;
+    document.getElementById('btn-groups').innerHTML = t.groups;
+    document.getElementById('btn-schedule').innerHTML = t.schedule;
+    document.getElementById('btn-predict').innerHTML = t.predict;
+    document.getElementById('btn-dossier').innerHTML = t.dossier;
+    document.getElementById('btn-news').innerHTML = `${t.news}<span class="live-dot"></span>`;
+    document.getElementById('btn-oracle-predict').innerText = t.oracleBtn;
+    document.getElementById('lbl-winA').innerText = t.winA; document.getElementById('lbl-draw').innerText = t.draw; document.getElementById('lbl-winB').innerText = t.winB;
+    document.getElementById('di').placeholder = t.placeholder; document.getElementById('btn-open-dossier').innerText = t.open;
+    document.getElementById('lbl-attack').innerText = t.attack; document.getElementById('lbl-defense').innerText = t.defense;
+    document.getElementById('lbl-form').innerText = t.form; document.getElementById('lbl-mental').innerText = t.mental;
+    document.getElementById('lbl-coach').innerText = t.coach; document.getElementById('lbl-keyplayer').innerText = t.keyplayer;
+    document.getElementById('lbl-stars').innerText = t.stars; document.getElementById('lbl-history').innerText = t.history;
+    const act = document.querySelector('.section.active').id;
+    if (act === 'schedule') { document.getElementById('mfilter').innerHTML = ""; initFilters(); afficherMatchs(); }
+    else if (act === 'news') afficherMessagesQuotidiens();
 }
 
-// ==========================================
-// FONCTION OUTIL : EXTRACTION DES 48 PAYS SINCE WORLDCUPDATA
-// ==========================================
+function tab(secId, btn) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById(secId).classList.add('active');
+    if (btn) btn.classList.add('active');
+    if (secId === 'groups') initGroups();
+    if (secId === 'schedule') initSchedule();
+    if (secId === 'predict') initPredictSelectors();
+    if (secId === 'news') afficherMessagesQuotidiens();
+}
+
 function extraireToutesLesEquipes() {
-    let equipes = [];
+    let eq = [];
     if (typeof worldCupData !== 'undefined' && worldCupData.groups) {
-        for (const teams of Object.values(worldCupData.groups)) {
-            teams.forEach(t => {
-                if (t.name) equipes.push(t.name);
-            });
-        }
+        for (const t of Object.values(worldCupData.groups)) t.forEach(x => { if (x.name) eq.push(x.name); });
     }
-    return equipes.sort();
+    return eq.sort();
 }
 
-// ==========================================
-// 2. ONGLET GROUPS : AFFICHAGE DYNAMIQUE (12 GROUPS)
-// ==========================================
 function initGroups() {
-    const container = document.getElementById('gg');
-    if (!container) return;
-    container.innerHTML = "";
-
-    if (typeof worldCupData === 'undefined' || !worldCupData.groups) {
-        container.innerHTML = `<p style='color:#EF4444; padding:1rem;'>⚠️ Erreur : L'outil worldCupData.groups est introuvable.</p>`;
-        return;
-    }
-
-    // Boucle directe sur tes 12 groupes (A à L)
-    for (const [groupLetter, teams] of Object.entries(worldCupData.groups)) {
-        let cardHTML = `<div class="card"><div class="glabel">GROUP ${groupLetter}</div>`;
-        
-        teams.forEach(team => {
-            cardHTML += `
-                <div class="trow" onclick="rechercherPaysDepuisGroupe('${team.name}')">
-                    <span>${team.name}</span>
-                    <span class="rk">#${team.fifa_rank}</span>
-                </div>
-            `;
-        });
-        
-        cardHTML += `</div>`;
-        container.innerHTML += cardHTML;
+    const c = document.getElementById('gg'); if (!c) return; c.innerHTML = "";
+    if (typeof worldCupData === 'undefined' || !worldCupData.groups) return;
+    for (const [letter, teams] of Object.entries(worldCupData.groups)) {
+        let h = `<div class="card"><div class="glabel">GROUP ${letter}</div>`;
+        teams.forEach(t => { h += `<div class="trow" onclick="rechercherPaysDepuisGroupe('${t.name}')"><span>${t.name}</span><span class="rk">#${t.fifa_rank}</span></div>`; });
+        c.innerHTML += h + `</div>`;
     }
 }
 
-function rechercherPaysDepuisGroupe(countryName) {
-    const dossierBtn = document.querySelector("nav button[onclick*='dossier']");
-    const inputField = document.getElementById('di');
-    if (inputField) inputField.value = countryName;
-    tab('dossier', dossierBtn);
-    dos();
+function rechercherPaysDepuisGroupe(n) {
+    const b = document.getElementById('btn-dossier'), i = document.getElementById('di');
+    if (i) i.value = n; tab('dossier', b); dos();
 }
 
-// ==========================================
-// 3. ONGLET SCHEDULE : CALENDRIER LOCAL
-// ==========================================
-let filtreActuel = "ALL";
-
-function initSchedule() {
-    initFilters();
-    afficherMatchs();
-}
-
+function initSchedule() { initFilters(); afficherMatchs(); }
 function initFilters() {
-    const filterContainer = document.getElementById('mfilter');
-    if (!filterContainer || filterContainer.children.length > 0) return;
-
-    // Tes 12 groupes réels de la Coupe du Monde 2026
-    const groupes = ["ALL", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"];
-    groupes.forEach(g => {
-        const btn = document.createElement('button');
-        btn.innerText = g === "ALL" ? "TOUT" : "GRP " + g;
+    const container = document.getElementById('mfilter'); if (!container || container.children.length > 0) return;
+    const t = traductions[langueActuelle];
+    ["ALL", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"].forEach(g => {
+        const btn = document.createElement('button'); btn.innerText = g === "ALL" ? t.all : t.grp + g;
         if (g === filtreActuel) btn.classList.add('active');
-        
-        btn.onclick = function() {
-            document.querySelectorAll('.mfilter button').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filtreActuel = g;
-            afficherMatchs();
-        };
-        filterContainer.appendChild(btn);
+        btn.onclick = function() { document.querySelectorAll('.mfilter button').forEach(b => b.classList.remove('active')); btn.classList.add('active'); filtreActuel = g; afficherMatchs(); };
+        container.appendChild(btn);
     });
 }
 
 async function afficherMatchs() {
-    const listContainer = document.getElementById('matchlist');
-    if (!listContainer) return;
-    
-    listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Chargement des matchs depuis le hub...</p>";
-
+    const c = document.getElementById('matchlist'); if (!c) return;
+    const t = traductions[langueActuelle]; c.innerHTML = `<p style='color:#94A3B8; padding:2rem;'>${t.loadingMatch}</p>`;
     try {
-        const response = await fetch('./2026.json');
-        if (!response.ok) throw new Error("Fichier 2026.json introuvable à la racine. Exécute le script Python.");
-        
-        const data = await response.json();
-        listContainer.innerHTML = "";
-
-        let matches = data.rounds[0].matches;
-
-        const matchesFiltrés = matches.filter(m => {
-            if (filtreActuel === "ALL") return true;
-            return m.group && m.group.toString().toUpperCase().includes(filtreActuel);
+        const res = await fetch('./2026.json'); if (!res.ok) throw new Error();
+        const d = await res.json(); c.innerHTML = "";
+        let mF = d.rounds[0].matches.filter(m => filtreActuel === "ALL" || (m.group && m.group.toString().toUpperCase().includes(filtreActuel)));
+        if (mF.length === 0) { c.innerHTML = `<p style='color:#94A3B8; padding:2rem;'>${t.noMatch}</p>`; return; }
+        mF.forEach(m => {
+            let sH = `<span class="mresult">VS</span>`, dt = m.date || "";
+            if (m.score1 !== undefined && m.score1 !== null) { sH = `<span class="mresult" style="color:#F59E0B;">${m.score1} - ${m.score2}</span>`; dt += ` | ${t.done}`; }
+            else if (m.time) { try { dt += ` ${t.at} ${new Date(`${m.date}T${m.time}:00Z`).toLocaleTimeString(navigator.language, {hour:'2-digit', minute:'2-digit'})}`; } catch(e) { dt += ` (${m.time})`; } }
+            c.innerHTML += `<div class="mcard"><div class="mdate">${dt}</div><div class="mteams"><span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team1}')">${m.team1}</span>${sH}<span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team2}')">${m.team2}</span></div><div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;"><div class="mvenue">${m.stadium || t.stadium}</div><span class="mgroup">${m.group}</span></div></div>`;
         });
-
-        if (matchesFiltrés.length === 0) {
-            listContainer.innerHTML = "<p style='color:#94A3B8; padding: 2rem;'>Aucun match pour ce groupe.</p>";
-            return;
-        }
-
-        matchesFiltrés.forEach(m => {
-            let scoreHTML = `<span class="mresult">VS</span>`;
-            let dateEtHeureAffichee = m.date || "";
-
-            if (m.score1 !== undefined && m.score1 !== null) {
-                // Match joué : On affiche le score et la mention Terminé
-                scoreHTML = `<span class="mresult" style="color:#F59E0B;">${m.score1} - ${m.score2}</span>`;
-                dateEtHeureAffichee += " | Terminé";
-            } else if (m.time) {
-                // Match à venir : Calcul automatique de l'heure locale selon le téléphone du fan
-                try {
-                    const dateMatch = new Date(`${m.date}T${m.time}:00Z`);
-                    const heureLocale = dateMatch.toLocaleTimeString(navigator.language, {
-                        hour: '2-digit',
-                        minute: '2-digit'
-                    });
-                    dateEtHeureAffichee += ` à ${heureLocale}`;
-                } catch (e) {
-                    // Sécurité en cas de mauvaise date
-                    dateEtHeureAffichee += ` (${m.time})`;
-                }
-            }
-
-            listContainer.innerHTML += `
-                <div class="mcard">
-                    <div class="mdate">${dateEtHeureAffichee}</div>
-                    <div class="mteams">
-                        <span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team1}')">${m.team1}</span>
-                        ${scoreHTML}
-                        <span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team2}')">${m.team2}</span>
-                    </div>
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;">
-                        <div class="mvenue">${m.stadium || "Stade"}</div>
-                        <span class="mgroup">${m.group}</span>
-                    </div>
-                </div>
-            `;
-        });
-    } catch (error) {
-        listContainer.innerHTML = `<p style='color:#EF4444; padding: 2rem;'>⚠️ Erreur Calendrier : ${error.message}</p>`;
-    }
+    } catch (e) { c.innerHTML = `<p style='color:#EF4444; padding:2rem;'>⚠️ Erreur Calendrier</p>`; }
 }
 
-// ==========================================
-// 4. ONGLET PREDICT : LES 48 PAYS DANS LES SÉLECTEURS
-// ==========================================
 function initPredictSelectors() {
-    const selectA = document.getElementById('ta');
-    const selectB = document.getElementById('tb');
-    if (!selectA || !selectB || selectA.children.length > 0) return;
-
-    const listeEquipes = extraireToutesLesEquipes();
-    
-    selectA.innerHTML = "";
-    selectB.innerHTML = "";
-    
-    listeEquipes.forEach(team => {
-        selectA.innerHTML += `<option value="${team}">${team}</option>`;
-        selectB.innerHTML += `<option value="${team}">${team}</option>`;
-    });
-
-    if (selectA.children[0]) selectA.selectedIndex = 0;
-    if (selectB.children[1]) selectB.selectedIndex = 1;
+    const a = document.getElementById('ta'), b = document.getElementById('tb'); if (!a || !b || a.children.length > 0) return;
+    a.innerHTML = ""; b.innerHTML = "";
+    extraireToutesLesEquipes().forEach(t => { a.innerHTML += `<option value="${t}">${t}</option>`; b.innerHTML += `<option value="${t}">${t}</option>`; });
+    if (a.children[0]) a.selectedIndex = 0; if (b.children[1]) b.selectedIndex = 1;
 }
 
 function predict() {
-    const teamA = document.getElementById('ta').value;
-    const teamB = document.getElementById('tb').value;
-    const resultBox = document.getElementById('rc');
-
-    if (teamA === teamB) {
-        alert("Sélectionnez deux équipes différentes.");
-        return;
-    }
-
-    const winA = Math.floor(Math.random() * 50) + 25;
-    const draw = Math.floor(Math.random() * 15) + 5;
-    const winB = 100 - (winA + draw);
-
-    document.getElementById('rta').innerText = teamA;
-    document.getElementById('rtb').innerText = teamB;
+    const tA = document.getElementById('ta').value, tB = document.getElementById('tb').value, t = traductions[langueActuelle];
+    if (tA === tB) { alert(t.diffTeams); return; }
+    const wA = Math.floor(Math.random() * 50) + 25, d = Math.floor(Math.random() * 15) + 5, wB = 100 - (wA + d);
+    document.getElementById('rta').innerText = tA; document.getElementById('rtb').innerText = tB;
     document.getElementById('rs').innerText = `${Math.floor(Math.random() * 4)} - ${Math.floor(Math.random() * 4)}`;
-    document.getElementById('pw').innerText = `${winA}%`;
-    document.getElementById('pd').innerText = `${draw}%`;
-    document.getElementById('pl').innerText = `${winB}%`;
-
-    document.getElementById('bat').innerText = `${teamA} ATTACK`;
-    document.getElementById('bbt').innerText = `${teamB} ATTACK`;
-    document.getElementById('bab').innerHTML = `<div class="btr"><div class="bf" style="width: ${winA}%"></div></div>`;
-    document.getElementById('bbb').innerHTML = `<div class="btr"><div class="bf" style="width: ${winB}%"></div></div>`;
-
-    if (resultBox) resultBox.style.display = 'block';
+    document.getElementById('pw').innerText = `${wA}%`; document.getElementById('pd').innerText = `${d}%`; document.getElementById('pl').innerText = `${wB}%`;
+    document.getElementById('bat').innerText = `${tA} ATTACK`; document.getElementById('bbt').innerText = `${tB} ATTACK`;
+    document.getElementById('bab').innerHTML = `<div class="btr"><div class="bf" style="width: ${wA}%"></div></div>`;
+    document.getElementById('bbb').innerHTML = `<div class="btr"><div class="bf" style="width: ${wB}%"></div></div>`;
+    document.getElementById('rc').style.display = 'block';
 }
 
-// ==========================================
-// 5. ONGLET DOSSIER : RECHERCHE PAYS
-// ==========================================
 function dos() {
-    const searchField = document.getElementById('di');
-    if (!searchField) return;
-
-    const val = searchField.value.trim();
-    if (!val) return;
-
-    const input = val.charAt(0).toUpperCase() + val.slice(1).toLowerCase();
-    const dCard = document.getElementById('dc');
-
-    if (typeof dossiers === 'undefined' || !dossiers[input]) {
-        alert("Données introuvables pour : " + input);
-        return;
-    }
-
-    const data = dossiers[input];
-    document.getElementById('dn').innerText = data.name || input;
-    document.getElementById('dm').innerText = data.meta || "Nations Cup";
-    document.getElementById('da').innerText = data.attack || "-";
-    document.getElementById('dd').innerText = data.defense || "-";
-    document.getElementById('df').innerText = data.form || "-";
-    document.getElementById('dme').innerText = data.mental || "-";
-    document.getElementById('dc2').innerText = data.coach || "-";
-    document.getElementById('dkp').innerText = data.keyPlayer || "-";
-    document.getElementById('dsp').innerText = data.stars || "-";
-    document.getElementById('dh').innerText = data.history || "-";
-    
-    if (dCard) dCard.style.display = 'block';
+    const s = document.getElementById('di'); if (!s || !s.value.trim()) return;
+    const v = s.value.trim(), input = v.charAt(0).toUpperCase() + v.slice(1).toLowerCase();
+    if (typeof dossiers === 'undefined' || !dossiers[input]) { alert("Données introuvables pour : " + input); return; }
+    const d = dossiers[input];
+    document.getElementById('dn').innerText = d.name || input; document.getElementById('dm').innerText = d.meta || "Nations Cup";
+    document.getElementById('da').innerText = d.attack || "-"; document.getElementById('dd').innerText = d.defense || "-";
+    document.getElementById('df').innerText = d.form || "-"; document.getElementById('dme').innerText = d.mental || "-";
+    document.getElementById('dc2').innerText = d.coach || "-"; document.getElementById('dkp').innerText = d.keyPlayer || "-";
+    document.getElementById('dsp').innerText = d.stars || "-"; document.getElementById('dh').innerText = d.history || "-";
+    document.getElementById('dc').style.display = 'block';
 }
 
-// ==========================================
-// 6. DÉMARRAGE AUTOMATIQUE
-// ==========================================
-window.onload = function() {
-    initGroups();
-};
-    
+async function afficherMessagesQuotidiens() {
+    const c = document.getElementById('news-list'); if (!c) return;
+    const t = traductions[langueActuelle]; c.innerHTML = `<p style='color:#94A3B8; text-align:center; padding:2rem;'>${t.loadingNews}</p>`;
+    try {
+        const res = await fetch('./messages.json'); if (!res.ok) throw new Error();
+        const d = await res.json(); c.innerHTML = `<div style="color:#64748B; font-size:0.75rem; font-weight:bold; margin-bottom:1rem; text-align:right; letter-spacing:0.5px;">📅 FLASH : ${d.date || '2026'}</div>`;
+        if (!d.articles || d.articles.length === 0) { c.innerHTML += `<p style='color:#94A3B8; text-align:center; padding:2rem;'>${t.noNews}</p>`; return; }
+        d.articles.forEach(a => { c.innerHTML += `<div class="card" style="margin-bottom:1rem; border-left:4px solid #8B5CF6; padding:1rem; background:#111827; border-radius:8px;"><div style="margin-bottom:.4rem;"><span style="background:#2D1B4E; color:#C084FC; font-size:0.65rem; font-weight:bold; padding:0.15rem 0.4rem; border-radius:4px; text-transform:uppercase;">${a.badge}</span></div><h3 style="color:#FFF; font-size:1.05rem; margin:0 0 .3rem 0; font-weight:bold;">${a.titre}</h3><p style="color:#94A3B8; font-size:0.85rem; line-height:1.4; margin:0;">${a.texte}</p></div>`; });
+    } catch (e) { c.innerHTML = `<p style='color:#EF4444; text-align:center; padding:2rem;'>${t.errorNews}</p>`; }
+}
+
+window.onload = function() { initGroups(); };
+         
