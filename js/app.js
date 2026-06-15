@@ -2,21 +2,23 @@
 // 1. SYSTEME MULTILINGUE (6 LANGUES)
 // ==========================================
 let langueActuelle = 'fr', filtreActuel = "ALL";
+let cacheTraductions = {};
 
 const traductions = {
-    fr: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUIN - 19 JUIL 2026", groups: "GROUPES", schedule: "CALENDRIER", predict: "PRÉDICTIONS", dossier: "DOSSIERS", news: "NEWS", oracleBtn: "ORACLE - PRÉDIRE LE MATCH", winA: "VICTOIRE A", draw: "NUL", winB: "VICTOIRE B", attack: "ATTAQUE", defense: "DÉFENSE", form: "FORME", mental: "MENTAL", coach: "SÉLECTIONNEUR", keyplayer: "JOUEUR CLÉ", stars: "ÉTOILES", history: "HISTOIRE", open: "OUVRIR", placeholder: "France, Espagne, Allemagne...", loadingNews: "Mise à jour des flashs infos...", noNews: "Aucun message pour le moment.", errorNews: "⚠️ Erreur d'affichage : Vérifie le format de messages.json.", all: "TOUT", grp: "GRP ", loadingMatch: "Chargement des matchs depuis le hub...", noMatch: "Aucun match pour ce groupe.", done: "Terminé", at: "à", stadium: "Stade", diffTeams: "Sélectionnez deux équipes différentes.", notFound: "Données introuvables pour : " },
-    en: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GROUPS", schedule: "SCHEDULE", predict: "PREDICT", dossier: "DOSSIER", news: "NEWS", oracleBtn: "ORACLE - PREDICT MATCH", winA: "WIN A", draw: "DRAW", winB: "WIN B", attack: "ATTACK", defense: "DEFENSE", form: "FORM", mental: "MENTAL", coach: "COACH", keyplayer: "KEY PLAYER", stars: "STARS", history: "HISTORY", open: "OPEN", placeholder: "France, Spain, Germany...", loadingNews: "Updating flash news...", noNews: "No news for now.", errorNews: "⚠️ Display error: Check messages.json format.", all: "ALL", grp: "GRP ", loadingMatch: "Loading matches from hub...", noMatch: "No matches for this group.", done: "Finished", at: "at", stadium: "Stadium", diffTeams: "Select two different teams.", notFound: "No data found for: " },
-    pt: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GRUPOS", schedule: "CALENDÁRIO", predict: "PREVISÕES", dossier: "DOSSIÊ", news: "NOTÍCIAS", oracleBtn: "ORÁCULO - PREVER JOGO", winA: "VITÓRIA A", draw: "EMPATE", winB: "VITÓRIA B", attack: "ATAQUE", defense: "DEFESA", form: "FORMA", mental: "MENTAL", coach: "TREINADOR", keyplayer: "JOGADOR CHAVE", stars: "ESTRELAS", history: "HISTÓRIA", open: "ABRIR", placeholder: "França, Espanha, Alemanha...", loadingNews: "Atualizando as últimas notícias...", noNews: "Nenhuma notícia no momento.", errorNews: "⚠️ Erro de exibição: Verifique o formato do messages.json.", all: "TODOS", grp: "GRP ", loadingMatch: "Carregando jogos do hub...", noMatch: "Nenhum jogo para este grupo.", done: "Terminado", at: "as", stadium: "Estádio", diffTeams: "Selecione duas equipes diferentes.", notFound: "Dados não encontrados para: " },
-    sw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUNI - 19 JULAI 2026", groups: "MAKUNDI", schedule: "RATIBA", predict: "UTABIRI", dossier: "FAILI", news: "HABARI", oracleBtn: "ORACLE - TABIRI MECHI", winA: "USHINDI A", draw: "SULUHISHO", winB: "USHINDI B", attack: "MASHAMBULIZI", defense: "ULINZI", form: "FOMU", mental: "AKILI", coach: "KOCHA", keyplayer: "MCHEZAJI MUHIMU", stars: "NYOTA", history: "HISTORIA", open: "FUNGUA", placeholder: "Ufaransa, Hispania, Ujerumani...", loadingNews: "Inasasisha habari za dharura...", noNews: "Hakuna habari kwa sasa.", errorNews: "⚠️ Hitilafu ya kuonyesha: Angalia muundo wa messages.json.", all: "ZOTE", grp: "KUNDI ", loadingMatch: "Inapakia mechi kutoka kwenye kitovu...", noMatch: "Hakuna mechi kwenye kundi hili.", done: "Imeisha", at: "saa", stadium: "Uwanja", diffTeams: "Chagua timu mbili tofauti.", notFound: "Hakuna data kwa: " },
-    ar: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 يونيو - 19 يوليو 2026", groups: "المجموعات", schedule: "جدول المباريات", predict: "التوقعات", dossier: "الملفات", news: "الأخبار", oracleBtn: "الأوراكل - توقع المباراة", winA: "فوز أ", draw: "تعادل", winB: "فوز ب", attack: "الهجوم", defense: "الدفاع", form: "المستوى الحالي", mental: "الذهنية", coach: "المدرب", keyplayer: "اللاعب النجم", stars: "النجوم", history: "التاريخ", open: "افتح", placeholder: "فرنسا، إسبانيا، ألمانيا...", loadingNews: "جاري تحديث الأخبار العاجلة...", noNews: "لا توجد أخبار في الوقت الحالي.", errorNews: "⚠️ خطأ في العرض: تحقق من صيغة ملف messages.json.", all: "الكل", grp: "المجموعة ", loadingMatch: "جاري تحميل المباريات...", noMatch: "لا توجد مباريات لهذه المجموعة.", done: "انتهت", at: "على الساعة", stadium: "الملعب", diffTeams: "اختر فريقين مختلفين.", notFound: "لا توجد بيانات لـ: " },
-    rw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 Kamena - 19 Nyakanga 2026", groups: "AMATSINDA", schedule: "GAHUNDA", predict: "IBITEKEREZO", dossier: "DOSSIYE", news: "AMAKURU", oracleBtn: "ORACLE - TABIRA UMUKINO", winA: "INTSINZI A", draw: "AMAYOBERANE", winB: "INTSINZI B", attack: "GUTERA", defense: "KWIRWANIRIRA", form: "IMITERERE", mental: "IMITEKEREREZE", coach: "UMUTOZA", keyplayer: "UMUKINNYI W'INGIRAKAMARO", stars: "INYENYERI", history: "AMATEKA", open: "FUNGURA", placeholder: "Ubufaransa, Espanye, Ubudage...", loadingNews: "Guhugura amakuru...", noNews: "Nta makuru ahari.", errorNews: "⚠️ Ikosa ryagaragaye.", all: "BYOSE", grp: "ITSINDA ", loadingMatch: "Gupakurura imikino...", noMatch: "Nta mikino.", done: "Birarangiye", at: "saa", stadium: "Sitade", diffTeams: "Hitamo amakipe abiri atandukanye.", notFound: "Nta makuru ahari kuri: " }
+    fr: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUIN - 19 JUIL 2026", groups: "GROUPES", schedule: "CALENDRIER", predict: "PRÉDICTIONS", dossier: "DOSSIERS", news: "NEWS", oracleBtn: "ORACLE - PRÉDIRE LE MATCH", winA: "VICTOIRE A", draw: "NUL", winB: "VICTOIRE B", attack: "ATTAQUE", defense: "DÉFENSE", form: "FORME", mental: "MENTAL", coach: "SÉLECTIONNEUR", keyplayer: "JOUEUR CLÉ", stars: "ÉTOILES", history: "HISTOIRE", open: "OUVRIR", placeholder: "France, Espagne, Allemagne...", loadingNews: "Mise à jour des flashs infos...", noNews: "Aucun message pour le moment.", errorNews: "⚠️ Erreur d'affichage.", all: "TOUT", grp: "GRP ", loadingMatch: "Chargement des matchs...", noMatch: "Aucun match pour ce groupe.", done: "Terminé", at: "à", stadium: "Stade", diffTeams: "Sélectionnez deux équipes différentes.", notFound: "Données introuvables pour : ", translating: "Traduction en cours..." },
+    en: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GROUPS", schedule: "SCHEDULE", predict: "PREDICT", dossier: "DOSSIER", news: "NEWS", oracleBtn: "ORACLE - PREDICT MATCH", winA: "WIN A", draw: "DRAW", winB: "WIN B", attack: "ATTACK", defense: "DEFENSE", form: "FORM", mental: "MENTAL", coach: "COACH", keyplayer: "KEY PLAYER", stars: "STARS", history: "HISTORY", open: "OPEN", placeholder: "France, Spain, Germany...", loadingNews: "Updating flash news...", noNews: "No news for now.", errorNews: "⚠️ Display error.", all: "ALL", grp: "GRP ", loadingMatch: "Loading matches...", noMatch: "No matches for this group.", done: "Finished", at: "at", stadium: "Stadium", diffTeams: "Select two different teams.", notFound: "No data found for: ", translating: "Translating..." },
+    pt: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUN - 19 JUL 2026", groups: "GRUPOS", schedule: "CALENDÁRIO", predict: "PREVISÕES", dossier: "DOSSIÊ", news: "NOTÍCIAS", oracleBtn: "ORÁCULO - PREVER JOGO", winA: "VITÓRIA A", draw: "EMPATE", winB: "VITÓRIA B", attack: "ATAQUE", defense: "DEFESA", form: "FORMA", mental: "MENTAL", coach: "TREINADOR", keyplayer: "JOGADOR CHAVE", stars: "ESTRELAS", history: "HISTÓRIA", open: "ABRIR", placeholder: "França, Espanha, Alemanha...", loadingNews: "Atualizando notícias...", noNews: "Nenhuma notícia.", errorNews: "⚠️ Erro.", all: "TODOS", grp: "GRP ", loadingMatch: "Carregando jogos...", noMatch: "Nenhum jogo.", done: "Terminado", at: "as", stadium: "Estádio", diffTeams: "Selecione duas equipes diferentes.", notFound: "Dados não encontrados para: ", translating: "Traduzindo..." },
+    sw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 JUNI - 19 JULAI 2026", groups: "MAKUNDI", schedule: "RATIBA", predict: "UTABIRI", dossier: "FAILI", news: "HABARI", oracleBtn: "ORACLE - TABIRI MECHI", winA: "USHINDI A", draw: "SULUHISHO", winB: "USHINDI B", attack: "MASHAMBULIZI", defense: "ULINZI", form: "FOMU", mental: "AKILI", coach: "KOCHA", keyplayer: "MCHEZAJI MUHIMU", stars: "NYOTA", history: "HISTORIA", open: "FUNGUA", placeholder: "Ufaransa, Hispania, Ujerumani...", loadingNews: "Inasasisha habari...", noNews: "Hakuna habari.", errorNews: "⚠️ Hitilafu.", all: "ZOTE", grp: "KUNDI ", loadingMatch: "Inapakia mechi...", noMatch: "Hakuna mechi.", done: "Imeisha", at: "saa", stadium: "Uwanja", diffTeams: "Chagua timu mbili tofauti.", notFound: "Hakuna data kwa: ", translating: "Inatafsiri..." },
+    ar: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 يونيو - 19 يوليو 2026", groups: "المجموعات", schedule: "جدول المباريات", predict: "التوقعات", dossier: "الملفات", news: "الأخبار", oracleBtn: "الأوراكل - توقع المباراة", winA: "فوز أ", draw: "تعادل", winB: "فوز ب", attack: "الهجوم", defense: "الدفاع", form: "المستوى الحالي", mental: "الذهنية", coach: "المدرب", keyplayer: "اللاعب النجم", stars: "النجوم", history: "التاريخ", open: "افتح", placeholder: "فرنسا، إسبانيا، ألمانيا...", loadingNews: "جاري التحديث...", noNews: "لا توجد أخبار.", errorNews: "⚠️ خطأ.", all: "الكل", grp: "المجموعة ", loadingMatch: "جاري التحميل...", noMatch: "لا توجد مباريات.", done: "انتهت", at: "على الساعة", stadium: "الملعب", diffTeams: "اختر فريقين مختلفين.", notFound: "لا توجد بيانات لـ: ", translating: "جاري الترجمة..." },
+    rw: { title: "WORLDCUP2026 · MUJOS OCTOPUS", sub: "AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES", dates: "11 Kamena - 19 Nyakanga 2026", groups: "AMATSINDA", schedule: "GAHUNDA", predict: "IBITEKEREZO", dossier: "DOSSIYE", news: "AMAKURU", oracleBtn: "ORACLE - TABIRA UMUKINO", winA: "INTSINZI A", draw: "AMAYOBERANE", winB: "INTSINZI B", attack: "GUTERA", defense: "KWIRWANIRIRA", form: "IMITERERE", mental: "IMITEKEREREZE", coach: "UMUTOZA", keyplayer: "UMUKINNYI W'INGIRAKAMARO", stars: "INYENYERI", history: "AMATEKA", open: "FUNGURA", placeholder: "Ubufaransa, Espanye, Ubudage...", loadingNews: "Guhugura amakuru...", noNews: "Nta makuru ahari.", errorNews: "⚠️ Ikosa ryagaragaye.", all: "BYOSE", grp: "ITSINDA ", loadingMatch: "Gupakurura imikino...", noMatch: "Nta mikino.", done: "Birarangiye", at: "saa", stadium: "Sitade", diffTeams: "Hitamo amakipe abiri atandukanye.", notFound: "Nta makuru ahari kuri: ", translating: "Gutafsiriza..." }
 };
 
-// ==========================================
-// CORRESPONDANCES NOMS (alias multilingues)
-// ==========================================
+const nomsLangues = {
+    fr: "français", en: "English", pt: "português",
+    sw: "Swahili", ar: "arabe", rw: "Kinyarwanda"
+};
+
 const aliasEquipes = {
-    // Français
     "espagne": "Spain", "france": "France", "allemagne": "Germany",
     "angleterre": "England", "brésil": "Brazil", "bresil": "Brazil",
     "portugal": "Portugal", "argentine": "Argentina", "maroc": "Morocco",
@@ -24,33 +26,51 @@ const aliasEquipes = {
     "norvege": "Norway", "colombie": "Colombia", "belgique": "Belgium",
     "croatie": "Croatia", "pays-bas": "Netherlands", "pays bas": "Netherlands",
     "hollande": "Netherlands", "uruguay": "Uruguay", "rdc": "DR Congo",
-    "congo": "DR Congo",
-    // Anglais (déjà les vraies clés)
-    "spain": "Spain", "france": "France", "germany": "Germany",
-    "england": "England", "brazil": "Brazil", "portugal": "Portugal",
-    "argentina": "Argentina", "morocco": "Morocco", "senegal": "Senegal",
+    "congo": "DR Congo", "rd congo": "DR Congo",
+    "spain": "Spain", "germany": "Germany", "england": "England",
+    "brazil": "Brazil", "argentina": "Argentina", "morocco": "Morocco",
     "norway": "Norway", "colombia": "Colombia", "belgium": "Belgium",
-    "croatia": "Croatia", "netherlands": "Netherlands", "uruguay": "Uruguay",
-    "dr congo": "DR Congo",
-    // Swahili
+    "croatia": "Croatia", "netherlands": "Netherlands", "dr congo": "DR Congo",
     "ufaransa": "France", "hispania": "Spain", "ujerumani": "Germany",
     "uingereza": "England", "brazili": "Brazil", "ureno": "Portugal",
     "ajentina": "Argentina", "moroko": "Morocco", "senegali": "Senegal",
-    "norwe": "Norway",
-    // Portugais
-    "frança": "France", "espanha": "Spain", "alemanha": "Germany",
-    "inglaterra": "England", "brasil": "Brazil", "argentina": "Argentina",
-    "marrocos": "Morocco"
+    "França": "France", "espanha": "Spain", "alemanha": "Germany",
+    "inglaterra": "England", "brasil": "Brazil", "marrocos": "Morocco",
+    "ubufaransa": "France", "espanye": "Spain", "ubudage": "Germany",
+    "ubwongereza": "England", "burezili": "Brazil", "porutugale": "Portugal",
+    "ajantini": "Argentina", "kroeshia": "Croatia", "holanda": "Netherlands",
+    "kolombia": "Colombia", "ibilijike": "Belgium", "korowasiya": "Croatia",
+    "urugwai": "Uruguay", "noriveje": "Norway"
 };
 
 function normaliserNomEquipe(input) {
     const lower = input.trim().toLowerCase();
-    // Vérifie d'abord les alias
     if (aliasEquipes[lower]) return aliasEquipes[lower];
-    // Cherche directement dans dossiers (clé exacte)
     const cle = Object.keys(dossiers).find(k => k.toLowerCase() === lower);
     if (cle) return cle;
     return null;
+}
+
+async function traduireArticles(articles, langue) {
+    if (langue === 'fr') return articles;
+    const cacheKey = `${langue}_${articles.map(a => a.titre).join('|')}`;
+    if (cacheTraductions[cacheKey]) return cacheTraductions[cacheKey];
+    try {
+        const prompt = `Traduis ces articles de football en ${nomsLangues[langue]}. Réponds UNIQUEMENT avec un JSON valide, sans texte avant ou après, sans balises markdown. Format exact: {"articles":[{"badge":"...","titre":"...","texte":"..."}]}\n\nArticles:\n${JSON.stringify(articles)}`;
+        const response = await fetch("https://api.anthropic.com/v1/messages", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 1000, messages: [{ role: "user", content: prompt }] })
+        });
+        const data = await response.json();
+        const text = data.content.map(i => i.text || "").join("").trim().replace(/```json|```/g, "").trim();
+        const parsed = JSON.parse(text);
+        cacheTraductions[cacheKey] = parsed.articles;
+        return parsed.articles;
+    } catch (e) {
+        console.error("Erreur traduction:", e);
+        return articles;
+    }
 }
 
 function changerLangue(code, btn) {
@@ -83,10 +103,7 @@ function changerLangue(code, btn) {
     const act = document.querySelector('.section.active').id;
     if (act === 'schedule') { document.getElementById('mfilter').innerHTML = ""; initFilters(); afficherMatchs(); }
     else if (act === 'news') afficherMessagesQuotidiens();
-    else if (act === 'dossier') {
-        // Re-affiche le dossier si un est déjà ouvert
-        if (document.getElementById('dc').style.display === 'block') dos();
-    }
+    else if (act === 'dossier' && document.getElementById('dc').style.display === 'block') dos();
 }
 
 function tab(secId, btn) {
@@ -134,10 +151,8 @@ function initFilters() {
         const btn = document.createElement('button'); btn.innerText = g === "ALL" ? t.all : t.grp + g;
         if (g === filtreActuel) btn.classList.add('active');
         btn.onclick = function() {
-            document.querySelectorAll('#mfilter button, .mfilter button').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filtreActuel = g;
-            afficherMatchs();
+            document.querySelectorAll('#mfilter button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active'); filtreActuel = g; afficherMatchs();
         };
         container.appendChild(btn);
     });
@@ -155,7 +170,7 @@ async function afficherMatchs() {
             let sH = `<span class="mresult">VS</span>`, dt = m.date || "";
             if (m.score1 !== undefined && m.score1 !== null) { sH = `<span class="mresult" style="color:#F59E0B;">${m.score1} - ${m.score2}</span>`; dt += ` | ${t.done}`; }
             else if (m.time) { try { dt += ` ${t.at} ${new Date(`${m.date}T${m.time}:00Z`).toLocaleTimeString(navigator.language, {hour:'2-digit', minute:'2-digit'})}`; } catch(e) { dt += ` (${m.time})`; } }
-            c.innerHTML += `<div class="mcard"><div class="mdate">${dt}</div><div class="mteams"><span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team1}')">${m.team1}</span>${sH}<span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team2}')">${m.team2}</span></div><div style="display:flex; justify-content:space-between; align-items:center; margin-top:.4rem;"><div class="mvenue">${m.stadium || t.stadium}</div><span class="mgroup">${m.group}</span></div></div>`;
+            c.innerHTML += `<div class="mcard"><div class="mdate">${dt}</div><div class="mteams"><span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team1}')">${m.team1}</span>${sH}<span style="cursor:pointer;" onclick="rechercherPaysDepuisGroupe('${m.team2}')">${m.team2}</span></div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:.4rem;"><div class="mvenue">${m.stadium || t.stadium}</div><span class="mgroup">${m.group}</span></div></div>`;
         });
     } catch (e) { c.innerHTML = `<p style='color:#EF4444; padding:2rem;'>⚠️ Erreur Calendrier</p>`; }
 }
@@ -175,26 +190,17 @@ function predict() {
     document.getElementById('rs').innerText = `${Math.floor(Math.random() * 4)} - ${Math.floor(Math.random() * 4)}`;
     document.getElementById('pw').innerText = `${wA}%`; document.getElementById('pd').innerText = `${d}%`; document.getElementById('pl').innerText = `${wB}%`;
     document.getElementById('bat').innerText = `${tA} ATTACK`; document.getElementById('bbt').innerText = `${tB} ATTACK`;
-    document.getElementById('bab').innerHTML = `<div class="btr"><div class="bf" style="width: ${wA}%"></div></div>`;
-    document.getElementById('bbb').innerHTML = `<div class="btr"><div class="bf" style="width: ${wB}%"></div></div>`;
+    document.getElementById('bab').innerHTML = `<div class="btr"><div class="bf" style="width:${wA}%"></div></div>`;
+    document.getElementById('bbb').innerHTML = `<div class="btr"><div class="bf" style="width:${wB}%"></div></div>`;
     document.getElementById('rc').style.display = 'block';
 }
 
 function dos() {
     const s = document.getElementById('di'); if (!s || !s.value.trim()) return;
     const t = traductions[langueActuelle];
-
-    // FIX : résolution du nom avec alias multilingues
     const cleEquipe = normaliserNomEquipe(s.value);
-
-    if (!cleEquipe || typeof dossiers === 'undefined' || !dossiers[cleEquipe]) {
-        alert(t.notFound + s.value);
-        return;
-    }
-
-    // FIX : dossiers.js n'a pas de sous-objet par langue — on lit directement
-    const d = dossiers[cleEquipe];
-
+    if (!cleEquipe || typeof dossiers === 'undefined' || !dossiers[cleEquipe]) { alert(t.notFound + s.value); return; }
+    const d = dossiers[cleEquipe][langueActuelle] || dossiers[cleEquipe]['fr'];
     document.getElementById('dn').innerText = d.name || cleEquipe;
     document.getElementById('dm').innerText = d.meta || "Nations Cup";
     document.getElementById('da').innerText = d.attack || "-";
@@ -210,16 +216,25 @@ function dos() {
 
 async function afficherMessagesQuotidiens() {
     const c = document.getElementById('news-list'); if (!c) return;
-    const t = traductions[langueActuelle]; c.innerHTML = `<p style='color:#94A3B8; text-align:center; padding:2rem;'>${t.loadingNews}</p>`;
+    const t = traductions[langueActuelle];
+    c.innerHTML = `<p style='color:#94A3B8;text-align:center;padding:2rem;'>${langueActuelle !== 'fr' ? t.translating : t.loadingNews}</p>`;
     try {
         const res = await fetch('./messages.json'); if (!res.ok) throw new Error();
-        const d = await res.json(); c.innerHTML = `<div style="color:#64748B; font-size:0.75rem; font-weight:bold; margin-bottom:1rem; text-align:right; letter-spacing:0.5px;">📅 FLASH : ${d.date || '2026'}</div>`;
-        if (!d.articles || d.articles.length === 0) { c.innerHTML += `<p style='color:#94A3B8; text-align:center; padding:2rem;'>${t.noNews}</p>`; return; }
-        d.articles.forEach(a => {
-            c.innerHTML += `<div class="card" style="margin-bottom:1rem; border-left:4px solid #8B5CF6; padding:1rem; background:#111827; border-radius:8px;"><div style="margin-bottom:.4rem;"><span style="background:#2D1B4E; color:#C084FC; font-size:0.65rem; font-weight:bold; padding:0.15rem 0.4rem; border-radius:4px; text-transform:uppercase;">${a.badge}</span></div><h3 style="color:#FFF; font-size:1.05rem; margin:0 0 .3rem 0; font-weight:bold;">${a.titre}</h3><p style="color:#94A3B8; font-size:0.85rem; line-height:1.4; margin:0;">${a.texte}</p></div>`;
+        const d = await res.json();
+        let articles = d.articles || [];
+        if (langueActuelle !== 'fr' && articles.length > 0) {
+            articles = await traduireArticles(articles, langueActuelle);
+        }
+        c.innerHTML = `<div style="color:#64748B;font-size:0.75rem;font-weight:bold;margin-bottom:1rem;text-align:right;letter-spacing:0.5px;">📅 FLASH : ${d.date || '2026'}</div>`;
+        if (articles.length === 0) { c.innerHTML += `<p style='color:#94A3B8;text-align:center;padding:2rem;'>${t.noNews}</p>`; return; }
+        articles.forEach(a => {
+            c.innerHTML += `<div class="card" style="margin-bottom:1rem;border-left:4px solid #8B5CF6;padding:1rem;background:#111827;border-radius:8px;"><div style="margin-bottom:.4rem;"><span style="background:#2D1B4E;color:#C084FC;font-size:0.65rem;font-weight:bold;padding:0.15rem 0.4rem;border-radius:4px;text-transform:uppercase;">${a.badge}</span></div><h3 style="color:#FFF;font-size:1.05rem;margin:0 0 .3rem 0;font-weight:bold;">${a.titre}</h3><p style="color:#94A3B8;font-size:0.85rem;line-height:1.4;margin:0;">${a.texte}</p></div>`;
         });
-    } catch (e) { c.innerHTML = `<p style='color:#EF4444; text-align:center; padding:2rem;'>${t.errorNews}</p>`; }
+    } catch (e) { c.innerHTML = `<p style='color:#EF4444;text-align:center;padding:2rem;'>${t.errorNews}</p>`; }
 }
 
-window.onload = function() { initGroups(); };
+window.onload = function() {
+    changerLangue('fr', document.querySelector('.lang-btn'));
+    initGroups();
+};
          
