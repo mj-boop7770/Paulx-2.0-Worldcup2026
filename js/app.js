@@ -237,4 +237,4 @@ window.onload = function() {
     changerLangue('fr', document.querySelector('.lang-btn'));
     initGroups();
 };
-         Et ça ça ne fonctionne pas ??
+         
