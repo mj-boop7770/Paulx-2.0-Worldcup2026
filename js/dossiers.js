@@ -193,5 +193,4 @@
       "history": "En quête de l'ultime consécration pour entrer dans la légende."
     }
   }
-    }
-      
+        }
