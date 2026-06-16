@@ -1,81 +1,143 @@
-// ==========================================
-// SYSTEME MULTILINGUE OPTIMISÉ
-// ==========================================
-let langueActuelle = 'fr', filtreActuel = "ALL";
-
-// Détection de la langue du téléphone
-function detecterLangueAuto() {
-    const lg = navigator.language.split('-')[0];
-    return ['fr', 'en', 'pt', 'sw', 'ar', 'rw'].includes(lg) ? lg : 'fr';
-}
-
-function changerLangue(code, btn) {
-    langueActuelle = code;
-    localStorage.setItem('languePreferee', code);
-    
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-    
-    const t = traductions[code];
-    document.getElementById('main-title').innerText = t.title;
-    document.getElementById('main-sub').innerText = t.sub;
-    document.getElementById('badge-dates').innerText = t.dates;
-    document.getElementById('btn-groups').innerHTML = t.groups;
-    document.getElementById('btn-schedule').innerHTML = t.schedule;
-    document.getElementById('btn-predict').innerHTML = t.predict;
-    document.getElementById('btn-dossier').innerHTML = t.dossier;
-    document.getElementById('btn-news').innerHTML = `${t.news}<span class="live-dot"></span>`;
-    document.getElementById('btn-oracle-predict').innerText = t.oracleBtn;
-    document.getElementById('lbl-winA').innerText = t.winA;
-    document.getElementById('lbl-draw').innerText = t.draw;
-    document.getElementById('lbl-winB').innerText = t.winB;
-    document.getElementById('di').placeholder = t.placeholder;
-    document.getElementById('btn-open-dossier').innerText = t.open;
-    document.getElementById('lbl-attack').innerText = t.attack;
-    document.getElementById('lbl-defense').innerText = t.defense;
-    document.getElementById('lbl-form').innerText = t.form;
-    document.getElementById('lbl-mental').innerText = t.mental;
-    document.getElementById('lbl-coach').innerText = t.coach;
-    document.getElementById('lbl-keyplayer').innerText = t.keyplayer;
-    document.getElementById('lbl-stars').innerText = t.stars;
-    document.getElementById('lbl-history').innerText = t.history;
-
-    // Mise à jour de la section active
-    const act = document.querySelector('.section.active').id;
-    if (act === 'schedule') { document.getElementById('mfilter').innerHTML = ""; initFilters(); afficherMatchs(); }
-    else if (act === 'news') afficherMessagesQuotidiens();
-}
-
-// AFFICHAGE DES MESSAGES (Utilise les suffixes du JSON)
-async function afficherMessagesQuotidiens() {
-    const c = document.getElementById('news-list');
-    if (!c) return;
-    c.innerHTML = `<p style='color:#94A3B8;text-align:center;padding:2rem;'>Chargement...</p>`;
-    try {
-        const res = await fetch('./messages.json');
-        const d = await res.json();
-        let html = `<div style="color:#64748B;font-size:0.75rem;font-weight:bold;margin-bottom:1rem;text-align:right;">📅 FLASH : ${d.date}</div>`;
-        
-        const suffixe = (langueActuelle === 'fr') ? '' : '_' + langueActuelle;
-        
-        d.articles.forEach(a => {
-            html += `
-            <div class="card" style="margin-bottom:1rem;border-left:4px solid #8B5CF6;padding:1rem;background:#111827;border-radius:8px;">
-                <span style="background:#2D1B4E;color:#C084FC;font-size:0.65rem;font-weight:bold;padding:0.15rem 0.4rem;border-radius:4px;">${a['badge' + suffixe] || a.badge}</span>
-                <h3 style="color:#FFF;font-size:1.05rem;margin:.5rem 0;">${a['titre' + suffixe] || a.titre}</h3>
-                <p style="color:#94A3B8;font-size:0.85rem;line-height:1.4;">${a['texte' + suffixe] || a.texte}</p>
-            </div>`;
-        });
-        c.innerHTML = html;
-    } catch (e) { c.innerHTML = `<p style='color:#EF4444;text-align:center;padding:2rem;'>Erreur news</p>`; }
-}
-
-// Initialisation
-window.onload = function() {
-    const langueInitiale = localStorage.getItem('languePreferee') || detecterLangueAuto();
-    const btn = Array.from(document.querySelectorAll('.lang-btn')).find(b => b.innerText.toLowerCase().includes(langueInitiale));
-    changerLangue(langueInitiale, btn || document.querySelector('.lang-btn'));
-    initGroups();
-};
-
-// ... Gardez vos autres fonctions (initGroups, tab, predict, dos, etc.) ici en dessous ...
+{
+  "date": "15 JUIN 2026",
+  "articles": [
+    {
+      "badge": "Mondial · Choc",
+      "badge_en": "World Cup · Shock",
+      "badge_pt": "Mundial · Choque",
+      "badge_sw": "Kombe · Msongo",
+      "badge_ar": "المونديال · صدمة",
+      "badge_rw": "Kombe · Gukanguka",
+      "titre": "Allemagne 7-1 Curaçao : Neuer et Wirtz font l'histoire",
+      "titre_en": "Germany 7-1 Curaçao: Neuer and Wirtz make history",
+      "titre_pt": "Alemanha 7-1 Curaçao: Neuer e Wirtz fazem história",
+      "titre_sw": "Ujerumani 7-1 Curaçao: Neuer na Wirtz wanaandika historia",
+      "titre_ar": "ألمانيا 7-1 كوراساو: نوير وفيرتز يصنعان التاريخ",
+      "titre_rw": "Ubudage 7-1 Curaçao: Neuer na Wirtz barandika amateka",
+      "texte": "À Houston, l'Allemagne a signé l'une des plus grandes victoires de ce Mondial en écrasant Curaçao 7-1. Manuel Neuer, à 40 ans, a battu le record du gardien le plus vieux à garder ses buts en Coupe du Monde. Florian Wirtz, magistral avec un doublé, confirme son statut de futur Ballon d'Or. La Mannschaft envoie un message clair à toutes les nations : elle est bel et bien de retour !",
+      "texte_en": "In Houston, Germany signed one of the greatest victories of this World Cup, crushing Curaçao 7-1. Manuel Neuer, at 40 years old, broke the record for the oldest goalkeeper to keep a clean sheet at a World Cup. Florian Wirtz, magnificent with a brace, confirms his status as a future Ballon d'Or. Die Mannschaft sends a clear message to all nations: they are well and truly back!",
+      "texte_pt": "Em Houston, a Alemanha assinou uma das maiores vitórias deste Mundial ao esmagar Curaçao 7-1. Manuel Neuer, aos 40 anos, quebrou o recorde do goleiro mais velho a manter as redes a zero. Florian Wirtz, magistral com uma dobradinha, confirma o seu estatuto de futuro Bola de Ouro. A Mannschaft manda uma mensagem clara: ela está de volta!",
+      "texte_sw": "Huko Houston, Ujerumani ilisaini moja ya ushindi mkubwa wa Kombe hili kwa kupondaponda Curaçao 7-1. Manuel Neuer, akiwa na miaka 40, alivunja rekodi ya mlinda lango mzee zaidi kulinda goli. Florian Wirtz, bora na mabao mawili, anathibitisha hadhi yake ya Ballon d'Or. Mannschaft inatuma ujumbe wazi: wamerudi!",
+      "texte_ar": "في هيوستن، سجّلت ألمانيا إحدى أكبر انتصاراتها في المونديال بسحق كوراساو 7-1. مانويل نوير، في سن 40، حطّم رقم أكبر حارس مرمى عمراً يحافظ على شباكه. فلوريان فيرتز، رائع بهدفين، يؤكد مكانته كبالون دور مستقبلي. المانشافت ترسل رسالة واضحة: إنها عادت بقوة!",
+      "texte_rw": "I Houston, Ubudage yasinyiye kimwe mu ntsinzi nkuru mu Kombe rya Monde imaze gutsinda Curaçao 7-1. Manuel Neuer, afite imyaka 40, yasenya rekordi ya umukingizi ukukuze. Florian Wirtz yakoze neza n'ibirego bibiri. Mannschaft yohereza ubutumwa busobanutse: yagarutse!"
+    },
+    {
+      "badge": "Mondial · Résultats",
+      "badge_en": "World Cup · Results",
+      "badge_pt": "Mundial · Resultados",
+      "badge_sw": "Kombe · Matokeo",
+      "badge_ar": "المونديال · النتائج",
+      "badge_rw": "Kombe · Ibisubizo",
+      "titre": "Brésil 1-1 Maroc, Pays-Bas 2-2 Japon : les chocs du week-end",
+      "titre_en": "Brazil 1-1 Morocco, Netherlands 2-2 Japan: the weekend shocks",
+      "titre_pt": "Brasil 1-1 Marrocos, Holanda 2-2 Japão: os choques do fim de semana",
+      "titre_sw": "Brazili 1-1 Moroko, Uholanzi 2-2 Japani: mapigano ya wikendi",
+      "titre_ar": "البرازيل 1-1 المغرب وهولندا 2-2 اليابان: صدمات نهاية الأسبوع",
+      "titre_rw": "Burezili 1-1 Maroko, Holanda 2-2 Japonine: imikino mikuru ya weekend",
+      "texte": "Deux matchs de feu ont enflammé ce début de Mondial ! Le Brésil et le Maroc se sont quittés dos à dos (1-1) dans un duel haletant. Fabinho a dénoncé publiquement l'arbitrage après la rencontre, créant la polémique. Les Pays-Bas et le Japon ont produit un thriller incroyable (2-2) avec un Japon héroïque qui a égalisé dans les dernières secondes. Le Mondial tient toutes ses promesses !",
+      "texte_en": "Two fiery matches lit up the start of this World Cup! Brazil and Morocco drew (1-1) in a breathless duel. Fabinho publicly denounced the refereeing, causing controversy. Netherlands and Japan produced an incredible thriller (2-2) with heroic Japan equalizing in the final seconds. The World Cup is delivering on all its promises!",
+      "texte_pt": "Dois jogos de fogo inflamaram o início deste Mundial! Brasil e Marrocos empataram (1-1) num duelo ofegante. Fabinho denunciou publicamente a arbitragem, criando polémica. A Holanda e o Japão produziram um thriller incrível (2-2) com um Japão heroico que empatou nos últimos segundos. O Mundial está a cumprir todas as suas promessas!",
+      "texte_sw": "Mechi mbili za moto ziliwasha mwanzo wa Kombe hili! Brazili na Moroko walifungana sare (1-1) katika duel la kupumua. Fabinho alishutumu refa hadharani. Uholanzi na Japani walikuwa na thriller ya ajabu (2-2) na Japani ya kishujaa iliyolingana sekunde za mwisho. Kombe linatekeleza ahadi zake zote!",
+      "texte_ar": "مباراتان من نار أشعلتا بداية المونديال! البرازيل والمغرب تعادلا (1-1) في مباراة مثيرة. فابينيو أدان التحكيم علناً مما أثار جدلاً واسعاً. هولندا واليابان قدّما إثارة رائعة (2-2) مع يابان بطولية أدركت التعادل في الثواني الأخيرة. المونديال يفي بكل وعوده!",
+      "texte_rw": "Imikino ibiri y'inkongi yamataje itangira ry'iri Kombe! Burezili na Maroko bagumanije (1-1) mu rugamba ruteye isoni. Fabinho yavugiye mu ruhame gusema nabi imicungire. Holanda na Japonine bagumanye thriller (2-2) na Japonine intwari yavunye nkana mu masegonda y'imperuka. Kombe ritanga byose!"
+    },
+    {
+      "badge": "Mondial · Programme",
+      "badge_en": "World Cup · Schedule",
+      "badge_pt": "Mundial · Programa",
+      "badge_sw": "Kombe · Ratiba",
+      "badge_ar": "المونديال · البرنامج",
+      "badge_rw": "Kombe · Gahunda",
+      "titre": "Ce soir Espagne & Belgique — Demain le choc France-Sénégal !",
+      "titre_en": "Tonight Spain & Belgium — Tomorrow the France-Senegal clash!",
+      "titre_pt": "Esta noite Espanha & Bélgica — Amanhã o choque França-Senegal!",
+      "titre_sw": "Usiku huu Hispania & Ubelgiji — Kesho mgongano Ufaransa-Senegali!",
+      "titre_ar": "الليلة إسبانيا وبلجيكا — غداً مواجهة فرنسا والسنغال!",
+      "titre_rw": "Uyu munsi Espanye & Ibilijike — Ejo umukino Ubufaransa-Senegali!",
+      "texte": "Journée chargée ce 15 juin ! L'Espagne entre en lice face au Cap-Vert à 18h00, avec Lamine Yamal sous les projecteurs mondiaux. La Belgique de De Bruyne affronte l'Égypte à 21h00. Et demain mardi, le grand choc tant attendu : France vs Sénégal au MetLife Stadium de New York à 21h00. Deschamps aligne son habituel 4-2-3-1 avec Koundé, Théo Hernandez et Mbappé en capitaine. Les Bleus n'ont pas le droit à l'erreur !",
+      "texte_en": "Busy day on June 15! Spain kicks off against Cape Verde at 6 PM, with Lamine Yamal in the global spotlight. De Bruyne's Belgium face Egypt at 9 PM. And tomorrow Tuesday, the long-awaited clash: France vs Senegal at MetLife Stadium New York at 9 PM. Deschamps lines up his usual 4-2-3-1 with Koundé, Theo Hernandez and Mbappé as captain. Les Bleus cannot afford to slip up!",
+      "texte_pt": "Dia cheio a 15 de junho! A Espanha entra em campo frente a Cabo Verde às 18h00, com Lamine Yamal sob os holofotes mundiais. A Bélgica de De Bruyne enfrenta o Egito às 21h00. E amanhã terça, o grande choque: França vs Senegal no MetLife Stadium às 21h00. Deschamps alinha o habitual 4-2-3-1 com Koundé, Theo Hernandez e Mbappé como capitão. Os Bleus não podem errar!",
+      "texte_sw": "Siku yenye shughuli nyingi tarehe 15 Juni! Hispania inaingia uwanjani dhidi ya Cape Verde saa 12 jioni, na Lamine Yamal chini ya taa za kimataifa. Ubelgiji wa De Bruyne inakabili Misri saa 3 usiku. Na kesho Jumanne, mgongano mkubwa: Ufaransa dhidi ya Senegali katika MetLife Stadium saa 3 usiku. Les Bleus hawawezi kukosea!",
+      "texte_ar": "يوم حافل في 15 يونيو! إسبانيا تنطلق أمام الرأس الأخضر الساعة 18:00، مع لامين يامال تحت الأضواء العالمية. بلجيكا دي بروين تواجه مصر الساعة 21:00. وغداً الثلاثاء، المواجهة الكبرى: فرنسا ضد السنغال في ملعب ميتلايف الساعة 21:00. البلوز لا يستطيعون الإخفاق!",
+      "texte_rw": "Umunsi uzuye ku wa 15 Kamena! Espanye itangira imikino irwanya Cap Vert saa 12, hamwe na Lamine Yamal mu muriro w'amaso y'isi yose. Ibilijike ya De Bruyne irwanya Egiputa saa 3 z'ijoro. Naho ejo Mararwe, imikino mikuru: Ubufaransa rwa Senegali kuri MetLife Stadium. Les Bleus ntibashobora gukora amakosa!"
+    },
+    {
+      "badge": "Mondial · Scandale",
+      "badge_en": "World Cup · Scandal",
+      "badge_pt": "Mundial · Escândalo",
+      "badge_sw": "Kombe · Kashfa",
+      "badge_ar": "المونديال · فضيحة",
+      "badge_rw": "Kombe · Ibyaha",
+      "titre": "L'arbitre africain Omar Artan refusé aux USA : la FIFA réagit enfin",
+      "titre_en": "African referee Omar Artan denied US entry: FIFA finally reacts",
+      "titre_pt": "Árbitro africano Omar Artan recusado nos EUA: a FIFA reage finalmente",
+      "titre_sw": "Refa wa Afrika Omar Artan alikataliwa USA: FIFA inajibu hatimaye",
+      "titre_ar": "الحكم الأفريقي عمر عرطان يُمنع من دخول أمريكا: الفيفا تتحرك أخيراً",
+      "titre_rw": "Umucamanza w'Afrika Omar Artan yanzwe USA: FIFA isubiza mu muhero",
+      "texte": "Le scandale a éclaté dès les premiers jours du Mondial : Omar Artan, élu meilleur arbitre d'Afrique en 2025, s'est vu refuser l'entrée sur le territoire américain sans explication officielle. Un affront qui a choqué le continent africain tout entier et les instances du football mondial. L'UEFA avait tendu la main en premier. Aujourd'hui, la FIFA annonce un geste symbolique fort pour réparer cette injustice et préserver l'image du tournoi.",
+      "texte_en": "The scandal erupted in the first days of the World Cup: Omar Artan, voted best referee in Africa in 2025, was denied entry to US territory without official explanation. An affront that shocked the entire African continent and world football's governing bodies. UEFA extended a hand first. Today, FIFA announces a strong symbolic gesture to repair this injustice and preserve the tournament's image.",
+      "texte_pt": "O escândalo explodiu nos primeiros dias do Mundial: Omar Artan, eleito melhor árbitro de África em 2025, foi recusado na entrada do território americano sem explicação oficial. Uma afronta que chocou todo o continente africano e as instâncias do futebol mundial. A UEFA foi a primeira a estender a mão. Hoje, a FIFA anuncia um gesto simbólico forte para reparar esta injustiça.",
+      "texte_sw": "Kashfa ilipasuka siku za kwanza za Kombe: Omar Artan, aliyechaguliwa refa bora wa Afrika mwaka 2025, alikataliwa kuingia eneo la Marekani bila maelezo rasmi. Udhalilishaji uliostua bara lote la Afrika na mamlaka ya soka duniani. UEFA ilikuwa ya kwanza kutoa mkono. Leo, FIFA inatangaza ishara kali kurekebisha dhuluma hii.",
+      "texte_ar": "اندلعت الفضيحة في الأيام الأولى للمونديال: عمر عرطان، المُنتخب أفضل حكم في أفريقيا عام 2025، مُنع من دخول الأراضي الأمريكية دون تفسير رسمي. إهانة صدمت القارة الأفريقية بأسرها ومؤسسات كرة القدم العالمية. كان الاتحاد الأوروبي أول من مد يد العون. اليوم، تعلن الفيفا إجراءً رمزياً قوياً لإصلاح هذا الظلم.",
+      "texte_rw": "Agahinda kavutse mu minsi ya mbere y'iri Kombe: Omar Artan, wahiswaga umucamanza mwiza wa Afrika mu 2025, yanzwe kwinjira muri Amerika atari bwonyine. Ikimenyetso cyateye akababaro Afrika yose n'inzego za siporo. UEFA yakomeje kubikora mbere. Uyu munsi, FIFA itangaza ikimenyetso gikomeye kugira ngo ihane uburenganzira bwabagowe."
+    },
+    {
+      "badge": "Mondial · Fun",
+      "badge_en": "World Cup · Fun",
+      "badge_pt": "Mundial · Curiosidade",
+      "badge_sw": "Kombe · Burudani",
+      "badge_ar": "المونديال · طرفة",
+      "badge_rw": "Kombe · Akamaro",
+      "titre": "Le président de la RDC prédit lui-même la victoire du Portugal sur son équipe !",
+      "titre_en": "The DRC president predicts Portugal's victory over his own team!",
+      "titre_pt": "O presidente da RDC prevê ele próprio a vitória de Portugal sobre a sua equipa!",
+      "titre_sw": "Rais wa DRC mwenyewe anatabiri ushindi wa Ureno juu ya timu yake!",
+      "titre_ar": "رئيس الكونغو يتنبأ بنفسه بفوز البرتغال على منتخب بلاده!",
+      "titre_rw": "Perezida wa RDC ubwe abitabira intsinzi ya Porutugale ku itsinda rye!",
+      "texte": "Voilà une anecdote qui a bien fait rire la planète football ! Les Portugais Gonçalo Ramos et Nuno Mendes ont révélé en conférence de presse que le président de la RDC, futur adversaire du Portugal au Mondial, leur avait personnellement envoyé un message pour leur souhaiter bonne chance... et prédire lui-même la victoire de la Seleção ! Une fair-play et un humour rares qui ont explosé sur les réseaux sociaux.",
+      "texte_en": "Here's an anecdote that made the football world laugh! Portuguese players Gonçalo Ramos and Nuno Mendes revealed at a press conference that the President of the DRC, Portugal's upcoming World Cup opponent, had personally sent them a message wishing them good luck... and predicting Portugal's victory himself! A rare display of fair-play and humor that exploded on social media.",
+      "texte_pt": "Aqui está uma anedota que fez rir o mundo do futebol! Os portugueses Gonçalo Ramos e Nuno Mendes revelaram em conferência de imprensa que o Presidente da RDC, futuro adversário de Portugal, lhes enviou pessoalmente uma mensagem a desejar boa sorte... e a prever ele próprio a vitória da Seleção! Um fair-play e humor raros que explodiram nas redes sociais.",
+      "texte_sw": "Hapa kuna hadithi iliyofanya ulimwengu wa soka ucheke! Wareno Gonçalo Ramos na Nuno Mendes walifunua kwamba Rais wa DRC, mpinzani wao wa Kombe, alituma ujumbe kibinafsi akiwapongeza na kutabiri mwenyewe ushindi wa Ureno! Onyesho la nadra la heshima na ucheshi uliolipuka kwenye mitandao ya kijamii.",
+      "texte_ar": "إليك طرفة أضحكت عالم كرة القدم! كشف البرتغاليان غونسالو راموس ونونو منديز أن رئيس جمهورية الكونغو الديمقراطية، المنافس القادم للبرتغال، أرسل لهم رسالة شخصية يتمنى فيها حظاً موفقاً... ويتنبأ بنفسه بفوز البرتغال! روح رياضية ودعابة نادرة انفجرت على وسائل التواصل الاجتماعي.",
+      "texte_rw": "Izi ni inkuru zaguye mu mwete w'isi ya siporo! Abaporutugale Gonçalo Ramos na Nuno Mendes basobanuriye ko Perezida wa RDC, umwanzi wabo w'iri Kombe, yaboherereje ubutumwa bwite abashimira... no gutabira we ubwe intsinzi ya Porutugale! Ubugwaneza n'akamaro bidasanzwe byatumye abantu benshi babivugaho ku mbuga nkoranyambaga."
+    },
+    {
+      "badge": "Mondial · Insolite",
+      "badge_en": "World Cup · Bizarre",
+      "badge_pt": "Mundial · Insólito",
+      "badge_sw": "Kombe · Ajabu",
+      "badge_ar": "المونديال · غريب",
+      "badge_rw": "Kombe · Bidasanzwe",
+      "titre": "Un pub irlandais en Écosse supporte la Côte d'Ivoire et fait le buzz mondial !",
+      "titre_en": "An Irish pub in Scotland supports Ivory Coast and goes viral worldwide!",
+      "titre_pt": "Um pub irlandês na Escócia apoia a Costa do Marfim e faz buzz mundial!",
+      "titre_sw": "Baa ya Kiayalandi Scotland inaunga mkono Côte d'Ivoire na kufanya buzz duniani!",
+      "titre_ar": "حانة إيرلندية في اسكتلندا تدعم ساحل العاج وتنتشر بشكل فيروسي عالمياً!",
+      "titre_rw": "Ibarafu ry'Iriande mu Busikotilande rifasha Côte d'Ivoire kandi ritera umurozi ku isi yose!",
+      "texte": "L'anecdote la plus folle de ce début de Mondial ! Un pub irlandais situé à Édimbourg en Écosse a décidé de soutenir... la Côte d'Ivoire ! DJ ivoirien en live, hymne national appris par un musicien local, commentaires en français sur 11 écrans et musique africaine toute la nuit. La vidéo a explosé sur TikTok et X avec des millions de vues. La Côte d'Ivoire entre en lice ce soir face à l'Équateur, et le pub sera à fond !",
+      "texte_en": "The craziest story of this World Cup start! An Irish pub in Edinburgh, Scotland decided to support... Ivory Coast! Live Ivorian DJ, national anthem learned by a local musician, French commentary on 11 screens and African music all night. The video exploded on TikTok and X with millions of views. Ivory Coast kicks off tonight against Ecuador and the pub will be going wild!",
+      "texte_pt": "A história mais louca deste início de Mundial! Um pub irlandês em Edimburgo, na Escócia, decidiu apoiar... a Costa do Marfim! DJ marfinense ao vivo, hino nacional aprendido por um músico local, comentários em francês em 11 ecrãs e música africana toda a noite. O vídeo explodiu no TikTok e no X com milhões de visualizações. A Costa do Marfim estreia-se esta noite frente ao Equador!",
+      "texte_sw": "Hadithi ya kipuuzi zaidi ya mwanzo wa Kombe hili! Baa ya Kiayalandi huko Edinburgh, Scotland iliamua kuunga mkono... Côte d'Ivoire! DJ wa Kiivori live, wimbo wa taifa uliojifunzwa na mwanamuziki wa ndani, maoni kwa Kifaransa kwenye skrini 11 na muziki wa Kiafrika usiku wote. Video ilipasuka kwenye TikTok na X na mamilioni ya maoni. Côte d'Ivoire inaingia uwanjani usiku huu!",
+      "texte_ar": "أغرب قصة في بداية هذا المونديال! حانة إيرلندية في إدنبرة باسكتلندا قررت دعم... ساحل العاج! دي جي إيفواري مباشرة، النشيد الوطني تعلمه موسيقي محلي، تعليق بالفرنسية على 11 شاشة وموسيقى أفريقية طوال الليل. الفيديو انتشر على تيكتوك وإكس بملايين المشاهدات. ساحل العاج تنطلق الليلة أمام الإكوادور!",
+      "texte_rw": "Inkuru idasanzwe cyane yo gutangira iri Kombe! Ibarafu ry'Iriande i Edinburgh, Busikotilande ryafashe icyemezo cyo gushyigikira... Côte d'Ivoire! DJ w'Ivoiri mu live, indirimbo y'igihugu yigishijwe n'umunzahabu w'ahantu, igitangazamakuru mu Gifaransa ku bibazo 11 no gusoza amajoro n'umuziki w'Afrika. Videwo yarasenyutse kuri TikTok na X n'ibigereranyo by'ubuzima."
+    },
+    {
+      "badge": "😂 Humour · Mondial",
+      "badge_en": "😂 Humour · World Cup",
+      "badge_pt": "😂 Humor · Mundial",
+      "badge_sw": "😂 Mzaha · Kombe",
+      "badge_ar": "😂 فكاهة · المونديال",
+      "badge_rw": "😂 Akajaguzi · Kombe",
+      "titre": "Le top des memes et fous rires du début du Mondial 2026 !",
+      "titre_en": "The top memes and laughs from the start of the 2026 World Cup!",
+      "titre_pt": "Os melhores memes e gargalhadas do início do Mundial 2026!",
+      "titre_sw": "Memes bora na kicheko kutoka mwanzo wa Kombe la Dunia 2026!",
+      "titre_ar": "أفضل الميمز والضحكات من بداية مونديال 2026!",
+      "titre_rw": "Imemes myiza n'ibitwenge byo gutangira kwa Kombe rya Monde 2026!",
+      "texte": "🇩🇪 Après le 7-1 de l'Allemagne, les fans de Curaçao ont posté : 'On avait dit qu'on venait pour l'expérience.' 😭 — 🧹 Les Japonais ont nettoyé les vestiaires adverses ENCORE une fois après le 2-2. La FIFA leur a proposé un CDI. — 🇧🇷 Fabinho dénonce l'arbitrage après le nul contre le Maroc. Les fans brésiliens : 'Fabinho a toujours raison, sauf quand il joue.' 💀 — 🤖 Un fan anglais a demandé à une IA de prédire la victoire de l'Angleterre. L'IA a répondu : 'Données insuffisantes depuis 1966.'",
+      "texte_en": "🇩🇪 After Germany's 7-1, Curaçao fans posted: 'We said we came for the experience.' 😭 — 🧹 The Japanese cleaned the opponent's locker rooms AGAIN after the 2-2. FIFA offered them a permanent contract. — 🇧🇷 Fabinho complained about the referee after the draw vs Morocco. Brazilian fans: 'Fabinho is always right, except when he plays.' 💀 — 🤖 An English fan asked AI to predict England winning. AI replied: 'Insufficient data since 1966.'",
+      "texte_pt": "🇩🇪 Após o 7-1 da Alemanha, adeptos de Curaçao publicaram: 'Dissemos que viemos pela experiência.' 😭 — 🧹 Os japoneses limparam os balneários adversários MAS UMA VEZ após o 2-2. A FIFA ofereceu-lhes um contrato permanente. — 🇧🇷 Fabinho queixou-se do árbitro após o empate com Marrocos. Adeptos brasileiros: 'Fabinho tem sempre razão, exceto quando joga.' 💀 — 🤖 Um adepto inglês pediu à IA para prever a vitória inglesa. A IA respondeu: 'Dados insuficientes desde 1966.'"
+    }
+  ]
+    }
+      
