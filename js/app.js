@@ -74,10 +74,16 @@ async function traduireArticles(articles, langue) {
 }
 
 function changerLangue(code, btn) {
+    // AJOUTS POUR ACCESSIBILITE : Gère la langue et le sens de lecture
+    document.documentElement.lang = code;
+    document.documentElement.dir = (code === 'ar') ? 'rtl' : 'ltr';
+
     langueActuelle = code;
     localStorage.setItem('langueOctopus', code);
+    
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
+    
     const t = traductions[code];
     document.getElementById('main-title').innerText = t.title;
     document.getElementById('main-sub').innerText = t.sub;
@@ -101,6 +107,7 @@ function changerLangue(code, btn) {
     document.getElementById('lbl-keyplayer').innerText = t.keyplayer;
     document.getElementById('lbl-stars').innerText = t.stars;
     document.getElementById('lbl-history').innerText = t.history;
+    
     const act = document.querySelector('.section.active').id;
     if (act === 'schedule') { document.getElementById('mfilter').innerHTML = ""; initFilters(); afficherMatchs(); }
     else if (act === 'news') afficherMessagesQuotidiens();
@@ -237,6 +244,7 @@ async function afficherMessagesQuotidiens() {
 window.onload = function() {
     const langueSauvegardee = localStorage.getItem('langueOctopus') || 'fr';
     const btnLangue = document.querySelector(`.lang-btn[onclick*="'${langueSauvegardee}'"]`);
+    // L'appel ici garantit que LANG et DIR sont bien appliqués au chargement
     changerLangue(langueSauvegardee, btnLangue);
     initGroups();
 };
