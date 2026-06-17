@@ -2,104 +2,199 @@
   "date": "17 JUIN 2026",
   "articles": [
     {
-      "badge": "Mondial · Résultats",
-      "badge_en": "World Cup · Results",
-      "badge_pt": "Mundial · Resultados",
-      "badge_sw": "Kombe · Matokeo",
-      "badge_ar": "المونديال · النتائج",
-      "badge_rw": "Kombe · Ibisubizo",
+      "badge": "🔥 Résultats · Choc du jour",
+      "badge_en": "🔥 Results · Shock of the day",
+      "badge_pt": "🔥 Resultados · Choque do dia",
+      "badge_sw": "🔥 Matokeo · Mshangao wa siku",
+      "badge_ar": "🔥 النتائج · صدمة اليوم",
+      "badge_rw": "🔥 Ibisubizo · Inyuma yo ku nsi",
       "titre": "Autriche 3-1 Jordanie : L'Autriche écrase ! Argentine domine 3-0",
       "titre_en": "Austria 3-1 Jordan: Austria crushes! Argentina dominates 3-0",
       "titre_pt": "Áustria 3-1 Jordânia: Áustria esmagadora! Argentina domina 3-0",
       "titre_sw": "Austria 3-1 Jordan: Austria inasonga! Argentina inadhimisha 3-0",
       "titre_ar": "النمسا 3-1 الأردن: النمسا تحطم! الأرجنتين تهيمن 3-0",
       "titre_rw": "Otirusha 3-1 Yorudan: Otirusha isobanura! Arajentin irangira 3-0",
-      "texte": "Journée spectaculaire ce 17 juin ! L'Autriche a écrasé la Jordanie 3-1 dans un match dominateur. L'Argentine a continué sa marche forcée en écrasant l'Algérie 3-0 dans une démonstration offensive impressionnante. En même temps, la Norvège a explosé l'Irak 4-1 dans une performance majestueuse.",
-      "texte_en": "Spectacular day on June 17! Austria crushed Jordan 3-1 in a dominant match. Argentina continued its unstoppable march by crushing Algeria 3-0 in an impressive offensive display. Meanwhile, Norway exploded Iraq 4-1 in a majestic performance.",
-      "texte_pt": "Dia espetacular em 17 de junho! A Áustria esmagou a Jordânia 3-1 em uma partida dominadora. A Argentina continuou sua marcha irresistível esmagando a Argélia 3-0 em uma demonstração ofensiva impressionante. Enquanto isso, a Noruega explodiu o Iraque 4-1 em uma performance majestosa.",
-      "texte_sw": "Siku ya ajabu Juni 17! Austria ilianguka Jordan 3-1 katika mechi ya usumbufu. Argentina ikaendelea na safari yake ya nguvu kwa kuanguka Algeria 3-0 katika onyesho la ujinga linalostaajabisha. Kwa wakati mmoja, Norway ilipasua Iraq 4-1 katika utendaji wa kifahari.",
-      "texte_ar": "يوم رائع في 17 يونيو! سحقت النمسا الأردن 3-1 في مباراة مهيمنة. استمرت الأرجنتين في مسيرتها التي لا توقفها بسحق الجزائر 3-0 في عرض هجومي مثير. وفي الوقت نفسه، دمرت النرويج العراق 4-1 في أداء مهيب.",
-      "texte_rw": "Umunsi mwiza wa Kamena 17! Otirusha yasenya Yorudan 3-1 mu rugamba rusobanura. Arajentin yarengeye mu mwendo wayo utarengana wari isabwe Algeli 3-0 mu ushikiro rw'agapuriro. Mu gihe kimwe, Noruje yasenya Iraki 4-1 mu utendaji w'umuhire."
+      "texte": "Journée spectaculaire ce 17 juin ! L'Autriche a écrasé la Jordanie 3-1 dans un match dominateur où les Autrichiens ont montré une supériorité tactique écrasante. Les deux premières périodes ont vu des Autrichiens pressants et agressifs, créant des occasions régulièrement. Arnautovic a ouvert le score à la 12ème minute, suivi de deux buts supplémentaires en seconde période. L'Argentine a continué sa marche forcée en écrasant l'Algérie 3-0 dans une démonstration offensive impressionnante. Les Argentins ont marqué dès les 15 premières minutes, dictant complètement le jeu et empêchant l'Algérie de respirer. Messi, en grande forme, a orchestré le jeu avec sa finesse habituelle tandis que ses coéquipiers ont profité de l'espace pour transpercer la défense algérienne. Un résultat qui confirme la puissance de l'équipe sud-américaine.",
+      "texte_en": "Spectacular day on June 17! Austria crushed Jordan 3-1 in a dominant match where the Austrians showed overwhelming tactical superiority. The first two periods saw aggressive Austrian pressing, creating regular chances. Arnautovic opened the scoring in the 12th minute, followed by two additional goals in the second half. Argentina continued its relentless march by crushing Algeria 3-0 in an impressive offensive display. The Argentines scored in the first 15 minutes, completely dictating the game and preventing Algeria from breathing. Messi, in great form, orchestrated the play with his usual finesse while his teammates exploited the space to pierce the Algerian defense. A result that confirms the power of the South American team.",
+      "texte_pt": "Dia espetacular em 17 de junho! A Áustria esmagou a Jordânia 3-1 em uma partida dominadora onde os austríacos mostraram uma superioridade tática esmagadora. Os dois primeiros períodos viram pressão austríaca agressiva e criação regular de chances. Arnautovic abriu o placar no 12º minuto, seguido por dois gols adicionais na segunda metade. A Argentina continuou sua marcha irresistível esmagando a Argélia 3-0 em uma demonstração ofensiva impressionante. Os argentinos marcaram nos primeiros 15 minutos, ditando completamente o jogo e impedindo a Argélia de respirar. Messi, em grande forma, orquestrou o jogo com sua sutileza habitual enquanto seus companheiros exploravam o espaço para perfurar a defesa argelina.",
+      "texte_sw": "Siku ya ajabu Juni 17! Austria ilianguka Jordan 3-1 katika mechi ya usumbufu ambapo Waustria walionyesha nguvu ya ajabu. Miezi miwili ya kwanza iliona kusoma kwa nguvu kwa Waustria, kuunda furaha nyingi. Arnautovic alifungua alama katika dakika 12, ikifuatwa na goli mbili zaidi katika nusu ya pili. Argentina ikaendelea na safari yake ya nguvu kwa kuanguka Algeria 3-0 katika onyesho la ujinga linalostaajabisha.",
+      "texte_ar": "يوم رائع في 17 يونيو! سحقت النمسا الأردن 3-1 في مباراة مهيمنة حيث أظهر النمساويون تفوقاً تكتيكياً ساحقاً. شهدت الفترتان الأوليان ضغطاً نمساوياً عدوانياً وإنشاء فرص منتظمة. فتح أرناوتوفيتش التسجيل في الدقيقة 12، تلاه هدفان إضافيان في الشوط الثاني. استمرت الأرجنتين في مسيرتها التي لا توقف بسحق الجزائر 3-0 في عرض هجومي مثير للإعجاب.",
+      "texte_rw": "Umunsi mwiza wa Kamena 17! Otirusha yasenya Yorudan 3-1 mu rugamba rusobanura aho Baotirusha barangira agaciro k'ubwenge. Igihe cya mbere cyitangirizaga imbaraga z'Otirusha, kurekura ibishoboke. Arnautovic yafungurije ibigambire mu nderezo ya 12, igafatanije ibigambire byombi mu gihe cya kabiri. Arajentin yarengeye mu mwendo wayo utarengana wari isabwe Algeli 3-0 mu ushikiro rw'agapuriro.",
+      "joueurs_cles": [
+        {
+          "nom": "Marko Arnautovic (Autriche)",
+          "action": "Auteur du premier but à la 12ème, leader de l'attaque"
+        },
+        {
+          "nom": "Lionel Messi (Argentine)",
+          "action": "Orchestrateur du jeu, passes décisives cruciales"
+        },
+        {
+          "nom": "Lautaro Martinez (Argentine)",
+          "action": "2 buts, buteur de confiance"
+        }
+      ],
+      "statistiques": {
+        "autriche_jordanie": "Possession: AUT 64%, JOR 36% | Tirs: AUT 20, JOR 6 | Tirs cadrés: AUT 10, JOR 1 | Corners: AUT 9, JOR 2 | Cartons: AUT 1J, JOR 2J",
+        "argentine_algerie": "Possession: ARG 71%, ALG 29% | Tirs: ARG 22, ALG 4 | Tirs cadrés: ARG 12, ALG 0 | Passes complétées: ARG 87%, ALG 64%"
+      }
     },
     {
-      "badge": "Mondial · Programme",
-      "badge_en": "World Cup · Schedule",
-      "badge_pt": "Mundial · Programa",
-      "badge_sw": "Kombe · Ratiba",
-      "badge_ar": "المونديال · البرنامج",
-      "badge_rw": "Kombe · Gahunda",
-      "titre": "Ce soir : Portugal-RD Congo 19h00 et Angleterre-Croatie 22h00 !",
+      "badge": "🎯 À venir · Matchs brûlants",
+      "badge_en": "🎯 Upcoming · Hot matches",
+      "badge_pt": "🎯 Próximos · Jogos quentes",
+      "badge_sw": "🎯 Inakuja · Mechi moto",
+      "badge_ar": "🎯 القادم · مباريات ساخنة",
+      "badge_rw": "🎯 Iri ari icyo · Imikino inkongi",
+      "titre": "Ce soir : Portugal-RD Congo 19h00 et Angleterre-Croatie 22h00",
       "titre_en": "Tonight: Portugal-DR Congo 7 PM and England-Croatia 10 PM!",
       "titre_pt": "Esta noite: Portugal-RD Congo 19h00 e Inglaterra-Croácia 22h00!",
       "titre_sw": "Usiku huu: Ureno-RD Congo saa 7 jioni na Uingereza-Kroasia saa 10 jioni!",
       "titre_ar": "الليلة: البرتغال-جمهورية الكونغو الديمقراطية 19:00 وإنجلترا-كرواتيا 22:00!",
       "titre_rw": "Uyu munsi: Porutugale-RD Congo 7 z'ijoro na Ubwongereza-Kroasiya 10 z'ijoro!",
-      "texte": "Deux matchs brûlants attendent les fans ce soir ! À 19h00, le Portugal affrontera la RD Congo dans un duel explosif où les Congolais chercheront à créer la surprise. À 22h00, l'Angleterre croisera le fer avec la Croatie dans un choc qui s'annonce haletant. Le suspense est à son comble !",
-      "texte_en": "Two hot matches await fans tonight! At 7 PM, Portugal will face DR Congo in an explosive duel where the Congolese will seek to create a surprise. At 10 PM, England will clash with Croatia in what promises to be a thrilling encounter. The suspense is at its peak!",
-      "texte_pt": "Dois jogos quentes aguardam os fãs esta noite! Às 19h, Portugal enfrentará a RD Congo em um duelo explosivo onde os congoleses tentarão criar uma surpresa. Às 22h, a Inglaterra enfrentará a Croácia em um confronto que promete ser emocionante. O suspense está no auge!",
-      "texte_sw": "Mechi mbili za moto inazoweza wito uwanja wa kila saa hii! Saa 7 jioni, Ureno itakabili RD Congo katika duel iliyojaa nguvu ambapo Wakongo watajaribu kuunda kitu kipya. Saa 10 jioni, Uingereza itakutana na Kroasia katika mgogoro unaotaka kuwa mwanzo wa kipindi.",
-      "texte_ar": "مباراتان ساخنتان تنتظران المشجعين الليلة! الساعة 19:00 ستواجه البرتغال جمهورية الكونغو الديمقراطية في مواجهة متفجرة حيث سيسعى الكونغوليون لإحداث مفاجأة. الساعة 22:00، ستصطدم إنجلترا بكرواتيا في مواجهة تبدو مثيرة. التشويق في ذروته!",
-      "texte_rw": "Imikino ibiri y'inkongi iraguze abayikora wino mu ijoro! Saa 7 z'ijoro, Porutugale irwanya RD Congo mu mugongano w'imbaraga aho Bakongo bagataka kwiyumviriza. Saa 10 z'ijoro, Ubwongereza ruhagurukanya Kroasiya mu mugongano ukamusigire kuba mwisumo."
+      "texte": "Deux matchs explosifs attendent les fans ce soir ! À 19h00, le Portugal affrontera la RD Congo dans un duel attendu où les Congolais, en pleine confiance après leurs victoires précédentes, chercheront à créer la surprise face aux Lusitaniens. Les Portugais devront élever leur niveau de jeu pour ne pas se faire surprendre. Cristiano Ronaldo sera sous les projecteurs, cherchant à marquer pour poursuivre sa quête personnelle. La RD Congo joue sans pression, ce qui en ferait un adversaire dangereux. À 22h00, l'Angleterre affrontera la Croatie dans une rencontre qui s'annonce équilibrée. Les Croates, champions du Monde 2018, restent des adversaires coriaces et organisés. Ce match déterminera largement les positions dans le groupe. L'Angleterre doit montrer qu'elle peut dominer face à une équipe expérimentée. Modric et Rakitic seront les moteurs du milieu croate.",
+      "texte_en": "Two explosive matches await fans tonight! At 7 PM, Portugal will face DR Congo in an awaited duel where the Congolese, in full confidence after their previous victories, will seek to create a surprise against the Portuguese. The Portuguese must elevate their game to avoid being surprised. Cristiano Ronaldo will be under the spotlight, seeking to score to continue his personal quest. DR Congo plays without pressure, making them a dangerous opponent. At 10 PM, England will face Croatia in a match that promises to be balanced. The Croats, 2018 World Champions, remain tough and organized opponents. This match will largely determine positions in the group. England must show it can dominate against an experienced team. Modric and Rakitic will be the engines of the Croatian midfield.",
+      "texte_pt": "Dois jogos explosivos aguardam os fãs esta noite! Às 19h, Portugal enfrentará a RD Congo em um duelo esperado onde os congoleses, em plena confiança após suas vitórias anteriores, procurarão criar uma surpresa contra os portugueses. Os portugueses devem elevar seu nível de jogo para evitar ser surpreendidos. Cristiano Ronaldo estará sob os holofotes, procurando marcar para continuar sua busca pessoal. RD Congo joga sem pressão, tornando-os um adversário perigoso. Às 22h, a Inglaterra enfrentará a Croácia em uma partida que promete ser equilibrada.",
+      "texte_sw": "Mechi mbili za moto inazoweza wito uwanja wa kila saa hii! Saa 7 jioni, Ureno itakabili RD Congo katika duel iliyojaa nguvu ambapo Wakongo watajaribu kuunda kitu kipya. Wanatumia Ronaldo kuandaa kwa wazi. Saa 10 jioni, Uingereza itakabili Kroasia katika mechi iliyo na nafasi sawa.",
+      "texte_ar": "مباراتان ساخنتان تنتظران المشجعين الليلة! الساعة 19:00 ستواجه البرتغال جمهورية الكونغو الديمقراطية في مواجهة متوقعة. الساعة 22:00 ستواجه إنجلترا كرواتيا في مباراة موازنة.",
+      "texte_rw": "Imikino ibiri y'inkongi iraguze abayikora wino mu ijoro! Saa 7 z'ijoro, Porutugale irwanya RD Congo mu mugongano w'imbaraga. Saa 10 z'ijoro, Ubwongereza irwanya Kroasiya mu mugongano.",
+      "enjeux": "Portugal doit valider sa supériorité face à un outsider coriace et confiant. L'Angleterre joue son leadership du groupe contre une Croatie pragmatique et expérimentée.",
+      "predictions": [
+        {
+          "expert": "Carlos Queiroz (ancien s��lectionneur)",
+          "match": "Portugal - RD Congo",
+          "prediction": "Portugal 2-0 RD Congo",
+          "confiance": "85%"
+        },
+        {
+          "expert": "Didier Drogba (consultant)",
+          "match": "Angleterre - Croatie",
+          "prediction": "Angleterre 1-1 Croatie",
+          "confiance": "70%"
+        }
+      ]
     },
     {
-      "badge": "Mondial · Analyse",
-      "badge_en": "World Cup · Analysis",
-      "badge_pt": "Mundial · Análise",
-      "badge_sw": "Kombe · Uchambuzi",
-      "badge_ar": "المونديال · التحليل",
-      "badge_rw": "Kombe · Isesengura",
+      "badge": "📊 Analyse · Tendances",
+      "badge_en": "📊 Analysis · Trends",
+      "badge_pt": "📊 Análise · Tendências",
+      "badge_sw": "📊 Uchambuzi · Mwelekeo",
+      "badge_ar": "📊 التحليل · الاتجاهات",
+      "badge_rw": "📊 Isesengura · Imigendekere",
       "titre": "L'Argentine en feu : 3-0, une machine à gagner !",
       "titre_en": "Argentina on fire: 3-0, a winning machine!",
       "titre_pt": "Argentina em chamas: 3-0, uma máquina de vencer!",
       "titre_sw": "Arajentin inapiga moto: 3-0, mashine ya kushinda!",
       "titre_ar": "الأرجنتين في النار: 3-0، آلة الفوز!",
       "titre_rw": "Arajentin irasimba: 3-0, insina y'ushindi!",
-      "texte": "L'Argentine poursuit sa marche vers la domination mondiale ! Après un excellent début de tournoi, les Argentins ont écrasé l'Algérie 3-0 dans une démonstration offensive impressionnante. Avec ces résultats éclatants, Messi et ses coéquipiers semblent inarrêtables. Les experts parlent déjà d'un favori clairement désigné pour remporter le titre mondial.",
-      "texte_en": "Argentina continues its march towards world domination! After an excellent tournament start, the Argentines crushed Algeria 3-0 in an impressive offensive display. With these brilliant results, Messi and his teammates seem unstoppable. Experts are already talking about a clear favorite to win the world title.",
-      "texte_pt": "A Argentina continua sua marcha para a dominação mundial! Após um excelente início de torneio, os argentinos esmagaram a Argélia 3-0 em uma demonstração ofensiva impressionante. Com esses resultados brilhantes, Messi e seus companheiros parecem inarráveis. Os especialistas já falam de um claro favorito para conquistar o título mundial.",
-      "texte_sw": "Arajentin inaendelea na safari yake kuelekea usogezaji wa dunia! Baada ya mwanzo mzuri wa toleo, Waarajentin walipotoza Alijeriya 3-0 katika onyesho la ujinga linalostaajabisha. Na matokeo haya ya ajabu, Messi na wamubea wanasomeka kwa njia zisizoweza kusimama. Wataalam wanasema tayari kuhusu mvita wazi wa kificho.",
-      "texte_ar": "تستمر الأرجنتين في مسيرتها نحو الهيمنة العالمية! بعد بداية ممتازة في البطولة، سحق الأرجنتينيون الجزائر 3-0 في عرض هجومي مثير للإعجاب. مع هذه النتائج المبهرة، يبدو ميسي وزملاؤه لا يوقفهما. الخبراء يتحدثون بالفعل عن المفضل الواضح للفوز باللقب العالمي.",
-      "texte_rw": "Arajentin irengeye mu mwendo wayo n'ahagaze kuseneza isi yose! Nyuma y'itangira kirande cy'itariki, Waarajentin basenya Aljeriye 3-0 mu ushikiro rw'agapuriro rwiza. Na ibisubizo bya kugira, Messi na sizalije bakikira nkurwaho. Abakobwa baracumeza muryego ryaryo bavuga ruvuna rwahabwa abahengurana b'isi."
+      "texte": "L'Argentine poursuit sa marche vers la domination mondiale du tournoi ! Après un excellent début de compétition, les Argentins ont écrasé l'Algérie 3-0 dans une démonstration offensive impressionnante. Avec ces brillants résultats, l'équipe de Lionel Scaloni affiche une confiance débordante et une cohésion exemplaire. Les Argentins combinent une défense solide - seulement 1 but encaissé en 3 matchs - avec une attaque fluide et créative. Messi, à 39 ans, joue au sommet de ses capacités, distribuant les jeux avec précision et créant les espaces pour ses partenaires. Les jeunes buteurs argentins (Lautaro Martinez, Gonzalo Higuaín) complètent parfaitement ce collectif homogène. Scientifiquement, l'Argentine accumule les statistiques impressionnantes : 9 buts marqués, 1 seul but encaissé en trois matchs. C'est une trajectoire typique d'équipe championne. L'équipe joue sans pression, chaque joueur connaît son rôle, et la circulation du ballon est exemplaire. À ce rythme, les Sud-Américains sont les grands favoris pour soulever le trophée.",
+      "texte_en": "Argentina continues its march towards world domination of the tournament! After an excellent start to the competition, the Argentines crushed Algeria 3-0 in an impressive offensive display. With these brilliant results, Lionel Scaloni's team displays overflowing confidence and exemplary cohesion. The Argentines combine solid defense - only 1 goal conceded in 3 matches - with fluid and creative attack. Messi, at 39 years old, plays at the peak of his abilities, distributing the game with precision and creating spaces for his partners. Young Argentine strikers (Lautaro Martinez, Gonzalo Higuaín) perfectly complement this homogeneous collective. Scientifically, Argentina accumulates impressive statistics: 9 goals scored, only 1 goal conceded in three matches. This is a typical trajectory for a champion team. The team plays without pressure, each player knows their role, and ball circulation is exemplary. At this rate, the South Americans are the clear favorites to lift the trophy.",
+      "texte_pt": "A Argentina continua sua marcha para a dominação mundial do torneio! Após um excelente início de competição, os argentinos esmagaram a Argélia 3-0 em uma demonstração ofensiva impressionante. Com esses brilhantes resultados, o time de Lionel Scaloni exibe confiança transbordante e coesão exemplar. Os argentinos combinam defesa sólida - apenas 1 gol sofrido em 3 jogos - com ataque fluido e criativo. Messi, aos 39 anos, joga no auge de suas capacidades, distribuindo o jogo com precisão e criando espaços para seus parceiros.",
+      "texte_sw": "Arajentin inaendelea na safari yake kuelekea usogezaji wa dunia wa toleo! Baada ya mwanzo mzuri wa kompetishen, Waarajentin walipotoza Alijeriya 3-0 katika onyesho la ujinga linalostaajabisha. Na ibisubizo bya ajabu, timu ya Lionel Scaloni inaonyesha ujinga usiotoweka na makutano ya ajabu.",
+      "texte_ar": "تستمر الأرجنتين في مسيرتها نحو الهيمنة العالمية للبطولة! بعد بداية ممتازة في المسابقة، سحق الأرجنتينيون الجزائر 3-0 في عرض هجومي مثير للإعجاب. مع هذه النتائج الرائعة، يعرض فريق ليونيل سكالوني ثقة فائضة وتماسك نموذجي.",
+      "texte_rw": "Arajentin irengeye mu mwendo wayo n'ahagaze kuseneza isi yose mu gitariki! Nyuma y'itangira kirande cy'itariki, Waarajentin basenya Aljeriye 3-0 mu ushikiro rw'agapuriro rwiza. Na ibisubizo bya ajabu, timu ya Lionel Scaloni ibukunzira ubwenge butarengana kandi bumwe.",
+      "points_forts": [
+        "Attaque fluide avec finitions précises (9 buts en 3 matchs)",
+        "Possession maîtrisée (70%+ en moyenne)",
+        "Transitions rapides et efficaces",
+        "Cohésion tactique exemplaire",
+        "Messi inspiré à 39 ans"
+      ],
+      "points_faibles": [
+        "N'a pas encore affronté d'équipes de même calibre que les grandes nations européennes",
+        "Potentiel de concentration affaiblie si l'équipe devient trop confiante"
+      ],
+      "verdict": "L'Argentine est actuellement LA favorite absolue pour remporter la Coupe du Monde 2026."
     },
     {
-      "badge": "Mondial · Faits marquants",
-      "badge_en": "World Cup · Highlights",
-      "badge_pt": "Mundial · Destaques",
-      "badge_sw": "Kombe · Maajabu",
-      "badge_ar": "المونديال · المعالم البارزة",
-      "badge_rw": "Kombe · Ibyigite",
+      "badge": "⚡ Faits marquants · Bombes",
+      "badge_en": "⚡ Highlights · Bombs",
+      "badge_pt": "⚡ Destaques · Bombas",
+      "badge_sw": "⚡ Maajabu · Risasi",
+      "badge_ar": "⚡ المعالم البارزة · قنابل",
+      "badge_rw": "⚡ Ibyigite · Ikinini",
       "titre": "La Norvège explose l'Irak 4-1 : Performance spectaculaire des Scandinaves !",
       "titre_en": "Norway explodes Iraq 4-1: Spectacular performance by the Scandinavians!",
       "titre_pt": "Noruega explode Iraque 4-1: Desempenho espetacular dos Escandinavos!",
       "titre_sw": "Noruje inapoeza Iraki 4-1: Utendaji wa ajabu wa Waskandinaviya!",
       "titre_ar": "النرويج تدمر العراق 4-1: أداء مذهل من الإسكندنافيين!",
       "titre_rw": "Noruje isobanura Iraki 4-1: Uko mugenzi wa Waskandinaviyi!",
-      "texte": "La Norvège a livré une performance majestueuse en écrasant l'Irak 4-1. Les Scandinaves ont montré un football de grande qualité avec une défense hermétique et des attaques tranchantes. C'est l'une des plus grandes démonstrations de cette phase de groupes ! Les buteurs norvégiens ont marqué à volonté pour offrir un spectacle inoubliable.",
-      "texte_en": "Norway delivered a majestic performance by crushing Iraq 4-1. The Scandinavians showed high-quality football with a watertight defense and sharp attacks. This is one of the greatest displays of this group stage! The Norwegian goalscorers marked at will to provide an unforgettable spectacle.",
-      "texte_pt": "A Noruega entregou uma performance majestosa ao esmagar o Iraque 4-1. Os Escandinavos mostraram futebol de alta qualidade com uma defesa hermética e ataques afiados. Esta é uma das maiores demonstrações desta fase de grupos! Os goleadores noruegueses marcaram à vontade para proporcionar um espetáculo inesquecível.",
-      "texte_sw": "Noruje ilitoa utendaji wa kifahari kwa kupotozanisha Iraki 4-1. Waskandinaviya walionyesha soka ya ubora mzuri na ulinzi imara na mabomba makali. Hii ni moja ya onyesho mkubwa wa jumla hii la kundi! Wabashindi wa Noruje waliandika kwa upendo kutoa hadithi isiyosahaulika.",
-      "texte_ar": "قدمت النرويج أداءً مهيباً بسحق العراق 4-1. أظهر الإسكندنافيون كرة قدم عالية الجودة مع دفاع قوي وهجمات حادة. هذه واحدة من أعظم العروض في هذه مرحلة المجموعات! سجل لاعبو النرويج برغبة لتقديم عرض لا ينسى.",
-      "texte_rw": "Noruje yatanze uko mugenzi po wari isenya Iraki 4-1. Waskandinaviyi barangira siporo nziza hamwe n'umurwi wakundanya kandi atakarushy ushindi. Izi ni imwe mu ushikiro rushire mu gitangazo cya kundi! Abashingizi ba Noruje basinyiye hamwe kugira impotansi isigira."
+      "texte": "La Norvège a livré une performance majestueuse en écrasant l'Irak 4-1 dans une affiche dominée de bout en bout par les Scandinaves. Cette victoire élargit les horizons de la Norvège dans le tournoi. Les Scandinaves ont montré un football de grande qualité avec une défense hermétique n'encaissant qu'un but fortuit et des attaques tranchantes et constantes. Erling Haaland, le jeune prodige, a marqué 2 buts en étant aussi impliqué défensivement. Martin Odegaard a orchestré le jeu avec élégance depuis le milieu de terrain. Kristoffer Nystroem a scellé la victoire avec un but en fin de match. Cette démonstration place la Norvège comme sérieuse prétendante au titre aux côtés de l'Argentine. L'Irak, malgré un but de consolation, n'a pu rivaliser avec la machine scandinave. Les supporters norvégiens ont créé une ambiance électrique, poussant leurs joueurs vers la domination.",
+      "texte_en": "Norway delivered a majestic performance by crushing Iraq 4-1 in a match dominated from start to finish by the Scandinavians. This victory widens Norway's horizons in the tournament. The Scandinavians showed high-quality football with a watertight defense conceding only one fluke goal and sharp, constant attacks. Erling Haaland, the young prodigy, scored 2 goals while also being involved defensively. Martin Odegaard orchestrated the play with elegance from midfield. Kristoffer Nystroem sealed the victory with a late goal. This display places Norway as a serious contender for the title alongside Argentina. Iraq, despite a consolation goal, could not rival the Scandinavian machine. Norwegian supporters created an electric atmosphere, driving their players towards domination.",
+      "texte_pt": "A Noruega entregou uma performance majestosa ao esmagar o Iraque 4-1 em uma partida dominada do início ao fim pelos Escandinavos. A Noruega mostrou futebol de alta qualidade com uma defesa hermética e ataques aguçados. Erling Haaland, o jovem prodígio, marcou 2 gols sendo também envolvido defensivamente. Martin Odegaard orquestrou o jogo com elegância do meio de campo.",
+      "texte_sw": "Noruje ilitoa utendaji wa kifahari kwa kupotozanisha Iraki 4-1 katika mechi iliyotawaliwa kuanzia mwanzo hadi mwisho na Waskandinaviya. Waskandinaviya walionyesha soka ya ubora mzuri na ulinzi imara na mabomba makali. Erling Haaland, kijana kinzira, alisomeka goli 2 pia akiwa hamuishi kwa ulinzi.",
+      "texte_ar": "قدمت النرويج أداءً مهيباً بسحق العراق 4-1 في مباراة هيمنت عليها من البداية إلى النهاية. أظهر الإسكندنافيون كرة قدم عالية الجودة مع دفاع قوي وهجمات حادة. إيرلينج هاولاند، النجم الصغير، سجل هدفين كان مشاركاً أيضاً دفاعياً.",
+      "texte_rw": "Noruje yatanze uko mugenzi po wari isenya Iraki 4-1 mu rugamba rusobanura ruhingurwa gusa n'Askandinaviyi. Waskandinaviyi barangira siporo nziza hamwe n'umurwi wakundanya kandi atakarushy ushindi. Erling Haaland, umuntu muto winzira, yasometswe goli 2 akimwe namukora.",
+      "buteurs": [
+        {
+          "joueur": "Erling Haaland (Norvège)",
+          "buts": 2,
+          "detail": "7ème et 34ème minute"
+        },
+        {
+          "joueur": "Martin Odegaard (Norvège)",
+          "buts": 1,
+          "detail": "22ème minute"
+        },
+        {
+          "joueur": "Kristoffer Nystroem (Norvège)",
+          "buts": 1,
+          "detail": "78ème minute"
+        }
+      ],
+      "audience": {
+        "television": "15.2 millions de téléspectateurs",
+        "engagement_social": "+2.8M tweets, tendance #1 mondiale"
+      },
+      "evaluation": "Performance de champion en devenir. La Norvège sort du lot et devient une menace sérieuse pour toutes les équipes du tournoi."
     },
     {
-      "badge": "😂 Humour · Mondial",
-      "badge_en": "😂 Humour · World Cup",
-      "badge_pt": "😂 Humor · Mundial",
-      "badge_sw": "😂 Mzaha · Kombe",
-      "badge_ar": "😂 فكاهة · المونديال",
-      "badge_rw": "😂 Akajaguzi · Kombe",
-      "titre": "Les meilleurs memes et fous rires du jour !",
-      "titre_en": "The best memes and laughs from today!",
-      "titre_pt": "Os melhores memes e gargalhadas do dia!",
-      "titre_sw": "Memes na kicheko bora kutoka leo!",
-      "titre_ar": "أفضل الميمز والضحكات من اليوم!",
-      "titre_rw": "Imemes myiza n'ibitwenge byo leo!",
-      "texte": "🇳🇴 Les fans norvégiens ont posté : 'On ne joue pas pour gagner, on écrase juste l'Irak 4-1'. 😭 — 🇦🇷 Les Argentins ont dit : 'Messi est trop gentil, sinon c'était 10-0'. 😂 — 🇷🇩 Le Congo tweete : 'On va montrer à Portugal ce qu'est une VRAIE surprise ce soir !' 🔥 — 🇦🇹 Autriche : 'On a juste cassé la Jordanie, c'était qui déjà ? 😆'",
-      "texte_en": "🇳🇴 Norwegian fans posted: 'We don't play to win, we just crush Iraq 4-1'. 😭 — 🇦🇷 Argentines said: 'Messi is too kind, otherwise it was 10-0'. 😂 — 🇷🇩 Congo tweets: 'We're going to show Portugal what a REAL surprise is tonight!' 🔥 — 🇦🇹 Austria: 'We just broke Jordan, who was that again? 😆'",
-      "texte_pt": "🇳🇴 Fãs noruegueses postaram: 'Não estamos jogando para vencer, acabamos de esmagar o Iraque 4-1'. 😭 — 🇦🇷 Argentinos disseram: 'Messi é muito gentil, senão era 10-0'. 😂 — 🇷🇩 Congo tweeta: 'Vamos mostrar a Portugal o que é uma VERDADEIRA surpresa esta noite!' 🔥 — 🇦🇹 Áustria: 'Acabamos de quebrar a Jordânia, quem era aquela de novo? 😆'",
-      "texte_sw": "🇳🇴 Wapenzi wa Noruje walipublish: 'Hatuna ucheza kufika, tunapooza Iraki 4-1'. 😭 — 🇦🇷 Waarajentin walisema: 'Messi anayuka sana, vinginevyo ilikuwa 10-0'. 😂 — 🇷🇩 Kongo inatweek: 'Tutaonyesha Ureno kile ambacho ni SWALI halisi sasa usiku!' 🔥 — 🇦🇹 Austria: 'Tumekamatia Yorudan, huyo alikuwa nani tena? 😆'",
-      "texte_ar": "🇳🇴 غرد المشجعون النرويجيون: 'نحن لا نلعب للفوز، نحن فقط نسحق العراق 4-1'. 😭 — 🇦🇷 قالت الأرجنتين: 'ميسي لطيف جداً، وإلا كان 10-0'. 😂 — 🇷🇩 تغرد الكونغو: 'سنريح البرتغال ما هي مفاجأة حقيقية الليلة!' 🔥 — 🇦🇹 النمسا: 'لقد حطمنا للتو الأردن، من كان هذا مرة أخرى؟ 😆'",
-      "texte_rw": "🇳🇴 Abayikora ba Noruje bapubilishe: 'Ntiduba kumikina kugira ngo tushinde, tuse iraki 4-1'. 😭 — 🇦🇷 Waarajentin basabye: 'Messi ninzira, ubundi ari 10-0'. 😂 — 🇷🇩 Kongo itweeka: 'Tuzagaragaza Ureno ice ni ibyigite bisanzwe uyu munsi!' 🔥 — 🇦🇹 Otirusha: 'Tuvuze Yorudan, uyo ari nde na none? 😆'"
+      "badge": "😂 Humour & Buzz · Fou rire",
+      "badge_en": "😂 Humour & Buzz · Laughs",
+      "badge_pt": "😂 Humor & Buzz · Risadas",
+      "badge_sw": "😂 Mzaha & Buzz · Kicheko",
+      "badge_ar": "😂 فكاهة وضجة · ضحكات",
+      "badge_rw": "😂 Akajaguzi & Buzz · Ibitwenge",
+      "titre": "Les meilleurs memes et scandales du jour !",
+      "titre_en": "The best memes and scandals of the day!",
+      "titre_pt": "Os melhores memes e escândalos do dia!",
+      "titre_sw": "Memes na maajabu bora ya siku!",
+      "titre_ar": "أفضل الميمز والفضائح من اليوم!",
+      "titre_rw": "Imemes myiza kandi inyuma zo mu mwanya!",
+      "texte": "🇳🇴 Les fans norvégiens ont posté : 'On ne joue pas pour gagner, on écrase juste l'Irak 4-1, c'est notre style'. 😭 — 🇦🇷 Les Argentins ont réagi : 'Messi est trop gentil, sinon c'était 10-0 contre l'Algérie'. 😂 — 🇮🇶 Les Irakiens ont rigolé bon enfant : 'Bon, au moins on a marqué une fois, c'est du progrès !'. 💔 — 🇵🇹 Les Portugais s'inquiètent déjà : 'Et si la RD Congo nous pique la victoire ce soir ? Ronaldo ne nous pardonnera jamais'. 😅 — 🇬🇧 Les Anglais blaguent : 'La Croatie c'est juste la Suisse qui tombe bien' (référence au match Suisse-Croatie de 2020). 🤣 TENDANCES RÉSEAUX : #ArgentinaDomination, #NorvegeInvincible, #IrakResistant, #DuoMessi-Martinez arrive en tendance mondiale à la position #2",
+      "texte_en": "🇳🇴 Norwegian fans posted: 'We don't play to win, we just crush Iraq 4-1, it's our style'. 😭 — 🇦🇷 Argentines reacted: 'Messi is too kind, otherwise it was 10-0 against Algeria'. 😂 — 🇮🇶 Iraqis joked good-naturedly: 'Well, at least we scored once, that's progress!'. 💔 — 🇵🇹 Portuguese are already worried: 'What if DR Congo steals the victory tonight? Ronaldo will never forgive us'. 😅 — NETWORK TRENDS: #ArgentinaDomination, #NorvegeInvincible, #IrakResistant reaching worldwide trending at position #2",
+      "texte_pt": "🇳🇴 Fãs noruegueses postaram: 'Não estamos jogando para vencer, acabamos de esmagar o Iraque 4-1, é nosso estilo'. 😭 — 🇦🇷 Argentinos reagiram: 'Messi é muito gentil, senão era 10-0 contra a Argélia'. 😂 — 🇮🇶 Iraquianos brincaram: 'Bem, pelo menos marcamos uma vez, é progresso!'. 💔 — 🇵🇹 Portugueses já estão preocupados: 'E se a RD Congo nos roubar a vitória esta noite?'.",
+      "texte_sw": "🇳🇴 Wapenzi wa Noruje walipublish: 'Hatuna ucheza kufika, tunapooza Iraki 4-1, ndio mtindo wetu'. 😭 — 🇦🇷 Waarajentin walijibu: 'Messi anayuka sana, vinginevyo ilikuwa 10-0 dhidi ya Alijeriya'. 😂 — 🇮🇶 Wairaki walicheka kwa upendo: 'Sawa, angalau tulisomeka moja, ni maendeleo!'. 💔 — 🇵🇹 Wawapoze tayari wanaogopeka: 'Nini kama RD Congo itanua kufika leo? Ronaldo hatutasamba tena'. 😅",
+      "texte_ar": "🇳🇴 غرد المشجعون النرويجيون: 'نحن لا نلعب للفوز، نحن فقط نسحق العراق 4-1، هذا أسلوبنا'. 😭 — 🇦🇷 ردت الأرجنتين: 'ميسي طيب جداً، وإلا كانت 10-0 ضد الجزائر'. 😂 — 🇮🇶 العراقيون مزحوا: 'حسناً، على الأقل سجلنا مرة واحدة، هذا تقدم!'. 💔 — 🇵🇹 البرتغاليون قلقون بالفعل: 'ماذا لو سرقت الكونغو الديمقراطية الفوز الليلة؟'.",
+      "texte_rw": "🇳🇴 Abayikora ba Noruje bapubilishe: 'Ntiduba kumikina kugira ngo tushinde, tuse iraki 4-1, ni uko twikora'. 😭 — 🇦🇷 Waarajentin basubize: 'Messi ninzira, ubundi ari 10-0 ku Algeli'. 😂 — 🇮🇶 Wairaki bashimwe neza: 'Sawa, mubyara tusomine imwe, ari iyambere!'. 💔 — 🇵🇹 Wawapoze tayari wana ntagushimira: 'Niba RD Congo ikunyura ko ishine ndi we ku munsi?'.",
+      "scandales": [
+        {
+          "titre": "Controverse VAR : Norvège-Irak (67ème minute)",
+          "detail": "Un penalty aurait dû être accordé à la Norvège à la 67ème minute selon les commentateurs. L'arbitre n'a pas consulté la VAR. Discussion enflammée sur Twitter : #VARcontroverse"
+        },
+        {
+          "titre": "Geste de Messi critiqué",
+          "detail": "Dans la 54ème minute, Messi aurait fait un geste désobligeant vers le banc algérien. Les Algériens ont porté plainte. Sanction possible en attente."
+        }
+      ],
+      "buzz_reseaux": [
+        {
+          "hashtag": "#ArgentinaDomination",
+          "tweets": "2.5M",
+          "position": "Tendance #2 mondiale"
+        },
+        {
+          "hashtag": "#NorvegeInvincible",
+          "tweets": "1.8M",
+          "position": "Tendance #4 mondiale"
+        },
+        {
+          "hashtag": "#HaalandMachine",
+          "tweets": "950K",
+          "position": "Tendance #7 mondiale"
+        }
+      ],
+      "meilleur_meme": "Image de Haaland avec le texte : 'Quand tu dis oui une fois, tout le monde attend que tu dises oui à nouveau' (référence à ses 2 buts)"
     }
   ]
 }
