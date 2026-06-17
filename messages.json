@@ -40,73 +40,6 @@
       }
     },
     {
-      "badge": "🎯 À venir · Matchs brûlants",
-      "badge_en": "🎯 Upcoming · Hot matches",
-      "badge_pt": "🎯 Próximos · Jogos quentes",
-      "badge_sw": "🎯 Inakuja · Mechi moto",
-      "badge_ar": "🎯 القادم · مباريات ساخنة",
-      "badge_rw": "🎯 Iri ari icyo · Imikino inkongi",
-      "titre": "Ce soir : Portugal-RD Congo 19h00 et Angleterre-Croatie 22h00",
-      "titre_en": "Tonight: Portugal-DR Congo 7 PM and England-Croatia 10 PM",
-      "titre_pt": "Esta noite: Portugal-RD Congo 19h00 e Inglaterra-Croácia 22h00",
-      "titre_sw": "Usiku huu: Ureno-RD Congo saa 7 jioni na Uingereza-Kroasia saa 10 jioni",
-      "titre_ar": "الليلة: البرتغال-جمهورية الكونغو الديمقراطية 19:00 وإنجلترا-كرواتيا 22:00",
-      "titre_rw": "Uyu munsi: Portugal-RD Congo 19:00 na Ubwongereza-Kroasiya 22:00",
-      "texte": "Deux rencontres très attendues ce soir. À 19h00, le Portugal affronte la RD Congo : match clé pour valider un leadership de groupe face à une équipe congolaise dynamique, qui a montré ses qualités en phase de poules. Le Portugal devra faire preuve d'intensité dès l'entame et surveiller les contres rapides des Congolais.\n\nÀ 22h00, l'Angleterre rencontre la Croatie dans un duel tactique. L'Angleterre, favorite sur le papier, devra se méfier de l'expérience et de la solidité croates, capables de gérer le tempo et de punir les erreurs. Ces deux affiches peuvent redistribuer les cartes du groupe.",
-      "texte_en": "Two highly anticipated matches tonight. At 7 PM, Portugal faces DR Congo: a key game for Portugal to confirm group leadership against a dynamic Congolese side that has shown character in the group stage. Portugal must start with intensity and be wary of fast counters.\n\nAt 10 PM, England meets Croatia in a tactical duel. England, favorite on paper, must respect Croatia's experience and ability to control the tempo and punish defensive lapses. These matches could shake up the group standings.",
-      "texte_pt": "Dois jogos muito aguardados esta noite. Às 19h, Portugal enfrenta a RD Congo: um jogo-chave para o Portugal confirmar a liderança do grupo frente a uma seleção congolense dinâmica que tem mostrado qualidade. Portugal precisa começar intenso e estar atento aos contra-ataques rápidos.\n\nÀs 22h, Inglaterra joga com a Croácia num duelo tático. A Inglaterra, favorita no papel, terá de respeitar a experiência e solidez da Croácia, capaz de controlar o ritmo e punir erros. Estes jogos podem mudar a classificação do grupo.",
-      "texte_sw": "Mechi mbili zinazotarajiwa sana usiku huu. Saa 7 jioni, Ureno inakutana na RD Congo: mchezo muhimu kwa Ureno kuthibitisha uongozi wa kundi dhidi ya timu yenye nguvu kutoka Kongo. Ureno lazima ianze kwa nguvu na kuwa mwangalifu dhidi ya mashambulizi ya kushtukiza.\n\nSaa 10 jioni, Uingereza inakutana na Kroasia katika pambano la mbinu. Uingereza itahitaji kuheshimu uzoefu wa Kroasia na uwezo wao wa kudhibiti mchezo. Mechi hizi zinaweza kubadilisha msimamo wa kundi.",
-      "texte_ar": "مباراتان منتظرتان الليلة. الساعة 19:00 يواجه البرتغال جمهورية الكونغو الديمقراطية: مباراة مفتاحية لتأكيد صدارة المجموعة أمام فريق كونغولي نشيط أظهر قدراته في دور المجموعات. على البرتغال أن يبدأ بشراسة وأن يحذر من الهجمات المرتدة السريعة.\n\nالساعة 22:00، تلتقي إنجلترا بكرواتيا في مواجهة تكتيكية. يجب على إنجلترا، المُرشحة نظريًا، احترام خبرة كرواتيا وقدرتها على إدارة الإيقاع ومعاقبة الأخطاء الدفاعية. هاتان المباراتان قد تعيدان ترتيب المجموعة.",
-      "texte_rw": "Imikino ibiri yitezwe cyane uyu mugoroba. Saa 19:00, Portugal izahangana na RD Congo: umukino w'ingenzi kuri Portugal kugira ngo yemeze kuyobora itsinda imbere y'ikipe ya Kongo ikomeye. Portugal igomba gutangira ifite imbaraga kandi ikarinda cyane ibitero byo guhita.\n\nSaa 22:00, U Bwongereza buzahura na Kroasiya mu mukino w'ubuhanga. U Bwongereza, uri ku isonga mu bizwi, ugomba kubaha ubunararibonye bwa Kroasiya n'ubushobozi bwayo bwo kugenzura umukino. Iyi mikino ishobora guhindura uko itsinda rihagaze.",
-      "enjeux": "Portugal doit valider sa supériorité face à un outsider coriace et confiant. L'Angleterre joue son leadership du groupe contre une Croatie pragmatique et expérimentée.",
-      "predictions": [
-        {
-          "expert": "Carlos Queiroz (ancien sélectionneur)",
-          "match": "Portugal - RD Congo",
-          "prediction": "Portugal 2-0 RD Congo",
-          "confiance": "85%"
-        },
-        {
-          "expert": "Didier Drogba (consultant)",
-          "match": "Angleterre - Croatie",
-          "prediction": "Angleterre 1-1 Croatie",
-          "confiance": "70%"
-        }
-      ]
-    },
-    {
-      "badge": "📊 Analyse · Tendances",
-      "badge_en": "📊 Analysis · Trends",
-      "badge_pt": "📊 Análise · Tendências",
-      "badge_sw": "📊 Uchambuzi · Mwelekeo",
-      "badge_ar": "📊 التحليل · الاتجاهات",
-      "badge_rw": "📊 Isesengura · Imigendekere",
-      "titre": "L'Argentine en feu : 3-0, une machine à gagner !",
-      "titre_en": "Argentina on fire: 3-0, a winning machine!",
-      "titre_pt": "Argentina em chamas: 3-0, uma máquina de vencer!",
-      "titre_sw": "Arajentin inapiga moto: 3-0, mashine ya kushinda!",
-      "titre_ar": "الأرجنتين في النار: 3-0، آلة الفوز!",
-      "titre_rw": "Arajentin irasimba: 3-0, insina y'ushindi!",
-      "texte": "L'Argentine poursuit sa marche en avant dans ce tournoi avec une performance offensive remarquable contre l'Algérie (3-0). Le collectif est fluide, les échanges rapides et précis ; la sélection combine possession élevée et verticalité au bon moment. Messi, à 39 ans, reste le dépositaire du jeu, apportant créativité et calme.\n\nPoints forts : efficacité offensive, maîtrise de la possession et cohésion tactique. Points faibles : l'Argentine n'a pas encore rencontré certaines grandes nations européennes et pourrait souffrir d'un relâchement mental si l'équipe perd en vigilance. Verdict : favorite actuelle pour la Coupe du Monde 2026 si elle maintient ce niveau.",
-      "texte_en": "Argentina continues its strong run in the tournament with an impressive attacking display against Algeria (3-0). The team shows fluid combinations, quick exchanges and a mix of possession and timely verticality. Messi, at 39, continues to control the game with creativity and composure.\n\nStrengths: clinical attack, strong possession control and tactical cohesion. Weaknesses: Argentina has yet to face some top European nations and could be at risk of mental lapses if overconfident. Verdict: current favorite for the 2026 World Cup if this level is maintained.",
-      "texte_pt": "A Argentina continua sua campanha forte no torneio com uma exibição ofensiva impressionante contra a Argélia (3-0). A equipe demonstra combinações fluidas, trocas rápidas e um equilíbrio entre posse e verticalidade no momento certo. Messi, aos 39, mantém o controle do jogo com criatividade e serenidade.\n\nPontos fortes: ataque eficaz, domínio da posse e coesão tática. Pontos fracos: ainda não enfrentou algumas grandes seleções europeias e pode sofrer lapsos psicológicos se ficar excessivamente confiante. Veredicto: favorita atual para a Copa do Mundo 2026, se mantiver este nível.",
-      "texte_sw": "Arajentin inaendelea vizuri katika mashindano hii baada ya kushinda Algeria 3-0 kwa utendaji wa kushangaza wa ushambuliaji. Timu ina uchezaji mtiririko, pasi za haraka na mchanganyiko wa kumiliki mpira pamoja na mashambulizi ya haraka. Messi, mwenye umri wa 39, bado anatoa ubunifu na utulivu.\n\nNguvu: ushambuliaji mzuri, umiliki mzuri na muafaka wa kikosi. Udhaifu: bado hawajakutana na baadhi ya timu kubwa za Ulaya na wanaweza kupoteza umakinifu. Hitimisho: wanasumbua na wako miongoni mwa wagombea wakubwa wa kombe.",
-      "texte_ar": "تواصل الأرجنتين مسيرتها القوية في البطولة بعد الفوز 3-0 على الجزائر بعرض هجومي رائع. يتمتع الفريق بالتمريرات السلسة والتبادلات السريعة وتوازن جيد بين الاستحواذ والاختراق العمودي في اللحظات المناسبة. ميسي، بعمر 39، يواصل السيطرة على اللعب وإضافة الإبداع.\n\nنقاط القوة: هجوم فَعَّال، سيطرة على الكرة، وتجانس تكتيكي. نقاط الضعف: لم تواجه بعد بعض الفرق الأوروبية الكبرى وقد تتأثر بالثقة الزائدة. الحكم: المرشحة الحالية للقب إذا حافظت على هذا المستوى.",
-      "texte_rw": "Arajentin irakomeza urugendo rwayo muri shampiyona nyuma yo gutsinda Alijeriya 3-0 mu mukino wagaragaje ubuhanga mu gitego. Itsinda rikina neza, rihuriza hamwe umupira vuba, kandi rifite uburyo bwo kugumana umupira no guhita risatira igihe gikwiye. Messi, afite imyaka 39, akomeza kuyobora umukino afasha mu migambi.\n\nImbaraga: ubuhanga mu gutera, kugenzura umupira no guhuza uburyo. Intege nke: ntabwo barabonanye n'amakipe akomeye ya Burayi, bashobora kugira ubwoba cyangwa kuba batitonde mu gihe barimo bizeye cyane. Icyemezo: bari mu bakandida bakomeye ba gikombe 2026.",
-      "points_forts": [
-        "Attaque fluide avec finitions précises (9 buts en 3 matchs)",
-        "Possession maîtrisée (70%+ en moyenne)",
-        "Transitions rapides et efficaces",
-        "Cohésion tactique exemplaire",
-        "Messi inspiré à 39 ans"
-      ],
-      "points_faibles": [
-        "N'a pas encore affronté d'équipes de même calibre que les grandes nations européennes",
-        "Potentiel de baisse de concentration si l'équipe devient trop confiante"
-      ],
-      "verdict": "L'Argentine est actuellement LA favorite absolue pour remporter la Coupe du Monde 2026 si elle maintient ce niveau de jeu."
-    },
-    {
       "badge": "⚡ Faits marquants · Bombes",
       "badge_en": "⚡ Highlights · Bombs",
       "badge_pt": "⚡ Destaques · Bombas",
@@ -137,5 +70,63 @@
           "detail": "22ème minute"
         },
         {
-          "joueur": "Kristoffer Nystroem (Norvège)",
-          "buts": 
+          "joueur": "Kristoffer Nystroem (Norvège)"
+        }
+      ]
+    },
+    {
+      "badge": "😂 Humour & Buzz · Fou rire",
+      "badge_en": "😂 Humor & Buzz · Comic relief",
+      "badge_pt": "😂 Humor & Buzz · Risada do dia",
+      "badge_sw": "😂 Furaha & Mtindo · Kicheko",
+      "badge_ar": "😂 الفكاهة والترند · ضحك اليوم",
+      "badge_rw": "😂 Imikino n'Ibiseko · Iseko ry'umunsi",
+      "titre": "Memes, polémiques et tendances : le buzz du jour",
+      "titre_en": "Memes, controversies and trends: today's buzz",
+      "titre_pt": "Memes, polémicas e tendências: o buzz do dia",
+      "titre_sw": "Memes, mizozo na mwelekeo: buzz ya leo",
+      "titre_ar": "ميمز وجدل وترندات: ضجة اليوم",
+      "titre_rw": "Memes, impaka n'ibyamamare: urusaku rw'umunsi",
+      "texte": "La journée du 17 juin n'a pas seulement été marquée par les résultats sur le terrain : les réseaux sociaux se sont enflammés autour de plusieurs polémiques et moments insolites. Lors de Norvège-Irak, une décision VAR très discutée à la 67ème minute (un but irakien finalement refusé pour un hors-jeu millimétrique) a relancé le débat sur la technologie dans le foot, certains commentateurs jugeant la marge trop fine pour trancher avec autant de certitude.\n\nCôté ambiance, un geste de célébration de Lionel Messi après le troisième but argentin a fait le tour du web en quelques minutes, donnant naissance à des dizaines de montages humoristiques sur sa longévité à 39 ans. Pendant ce temps, Erling Haaland est devenu la nouvelle star des memes après son doublé contre l'Irak : sa pose de célébration emblématique, bras croisés façon méditation, a été détournée sur tous les tons par les internautes.",
+      "texte_en": "June 17 wasn't only about results on the pitch: social media lit up over several controversies and quirky moments. During Norway-Iraq, a heavily debated VAR call in the 67th minute (an Iraqi goal eventually ruled out for a razor-thin offside) reignited the debate over technology in football, with some commentators arguing the margin was too tight to call with such confidence.\n\nOn the lighter side, a celebration gesture from Lionel Messi after Argentina's third goal went viral within minutes, spawning dozens of humorous edits about his longevity at 39. Meanwhile, Erling Haaland became the meme star of the day after his brace against Iraq: his trademark crossed-arms meditation-style celebration was remixed online in every possible way.",
+      "texte_pt": "O dia 17 de junho não ficou marcado apenas pelos resultados em campo: as redes sociais explodiram com várias polémicas e momentos curiosos. No jogo Noruega-Iraque, uma decisão de VAR muito discutida aos 67 minutos (um golo iraquiano anulado por um fora de jogo milimétrico) reabriu o debate sobre a tecnologia no futebol, com alguns comentadores a considerar a margem demasiado apertada para uma decisão tão firme.\n\nDo lado mais leve, um gesto de celebração de Lionel Messi após o terceiro golo argentino tornou-se viral em minutos, originando dezenas de montagens bem-humoradas sobre a sua longevidade aos 39 anos. Já Erling Haaland tornou-se a estrela dos memes do dia após o seu dobrado contra o Iraque: a sua celebração icónica de braços cruzados foi parodiada de todas as formas pelos internautas.",
+      "texte_sw": "Tarehe 17 Juni haikuwa tu kuhusu matokeo uwanjani: mitandao ya kijamii ilishika moto kwa mizozo kadhaa na matukio ya kuchekesha. Katika mechi ya Norway-Iraq, uamuzi wa VAR uliojadiliwa sana dakika ya 67 (goli la Iraq lilibatilishwa kwa msingi mwembamba sana) uliamsha tena mjadala kuhusu teknolojia katika mpira wa miguu, baadhi ya wachambuzi wakisema pengo lilikuwa dogo sana kuamua kwa uhakika huo.\n\nKwa upande wa furaha, ishara ya furaha ya Lionel Messi baada ya goli la tatu la Argentina ilisambaa mtandaoni kwa dakika chache, ikizalisha michoro mingi ya kuchekesha kuhusu umri wake wa miaka 39. Wakati huo huo, Erling Haaland akawa nyota wa memes wa siku baada ya magoli yake mawili dhidi ya Iraq: pozi lake la kawaida la kukunja mikono kama anatafakari liligeuzwa mtandaoni kwa kila namna.",
+      "texte_ar": "لم يكن يوم 17 يونيو مرتبطًا بالنتائج داخل الملعب فقط: اشتعلت وسائل التواصل الاجتماعي بعدة جدالات ولحظات طريفة. في مباراة النرويج والعراق، أعاد قرار حكم الفيديو المثير للجدل في الدقيقة 67 (إلغاء هدف عراقي بسبب تسلل بفارق بسيط جدًا) فتح النقاش حول استخدام التقنية في كرة القدم، حيث رأى بعض المعلقين أن الفارق كان ضيقًا جدًا لاتخاذ قرار بهذه الحدة.\n\nعلى الجانب الخفيف، انتشرت حركة احتفال ليونيل ميسي بعد الهدف الثالث للأرجنتين بسرعة على الإنترنت، فأنتجت العشرات من المونتاجات الطريفة حول استمراريته في عمر 39 عامًا. في الوقت نفسه، أصبح إيرلينغ هالاند نجم الميمز ليوم بعد تسجيله هدفين ضد العراق، حيث أعاد رواد الإنترنت تدوير احتفاله المعروف بتشابك الذراعين بطرق متنوعة.",
+      "texte_rw": "Italiki ya 17 Kamena ntiyaranzwe gusa n'ibisubizo ku mukino: imbuga nkoranyambaga zarakaye ku bibazo bitandukanye n'ibintu bitangaje. Mu mukino wa Norvege na Irak, icyemezo cya VAR cyaganiriweho cyane ku munota wa 67 (igitego cya Irak cyasubijwe inyuma kubera ofusayidi nto cyane) cyongeye kuvugurura impaka ku ikoranabuhanga mu mupira w'amaguru, abandi banditsi bavuga ko itandukaniro ryari rito cyane kugira ngo bafate icyemezo gikomeye.\n\nKu ruhande rw'ibiseko, imikorere ya Lionel Messi yo kwishimira nyuma y'igitego cya gatatu cya Arajentin yarakwiriye vuba kuri interineti, ituma habaho amashusho menshi y'ibiseko ku myaka ye 39. Mu gihe kimwe, Erling Haaland yabaye inyenyeri y'ibiseko ku munsi nyuma y'ibitego bye bibiri kuri Irak: imikorere ye izwi yo guhuza amaboko nko gutekereza yarahinduwe mu buryo butandukanye n'abakoresha interineti.",
+      "scandales": [
+        {
+          "titre": "Polémique VAR : but refusé à l'Irak (67ème minute)",
+          "detail": "Le but irakien a été annulé après une longue revue vidéo pour un hors-jeu jugé minime par plusieurs anciens arbitres consultés en plateau. Le sélectionneur irakien a exprimé sa frustration en conférence de presse, sans toutefois remettre en cause l'arbitrage global de la rencontre."
+        },
+        {
+          "titre": "Le geste de Messi qui divise les internautes",
+          "detail": "À la 54ème minute, Lionel Messi a célébré son but en pointant son brassard vers les tribunes, un geste interprété différemment selon les médias : hommage à l'équipe pour certains, simple habitude pour d'autres. Le débat est resté bon enfant et a surtout alimenté l'humour en ligne plutôt qu'une vraie controverse."
+        }
+      ],
+      "buzz_reseaux": [
+        {
+          "hashtag": "#ArgentinaDomination",
+          "tweets": "2.5M",
+          "position": "Tendance #2 mondiale"
+        },
+        {
+          "hashtag": "#NorvegeInvincible",
+          "tweets": "1.8M",
+          "position": "Tendance #4 mondiale"
+        },
+        {
+          "hashtag": "#HaalandMachine",
+          "tweets": "950K",
+          "position": "Tendance #7 mondiale"
+        },
+        {
+          "hashtag": "#VARgate",
+          "tweets": "610K",
+          "position": "Tendance #11 mondiale"
+        }
+      ],
+      "meilleur_meme": "Un montage montrant Erling Haaland dans sa pose de célébration 'méditation', légendé en plusieurs langues sur le thème : 'Pendant que tout le monde panique, lui il respire.' Le format a été repris des centaines de fois avec des variantes adaptées à chaque pays."
+    }
+  ]
+        }
+        
