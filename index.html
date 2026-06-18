@@ -14,66 +14,71 @@
     <meta property="og:type" content="website" />
 
     <style>
+        :root {
+            --usa: #0066CC; --canada: #E53935; --mexico: #00A651;
+            --gold: #D4AF37; --dark: #04080F; --light: #F8FAFC;
+        }
         *{margin:0;padding:0;box-sizing:border-box}
-        body{background:#04080F;color:#F8FAFC;font-family:sans-serif;text-align:center}
-        header{padding:2rem 1rem;border-bottom:1px solid #7C3AED44}
-        h1{font-size:2.1rem;font-weight:900;letter-spacing:1px;color:#A78BFA;margin-top:1rem}
+        body{background:var(--dark);color:var(--light);font-family:sans-serif;text-align:center}
+        header{padding:2rem 1rem;border-bottom:1px solid var(--usa)}
+        h1{font-size:2.1rem;font-weight:900;letter-spacing:1px;margin-top:1rem;
+           background:linear-gradient(90deg, var(--mexico), var(--usa), var(--canada));
+           -webkit-background-clip:text;-webkit-text-fill-color:transparent}
         p.sub{font-size:.75rem;color:#94A3B8;letter-spacing:.2em;margin-top:.4rem}
         .badges{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
-        .badge{font-size:.65rem;padding:.3rem .8rem;border-radius:999px;border:1px solid #7C3AED44;color:#A78BFA}
+        .badge{font-size:.65rem;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--usa);color:var(--usa)}
         
         .lang-selector{display:flex;justify-content:center;gap:.4rem;margin-top:1.2rem;flex-wrap:wrap}
-        .lang-btn{padding:.3rem .6rem;font-size:.65rem;border-radius:6px;border:1px solid #7C3AED33;background:#111827;color:#94A3B8;cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:all 0.2s}
-        .lang-btn.active,.lang-btn:hover{border-color:#7C3AED;color:#fff;background:#7C3AED32}
+        .lang-btn{padding:.3rem .6rem;font-size:.65rem;border-radius:6px;border:1px solid var(--usa);background:#111827;color:#94A3B8;cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:all 0.2s}
+        .lang-btn.active,.lang-btn:hover{border-color:var(--mexico);color:#fff;background:var(--mexico)}
 
         nav{display:flex;justify-content:center;gap:.5rem;padding:1rem;flex-wrap:wrap}
-        button{padding:.5rem 1rem;border-radius:8px;border:1px solid #7C3AED44;background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem;position:relative}
-        button.active,button:hover{background:#7C3AED;color:#fff;border-color:#7C3AED}
+        button{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--usa);background:transparent;color:#94A3B8;cursor:pointer;font-size:.7rem;position:relative}
+        button.active,button:hover{background:var(--usa);color:#fff;border-color:var(--usa)}
         
-        .live-dot{width:6px;height:6px;background:#EF4444;border-radius:50%;display:inline-block;margin-left:4px;vertical-align:middle;box-shadow:0 0 8px #EF4444;animation:blink 1.2s infinite}
+        .live-dot{width:6px;height:6px;background:var(--canada);border-radius:50%;display:inline-block;margin-left:4px;vertical-align:middle;box-shadow:0 0 8px var(--canada);animation:blink 1.2s infinite}
         @keyframes blink{0%{opacity:0.2}50%{opacity:1}100%{opacity:0.2}}
 
         .section{display:none;max-width:900px;margin:0 auto;padding:1rem}
         .section.active{display:block}
         .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
-        .card{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1rem;text-align:left}
-        .glabel{font-size:1.3rem;font-weight:900;color:#A78BFA;margin-bottom:.6rem}
+        .card{background:#0A1224;border:1px solid var(--usa);border-radius:12px;padding:1rem;text-align:left}
+        .glabel{font-size:1.3rem;font-weight:900;color:var(--mexico);margin-bottom:.6rem}
         .trow{display:flex;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid #ffffff08;font-size:.85rem;cursor:pointer}
-        .trow:hover{color:#A78BFA}.trow:last-child{border:none}
+        .trow:hover{color:var(--usa)}.trow:last-child{border:none}
         .rk{font-size:.6rem;color:#94A3B8;background:#ffffff08;padding:.1rem .4rem;border-radius:4px}
-        .box{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;margin-top:.5rem;text-align:left}
-        select{width:100%;background:#111827;color:#F8FAFC;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;font-size:.82rem;margin-bottom:.8rem}
-        .pbtn{width:100%;padding:.9rem;background:#7C3AED;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer}
-        .result{display:none;margin-top:1rem;background:#111827;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem}
-        .score{font-size:2rem;font-weight:900;color:#F59E0B;text-align:center;display:block;margin:.5rem 0}
+        .box{background:#0A1224;border:1px solid var(--usa);border-radius:12px;padding:1.2rem;margin-top:.5rem;text-align:left}
+        select{width:100%;background:#111827;color:var(--light);border:1px solid var(--usa);border-radius:8px;padding:.6rem;font-size:.82rem;margin-bottom:.8rem}
+        .pbtn{width:100%;padding:.9rem;background:var(--usa);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer}
+        .result{display:none;margin-top:1rem;background:#111827;border:1px solid var(--usa);border-radius:12px;padding:1.2rem}
+        .score{font-size:2rem;font-weight:900;color:var(--gold);text-align:center;display:block;margin:.5rem 0}
         .prow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin:.8rem 0}
-        .pc{text-align:center;padding:.7rem .3rem;border-radius:10px;border:1px solid #7C3AED33}
+        .pc{text-align:center;padding:.7rem .3rem;border-radius:10px;border:1px solid var(--usa)}
         .pc span{display:block;font-size:1.6rem;font-weight:900}
         .pc small{font-size:.55rem;color:#94A3B8}
-        .w span{color:#A78BFA}.d span{color:#F59E0B}.l span{color:#06B6D4}
+        .w span{color:var(--mexico)}.d span{color:var(--gold)}.l span{color:var(--usa)}
         .bars{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.8rem}
         .bl{display:flex;justify-content:space-between;font-size:.7rem;color:#94A3B8;margin-bottom:.15rem}
         .btr{height:4px;background:#ffffff08;border-radius:4px;overflow:hidden;margin-bottom:.35rem}
-        .bf{height:100%;background:linear-gradient(90deg,#7C3AED,#06B6D4);border-radius:4px}
+        .bf{height:100%;background:linear-gradient(90deg,var(--mexico),var(--usa));border-radius:4px}
         .dsearch{display:flex;gap:.5rem;margin-bottom:1rem}
-        .dsearch input{flex:1;background:#111827;border:1px solid #7C3AED44;border-radius:8px;padding:.6rem;color:#F8FAFC;font-size:.85rem;outline:none}
-        .dsearch button{padding:.6rem 1rem;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
-        .dcard{display:none;background:#7C3AED11;border:1px solid #7C3AED33;border-radius:12px;padding:1.2rem;text-align:left}
-        .dname{font-size:1.8rem;font-weight:900;color:#A78BFA}
+        .dsearch input{flex:1;background:#111827;border:1px solid var(--usa);border-radius:8px;padding:.6rem;color:var(--light);font-size:.85rem;outline:none}
+        .dsearch button{padding:.6rem 1rem;background:var(--usa);color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
+        .dcard{display:none;background:#0A1224;border:1px solid var(--usa);border-radius:12px;padding:1.2rem;text-align:left}
+        .dname{font-size:1.8rem;font-weight:900;color:var(--usa)}
         .dmeta{font-size:.65rem;color:#94A3B8;margin-bottom:1rem}
         .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
-        .db{background:#111827;border-radius:8px;padding:.8rem}
-        .dgrid .db p{white-space:pre-wrap;}
+        .db{background:#111827;border-radius:8px;padding:.8rem;border:1px solid var(--usa)}
         .db p{font-size:.78rem;color:#94A3B8;line-height:1.5}
-        .mcard{background:#7C3AED11;border:1px solid #7C3AED33;border-radius:10px;padding:.9rem;margin-bottom:.6rem;text-align:left}
+        .mcard{background:#0A1224;border:1px solid var(--usa);border-radius:10px;padding:.9rem;margin-bottom:.6rem;text-align:left}
         .mdate{font-size:.6rem;color:#94A3B8;margin-bottom:.4rem}
         .mteams{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.95rem}
-        .mgroup{font-size:.6rem;color:#A78BFA;background:#7C3AED22;padding:.2rem .5rem;border-radius:4px}
+        .mgroup{font-size:.6rem;color:var(--gold);background:rgba(212,175,55,0.1);padding:.2rem .5rem;border-radius:4px}
         .mvenue{font-size:.62rem;color:#64748B;margin-top:.3rem}
-        .mresult{font-size:1.2rem;font-weight:900;color:#F59E0B}
+        .mresult{font-size:1.2rem;font-weight:900;color:var(--gold)}
         .mfilter{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;justify-content:center}
         .mfilter button{font-size:.65rem;padding:.3rem .7rem}
-        footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid #7C3AED22;margin-top:2rem}
+        footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid var(--usa);margin-top:2rem}
         @media(max-width:480px){.bars,.dgrid{grid-template-columns:1fr}}
     </style>
 </head>
@@ -107,7 +112,6 @@
             <span class="badge" id="badge-dates">11 JUN - 19 JUL 2026</span>
         </div>
 
-        <!-- SÉLECTEUR DE LANGUES — 6 langues dont RW ajouté -->
         <div class="lang-selector">
             <button class="lang-btn active" onclick="changerLangue('fr', this)">🇫🇷 FR</button>
             <button class="lang-btn" onclick="changerLangue('en', this)">🇬🇧 EN</button>
@@ -126,18 +130,15 @@
         <button id="btn-news" onclick="tab('news',this)">NEWS<span class="live-dot"></span></button>
     </nav>
 
-    <!-- SECTION : GROUPS -->
     <div id="groups" class="section active">
         <div class="grid" id="gg"></div>
     </div>
 
-    <!-- SECTION : SCHEDULE -->
     <div id="schedule" class="section">
         <div class="mfilter" id="mfilter"></div>
         <div id="matchlist"></div>
     </div>
 
-    <!-- SECTION : PREDICT -->
     <div id="predict" class="section">
         <div class="box">
             <select id="ta"></select>
@@ -169,7 +170,6 @@
         </div>
     </div>
 
-    <!-- SECTION : DOSSIER -->
     <div id="dossier" class="section">
         <div class="dsearch">
             <input id="di" placeholder="France, Espagne, Allemagne..."/>
@@ -191,7 +191,6 @@
         </div>
     </div>
 
-    <!-- SECTION : NEWS -->
     <div id="news" class="section">
         <div id="news-list" style="padding:0.5rem 0;"></div>
     </div>
@@ -204,5 +203,5 @@
     <script src="js/app.js"></script>
 
 </body>
-                </html>
-                            
+    </html>
+                
