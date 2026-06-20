@@ -1,132 +1,112 @@
 {
-  "date": "17 JUIN 2026",
-  "articles": [
-    {
-      "badge": "🔥 Résultats · Choc du jour",
-      "badge_en": "🔥 Results · Shock of the day",
-      "badge_pt": "🔥 Resultados · Choque do dia",
-      "badge_sw": "🔥 Matokeo · Mshangao wa siku",
-      "badge_ar": "🔥 النتائج · صدمة اليوم",
-      "badge_rw": "🔥 Ibisubizo · Inyuma yo ku nsi",
-      "titre": "Autriche 3-1 Jordanie : L'Autriche écrase ! Argentine domine 3-0",
-      "titre_en": "Austria 3-1 Jordan: Austria crushes! Argentina dominates 3-0",
-      "titre_pt": "Áustria 3-1 Jordânia: Áustria esmagadora! Argentina domina 3-0",
-      "titre_sw": "Austria 3-1 Jordan: Austria inasonga! Argentina inadhimisha 3-0",
-      "titre_ar": "النمسا 3-1 الأردن: النمسا تحطم! الأرجنتين تهيمن 3-0",
-      "titre_rw": "Otirusha 3-1 Yorudan: Otirusha isobanura! Arajentin irangira 3-0",
-      "texte": "Journée spectaculaire ce 17 juin ! L'Autriche a dominé la Jordanie 3-1 dans un match où la supériorité tactique des Autrichiens s'est vue à chaque phase du jeu. Après une ouverture rapide à la 12ème minute signée Marko Arnautovic, l'Autriche a contrôlé le ballon et le tempo, multipliant les courses sur les ailes et les centres dangereux. La Jordanie a résisté et réduit l'écart en seconde période sur une contre-attaque bien menée, mais un coup franc bien tiré et une fin de match maîtrisée ont scellé la victoire des Autrichiens.\n\nCôté Argentine, la sélection a livré une prestation clinique : 3-0 contre l'Algérie avec une maîtrise du ballon exceptionnelle et des transitions rapides. Lionel Messi a régné sur le jeu en collectant les ballons et en organisant les attaques, tandis que Lautaro Martinez a concrétisé les actions avec deux buts. L'Argentine confirme qu'elle est l'une des équipes les plus dangereuses du tournoi.",
-      "texte_en": "Spectacular day on June 17! Austria beat Jordan 3-1 in a match where Austrian tactical superiority was visible at every stage. After an early opener in the 12th minute by Marko Arnautovic, Austria controlled possession and tempo, exploiting the wings and sending dangerous crosses. Jordan fought back and pulled one back in the second half on a swift counter, but a well-taken free kick and composed finish late on sealed the victory for Austria.\n\nIn Argentina's game, the team put on a clinical display, beating Algeria 3-0 with excellent ball control and quick transitions. Lionel Messi dominated the midfield, setting the tempo and providing key passes, while Lautaro Martinez finished strongly with two goals. Argentina is asserting itself as a major contender in the tournament.",
-      "texte_pt": "Dia espetacular em 17 de junho! A Áustria venceu a Jordânia por 3-1 numa partida em que a superioridade tática austríaca esteve visível em todo o jogo. Após o primeiro golo aos 12 minutos, por Marko Arnautovic, a Áustria controlou a posse e o ritmo, explorando as alas e criando cruzamentos perigosos. A Jordânia reagiu e marcou um golo na segunda parte num contra-ataque rápido, mas um livre bem executado e a gestão do final de jogo fecharam a vitória dos austríacos.\n\nA Argentina, por sua vez, fez um jogo clínico: 3-0 contra a Argélia, com excelente circulação de bola e transições rápidas. Lionel Messi comandou o jogo, fazendo passes decisivos, enquanto Lautaro Martinez finalizou com dois golos. A Argentina mostra-se entre as favoritas.",
-      "texte_sw": "Siku ya kushangaza Juni 17! Austria ilishinda Jordan 3-1 katika mechi ambayo ilionyesha kuwa Austria ilikuwa na mbinu bora. Goli la kwanza lilifungwa dakika ya 12 na Marko Arnautovic, na Austria ikawa na umiliki wa mpira na kudhibiti mchezaji. Jordan ilitoroka na kupiga goli la pili katika kipindi cha pili kwa mashambulizi ya kushtukiza, lakini Austria ilidhibiti mchezo hadi mwisho na kushinda.\n\nKatika mchezo wa Argentina, timu ilitoa utendaji wa ubora kwa kushinda Algeria 3-0. Lionel Messi alisimamia mchezo na kutoa pasi muhimu, na Lautaro Martinez akifunga magoli mawili. Argentina inaonekana kuwa miongoni mwa timu zenye nguvu za kushinda kombe.",
-      "texte_ar": "يوم مذهل في 17 يونيو! فازت النمسا على الأردن 3-1 في مباراة ظهرت فيها الأفضلية التكتيكية للنمساويين في كل أجزاء اللعب. افتتح ماركو أرناوتوفيتش التسجيل في الدقيقة 12، وسيطرت النمسا على الكرة والإيقاع، مستغلة الأجنحة والكرات العرضية الخطرة. نجحت الأردن في تقليص الفارق في الشوط الثاني بهجمة مرتدة سريعة، لكن ركلة حرة محكمة ونهاية مباراة هادئة أمنتا الفوز للنمسا.\n\nأما الأرجنتين فقد قدمت عرضًا هجوميًا منظمًا بفوز 3-0 على الجزائر، مع تحكم ممتاز في الكرة وتحولات سريعة. سيطر ليونيل ميسي على وسط الملعب ومرر كرات حاسمة، بينما سجل لاوتارو مارتينيز هدفين. الأرجنتين تبدو مرشحة قوية للقب.",
-      "texte_rw": "Umunsi w'igitangaza ku ya 17 Kamena! Otirusha yatsinze Yorudan 3-1 mu mukino aho uburyo bwa kivugurura bwa Otirusha bwagaragaye buri gihe. Marko Arnautovic yatsinze igitego cya mbere ku munota wa 12, hanyuma Otirusha ifata umupira kandi igenzura umukino, ikoresha impande n'ibitego bya centrike. Yorudan yaje gusubiza umwe mu gice cya kabiri ku gikombe cyihuse, ariko umupira w'ibyumweru n'ibyemezo byiza byarangiye byafungura intsinzi ya Otirusha.\n\nArajentin nayo yerekanye imbaraga, itsinda Alijeriya 3-0, ifite kugenzura umupira neza no guhinduka vuba. Lionel Messi yayoboye umukino atanga imipira y'ingenzi, naho Lautaro Martinez atsinda ibitego bibiri. Arajentin isa n'iy'imbere mu bakandida ba gikombe.",
-      "joueurs_cles": [
-        {
-          "nom": "Marko Arnautovic (Autriche)",
-          "action": "Auteur du premier but à la 12ème, leader de l'attaque, excellente finition dans la surface"
-        },
-        {
-          "nom": "Lionel Messi (Argentine)",
-          "action": "Orchestrateur du jeu, passeur décisif, influence majeure sur les phases offensives"
-        },
-        {
-          "nom": "Lautaro Martinez (Argentine)",
-          "action": "Buteur clinique: 2 buts dans le match contre l'Algérie, bon placement et finition"
-        }
-      ],
-      "statistiques": {
-        "autriche_jordanie": "Possession: AUT 64%, JOR 36% | Tirs: AUT 20, JOR 6 | Tirs cadrés: AUT 10, JOR 1 | Corners: AUT 9, JOR 2 | Cartons: AUT 1, JOR 2",
-        "argentine_algerie": "Possession: ARG 71%, ALG 29% | Tirs: ARG 22, ALG 4 | Tirs cadrés: ARG 12, ALG 0 | Passes complétées: ARG 87%, ALG 64%"
-      }
-    },
-    {
-      "badge": "⚡ Faits marquants · Bombes",
-      "badge_en": "⚡ Highlights · Bombs",
-      "badge_pt": "⚡ Destaques · Bombas",
-      "badge_sw": "⚡ Maajabu · Risasi",
-      "badge_ar": "⚡ المعالم البارزة · قنابل",
-      "badge_rw": "⚡ Ibyigite · Ikinini",
-      "titre": "La Norvège explose l'Irak 4-1 : Performance spectaculaire des Scandinaves !",
-      "titre_en": "Norway explodes Iraq 4-1: Spectacular performance by the Scandinavians!",
-      "titre_pt": "Noruega explode Iraque 4-1: Desempenho espetacular dos Escandinavos!",
-      "titre_sw": "Norway ibashangaza Iraki 4-1: Utendaji wa ajabu wa Waskandinaviya!",
-      "titre_ar": "النرويج تهزم العراق 4-1: أداء مذهل من الإسكندنافيين!",
-      "titre_rw": "Norvege itsinze Irak 4-1: Imikino y'ikirenga y'Abaskandinaviyani!",
-      "texte": "La Norvège a livré une performance de très haut niveau contre l'Irak, s'imposant 4-1 dans un match maîtrisé de bout en bout. Dès l'entame, les Scandinaves ont imposé leur rythme : pressing coordonné, mouvements collectifs rapides et exploitation des espaces. Erling Haaland a signé un doublé, tandis que Martin Ødegaard et Kristoffer Nystroem ont complété le score.\n\nCe succès, en plus d'être spectaculaire sur le plan offensif, confirme la profondeur d'effectif norvégienne et leur capacité à imposer un style de jeu énergique et efficace. La Norvège devient un sérieux prétendant au titre si elle confirme ce niveau dans les prochains matchs.",
-      "texte_en": "Norway produced a top-level performance against Iraq, winning 4-1 in a thoroughly controlled match. From the start, the Scandinavians set the tempo with coordinated pressing, quick collective movements and smart exploitation of space. Erling Haaland scored twice, while Martin Ødegaard and Kristoffer Nystroem added goals to complete the tally.\n\nThis result not only shines offensively but also confirms Norway's squad depth and ability to impose an energetic, efficient playing style. Norway becomes a serious contender for the title if they maintain this level in the coming games.",
-      "texte_pt": "A Noruega apresentou uma exibição ao mais alto nível contra o Iraque, vencendo por 4-1 num jogo controlado do início ao fim. Desde o início, os escandinavos impuseram o ritmo com pressão coordenada, movimentos coletivos e aproveitamento dos espaços. Erling Haaland marcou duas vezes, Martin Ødegaard e Kristoffer Nystroem também marcaram.\n\nO resultado destaca a profundidade do plantel norueguês e a sua capacidade de impor um futebol enérgico e eficiente. A Noruega surge como candidata séria ao título se mantiver este nível.",
-      "texte_sw": "Norway ilitoa utendaji wa juu dhidi ya Iraq na kushinda 4-1 katika mechi iliyodhibitiwa vizuri. Tangu mwanzo, Waskandinavi walipiga hatua kwa kushambulia kwa pamoja, kusongea haraka na kutumia nafasi. Erling Haaland alifunga mara mbili, Martin Ødegaard na Kristoffer Nystroem waliongeza magoli.\n\nMatokeo haya yanaonyesha nguvu ya kikosi na uwezo wa Norway kuleta mtindo wa haraka na mzuri. Norway inakuwa tishio kubwa ikiwa itaendelea hivi.",
-      "texte_ar": "قدمت النرويج أداءً على أعلى مستوى ضد العراق وفازت 4-1 في مباراة تحكموا فيها منذ البداية حتى النهاية. فُرض الإيقاع من قبل الإسكندنافيين عبر الضغط المنسق والتحركات السريعة واستغلال المساحات. سجل إيرلينغ هالاند هدفين، وأضاف مارتن أوديغارد وكريستوفر نيستوريم الهدفين الآخرين.\n\nهذا الفوز يؤكد عمق صفوف النرويج وقدرتها على فرض أسلوب لعب قوي وفعال، مما يجعلها مرشحًا جادًا للقب إذا استمرت بهذا الأداء.",
-      "texte_rw": "Norvege yatanze umukino ukomeye cyane ku Iraki itsinda 4-1 mu mukino wabereye mu maboko yabo. Guhera mu ntangiriro, Abaskandinaviyani bashyizeho umuvuduko: gukurikirana byumvikana, kwimuka vuba mu ikipe no gukoresha neza imyanya. Erling Haaland yatsinze kabiri, Martin Ødegaard na Kristoffer Nystroem batsindira ibindi.\n\nIri tsinzi yerekana ko Norvege ifite abakinnyi benshi beza kandi ishobora guhatana ku gikombe niba ikomeje muri ubu buryo.",
-      "buteurs": [
-        {
-          "joueur": "Erling Haaland (Norvège)",
-          "buts": 2,
-          "detail": "7ème et 34ème minute"
-        },
-        {
-          "joueur": "Martin Ødegaard (Norvège)",
-          "buts": 1,
-          "detail": "22ème minute"
-        },
-        {
-          "joueur": "Kristoffer Nystroem (Norvège)"
-        }
-      ]
-    },
-    {
-      "badge": "😂 Humour & Buzz · Fou rire",
-      "badge_en": "😂 Humor & Buzz · Comic relief",
-      "badge_pt": "😂 Humor & Buzz · Risada do dia",
-      "badge_sw": "😂 Furaha & Mtindo · Kicheko",
-      "badge_ar": "😂 الفكاهة والترند · ضحك اليوم",
-      "badge_rw": "😂 Imikino n'Ibiseko · Iseko ry'umunsi",
-      "titre": "Memes, polémiques et tendances : le buzz du jour",
-      "titre_en": "Memes, controversies and trends: today's buzz",
-      "titre_pt": "Memes, polémicas e tendências: o buzz do dia",
-      "titre_sw": "Memes, mizozo na mwelekeo: buzz ya leo",
-      "titre_ar": "ميمز وجدل وترندات: ضجة اليوم",
-      "titre_rw": "Memes, impaka n'ibyamamare: urusaku rw'umunsi",
-      "texte": "La journée du 17 juin n'a pas seulement été marquée par les résultats sur le terrain : les réseaux sociaux se sont enflammés autour de plusieurs polémiques et moments insolites. Lors de Norvège-Irak, une décision VAR très discutée à la 67ème minute (un but irakien finalement refusé pour un hors-jeu millimétrique) a relancé le débat sur la technologie dans le foot, certains commentateurs jugeant la marge trop fine pour trancher avec autant de certitude.\n\nCôté ambiance, un geste de célébration de Lionel Messi après le troisième but argentin a fait le tour du web en quelques minutes, donnant naissance à des dizaines de montages humoristiques sur sa longévité à 39 ans. Pendant ce temps, Erling Haaland est devenu la nouvelle star des memes après son doublé contre l'Irak : sa pose de célébration emblématique, bras croisés façon méditation, a été détournée sur tous les tons par les internautes.",
-      "texte_en": "June 17 wasn't only about results on the pitch: social media lit up over several controversies and quirky moments. During Norway-Iraq, a heavily debated VAR call in the 67th minute (an Iraqi goal eventually ruled out for a razor-thin offside) reignited the debate over technology in football, with some commentators arguing the margin was too tight to call with such confidence.\n\nOn the lighter side, a celebration gesture from Lionel Messi after Argentina's third goal went viral within minutes, spawning dozens of humorous edits about his longevity at 39. Meanwhile, Erling Haaland became the meme star of the day after his brace against Iraq: his trademark crossed-arms meditation-style celebration was remixed online in every possible way.",
-      "texte_pt": "O dia 17 de junho não ficou marcado apenas pelos resultados em campo: as redes sociais explodiram com várias polémicas e momentos curiosos. No jogo Noruega-Iraque, uma decisão de VAR muito discutida aos 67 minutos (um golo iraquiano anulado por um fora de jogo milimétrico) reabriu o debate sobre a tecnologia no futebol, com alguns comentadores a considerar a margem demasiado apertada para uma decisão tão firme.\n\nDo lado mais leve, um gesto de celebração de Lionel Messi após o terceiro golo argentino tornou-se viral em minutos, originando dezenas de montagens bem-humoradas sobre a sua longevidade aos 39 anos. Já Erling Haaland tornou-se a estrela dos memes do dia após o seu dobrado contra o Iraque: a sua celebração icónica de braços cruzados foi parodiada de todas as formas pelos internautas.",
-      "texte_sw": "Tarehe 17 Juni haikuwa tu kuhusu matokeo uwanjani: mitandao ya kijamii ilishika moto kwa mizozo kadhaa na matukio ya kuchekesha. Katika mechi ya Norway-Iraq, uamuzi wa VAR uliojadiliwa sana dakika ya 67 (goli la Iraq lilibatilishwa kwa msingi mwembamba sana) uliamsha tena mjadala kuhusu teknolojia katika mpira wa miguu, baadhi ya wachambuzi wakisema pengo lilikuwa dogo sana kuamua kwa uhakika huo.\n\nKwa upande wa furaha, ishara ya furaha ya Lionel Messi baada ya goli la tatu la Argentina ilisambaa mtandaoni kwa dakika chache, ikizalisha michoro mingi ya kuchekesha kuhusu umri wake wa miaka 39. Wakati huo huo, Erling Haaland akawa nyota wa memes wa siku baada ya magoli yake mawili dhidi ya Iraq: pozi lake la kawaida la kukunja mikono kama anatafakari liligeuzwa mtandaoni kwa kila namna.",
-      "texte_ar": "لم يكن يوم 17 يونيو مرتبطًا بالنتائج داخل الملعب فقط: اشتعلت وسائل التواصل الاجتماعي بعدة جدالات ولحظات طريفة. في مباراة النرويج والعراق، أعاد قرار حكم الفيديو المثير للجدل في الدقيقة 67 (إلغاء هدف عراقي بسبب تسلل بفارق بسيط جدًا) فتح النقاش حول استخدام التقنية في كرة القدم، حيث رأى بعض المعلقين أن الفارق كان ضيقًا جدًا لاتخاذ قرار بهذه الحدة.\n\nعلى الجانب الخفيف، انتشرت حركة احتفال ليونيل ميسي بعد الهدف الثالث للأرجنتين بسرعة على الإنترنت، فأنتجت العشرات من المونتاجات الطريفة حول استمراريته في عمر 39 عامًا. في الوقت نفسه، أصبح إيرلينغ هالاند نجم الميمز ليوم بعد تسجيله هدفين ضد العراق، حيث أعاد رواد الإنترنت تدوير احتفاله المعروف بتشابك الذراعين بطرق متنوعة.",
-      "texte_rw": "Italiki ya 17 Kamena ntiyaranzwe gusa n'ibisubizo ku mukino: imbuga nkoranyambaga zarakaye ku bibazo bitandukanye n'ibintu bitangaje. Mu mukino wa Norvege na Irak, icyemezo cya VAR cyaganiriweho cyane ku munota wa 67 (igitego cya Irak cyasubijwe inyuma kubera ofusayidi nto cyane) cyongeye kuvugurura impaka ku ikoranabuhanga mu mupira w'amaguru, abandi banditsi bavuga ko itandukaniro ryari rito cyane kugira ngo bafate icyemezo gikomeye.\n\nKu ruhande rw'ibiseko, imikorere ya Lionel Messi yo kwishimira nyuma y'igitego cya gatatu cya Arajentin yarakwiriye vuba kuri interineti, ituma habaho amashusho menshi y'ibiseko ku myaka ye 39. Mu gihe kimwe, Erling Haaland yabaye inyenyeri y'ibiseko ku munsi nyuma y'ibitego bye bibiri kuri Irak: imikorere ye izwi yo guhuza amaboko nko gutekereza yarahinduwe mu buryo butandukanye n'abakoresha interineti.",
-      "scandales": [
-        {
-          "titre": "Polémique VAR : but refusé à l'Irak (67ème minute)",
-          "detail": "Le but irakien a été annulé après une longue revue vidéo pour un hors-jeu jugé minime par plusieurs anciens arbitres consultés en plateau. Le sélectionneur irakien a exprimé sa frustration en conférence de presse, sans toutefois remettre en cause l'arbitrage global de la rencontre."
-        },
-        {
-          "titre": "Le geste de Messi qui divise les internautes",
-          "detail": "À la 54ème minute, Lionel Messi a célébré son but en pointant son brassard vers les tribunes, un geste interprété différemment selon les médias : hommage à l'équipe pour certains, simple habitude pour d'autres. Le débat est resté bon enfant et a surtout alimenté l'humour en ligne plutôt qu'une vraie controverse."
-        }
-      ],
-      "buzz_reseaux": [
-        {
-          "hashtag": "#ArgentinaDomination",
-          "tweets": "2.5M",
-          "position": "Tendance #2 mondiale"
-        },
-        {
-          "hashtag": "#NorvegeInvincible",
-          "tweets": "1.8M",
-          "position": "Tendance #4 mondiale"
-        },
-        {
-          "hashtag": "#HaalandMachine",
-          "tweets": "950K",
-          "position": "Tendance #7 mondiale"
-        },
-        {
-          "hashtag": "#VARgate",
-          "tweets": "610K",
-          "position": "Tendance #11 mondiale"
-        }
-      ],
-      "meilleur_meme": "Un montage montrant Erling Haaland dans sa pose de célébration 'méditation', légendé en plusieurs langues sur le thème : 'Pendant que tout le monde panique, lui il respire.' Le format a été repris des centaines de fois avec des variantes adaptées à chaque pays."
-    }
-  ]
-        }
-        
+"date": "20 JUIN 2026",
+"articles": [
+{
+"badge": "🔥 Résultats · Choc du jour",
+"badge_en": "🔥 Results · Shock of the day",
+"badge_pt": "🔥 Resultados · Choque do dia",
+"badge_sw": "🔥 Matokeo · Mshangao wa siku",
+"badge_ar": "🔥 النتائج · صدمة اليوم",
+"badge_rw": "🔥 Ibisubizo · Inyuma yo ku nsi",
+"titre": "USA 2-0 Australie : Les Américains qualifiés ! Brésil domine Haïti 3-0, Maroc choc Écosse 1-0",
+"titre_en": "USA 2-0 Australia: Americans qualify! Brazil dominates Haiti 3-0, Morocco shocks Scotland 1-0",
+"titre_pt": "EUA 2-0 Austrália: Americanos qualificados! Brasil domina Haiti 3-0, Marrocos choca Escócia 1-0",
+"titre_sw": "USA 2-0 Australia: Wamarekani wameingia! Brazil inadhimisha Haiti 3-0, Morocco inashangaza Scotland 1-0",
+"titre_ar": "الولايات المتحدة 2-0 أستراليا: الأمريكيون يتأهلون! البرازيل تهزم هايتي 3-0، المغرب يصدم اسكتلندا 1-0",
+"titre_rw": "USA 2-0 Ositaraliya: Amerika yiyemeje! Burezili itsinda Haiti 3-0, Maroc ishangaza Ekosi 1-0",
+"texte": "Journée chargée ce 19 juin ! Les États-Unis ont validé leur ticket pour les huitièmes de finale en dominant l'Australie 2-0 à Seattle. Les Américains ont ouvert le score grâce à un but contre son camp de Cameron Burgess, avant qu'Alex Freeman ne scelle la victoire d'une tête. Une performance solide malgré l'absence du capitaine Christian Pulisic, blessé au mollet, qui manquait à l'appel.\n\nDu côté du Groupe C, le Brésil a enfin montré son vrai visage en écrasant Haïti 3-0 à Philadelphie. Matheus Cunha a brillé avec un doublé, et Vinícius Junior a complété le score. Cette victoire relance la Seleção après son match nul décevant contre le Maroc lors du premier match. Le Maroc, justement, a confirmé sa montée en puissance en battant l'Écosse 1-0 à Boston grâce à un but dès la 2ème minute signé Ismael Saibari. Enfin, au Groupe D, le Paraguay a créé la surprise en battant la Turquie 1-0 grâce à un but de Matías Galarza à la 2ème minute, éliminant ainsi la Turquie de la compétition.",
+"texte_en": "Busy day on June 19! The United States secured their place in the knockout stage with a solid 2-0 win over Australia in Seattle. The Americans opened the scoring through a Cameron Burgess own goal, before Alex Freeman headed in the second. A confident display even without Christian Pulisic, who is nursing a calf injury.\n\nIn Group C, Brazil finally showed their true quality by crushing Haiti 3-0 in Philadelphia. Matheus Cunha shone with a brace, while Vinícius Junior added the third. The win reinvigorates the Seleção after their disappointing draw against Morocco in match one. Morocco, meanwhile, confirmed their form by beating Scotland 1-0 in Boston, with Ismael Saibari netting in the 2nd minute. In Group D, Paraguay pulled off a surprise by defeating Turkey 1-0, with Matías Galarza scoring in the 2nd minute to eliminate Turkey from the competition.",
+"texte_pt": "Dia carregado em 19 de junho! Os Estados Unidos garantiram a qualificação para os oitavos de final com uma vitória sólida por 2-0 sobre a Austrália em Seattle. Os americanos abriram o marcador com um golo contra de Cameron Burgess, antes de Alex Freeman selar o resultado de cabeça. Uma exibição de qualidade mesmo sem Christian Pulisic, lesionado na barriga da perna.\n\nNo Grupo C, o Brasil mostrou finalmente o seu verdadeiro nível ao esmagar o Haiti por 3-0 na Filadélfia. Matheus Cunha brilhou com um bis, e Vinícius Junior marcou o terceiro. A vitória relança a Seleção após o empate frustrante com Marrocos. O Marrocos, por sua vez, confirmou a sua forma batendo a Escócia por 1-0 em Boston, com Ismael Saibari a marcar logo no 2º minuto. No Grupo D, o Paraguai surpreendeu ao bater a Turquia por 1-0, com Matías Galarza a marcar no 2º minuto, eliminando a Turquia.",
+"texte_sw": "Siku yenye shughuli nyingi ya Juni 19! Marekani walihakikisha nafasi yao ya hatua ya pili kwa kushinda Australia 2-0 huko Seattle. Wamarekani walifungua kwa goli la own goal la Cameron Burgess, kabla Alex Freeman kuongeza la pili kwa kichwa. Utendaji thabiti hata bila Christian Pulisic aliyeumia mguu.\n\nKatika Kundi C, Brazil walionyesha ubora wao wa kweli kwa kushambulia Haiti 3-0 huko Philadelphia. Matheus Cunha alitoa magoli mawili, na Vinícius Junior akaongeza la tatu. Ushindi huu unafufua Seleção baada ya sare ya kukatisha tamaa dhidi ya Morocco. Morocco, kwa upande wao, walithibitisha hali yao kwa kushinda Scotland 1-0 huko Boston, na Ismael Saibari kufunga dakika ya 2. Katika Kundi D, Paraguay walishangazisha kwa kushinda Turkey 1-0, Matías Galarza akifunga dakika ya 2, na kuwaondoa Turkey kwenye mashindano.",
+"texte_ar": "يوم حافل في 19 يونيو! ضمنت الولايات المتحدة التأهل إلى دور الثمانية بفوز متين 2-0 على أستراليا في سياتل. فُتح التسجيل بهدف عكسي من كاميرون بيرغس، قبل أن يختم أليكس فريمان بالرأس. أداء واثق رغم غياب كريستيان بوليسيتش المصاب في ربلة ساقه.\n\nفي المجموعة ج، أظهر البرازيل مستواه الحقيقي بسحق هايتي 3-0 في فيلادلفيا. تألق ماثيوس كونها بهدفين، وأضاف فينيسيوس جونيور الثالث. هذا الفوز يعيد الأنفاس للسيليساو بعد التعادل المخيب مع المغرب. المغرب بدوره أكد صعوده ببلوغه فوزاً على اسكتلندا 1-0 بهدف إسماعيل سيباري في الدقيقة الثانية. وفي المجموعة د، فاجأ باراغواي بالفوز على تركيا 1-0 بهدف غالارزا في الدقيقة الثانية، مما أقصى تركيا من المنافسة.",
+"texte_rw": "Italiki ya 19 Kamena yari yuzuyemo! Amerika yiyemeje kujya mu nzira y'amaherezo yo kwirukana itsinda Ositaraliya 2-0 i Seattle. Abanyamerika bafunguye igitego cyabo binyuze mu gitego cyasubijwe c'uwabo Cameron Burgess, mbere Alex Freeman yongeye igitego cye cya kabiri n'umutwi. Imikino y'ikirenga nubwo Christian Pulisic utarayigiranye afite ibikomere by'akabero.\n\nMu itsinda C, Burezili yerekeje ubwenge bwabo atsinda Haiti 3-0 i Philadelphia. Matheus Cunha yatsindiye kabiri, na Vinícius Junior yongeye gatatu. Iyi ntsinzi izurura Seleção nyuma yo gutana no Maroc ku mukino wa mbere. Maroc, yabo, yemeje imbaraga zayo itsinda Ekosi 1-0 i Boston, Ismael Saibari yatsinze ku munota wa 2. Mu itsinda D, Paragwe yashangaje itsinda Turikeyi 1-0, Matías Galarza yatsinze ku munota wa 2, yirukana Turikeyi mu makipe.",
+"joueurs_cles": [
+{
+"nom": "Alex Freeman (États-Unis)",
+"action": "Buteur décisif de la tête face à l'Australie, révélation du tournoi à 21 ans, première sélection il y a un an seulement"
+},
+{
+"nom": "Matheus Cunha (Brésil)",
+"action": "Doublé contre Haïti, omniprésent en attaque, libère la Seleção après une ouverture décevante"
+},
+{
+"nom": "Ismael Saibari (Maroc)",
+"action": "But dès la 2ème minute contre l'Écosse, déjà buteur contre le Brésil au match 1, meilleur joueur marocain du tournoi jusqu'ici"
+}
+],
+"statistiques": {
+"usa_australie": "Possession: USA 55%, AUS 45% | Tirs: USA 14, AUS 9 | Tirs cadrés: USA 5, AUS 3 | Corners: USA 6, AUS 4",
+"bresil_haiti": "Possession: BRE 72%, HAI 28% | Tirs: BRE 24, HAI 3 | Tirs cadrés: BRE 11, HAI 0 | Passes complétées: BRE 89%, HAI 61%",
+"maroc_ecosse": "Possession: MAR 58%, ECO 42% | Tirs: MAR 16, ECO 11 | Tirs cadrés: MAR 5, ECO 4 | Corners: MAR 7, ECO 5",
+"paraguay_turquie": "Possession: PAR 19%, TUR 81% | Tirs: PAR 6, TUR 22 | Tirs cadrés: PAR 2, TUR 7 | Résultat: Paraguay 1-0"
+}
+},
+{
+"badge": "⚡ Faits marquants · Bombes",
+"badge_en": "⚡ Highlights · Bombs",
+"badge_pt": "⚡ Destaques · Bombas",
+"badge_sw": "⚡ Maajabu · Risasi",
+"badge_ar": "⚡ المعالم البارزة · قنابل",
+"badge_rw": "⚡ Ibyigite · Ikinini",
+"titre": "Pays-Bas vs Suède, Allemagne vs Côte d'Ivoire : les chocs du jour (20 juin) !",
+"titre_en": "Netherlands vs Sweden, Germany vs Ivory Coast: today's clashes (June 20)!",
+"titre_pt": "Países Baixos vs Suécia, Alemanha vs Costa do Marfim: os grandes duelos de hoje (20 de junho)!",
+"titre_sw": "Netherlands vs Sweden, Germany vs Ivory Coast: mechi kubwa za leo (Juni 20)!",
+"titre_ar": "هولندا ضد السويد، ألمانيا ضد كوت ديفوار: مواجهات اليوم الحاسمة (20 يونيو)!",
+"titre_rw": "Pays-Bas na Suede, Allemagne na Côte d'Ivoire: imikino ikomeye y'uyu munsi (20 Kamena)!",
+"texte": "Ce samedi 20 juin, la Coupe du Monde entre dans une nouvelle dimension avec quatre matchs à forts enjeux dans les Groupes E et F. En tête d'affiche, les Pays-Bas affrontent la Suède à Houston dans un duel européen de haut vol : les Néerlandais veulent confirmer après leur nul contre le Japon (2-2), tandis que les Suédois, portés par un Isak en grande forme et les missiles de Yasin Ayari, arrivent en leader du groupe après leur écrasante victoire sur la Tunisie (5-1).\n\nDans l'autre match du Groupe E, l'Allemagne, qui sort d'une démonstration de force face à Curaçao (7-1), affronte la Côte d'Ivoire qui a arraché sa victoire à la 90ème minute contre l'Équateur (1-0). Ce duel annonce une soirée électrique à Toronto. En fin de journée, Équateur-Curaçao et Tunisie-Japon compléteront une journée qui pourrait dessiner les premières qualifications dans ces deux groupes.",
+"texte_en": "This Saturday June 20, the World Cup steps up a gear with four high-stakes matches in Groups E and F. The headliner is Netherlands vs Sweden in Houston, a top European clash: the Dutch want to bounce back after their draw against Japan (2-2), while Sweden, powered by an in-form Isak and Yasin Ayari's long-range rockets, arrive as group leaders following their dominant 5-1 win over Tunisia.\n\nIn the other Group E match, Germany, fresh from a 7-1 statement win over Curaçao, face Ivory Coast who snatched their own victory in the 90th minute against Ecuador (1-0). This clash promises a fiery evening in Toronto. Later, Ecuador vs Curaçao and Tunisia vs Japan will round off a day that could see the first qualifications sealed in both groups.",
+"texte_pt": "Neste sábado, 20 de junho, o Mundial entra numa nova dimensão com quatro jogos de alto nível nos Grupos E e F. Em destaque, os Países Baixos defrontam a Suécia em Houston num grande duelo europeu: os holandeses querem confirmar após o empate com o Japão (2-2), enquanto a Suécia, animada por um Isak em grande forma e pelos mísseis de Yasin Ayari, chega como líder do grupo após a esmagadora vitória sobre a Tunísia (5-1).\n\nNo outro jogo do Grupo E, a Alemanha, que vem de uma demonstração de força contra Curaçao (7-1), enfrenta a Costa do Marfim que arrancou a vitória aos 90 minutos frente ao Equador (1-0). Este duelo promete uma noite elétrica em Toronto. Mais tarde, Equador-Curaçao e Tunísia-Japão completarão um dia que poderá desenhar as primeiras qualificações nos dois grupos.",
+"texte_sw": "Jumamosi hii ya Juni 20, Kombe la Dunia linaendelea kwa nguvu zaidi na mechi nne zenye umuhimu mkubwa katika Vikundi E na F. Mechi kuu ni Netherlands dhidi ya Sweden huko Houston, duwa kubwa la Ulaya: Wadachi wanataka kuthibitisha baada ya sare dhidi ya Japan (2-2), huku Sweden, ikiongozwa na Isak mwenye nguvu na makombora ya Yasin Ayari, ikifika kama kiongozi wa kundi baada ya ushindi mkubwa 5-1 dhidi ya Tunisia.\n\nKatika mechi nyingine ya Kundi E, Germany, wanaotoka katika onyesho la nguvu dhidi ya Curaçao (7-1), wanakabiliwa na Ivory Coast waliofanikiwa kwa goli la dakika ya 90 dhidi ya Ecuador (1-0). Hii inaahidi usiku wa msisimko Toronto. Baadaye, Ecuador-Curaçao na Tunisia-Japan zitakamilisha siku inayoweza kuona mafanikio ya kwanza ya kuhitimu katika vikundi vyote viwili.",
+"texte_ar": "في هذا السبت 20 يونيو، يدخل المونديال بُعداً جديداً مع أربع مباريات حاسمة في المجموعتين E وF. في الواجهة، تواجه هولندا السويد في هيوستن في دوار أوروبي رفيع المستوى: يريد الهولنديون التأكيد بعد تعادلهم مع اليابان (2-2)، فيما تصل السويد بقيادة إيساك المتألق وصواريخ ياسين عياري كقائدة للمجموعة بعد فوزها الساحق 5-1 على تونس.\n\nفي المباراة الأخرى من المجموعة E، تواجه ألمانيا، القادمة من عرض قوة أمام كوراساو (7-1)، كوت ديفوار التي انتزعت فوزها في الدقيقة 90 أمام الإكوادور (1-0). هذا المواجهة تعد بليلة مشتعلة في تورنتو. لاحقاً، تكمل إكوادور-كوراساو وتونس-اليابان يوماً قد يشهد أولى التأهلات في المجموعتين.",
+"texte_rw": "Uyu wa gatanu, 20 Kamena, Ikibehe cy'Isi cinjira mu nzego nshya harimo imikino ine ikomeye mu matsinda E na F. Imikino ikomeye ni Pays-Bas na Suede i Houston: Abanyeholande bashaka gutsinda nyuma yo gutana na Japani (2-2), naho Suede, yiyoborwa na Isak ukomeye na misairu ya Yasin Ayari, iza nk'iyobora itsinda nyuma y'intsinzi ikomeye ya 5-1 kuri Tuniziya.\n\nMu mukino wundi wa Itsinda E, Allemagne, ivuye mu gushisha Curaçao (7-1), irwana na Côte d'Ivoire yafashe intsinzi yayo ku munota wa 90 kuri Ekwatori (1-0). Iki gikanguro giteganya ijoro ry'amashanyarazi i Toronto. Nyuma, Ekwatori-Curaçao na Tuniziya-Japani bizuzanya umunsi ushobora kugaragaza ibyemezo bya mbere mu matsinda yombi.",
+"matchs_du_jour": [
+{
+"match": "Pays-Bas vs Suède",
+"heure": "13h00 EDT / 19h00 CET",
+"stade": "NRG Stadium, Houston",
+"groupe": "Group F",
+"enjeu": "Leader Suède (3pts) vs Pays-Bas (1pt) - Victoire quasi-synonyme de qualification"
+},
+{
+"match": "Allemagne vs Côte d'Ivoire",
+"heure": "16h00 EDT / 22h00 CET",
+"stade": "BMO Field, Toronto",
+"groupe": "Group E",
+"enjeu": "Choc entre deux équipes à 3pts chacune - Un favoris devra lâcher des points"
+},
+{
+"match": "Équateur vs Curaçao",
+"heure": "20h00 EDT / 02h00 CET",
+"stade": "Arrowhead Stadium, Kansas City",
+"groupe": "Group E",
+"enjeu": "Match à quitte ou double pour l'Équateur éliminé en cas de défaite"
+},
+{
+"match": "Tunisie vs Japon",
+"heure": "00h00 EDT / 06h00 CET",
+"stade": "Estadio BBVA, Monterrey",
+"groupe": "Group F",
+"enjeu": "Tunisie dos au mur (0pt) face à un Japon qui cherche à confirmer"
+}
+]
+},
+{
+"badge": "😂 Humour & Buzz · Fou rire",
+"badge_en": "😂 Humor & Buzz · Comic relief",
+"badge_pt": "😂 Humor & Buzz · Risada do dia",
+"badge_sw": "😂 Furaha & Mtindo · Kicheko",
+"badge_ar": "😂 الفكاهة والترند · ضحك اليوم",
+"badge_rw": "😂 Imikino n'Ibiseko · Iseko ry'umunsi",
+"titre": "Freeman héros surprise, l'Algérie se plaint à la FIFA, la Turquie éliminée : le buzz du 20 juin",
+"titre_en": "Freeman surprise hero, Algeria complain to FIFA, Turkey eliminated: the June 20 buzz",
+"titre_pt": "Freeman herói surpresa, Argélia queixa-se à FIFA, Turquia eliminada: o buzz de 20 de junho",
+"titre_sw": "Freeman shujaa wa mshangao, Algeria walalamika FIFA, Turkey wametolewa: buzz ya Juni 20",
+"titre_ar": "فريمان البطل المفاجأة، الجزائر تشتكي لـFIFA، تركيا تودع: ضجة 20 يونيو",
+"titre_rw": "Freeman inzobere itunguranye, Alijeriya irega FIFA, Turikeyi yirukanywe: urusaku rwa 20 Kamena",
+"texte": "Alex Freeman, 21 ans, est devenu la grande révélation du tournoi après son but décisif face à l'Australie. Sa trajectoire fulgurante — premier match en sélection il y a à peine un an, puis héros d'un match décisif en Coupe du Monde — a provoqué un raz-de-marée de memes sur les réseaux sociaux, les internautes comparant son ascension à un film hollywoodien.\n\nAutre grande histoire de la journée : l'Algérie a officiellement déposé une plainte auprès de la FIFA concernant des décisions arbitrales jugées défavorables lors de leur défaite 3-0 face à l'Argentine. Le sélectionneur algérien a évoqué 'un manque de protection' de ses joueurs face aux charges adverses. La communauté algérienne en ligne a massivement relayé la polémique sous le hashtag #JusticeAlgerie.\n\nEnfin, l'élimination de la Turquie après seulement deux matchs a surpris beaucoup de pronostiqueurs, qui la voyaient au moins atteindre les huitièmes. Les memes sur Gündogan 'rentrant trop tôt à la maison' ont rapidement envahi les réseaux.",
+"texte_en": "Alex Freeman, 21, has become the tournament's big revelation after his decisive goal against Australia. His rapid rise — first senior cap just a year ago, now World Cup match-winner — triggered a wave of memes online, with fans comparing his journey to a Hollywood movie.\n\nAnother big story of the day: Algeria officially lodged a complaint with FIFA over refereeing decisions they considered unfair during their 3-0 defeat to Argentina. The Algerian coach cited 'a lack of protection' for his players against physical challenges. The Algerian online community massively amplified the controversy under the hashtag #JusticeAlgerie.\n\nFinally, Turkey's elimination after just two matches caught many pundits off guard, as they had been tipped to reach at least the round of 32. Memes about Gündogan 'going home too early' quickly flooded social media.",
+"texte_pt": "Alex Freeman, 21 anos, tornou-se a grande revelação do torneio após o seu golo decisivo frente à Austrália. A sua ascensão meteórica — primeira convocatória há apenas um ano, agora herói de um jogo decisivo no Mundial — desencadeou uma vaga de memes nas redes, com os adeptos a comparar a sua história a um filme de Hollywood.\n\nOutra grande história do dia: a Argélia apresentou oficialmente uma queixa à FIFA sobre decisões arbitrais que considerou injustas na derrota por 3-0 frente à Argentina. O selecionador argelino falou de 'falta de proteção' para os seus jogadores. A comunidade online argelina amplificou massivamente a polémica com a hashtag #JusticeAlgerie.\n\nPor fim, a eliminação da Turquia após apenas dois jogos surpreendeu muitos analistas, que a viam pelo menos a chegar à fase a eliminar. Os memes sobre Gündogan 'a ir para casa demasiado cedo' inundaram rapidamente as redes.",
+"texte_sw": "Alex Freeman, mwenye umri wa miaka 21, amekuwa ufunuo mkubwa wa mchezo baada ya goli lake la maamuzi dhidi ya Australia. Safari yake ya haraka — soka la kwanza la timu ya taifa mwaka mmoja uliopita, sasa mshindi wa mchezo muhimu wa Kombe la Dunia — ilisababisha wimbi la memes mtandaoni, mashabiki wakilinganisha safari yake na filamu ya Hollywood.\n\nHabari nyingine kubwa ya siku: Algeria rasmi iliwasilisha malalamiko kwa FIFA kuhusu maamuzi ya uamuzi yaliyoonekana kuwa ya dhuluma wakati wa kushindwa kwao 3-0 dhidi ya Argentina. Kocha wa Algeria alitaja 'ukosefu wa ulinzi' kwa wachezaji wake dhidi ya mashambulizi ya kimwili. Jamii ya Algeria mtandaoni ilieneza sana mgogoro huo chini ya hashtag #JusticeAlgerie.\n\nHatimaye, kuondolewa kwa Turkey baada ya mechi mbili tu kulishangaza wataalam wengi waliokuwa wakiwaona wakifika angalau katika hatua ya pili. Memes kuhusu Gündogan 'kurudi nyumbani mapema sana' haraka zilisambaa mitandaoni.",
+"texte_ar": "أصبح أليكس فريمان، البالغ من العمر 21 عامًا، أبرز كشف في البطولة بعد هدفه الحاسم أمام أستراليا. مساره الصاروخي — أول مباراة دولية منذ عام فقط، والآن بطل مباراة حاسمة في كأس العالم — أطلق موجة من الميمز على الإنترنت، مع مقارنات لرحلته بأفلام هوليوود.\n\nقصة بارزة أخرى في اليوم: تقدمت الجزائر رسمياً بشكوى إلى الفيفا بشأن قرارات تحكيمية اعتبرتها مجحفة خلال خسارتها 3-0 أمام الأرجنتين. تحدث مدرب الجزائر عن 'غياب الحماية' للاعبيه في مواجهة الشدات الجسدية. ضخّت الجالية الجزائرية الرقمية الجدل بكثافة تحت وسم #JusticeAlgerie.\n\nوأخيراً، فاجأ خروج تركيا بعد مباراتين فقط كثيرًا من المحللين الذين كانوا يتوقعون وصولها على الأقل إلى دور الثمانية والثلاثين. انتشرت الميمز حول غوندوغان 'العائد إلى المنزل مبكراً جداً' بسرعة على منصات التواصل.",
+"texte_rw": "Alex Freeman, afite imyaka 21, yabaye umunyamikino w'ingenzi wa gikombe nyuma y'igitego cye gikomeye kuri Ositaraliya. Inzira ye y'ikirenga — umukino wa mbere mu ikipe y'igihugu mu mwaka umwe gusa, none we gutsinda mu mukino ukomeye wa Gikebe cy'Isi — yabyutse imishusho myinshi ya interineti, abakinzi bayerekanya inzira ye na filime ya Hollywood.\n\nInkuru nkuru yindi y'umunsi: Alijeriya yashyikirije ambarana y"}]}
