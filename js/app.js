@@ -190,4 +190,4 @@ c.innerHTML+=h+`</div>`;
 }catch(e){c.innerHTML=`<p style='color:#EF4444;text-align:center;padding:2rem;'>${T[L].en}</p>`;}
 }
 window.onload=()=>{const l=localStorage.getItem('langueOctopus')||'fr';changerLangue(l,document.querySelector(`.lang-btn[onclick*="'${l}'"]`));initGroups();};
-  
+    
