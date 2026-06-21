@@ -1,10 +1,10 @@
 let L='fr',F="ALL",NC=null;
-const T={fr:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUIN - 19 JUIL 2026",groups:"GROUPES",schedule:"CALENDRIER",predict:"PRÉDICTIONS",dossier:"DOSSIERS",news:"NEWS",oracleBtn:"ORACLE - PRÉDIRE LE MATCH",winA:"VICTOIRE A",draw:"NUL",winB:"VICTOIRE B",placeholder:"France, Espagne, Allemagne...",open:"OUVRIR",attack:"ATTAQUE",defense:"DÉFENSE",form:"FORME",mental:"MENTAL",coach:"SÉLECTIONNEUR",keyplayer:"JOUEUR CLÉ",stars:"ÉTOILES",history:"HISTOIRE",all:"TOUS",grp:"GROUPE ",lm:"⏳ Chargement...",nm:"Aucun match",done:"✅ TERMINÉ",at:"à",dt:"Sélectionnez deux équipes différentes",nf:"Équipe non trouvée : ",ln:"📰 Chargement...",nn:"Pas d'actualité",en:"⚠️ Erreur",kp:"JOUEURS CLÉS",st:"STATISTIQUES",mj:"MATCHS DU JOUR",mb:"🔥 MATCH DU JOUR",ia:"🧠 ANALYSE IA"},
-en:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUN - 19 JUL 2026",groups:"GROUPS",schedule:"SCHEDULE",predict:"PREDICT",dossier:"DOSSIERS",news:"NEWS",oracleBtn:"ORACLE - PREDICT MATCH",winA:"WIN A",draw:"DRAW",winB:"WIN B",placeholder:"France, Spain, Germany...",open:"OPEN",attack:"ATTACK",defense:"DEFENSE",form:"FORM",mental:"MENTAL",coach:"COACH",keyplayer:"KEY PLAYER",stars:"STARS",history:"HISTORY",all:"ALL",grp:"GROUP ",lm:"⏳ Loading...",nm:"No matches",done:"✅ DONE",at:"at",dt:"Select two different teams",nf:"Team not found: ",ln:"📰 Loading...",nn:"No news",en:"⚠️ Error",kp:"KEY PLAYERS",st:"STATISTICS",mj:"TODAY'S MATCHES",mb:"🔥 TODAY'S MATCH",ia:"🧠 AI ANALYSIS"},
-pt:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUN - 19 JUL 2026",groups:"GRUPOS",schedule:"CALENDÁRIO",predict:"PREVISÕES",dossier:"DOSSIÊS",news:"NOTÍCIAS",oracleBtn:"ORÁCULO - PREVER JOGO",winA:"VITÓRIA A",draw:"EMPATE",winB:"VITÓRIA B",placeholder:"França, Espanha, Alemanha...",open:"ABRIR",attack:"ATAQUE",defense:"DEFESA",form:"FORMA",mental:"MENTAL",coach:"TÉCNICO",keyplayer:"JOGADOR CHAVE",stars:"ESTRELAS",history:"HISTÓRIA",all:"TUDO",grp:"GRUPO ",lm:"⏳ Carregando...",nm:"Nenhuma partida",done:"✅ CONCLUÍDO",at:"às",dt:"Selecione dois times diferentes",nf:"Equipe não encontrada: ",ln:"📰 Carregando...",nn:"Sem notícias",en:"⚠️ Erro",kp:"JOGADORES CHAVE",st:"ESTATÍSTICAS",mj:"JOGOS DO DIA",mb:"🔥 JOGO DO DIA",ia:"🧠 ANÁLISE IA"},
-sw:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUNI - 19 JULAI 2026",groups:"MAKUNDI",schedule:"RATIBA",predict:"UTABIRI",dossier:"FAILI",news:"HABARI",oracleBtn:"ORACLE - TABIRI MCHEZO",winA:"USHINDI A",draw:"SARE",winB:"USHINDI B",placeholder:"Ufaransa, Hispania, Ujerumani...",open:"FUNGUA",attack:"SHAMBULIO",defense:"ULINZI",form:"HALI",mental:"AKILI",coach:"KOCHA",keyplayer:"MCHEZAJI MUHIMU",stars:"NYOTA",history:"HISTORIA",all:"YOTE",grp:"KIKUNDI ",lm:"⏳ Inapakia...",nm:"Hakuna michezo",done:"✅ KAMATA",at:"saa",dt:"Chagua timu mbili tofauti",nf:"Timu haipatikani: ",ln:"📰 Inapakia...",nn:"Hakuna habari",en:"⚠️ Hitilafu",kp:"WACHEZAJI MUHIMU",st:"TAKWIMU",mj:"MECHI ZA LEO",mb:"🔥 MCHEZO WA LEO",ia:"🧠 UCHAMBUZI WA AI"},
-ar:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 يونيو - 19 يوليو 2026",groups:"المجموعات",schedule:"جدول المباريات",predict:"التنبؤات",dossier:"الملفات",news:"أخبار",oracleBtn:"الأوراكل - توقع المباراة",winA:"الفوز أ",draw:"تعادل",winB:"الفوز ب",placeholder:"فرنسا، إسبانيا، ألمانيا...",open:"افتح",attack:"الهجوم",defense:"الدفاع",form:"الشكل",mental:"عقلي",coach:"المدرب",keyplayer:"لاعب المفتاح",stars:"النجوم",history:"التاريخ",all:"الكل",grp:"المجموعة ",lm:"⏳ جاري التحميل...",nm:"لا توجد مباريات",done:"✅ تم",at:"في",dt:"اختر فريقين مختلفين",nf:"فريق غير موجود: ",ln:"📰 جاري التحميل...",nn:"لا توجد أخبار",en:"⚠️ خطأ",kp:"اللاعبون الرئيسيون",st:"الإحصائيات",mj:"مباريات اليوم",mb:"🔥 مباراة اليوم",ia:"🧠 تحليل الذكاء الاصطناعي"},
-rw:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 Kamena - 19 Nyakanga 2026",groups:"AMATSINDA",schedule:"GAHUNDA",predict:"IGENAMIGABIRO",dossier:"AMADOSIYE",news:"AMAKURU",oracleBtn:"ORACLE - KARABIGABIRO",winA:"INZIRA A",draw:"BUNGUNGUKE",winB:"INZIRA B",placeholder:"Ubufaransa, Espanye, Ubudage...",open:"FUNGURA",attack:"IBITERO",defense:"KURINDA",form:"IMITERERE",mental:"IRITONDA",coach:"UMUGEZI",keyplayer:"UMUKINNYI INZIRA",stars:"INYOTA",history:"AMATEKA",all:"BYOSE",grp:"ITANDUKANIRO ",lm:"⏳ Iratara...",nm:"Nta musanzu",done:"✅ CURUZA",at:"kuri",dt:"Hitamo umusanzu ibiri bitandukanye",nf:"Umusanzu ntabwo waboneka: ",ln:"📰 Iratara...",nn:"Nta makuru",en:"⚠️ Ikosa",kp:"ABAKINNYI BAKOMEYE",st:"IMIBARE",mj:"IMIKINO Y'UMUSI",mb:"🔥 UMUKINO W'UMUSI",ia:"🧠 ISESENGURA RYA AI"}};
+const T={fr:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUIN - 19 JUIL 2026",groups:"GROUPES",schedule:"CALENDRIER",predict:"PRÉDICTIONS",dossier:"DOSSIERS",news:"NEWS",oracleBtn:"ORACLE - PRÉDIRE LE MATCH",winA:"VICTOIRE A",draw:"NUL",winB:"VICTOIRE B",placeholder:"France, Espagne, Allemagne...",open:"OUVRIR",attack:"ATTAQUE",defense:"DÉFENSE",form:"FORME",mental:"MENTAL",coach:"SÉLECTIONNEUR",keyplayer:"JOUEUR CLÉ",stars:"ÉTOILES",history:"HISTOIRE",all:"TOUS",grp:"GROUPE ",lm:"⏳ Chargement...",nm:"Aucun match",done:"✅ TERMINÉ",at:"à",dt:"Sélectionnez deux équipes différentes",nf:"Équipe non trouvée : ",ln:"📰 Chargement...",nn:"Pas d'actualité",en:"⚠️ Erreur",kp:"JOUEURS CLÉS",st:"STATISTIQUES",mj:"MATCHS DU JOUR",mb:"🔥 MATCH DU JOUR",ia:"🧠 ANALYSE IA",tap:"Touchez une équipe pour voir son dossier"},
+en:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUN - 19 JUL 2026",groups:"GROUPS",schedule:"SCHEDULE",predict:"PREDICT",dossier:"DOSSIERS",news:"NEWS",oracleBtn:"ORACLE - PREDICT MATCH",winA:"WIN A",draw:"DRAW",winB:"WIN B",placeholder:"France, Spain, Germany...",open:"OPEN",attack:"ATTACK",defense:"DEFENSE",form:"FORM",mental:"MENTAL",coach:"COACH",keyplayer:"KEY PLAYER",stars:"STARS",history:"HISTORY",all:"ALL",grp:"GROUP ",lm:"⏳ Loading...",nm:"No matches",done:"✅ DONE",at:"at",dt:"Select two different teams",nf:"Team not found: ",ln:"📰 Loading...",nn:"No news",en:"⚠️ Error",kp:"KEY PLAYERS",st:"STATISTICS",mj:"TODAY'S MATCHES",mb:"🔥 TODAY'S MATCH",ia:"🧠 AI ANALYSIS",tap:"Tap a team to see its dossier"},
+pt:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUN - 19 JUL 2026",groups:"GRUPOS",schedule:"CALENDÁRIO",predict:"PREVISÕES",dossier:"DOSSIÊS",news:"NOTÍCIAS",oracleBtn:"ORÁCULO - PREVER JOGO",winA:"VITÓRIA A",draw:"EMPATE",winB:"VITÓRIA B",placeholder:"França, Espanha, Alemanha...",open:"ABRIR",attack:"ATAQUE",defense:"DEFESA",form:"FORMA",mental:"MENTAL",coach:"TÉCNICO",keyplayer:"JOGADOR CHAVE",stars:"ESTRELAS",history:"HISTÓRIA",all:"TUDO",grp:"GRUPO ",lm:"⏳ Carregando...",nm:"Nenhuma partida",done:"✅ CONCLUÍDO",at:"às",dt:"Selecione dois times diferentes",nf:"Equipe não encontrada: ",ln:"📰 Carregando...",nn:"Sem notícias",en:"⚠️ Erro",kp:"JOGADORES CHAVE",st:"ESTATÍSTICAS",mj:"JOGOS DO DIA",mb:"🔥 JOGO DO DIA",ia:"🧠 ANÁLISE IA",tap:"Toque numa equipa para ver o dossier"},
+sw:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 JUNI - 19 JULAI 2026",groups:"MAKUNDI",schedule:"RATIBA",predict:"UTABIRI",dossier:"FAILI",news:"HABARI",oracleBtn:"ORACLE - TABIRI MCHEZO",winA:"USHINDI A",draw:"SARE",winB:"USHINDI B",placeholder:"Ufaransa, Hispania, Ujerumani...",open:"FUNGUA",attack:"SHAMBULIO",defense:"ULINZI",form:"HALI",mental:"AKILI",coach:"KOCHA",keyplayer:"MCHEZAJI MUHIMU",stars:"NYOTA",history:"HISTORIA",all:"YOTE",grp:"KIKUNDI ",lm:"⏳ Inapakia...",nm:"Hakuna michezo",done:"✅ KAMATA",at:"saa",dt:"Chagua timu mbili tofauti",nf:"Timu haipatikani: ",ln:"📰 Inapakia...",nn:"Hakuna habari",en:"⚠️ Hitilafu",kp:"WACHEZAJI MUHIMU",st:"TAKWIMU",mj:"MECHI ZA LEO",mb:"🔥 MCHEZO WA LEO",ia:"🧠 UCHAMBUZI WA AI",tap:"Gonga timu kuona faili"},
+ar:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 يونيو - 19 يوليو 2026",groups:"المجموعات",schedule:"جدول المباريات",predict:"التنبؤات",dossier:"الملفات",news:"أخبار",oracleBtn:"الأوراكل - توقع المباراة",winA:"الفوز أ",draw:"تعادل",winB:"الفوز ب",placeholder:"فرنسا، إسبانيا، ألمانيا...",open:"افتح",attack:"الهجوم",defense:"الدفاع",form:"الشكل",mental:"عقلي",coach:"المدرب",keyplayer:"لاعب المفتاح",stars:"النجوم",history:"التاريخ",all:"الكل",grp:"المجموعة ",lm:"⏳ جاري التحميل...",nm:"لا توجد مباريات",done:"✅ تم",at:"في",dt:"اختر فريقين مختلفين",nf:"فريق غير موجود: ",ln:"📰 جاري التحميل...",nn:"لا توجد أخبار",en:"⚠️ خطأ",kp:"اللاعبون الرئيسيون",st:"الإحصائيات",mj:"مباريات اليوم",mb:"🔥 مباراة اليوم",ia:"🧠 تحليل الذكاء الاصطناعي",tap:"انقر على فريق لعرض الملف"},
+rw:{title:"WORLDCUP2026 · MUJOS OCTOPUS",sub:"AI FOOTBALL ORACLE · 48 NATIONS · LIVE SCORES",dates:"11 Kamena - 19 Nyakanga 2026",groups:"AMATSINDA",schedule:"GAHUNDA",predict:"IGENAMIGABIRO",dossier:"AMADOSIYE",news:"AMAKURU",oracleBtn:"ORACLE - KARABIGABIRO",winA:"INZIRA A",draw:"BUNGUNGUKE",winB:"INZIRA B",placeholder:"Ubufaransa, Espanye, Ubudage...",open:"FUNGURA",attack:"IBITERO",defense:"KURINDA",form:"IMITERERE",mental:"IRITONDA",coach:"UMUGEZI",keyplayer:"UMUKINNYI INZIRA",stars:"INYOTA",history:"AMATEKA",all:"BYOSE",grp:"ITANDUKANIRO ",lm:"⏳ Iratara...",nm:"Nta musanzu",done:"✅ CURUZA",at:"kuri",dt:"Hitamo umusanzu ibiri bitandukanye",nf:"Umusanzu ntabwo waboneka: ",ln:"📰 Iratara...",nn:"Nta makuru",en:"⚠️ Ikosa",kp:"ABAKINNYI BAKOMEYE",st:"IMIBARE",mj:"IMIKINO Y'UMUSI",mb:"🔥 UMUKINO W'UMUSI",ia:"🧠 ISESENGURA RYA AI",tap:"Kanda ikipe kureba amadosiye"}};
 
 const AE={"espagne":"Spain","france":"France","allemagne":"Germany","angleterre":"England","brésil":"Brazil","bresil":"Brazil","portugal":"Portugal","argentine":"Argentina","maroc":"Morocco","sénégal":"Senegal","senegal":"Senegal","norvège":"Norway","norvege":"Norway","colombie":"Colombia","belgique":"Belgium","croatie":"Croatia","pays-bas":"Netherlands","pays bas":"Netherlands","hollande":"Netherlands","uruguay":"Uruguay","rdc":"DR Congo","congo":"DR Congo","rd congo":"DR Congo","spain":"Spain","germany":"Germany","england":"England","brazil":"Brazil","argentina":"Argentina","morocco":"Morocco","norway":"Norway","colombia":"Colombia","belgium":"Belgium","croatia":"Croatia","netherlands":"Netherlands","dr congo":"DR Congo","ufaransa":"France","hispania":"Spain","ujerumani":"Germany","uingereza":"England","brazili":"Brazil","ureno":"Portugal","ajentina":"Argentina","moroko":"Morocco","senegali":"Senegal","França":"France","espanha":"Spain","alemanha":"Germany","inglaterra":"England","brasil":"Brazil","marrocos":"Morocco","ubufaransa":"France","espanye":"Spain","ubudage":"Germany","ubwongereza":"England","burezili":"Brazil","porutugale":"Portugal","ajantini":"Argentina","kroeshia":"Croatia","holanda":"Netherlands","kolombia":"Colombia","ibilijike":"Belgium","korowasiya":"Croatia","urugwai":"Uruguay","noriveje":"Norway"};
 
@@ -28,7 +28,7 @@ function changerLangue(code,btn){
   const act=document.querySelector('.section.active').id;
   if(act==='schedule'){$('mfilter').innerHTML='';initFilters();afficherMatchs();}
   else if(act==='news')afficherNews();
-  else if(act==='dossier'&&$('dc').style.display==='block')dos();
+  else if(act==='dossier'){afficherMatchsJour();if($('dc').style.display==='block')dos();}
 }
 
 function tab(s,btn){
@@ -37,6 +37,7 @@ function tab(s,btn){
   $(s).classList.add('active');if(btn)btn.classList.add('active');
   if(s==='groups')initGroups();if(s==='schedule')initSchedule();
   if(s==='predict')initPredictSelectors();if(s==='news')afficherNews();
+  if(s==='dossier')afficherMatchsJour();
 }
 
 function eqList(){let e=[];if(typeof worldCupData!=='undefined'&&worldCupData.groups)for(const t of Object.values(worldCupData.groups))t.forEach(x=>{if(x.name)e.push(x.name);});return e.sort();}
@@ -134,6 +135,46 @@ async function predict(){
   $('rc').style.display='block';
 }
 
+// == MATCHS DU JOUR dans DOSSIER ==
+async function afficherMatchsJour(){
+  const c=$('dossier-matchday');if(!c)return;
+  if(!NC){try{const r=await fetch('./messages.json');if(r.ok)NC=await r.json();}catch(e){}}
+  if(!NC){c.style.display='none';return;}
+  const t=T[L];
+  let matchs=[];
+  for(const a of NC.articles||[])for(const m of a.matchs_du_jour||[])if(!matchs.find(x=>x.match===m.match))matchs.push(m);
+  if(!matchs.length){c.style.display='none';return;}
+  let h=`<div style="background:#0A1224;border:1px solid #F59E0B;border-radius:12px;padding:1rem;margin-bottom:1rem;">`;
+  h+=`<div style="font-size:.65rem;font-weight:700;color:#F59E0B;letter-spacing:1px;margin-bottom:.8rem;">🗓️ ${t.mj} · <span style="color:#64748B;font-weight:400;">${t.tap}</span></div>`;
+  matchs.forEach(m=>{
+    const parts=(m.match||'').split(' vs ');
+    const eq1=(parts[0]||'').trim(),eq2=(parts[1]||'').trim();
+    const f1=force(eq1),f2=force(eq2);
+    const pct1=Math.round(f1/(f1+f2)*100),pct2=100-pct1;
+    h+=`<div style="background:#111827;border-radius:8px;padding:.8rem;margin-bottom:.6rem;border:1px solid #1E293B;">`;
+    // Ligne équipes cliquables
+    h+=`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem;">`;
+    h+=`<span onclick="goD('${eq1}')" style="color:#fff;font-size:.85rem;font-weight:700;cursor:pointer;flex:1;text-align:left;border-bottom:1px dashed #0066CC;">${eq1}</span>`;
+    h+=`<span style="color:#F59E0B;font-size:.7rem;font-weight:700;padding:0 .6rem;">VS</span>`;
+    h+=`<span onclick="goD('${eq2}')" style="color:#fff;font-size:.85rem;font-weight:700;cursor:pointer;flex:1;text-align:right;border-bottom:1px dashed #0066CC;">${eq2}</span>`;
+    h+=`</div>`;
+    // Barre de force comparative
+    h+=`<div style="display:flex;height:5px;border-radius:4px;overflow:hidden;margin-bottom:.4rem;">`;
+    h+=`<div style="width:${pct1}%;background:linear-gradient(90deg,#0066CC,#003399);"></div>`;
+    h+=`<div style="width:${pct2}%;background:linear-gradient(90deg,#E53935,#8B0000);"></div>`;
+    h+=`</div>`;
+    h+=`<div style="display:flex;justify-content:space-between;font-size:.6rem;color:#64748B;">`;
+    h+=`<span style="color:#0066CC;">${pct1}%</span>`;
+    h+=`<span>🕐 ${m.heure||''} · 🏟️ ${m.stade||''}</span>`;
+    h+=`<span style="color:#E53935;">${pct2}%</span>`;
+    h+=`</div>`;
+    if(m.enjeu)h+=`<div style="color:#F59E0B;font-size:.65rem;margin-top:.4rem;">⚡ ${m.enjeu}</div>`;
+    h+=`</div>`;
+  });
+  h+=`</div>`;
+  c.innerHTML=h;c.style.display='block';
+}
+
 function dos(){
   const s=$('di');if(!s||!s.value.trim())return;
   const t=T[L],cle=NE(s.value);
@@ -173,15 +214,4 @@ async function afficherNews(){
         Object.entries(a.statistiques).forEach(([k,v])=>{h+=`<div style="margin-bottom:.4rem;"><span style="color:#64748B;font-size:.7rem;font-weight:600;">${k.replace(/_/g,' ').toUpperCase()} :</span><br><span style="color:#94A3B8;font-size:.7rem;">${v}</span></div>`;});
         h+=`</div>`;
       }
-      if(a.matchs_du_jour?.length){
-        h+=`<div style="margin-top:.8rem;border-top:1px solid #1E293B;padding-top:.8rem;"><div style="font-size:.65rem;font-weight:700;color:#34D399;margin-bottom:.5rem;">🗓️ ${t.mj}</div>`;
-        a.matchs_du_jour.forEach(m=>{h+=`<div style="background:#0A1224;border-radius:6px;padding:.6rem;margin-bottom:.4rem;"><div style="color:#fff;font-size:.8rem;font-weight:700;">${m.match}</div><div style="color:#94A3B8;font-size:.7rem;">🕐 ${m.heure} · 🏟️ ${m.stade}</div>${m.enjeu?`<div style="color:#F59E0B;font-size:.7rem;margin-top:.2rem;">⚡ ${m.enjeu}</div>`:''}</div>`;});
-        h+=`</div>`;
-      }
-      c.innerHTML+=h+`</div>`;
-    });
-  }catch(e){c.innerHTML=`<p style='color:#EF4444;text-align:center;padding:2rem;'>${T[L].en}</p>`;}
-}
-
-window.onload=()=>{const l=localStorage.getItem('langueOctopus')||'fr';changerLangue(l,document.querySelector(`.lang-btn[onclick*="'${l}'"]`));initGroups();};
-    
+      if(a.matchs_du_j
