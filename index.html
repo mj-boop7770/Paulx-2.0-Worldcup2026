@@ -44,7 +44,6 @@ select{width:100%;background:#111827;color:var(--light);border:1px solid var(--u
 .pc small{font-size:.55rem;color:#94A3B8}
 .w span{color:var(--mexico)}.d span{color:var(--gold)}.l span{color:var(--usa)}
 .bars{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.8rem}
-.bl{display:flex;justify-content:space-between;font-size:.7rem;color:#94A3B8;margin-bottom:.15rem}
 .btr{height:4px;background:#ffffff08;border-radius:4px;overflow:hidden;margin-bottom:.35rem}
 .bf{height:100%;background:linear-gradient(90deg,var(--mexico),var(--usa));border-radius:4px}
 .dsearch{display:flex;gap:.5rem;margin-bottom:1rem}
@@ -116,8 +115,11 @@ footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid var(--u
 <button id="btn-dossier" onclick="tab('dossier',this)">DOSSIERS</button>
 <button id="btn-news" onclick="tab('news',this)">NEWS<span class="live-dot"></span></button>
 </nav>
+
 <div id="groups" class="section active"><div class="grid" id="gg"></div></div>
+
 <div id="schedule" class="section"><div class="mfilter" id="mfilter"></div><div id="matchlist"></div></div>
+
 <div id="predict" class="section">
 <div class="box">
 <select id="ta"></select><select id="tb"></select>
@@ -139,7 +141,9 @@ footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid var(--u
 </div>
 </div>
 </div>
+
 <div id="dossier" class="section">
+<div id="dossier-matchday"></div>
 <div class="dsearch"><input id="di" placeholder="France, Espagne, Allemagne..."/><button onclick="dos()" id="btn-open-dossier">OUVRIR</button></div>
 <div class="dcard" id="dc">
 <div class="dname" id="dn"></div><div class="dmeta" id="dm"></div>
@@ -155,7 +159,9 @@ footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid var(--u
 </div>
 </div>
 </div>
+
 <div id="news" class="section"><div id="news-list" style="padding:.5rem 0;"></div></div>
+
 <footer id="main-footer">MUJOS Octopus · AI Football Oracle · Not affiliated with FIFA</footer>
 <script src="js/teams.js"></script>
 <script src="js/matches.js"></script>
@@ -163,4 +169,4 @@ footer{padding:1.5rem;font-size:.6rem;color:#94A3B8;border-top:1px solid var(--u
 <script src="js/app.js"></script>
 </body>
     </html>
-         
+    
