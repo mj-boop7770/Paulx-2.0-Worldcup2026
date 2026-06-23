@@ -130,9 +130,9 @@ for(const a of NC.articles||[])for(const m of a.matchs_du_jour||[])if(!matchs.fi
 if(!matchs.length){c.style.display='none';return;}
 let h=`<div class="nbox gold"><div class="nl">🗓️ ${t.mj} · <span class="ndim">${t.tap}</span></div>`;
 matchs.forEach(m=>{
-const parts=(m.match||'').split(' vs ');
+const parts=(m.match||'').split(/ vs /i);
 const eq1=(parts[0]||'').trim(),eq2=(parts[1]||'').trim();
-const f1=force(eq1),f2=force(eq2),tot=f1+f2;
+const f1=force(eq1)||5,f2=force(eq2)||5,tot=f1+f2;
 const p1=Math.round(f1/tot*100),p2=100-p1;
 h+=`<div class="nmatch"><div class="nteams"><span onclick="goD('${eq1}')" class="nteam">${eq1}</span><span class="nvs">VS</span><span onclick="goD('${eq2}')" class="nteam">${eq2}</span></div>`;
 h+=`<div class="nbar"><div style="width:${p1}%;background:#0066CC;height:100%;"></div><div style="width:${p2}%;background:#E53935;height:100%;"></div></div>`;
