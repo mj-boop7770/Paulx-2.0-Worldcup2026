@@ -1,396 +1,299 @@
 {
   "matches_dossier": [
     {
-      "date": "2026-06-19",
-      "match": "États-Unis vs Australie",
-      "group": "D",
-      "venue": "Lumen Field, Seattle",
+      "date": "2026-06-22",
+      "match": "Argentine vs Autriche",
+      "group": "J",
+      "venue": "AT&T Stadium, Dallas",
       "teams": {
-        "usa": {
+        "argentina": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Qualifiés d'office en tant que co-organisateurs, mais solides en matchs de préparation.",
-              "en": "Automatically qualified as co-hosts, but strong in preparation matches.",
-              "pt": "Classificados automaticamente como co-anfitriões, mas sólidos nos jogos de preparação."
+              "fr": "Parcours impérial en zone CONMEBOL, qualifiés en tête avec une régularité impressionnante.",
+              "en": "Imperious run in the CONMEBOL zone, qualifying at the top with impressive consistency.",
+              "pt": "Percurso imperial na zona CONMEBOL, classificados na liderança com uma consistência impressionante."
             },
             "world_cup": {
-              "fr": "Motivation décuplée à domicile, pressing intense et jeu de transition rapide.",
-              "en": "Extra motivation on home soil, intense pressing and quick transition play.",
-              "pt": "Motivação redobrada em casa, pressão intensa e jogo de transição rápida."
+              "fr": "Qualification validée après deux victoires majeures, maîtrise collective et gestion des temps forts.",
+              "en": "Qualification secured after two major wins, collective mastery and management of key moments.",
+              "pt": "Qualificação garantida após duas grandes vitórias, mestria coletiva e gestão dos momentos-chave."
             }
           },
           "key_strength": {
-            "fr": "Soutien populaire massif et intensité physique redoutable.",
-            "en": "Massive popular support and formidable physical intensity.",
-            "pt": "Apoio popular massivo e intensidade física formidável."
+            "fr": "Mental d'acier, créativité technique et le facteur X Lionel Messi.",
+            "en": "Mental toughness, technical creativity, and the Lionel Messi X-factor.",
+            "pt": "Mentalidade de aço, criatividade técnica e o fator X Lionel Messi."
           },
           "key_weakness": {
-            "fr": "Manque d'expérience au plus haut niveau en phase finale.",
-            "en": "Lack of experience at the highest level in the final phase.",
-            "pt": "Falta de experiência ao mais alto nível na fase final."
+            "fr": "Parfois un léger relâchement défensif en fin de match.",
+            "en": "Sometimes a slight defensive lapse late in the game.",
+            "pt": "Por vezes, um ligeiro relaxamento defensivo no final do jogo."
           },
           "coach": {
-            "name": "Mauricio Pochettino",
+            "name": "Lionel Scaloni",
             "tactics": {
-              "fr": "Pressing haut organisé, 4-3-3 dynamique avec transitions rapides.",
-              "en": "Organized high press, dynamic 4-3-3 with quick transitions.",
-              "pt": "Pressão alta organizada, 4-3-3 dinâmico com transições rápidas."
+              "fr": "4-3-3 fluide axé sur la possession, le contre-pressing et la liberté absolue accordée à Messi.",
+              "en": "Fluid 4-3-3 focused on possession, counter-pressing, and absolute freedom given to Messi.",
+              "pt": "4-3-3 fluido focado na posse de bola, contra-pressão e liberdade absoluta dada a Messi."
             }
           },
           "star_player": {
-            "name": "Christian Pulisic",
+            "name": "Lionel Messi",
             "club_form": {
-              "fr": "Capitaine emblématique du Milan AC, leader offensif incontesté de la sélection.",
-              "en": "Emblematic captain of AC Milan, undisputed attacking leader of the squad.",
-              "pt": "Capitão emblemático do Milan, líder ofensivo incontestável da seleção."
+              "fr": "Entré définitivement dans la légende absolue en devenant le seul meilleur buteur de l'histoire du Mondial (18 buts).",
+              "en": "Definitively entered absolute legend status by becoming the sole top scorer in World Cup history (18 goals).",
+              "pt": "Entrou definitivamente na lenda absoluta ao tornar-se o maior marcador da história do Mundial (18 golos)."
             }
           },
           "prediction": {
-            "fr": "Favoris logiques sur leur sol, portés par un public électrisé.",
-            "en": "Logical favorites on home soil, driven by an electrifying crowd.",
-            "pt": "Favoritos lógicos em casa, impulsionados por uma torcida eletrizada."
+            "fr": "Favoris confirmés du tournoi, impressionnants de sérénité.",
+            "en": "Confirmed tournament favorites, impressive in their serenity.",
+            "pt": "Favoritos confirmados do torneio, impressionantes na sua serenidade."
           }
         },
-        "australia": {
+        "austria": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Qualifiés directement pour la première fois en 12 ans, solides en zone AFC.",
-              "en": "Direct qualification for the first time in 12 years, solid in the AFC zone.",
-              "pt": "Classificação direta pela primeira vez em 12 anos, sólidos na zona AFC."
+              "fr": "Excellente campagne en éliminateurs UEFA, un collectif très discipliné physiquement.",
+              "en": "Excellent UEFA qualifying campaign, a very physically disciplined squad.",
+              "pt": "Excelente campanha nas eliminatórias da UEFA, um coletivo muito disciplinado fisicamente."
             },
             "world_cup": {
-              "fr": "Combatifs et disciplinés, réputés pour créer des surprises.",
-              "en": "Combative and disciplined, known for causing upsets.",
-              "pt": "Combativos e disciplinados, conhecidos por causar surpresas."
+              "fr": "Solide mais impuissante face au réalisme argentin, jouera sa survie au prochain match.",
+              "en": "Solid but powerless against Argentine clinical finishing, will play for survival next match.",
+              "pt": "Sólida mas impotente face ao pragmatismo argentino, jogará a sobrevivência no próximo jogo."
             }
           },
           "key_strength": {
-            "fr": "Solidarité collective et combativité tout au long des 90 minutes.",
-            "en": "Collective solidarity and combativeness throughout 90 minutes.",
-            "pt": "Solidariedade coletiva e combatividade durante os 90 minutos."
+            "fr": "Organisation tactique rigoureuse et impact dans les duels au milieu.",
+            "en": "Rigorous tactical organization and impact in midfield duels.",
+            "pt": "Organização tática rigorosa e impacto nos duelos a meio-campo."
           },
           "key_weakness": {
-            "fr": "Effectif limité en profondeur face aux grandes nations.",
-            "en": "Limited squad depth when facing major nations.",
-            "pt": "Plantel com pouca profundidade frente às grandes seleções."
+            "fr": "Difficulté à se montrer dangereux face aux blocs défensifs d'élite.",
+            "en": "Difficulty posing a threat against elite defensive blocks.",
+            "pt": "Dificuldade em criar perigo contra blocos defensivos de elite."
           },
           "coach": {
-            "name": "Tony Popovic",
+            "name": "Ralf Rangnick",
             "tactics": {
-              "fr": "Système en 3-4-2-1, s'appuyant sur les flancs et la combativité défensive.",
-              "en": "3-4-2-1 system, relying on the flanks and defensive combativeness.",
-              "pt": "Sistema em 3-4-2-1, apostando nas alas e na combatividade defensiva."
+              "fr": "Gegenpressing intense, bloc médian compact en 4-2-3-1 à forte projection.",
+              "en": "Intense Gegenpressing, compact mid-block in a highly transitional 4-2-3-1.",
+              "pt": "Gegenpressing intenso, bloco médio compacto em 4-2-3-1 com forte projeção."
             }
           },
           "star_player": {
-            "name": "Mathew Ryan",
+            "name": "Marcel Sabitzer",
             "club_form": {
-              "fr": "Gardien expérimenté, pilier de la sélection depuis de nombreuses années.",
-              "en": "Experienced goalkeeper, a cornerstone of the national team for many years.",
-              "pt": "Guarda-redes experiente, pilar da seleção há muitos anos."
+              "fr": "Le métronome de l'équipe, précieux à la récupération et sur les frappes de loin.",
+              "en": "The team's metronome, valuable in recovery and long-range shooting.",
+              "pt": "O metrónomo da equipa, precioso na recuperação e nos remates de longe."
             }
           },
           "prediction": {
-            "fr": "Outsider courageux, mais l'écart de niveau face aux USA reste important.",
-            "en": "Brave underdog, but the gap in quality against the USA remains significant.",
-            "pt": "Azarão corajoso, mas a diferença de nível face aos EUA continua sendo grande."
+            "fr": "Outsider valeureux, condamné à l'exploit lors de la dernière journée.",
+            "en": "Valiant underdog, condemned to a major feat on the final matchday.",
+            "pt": "Azarão valente, obrigado a um feito heroico na última jornada."
           }
         }
       }
     },
     {
-      "date": "2026-06-19",
-      "match": "Écosse vs Maroc",
-      "group": "C",
-      "venue": "Gillette Stadium, Boston",
-      "teams": {
-        "scotland": {
-          "general_performance": {
-            "qualifiers": {
-              "fr": "Qualifiée au forceps après 28 ans d'absence, solide sur les duels aériens.",
-              "en": "Qualified by a narrow margin after 28 years of absence, solid in aerial duels.",
-              "pt": "Qualificada no limite após 28 anos de ausência, sólida nos duelos aéreos."
-            },
-            "world_cup": {
-              "fr": "Jeu très direct, dépend énormément de ses pistons latéraux.",
-              "en": "Very direct play, highly dependent on wing-backs.",
-              "pt": "Jogo muito direto, depende enormemente dos seus alas."
-            }
-          },
-          "key_strength": {
-            "fr": "Intensité physique et efficacité sur les phases arrêtées.",
-            "en": "Physical intensity and efficiency on set pieces.",
-            "pt": "Intensidade física e eficiência nas bolas paradas."
-          },
-          "key_weakness": {
-            "fr": "Manque de technique individuelle face aux équipes de haut niveau.",
-            "en": "Lack of individual technique against high-level opponents.",
-            "pt": "Falta de qualidade técnica individual contra adversários de alto nível."
-          },
-          "coach": {
-            "name": "Steve Clarke",
-            "tactics": {
-              "fr": "Défense à trois, misant sur la robustesse et les centres.",
-              "en": "Back three formation, relying on robustness and crosses.",
-              "pt": "Defesa de três, apostando na robustez e nos cruzamentos."
-            }
-          },
-          "star_player": {
-            "name": "Andy Robertson",
-            "club_form": {
-              "fr": "Valeur sûre à Liverpool, immense capacité physique et technique.",
-              "en": "Reliable asset at Liverpool, immense physical and technical capacity.",
-              "pt": "Valor seguro no Liverpool, enorme capacidade física e técnica."
-            }
-          },
-          "prediction": {
-            "fr": "Admirable dans l'effort mais techniquement limité face au Maroc.",
-            "en": "Admirable in effort but technically limited against Morocco.",
-            "pt": "Admirável no esforço, mas tecnicamente limitado diante do Marrocos."
-          }
-        },
-        "morocco": {
-          "general_performance": {
-            "qualifiers": {
-              "fr": "Impérial durant les éliminatoires africains, une équipe très mature.",
-              "en": "Imperious during African qualifiers, a very mature team.",
-              "pt": "Imperial durante as eliminatórias africanas, uma equipe muito madura."
-            },
-            "world_cup": {
-              "fr": "Jeu de possession élaboré, capacité à accélérer le rythme en transition.",
-              "en": "Elaborate possession play, ability to increase the pace on transition.",
-              "pt": "Jogo de posse elaborado, capacidade de acelerar o ritmo na transição."
-            }
-          },
-          "key_strength": {
-            "fr": "Équilibre défensif et offensif, grande expérience internationale depuis 2022.",
-            "en": "Defensive and offensive balance, vast international experience since 2022.",
-            "pt": "Equilíbrio defensivo e ofensivo, vasta experiência internacional desde 2022."
-          },
-          "key_weakness": {
-            "fr": "Peut manquer de tranchant offensif dans les grands matches.",
-            "en": "Can lack cutting edge in attack during big matches.",
-            "pt": "Pode faltar eficácia ofensiva nos grandes jogos."
-          },
-          "coach": {
-            "name": "Walid Regragui",
-            "tactics": {
-              "fr": "Tactique hybride, capable de défendre compact et de sortir vite en contre.",
-              "en": "Hybrid tactics, capable of compact defense and quick counter-attacks.",
-              "pt": "Tática híbrida, capaz de defender de forma compacta e sair em contra-ataque rápido."
-            }
-          },
-          "star_player": {
-            "name": "Achraf Hakimi",
-            "club_form": {
-              "fr": "L'un des meilleurs latéraux du monde, moteur infatigable au PSG.",
-              "en": "One of the best full-backs in the world, tireless engine at PSG.",
-              "pt": "Um dos melhores laterais do mundo, motor incansável no PSG."
-            }
-          },
-          "prediction": {
-            "fr": "Favori logique, avec les ressources pour s'imposer confortablement.",
-            "en": "Logical favorite, with the resources to win comfortably.",
-            "pt": "Favorito lógico, com recursos para vencer de forma confortável."
-          }
-        }
-      }
-    },
-    {
-      "date": "2026-06-19",
-      "match": "Brésil vs Haïti",
-      "group": "C",
+      "date": "2026-06-22",
+      "match": "France vs Irak",
+      "group": "I",
       "venue": "Lincoln Financial Field, Philadelphie",
       "teams": {
-        "brazil": {
+        "france": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Qualifiés avec difficulté, parcours irrégulier en zone CONMEBOL.",
-              "en": "Qualified with difficulty, irregular run in the CONMEBOL zone.",
-              "pt": "Classificados com dificuldade, percurso irregular na zona CONMEBOL."
+              "fr": "Souverains en zone UEFA, une profondeur de banc sans équivalent dans le monde.",
+              "en": "Sovereign in the UEFA zone, unparalleled squad depth in the world.",
+              "pt": "Soberanos na zona UEFA, uma profundidade de plantel sem paralelo no mundo."
             },
             "world_cup": {
-              "fr": "Jeu offensif flamboyant mais vulnérable défensivement selon les matchs.",
-              "en": "Flamboyant attacking play but defensively vulnerable depending on the match.",
-              "pt": "Futebol ofensivo e vistoso, mas defensivamente vulnerável conforme o jogo."
+              "fr": "Qualifiés pour les seizièmes de finale (3-0), gestion parfaite malgré une longue interruption météo.",
+              "en": "Qualified for the round of 32 (3-0), perfect management despite a long weather delay.",
+              "pt": "Qualificados para os dezasseis-avos de final (3-0), gestão perfeita apesar de uma longa interrupção meteorológica."
             }
           },
           "key_strength": {
-            "fr": "Créativité offensive exceptionnelle et vitesse sur les ailes.",
-            "en": "Exceptional attacking creativity and pace on the wings.",
-            "pt": "Criatividade ofensiva excecional e velocidade nas alas."
+            "fr": "Pouvoir offensif dévastateur mené par Kylian Mbappé.",
+            "en": "Devastating attacking power led by Kylian Mbappé.",
+            "pt": "Poder ofensivo devastador liderado por Kylian Mbappé."
           },
           "key_weakness": {
-            "fr": "Fragilité défensive sur les transitions rapides adverses.",
-            "en": "Defensive fragility on opposition quick transitions.",
-            "pt": "Fragilidade defensiva nas transições rápidas adversárias."
+            "fr": "Parfois un manque de rythme en début de rencontre.",
+            "en": "Sometimes a lack of rhythm at the start of matches.",
+            "pt": "Por vezes, falta de ritmo no início das partidas."
           },
           "coach": {
-            "name": "Carlo Ancelotti",
+            "name": "Didier Deschamps",
             "tactics": {
-              "fr": "Jeu de possession structuré avec liberté offensive accordée aux attaquants.",
-              "en": "Structured possession play with attacking freedom given to forwards.",
-              "pt": "Futebol de posse estruturado com liberdade ofensiva concedida aos atacantes."
+              "fr": "4-2-3-1 pragmatique, solide assise défensive et projections rapides sur les ailes.",
+              "en": "Pragmatic 4-2-3-1, solid defensive foundation and quick bursts down the wings.",
+              "pt": "4-2-3-1 pragmático, sólida base defensiva e projeções rápidas pelas alas."
             }
           },
           "star_player": {
-            "name": "Vinícius Jr",
+            "name": "Kylian Mbappé",
             "club_form": {
-              "fr": "Décisif avec le Real Madrid, leader technique incontesté de la Seleção.",
-              "en": "Decisive for Real Madrid, undisputed technical leader of the Seleção.",
-              "pt": "Decisivo pelo Real Madrid, líder técnico incontestável da Seleção."
+              "fr": "Inarrêtable, auteur d'un nouveau doublé décisif pour valider la qualification des Bleus.",
+              "en": "Unstoppable, scoring another decisive brace to seal Les Bleus' qualification.",
+              "pt": "Irrefreável, autor de mais um bis decisivo para garantir a qualificação dos Bleus."
             }
           },
           "prediction": {
-            "fr": "Favori absolu, attendu dominant malgré un collectif encore en construction.",
-            "en": "Absolute favorite, expected to dominate despite a squad still under construction.",
-            "pt": "Favorito absoluto, esperado para dominar apesar de um coletivo ainda em construção."
+            "fr": "Prétendants sérieux au titre, assument parfaitement leur statut.",
+            "en": "Serious title contenders, perfectly living up to their status.",
+            "pt": "Sérios candidatos ao título, assumindo perfeitamente o seu estatuto."
           }
         },
-        "haiti": {
+        "iraq": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Surprise solide de la zone CONCACAF, très rigoureux défensivement.",
-              "en": "A solid surprise from the CONCACAF zone, very rigorous defensively.",
-              "pt": "Surpresa sólida da zona CONCACAF, muito rigorosos defensivamente."
+              "fr": "Parcours surprise et valeureux en zone AFC pour décrocher le billet historique.",
+              "en": "Surprise and valiant run in the AFC zone to secure a historic ticket.",
+              "pt": "Percurso surpresa e valente na zona AFC para garantir a vaga histórica."
             },
             "world_cup": {
-              "fr": "Difficultés à exister offensivement face aux grandes nations.",
-              "en": "Struggling to make an impact offensively against major nations.",
-              "pt": "Dificuldades em criar jogadas ofensivas contra grandes seleções."
+              "fr": "Élimination officielle après deux défaites, mais un apprentissage précieux au haut niveau.",
+              "en": "Official elimination after two defeats, but valuable learning at the highest level.",
+              "pt": "Eliminação oficial após duas derrotas, mas uma aprendizagem preciosa ao mais alto nível."
             }
           },
           "key_strength": {
-            "fr": "Organisation défensive exemplaire et solidarité collective.",
-            "en": "Exemplary defensive organization and collective solidarity.",
-            "pt": "Organização defensiva exemplar e solidariedade coletiva."
+            "fr": "Ferveur nationale, solidarité collective et combativité défensive.",
+            "en": "National fervor, collective solidarity, and defensive combativeness.",
+            "pt": "Fervor nacional, solidariedade coletiva e combatividade defensiva."
           },
           "key_weakness": {
-            "fr": "Manque de profondeur offensive et dépendance excessive à Nazon.",
-            "en": "Lack of attacking depth and over-reliance on Nazon.",
-            "pt": "Falta de profundidade ofensiva e dependência excessiva de Nazon."
+            "fr": "Écart technique trop important face aux géants mondiaux.",
+            "en": "Too large a technical gap when facing global giants.",
+            "pt": "Diferença técnica demasiado grande face aos gigantes mundiais."
           },
           "coach": {
-            "name": "Sébastien Migné",
+            "name": "Jesús Casas",
             "tactics": {
-              "fr": "Bloc bas très discipliné, cherchant à neutraliser et punir sur contre.",
-              "en": "Very disciplined low block, seeking to neutralize and punish on counter.",
-              "pt": "Bloco baixo muito disciplinado, buscando neutralizar e punir no contra-ataque."
+              "fr": "Bloc bas compact en 5-4-1 visant à restreindre les espaces axiaux.",
+              "en": "Compact low block in a 5-4-1 aimed at restricting central spaces.",
+              "pt": "Bloco baixo compacto em 5-4-1 visando restringir os espaços centrais."
             }
           },
           "star_player": {
-            "name": "Duckens Nazon",
+            "name": "Aymen Hussein",
             "club_form": {
-              "fr": "Efficacité redoutable dans son championnat, buteur prolifique et imprévisible.",
-              "en": "Deadly efficiency in his league, a prolific and unpredictable scorer.",
-              "pt": "Eficiência temível na sua liga, artilheiro prolífico e imprevisível."
+              "fr": "Point d'ancrage physique à la pointe de l'attaque, sevré de ballons face à la France.",
+              "en": "Physical target man at the top of the attack, starved of service against France.",
+              "pt": "Ponto de ancoragem físico na frente de ataque, privado de bolas frente à França."
             }
           },
           "prediction": {
-            "fr": "Outsider courageux, cherchera à tenir le score le plus longtemps possible.",
-            "en": "Brave underdog, will aim to keep the score tight for as long as possible.",
-            "pt": "Azarão corajoso, vai tentar manter o resultado equilibrado pelo maior tempo possível."
+            "fr": "Éliminés la tête haute, chercheront l'honneur lors du dernier match.",
+            "en": "Eliminated with heads held high, will play for honor in the final match.",
+            "pt": "Eliminados de cabeça erguida, procurarão a honra na última partida."
           }
         }
       }
     },
     {
-      "date": "2026-06-19",
-      "match": "Turquie vs Paraguay",
-      "group": "D",
-      "venue": "Levi's Stadium, San Francisco",
+      "date": "2026-06-22",
+      "match": "Norvège vs Sénégal",
+      "group": "I",
+      "venue": "MetLife Stadium, East Rutherford",
       "teams": {
-        "turkey": {
+        "norway": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Retour en Coupe du monde après 24 ans d'absence, qualifiés via les barrages UEFA.",
-              "en": "Return to the World Cup after 24 years of absence, qualified via UEFA playoffs.",
-              "pt": "Regresso ao Mundial após 24 anos de ausência, qualificados pelos play-offs da UEFA."
+              "fr": "Qualifiés brillamment via les barrages européens, génération dorée en pleine éclosion.",
+              "en": "Brilliantly qualified through European playoffs, a golden generation in full bloom.",
+              "pt": "Qualificados brilhantemente através dos play-offs europeus, uma geração de ouro em plena afirmação."
             },
             "world_cup": {
-              "fr": "Équipe séduisante avec un beau milieu de terrain, déjà battue par l'Australie (0-2).",
-              "en": "Attractive team with a strong midfield, already beaten by Australia (0-2).",
-              "pt": "Equipe atraente com um bom meio-campo, já derrotada pela Austrália (0-2)."
+              "fr": "Billet pour les seizièmes en poche après un match fou contre le Sénégal (3-2).",
+              "en": "Ticket to the round of 32 secured after a wild match against Senegal (3-2).",
+              "pt": "Vaga nos dezasseis-avos garantida após um jogo louco contra o Senegal (3-2)."
             }
           },
           "key_strength": {
-            "fr": "Milieu de terrain technique et physique, porté par Çalhanoğlu.",
-            "en": "Technical and physical midfield, driven by Çalhanoğlu.",
-            "pt": "Meio-campo técnico e físico, liderado por Çalhanoğlu."
+            "fr": "Une attaque dévastatrice portée par le duo Ødegaard - Haaland.",
+            "en": "A devastating attack driven by the Ødegaard - Haaland duo.",
+            "pt": "Um ataque devastador liderado pela dupla Ødegaard - Haaland."
           },
           "key_weakness": {
-            "fr": "Défense parfois fragile et manque de profondeur offensive.",
-            "en": "Sometimes fragile defense and lack of attacking depth.",
-            "pt": "Defesa por vezes frágil e falta de profundidade ofensiva."
+            "fr": "Charnière défensive centrale parfois naïve face à la vitesse.",
+            "en": "Central defensive pairing sometimes naive against raw pace.",
+            "pt": "Dupla defensiva central por vezes ingénua face à velocidade."
           },
           "coach": {
-            "name": "Vincenzo Montella",
+            "name": "Ståle Solbakken",
             "tactics": {
-              "fr": "Jeu offensif collectif, valorisant les phases de transition et les coups de pied arrêtés.",
-              "en": "Collective attacking play, emphasizing transition phases and set pieces.",
-              "pt": "Jogo ofensivo coletivo, valorizando as fases de transição e as bolas paradas."
+              "fr": "4-3-3 vertical axé sur la créativité d'Ødegaard pour nourrir Haaland dans la profondeur.",
+              "en": "Vertical 4-3-3 focused on Ødegaard's creativity to feed Haaland in behind.",
+              "pt": "4-3-3 vertical focado na criatividade de Ødegaard para servir Haaland na profundidade."
             }
           },
           "star_player": {
-            "name": "Hakan Çalhanoğlu",
+            "name": "Erling Haaland",
             "club_form": {
-              "fr": "Capitaine de l'Inter Milan, visionnaire du jeu et redoutable sur coup franc.",
-              "en": "Inter Milan captain, a visionary playmaker and deadly on free kicks.",
-              "pt": "Capitão da Inter de Milão, visionário do jogo e temível nas faltas diretas."
+              "fr": "Monstrueux, auteur d'un doublé capital qui propulse son pays au tour suivant.",
+              "en": "Monstrous, scoring a crucial brace that propels his country to the next round.",
+              "pt": "Monstruoso, autor de um bis capital que catapulta o seu país para a fase seguinte."
             }
           },
           "prediction": {
-            "fr": "Match crucial après la défaite inaugurale, obligés de gagner pour rester en course.",
-            "en": "Crucial match after the opening defeat, must win to stay in contention.",
-            "pt": "Jogo crucial após a derrota inaugural, obrigados a ganhar para continuar na corrida."
+            "fr": "Équipe frisson du tournoi, capable de bousculer n'importe quel favori.",
+            "en": "Thrilling team of the tournament, capable of shaking up any favorite.",
+            "pt": "Equipa sensação do torneio, capaz de destabilizar qualquer favorito."
           }
         },
-        "paraguay": {
+        "senegal": {
           "general_performance": {
             "qualifiers": {
-              "fr": "Retour en Coupe du monde après 16 ans d'absence, défense solide en CONMEBOL.",
-              "en": "Return to the World Cup after 16 years of absence, solid defense in CONMEBOL.",
-              "pt": "Regresso ao Mundial após 16 anos de ausência, defesa sólida na CONMEBOL."
+              "fr": "Parcours solide en zone CAF, leaders incontestés de leur groupe éliminatoire.",
+              "en": "Solid run in the CAF zone, undisputed leaders of their qualifying group.",
+              "pt": "Percurso sólido na zona CAF, líderes incontestáveis do seu grupo de qualificação."
             },
             "world_cup": {
-              "fr": "Lourde défaite inaugurale face aux États-Unis (1-4), dos au mur.",
-              "en": "Heavy opening defeat against the USA (1-4), backs against the wall.",
-              "pt": "Pesada derrota inaugural frente aos EUA (1-4), de costas para a parede."
+              "fr": "Cruelle défaite (2-3), obligés de l'emporter lors du dernier match pour espérer se qualifier.",
+              "en": "Cruel defeat (2-3), forced to win their final match to maintain qualification hopes.",
+              "pt": "Derrota cruel (2-3), obrigados a vencer a última partida para manter as esperanças de apuramento."
             }
           },
           "key_strength": {
-            "fr": "Solidité défensive historique et organisation tactique rigoureuse.",
-            "en": "Historic defensive solidity and rigorous tactical organization.",
-            "pt": "Solidez defensiva histórica e organização tática rigorosa."
+            "fr": "Impact physique, puissance athlétique et expérience des grands rendez-vous.",
+            "en": "Physical impact, athletic power, and big-match experience.",
+            "pt": "Impacto físico, potência atlética e experiência em grandes palcos."
           },
           "key_weakness": {
-            "fr": "Manque de créativité offensive et dépendance à Almirón.",
-            "en": "Lack of attacking creativity and over-reliance on Almirón.",
-            "pt": "Falta de criatividade ofensiva e dependência excessiva de Almirón."
+            "fr": "Manque de concentration coupable sur les transitions défensives.",
+            "en": "Costly lack of concentration during defensive transitions.",
+            "pt": "Falta de concentração crucial nas transições defensivas."
           },
           "coach": {
-            "name": "Gustavo Alfaro",
+            "name": "Aliou Cissé",
             "tactics": {
-              "fr": "Bloc compact en 4-4-2, misant sur la solidarité défensive et les contres.",
-              "en": "Compact 4-4-2 block, relying on defensive solidarity and counter-attacks.",
-              "pt": "Bloco compacto em 4-4-2, apostando na solidariedade defensiva e nos contra-ataques."
+              "fr": "4-3-3 équilibré misant sur l'impact des milieux et la vitesse des attaquants excentrés.",
+              "en": "Balanced 4-3-3 relying on midfield impact and the pace of wide forwards.",
+              "pt": "4-3-3 equilibrado apostando no impacto dos médios e na velocidade dos avançados alas."
             }
           },
           "star_player": {
-            "name": "Julio Enciso",
+            "name": "Sadio Mané",
             "club_form": {
-              "fr": "Pépite offensive de 22 ans à Strasbourg, vitesse et frappe redoutables.",
-              "en": "22-year-old attacking gem at Strasbourg, fearsome pace and shooting.",
-              "pt": "Pépita ofensiva de 22 anos no Estrasburgo, velocidade e remate temíveis."
+              "fr": "Leader spirituel et technique, combatif mais malheureux face au réalisme norvégien.",
+              "en": "Spiritual and technical leader, combative but unfortunate against clinical Norwegian play.",
+              "pt": "Líder espiritual e técnico, combativo mas infeliz face ao pragmatismo norueguês."
             }
           },
           "prediction": {
-            "fr": "Match vital après la déroute, doivent absolument s'imposer pour espérer.",
-            "en": "Vital match after the rout, must absolutely win to keep hopes alive.",
-            "pt": "Jogo vital após a goleada sofrida, precisam vencer para manter as esperanças."
+            "fr": "Dos au mur, les Lions de la Teranga vont devoir sortir un match de titans.",
+            "en": "Backs against the wall, the Teranga Lions will need to deliver a titanic performance.",
+            "pt": "De costas para a parede, os Leões da Teranga precisarão de uma exibição titânica."
           }
         }
       }
     }
   ]
-            }
+          }
+          
