@@ -13,92 +13,53 @@ def get_matches():
     r.raise_for_status()
     return r.json().get("matches", [])
 
-def get_standings():
-    r = requests.get(f"{BASE_URL}/competitions/{WC_ID}/standings", headers=HEADERS)
-    r.raise_for_status()
-    return r.json().get("standings", [])
-
 def get_scorers():
     r = requests.get(f"{BASE_URL}/competitions/{WC_ID}/scorers?limit=10", headers=HEADERS)
     r.raise_for_status()
     return r.json().get("scorers", [])
 
-def build_2026_json(matches, standings):
-    groupes = {}
-    for match in matches:
-        group = match.get("group", "")
-        if not group:
-            continue
-        key = group.replace("GROUP_", "Groupe ")
-        if key not in groupes:
-            groupes[key] = {"matchs": [], "classement": []}
-        home = match["homeTeam"]["shortName"] or match["homeTeam"]["name"]
-        away = match["awayTeam"]["shortName"] or match["awayTeam"]["name"]
-        score_home = match["score"]["fullTime"]["home"]
-        score_away = match["score"]["fullTime"]["away"]
+def build_2026_json(matches):
+    result = []
+    for m in matches:
         entry = {
-            "date": match["utcDate"][:10],
-            "heure": match["utcDate"][11:16],
-            "domicile": home,
-            "exterieur": away,
-            "statut": match["status"],
+            "date": m["utcDate"][:10],
+            "time": m["utcDate"][11:16],
+            "team1": m["homeTeam"]["shortName"] or m["homeTeam"]["name"],
+            "team2": m["awayTeam"]["shortName"] or m["awayTeam"]["name"],
+            "score1": m["score"]["fullTime"]["home"],
+            "score2": m["score"]["fullTime"]["away"],
+            "group": m.get("group", "").replace("GROUP_", "") or "KO",
+            "status": m["status"]
         }
-        if score_home is not None:
-            entry["score"] = {"domicile": score_home, "exterieur": score_away}
-        groupes[key]["matchs"].append(entry)
-    for standing in standings:
-        group = standing.get("group", "")
-        key = group.replace("GROUP_", "Groupe ")
-        if key not in groupes:
-            continue
-        for row in standing.get("table", []):
-            groupes[key]["classement"].append({
-                "equipe": row["team"]["shortName"] or row["team"]["name"],
-                "pts": row["points"],
-                "j": row["playedGames"],
-                "g": row["won"],
-                "n": row["draw"],
-                "p": row["lost"],
-                "bp": row["goalsFor"],
-                "bc": row["goalsAgainst"],
-                "diff": row["goalDifference"]
-            })
-    return {
-        "mise_a_jour": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "competition": "FIFA World Cup 2026",
-        "groupes": groupes
-    }
+        result.append(entry)
+    return {"rounds": [{"name": "FIFA World Cup 2026", "matches": result}]}
 
 def build_messages_json(matches, scorers):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     matchs_du_jour = [m for m in matches if m["utcDate"][:10] == today]
     articles = []
     if matchs_du_jour:
-        lines_fr, lines_en, lines_pt = [], [], []
+        lines = []
         for m in matchs_du_jour:
-            home = m["homeTeam"]["shortName"] or m["homeTeam"]["name"]
-            away = m["awayTeam"]["shortName"] or m["awayTeam"]["name"]
-            heure = m["utcDate"][11:16]
+            h = m["homeTeam"]["shortName"] or m["homeTeam"]["name"]
+            a = m["awayTeam"]["shortName"] or m["awayTeam"]["name"]
             sh = m["score"]["fullTime"]["home"]
             sa = m["score"]["fullTime"]["away"]
             if sh is not None:
-                lines_fr.append(f"{home} {sh}-{sa} {away}")
-                lines_en.append(f"{home} {sh}-{sa} {away}")
-                lines_pt.append(f"{home} {sh}-{sa} {away}")
+                lines.append(f"{h} {sh}-{sa} {a}")
             else:
-                lines_fr.append(f"{home} vs {away} à {heure} UTC")
-                lines_en.append(f"{home} vs {away} at {heure} UTC")
-                lines_pt.append(f"{home} vs {away} às {heure} UTC")
+                lines.append(f"{h} vs {a} à {m['utcDate'][11:16]} UTC")
         articles.append({
             "id": f"news-{today}-matches",
             "date": today,
-            "categorie": "resultats",
-            "titre_fr": f"Matchs du {today}",
+            "badge": "🗓️ AUJOURD'HUI",
+            "titre": f"Matchs du {today}",
             "titre_en": f"Matches on {today}",
             "titre_pt": f"Jogos de {today}",
-            "texte_fr": " | ".join(lines_fr),
-            "texte_en": " | ".join(lines_en),
-            "texte_pt": " | ".join(lines_pt)
+            "texte": " | ".join(lines),
+            "texte_en": " | ".join(lines),
+            "texte_pt": " | ".join(lines),
+            "matchs_du_jour": [{"match": f"{m['homeTeam']['shortName'] or m['homeTeam']['name']} vs {m['awayTeam']['shortName'] or m['awayTeam']['name']}", "heure": m["utcDate"][11:16], "stade": ""} for m in matchs_du_jour]
         })
     if scorers:
         top = scorers[:5]
@@ -106,40 +67,40 @@ def build_messages_json(matches, scorers):
         articles.append({
             "id": f"news-{today}-scorers",
             "date": today,
-            "categorie": "stats",
-            "titre_fr": "Top buteurs",
+            "badge": "⚽ STATS",
+            "titre": "Top buteurs",
             "titre_en": "Top scorers",
             "titre_pt": "Artilheiros",
-            "texte_fr": " | ".join(lines),
+            "texte": " | ".join(lines),
             "texte_en": " | ".join(lines),
             "texte_pt": " | ".join(lines)
         })
     existing = []
     try:
-        with open("data/messages.json", "r", encoding="utf-8") as f:
+        with open("messages.json", "r", encoding="utf-8") as f:
             existing = json.load(f)
+            if isinstance(existing, dict):
+                existing = existing.get("articles", [])
     except Exception:
         pass
     existing_ids = {a["id"] for a in existing}
     for a in articles:
         if a["id"] not in existing_ids:
             existing.insert(0, a)
-    return existing[:30]
+    return {"date": today, "articles": existing[:30]}
 
 def main():
     print("Récupération des données...")
     matches = get_matches()
-    standings = get_standings()
     scorers = get_scorers()
-    data_2026 = build_2026_json(matches, standings)
-    os.makedirs("data", exist_ok=True)
-    with open("data/2026.json", "w", encoding="utf-8") as f:
+    data_2026 = build_2026_json(matches)
+    with open("2026.json", "w", encoding="utf-8") as f:
         json.dump(data_2026, f, ensure_ascii=False, indent=2)
-    print("✅ data/2026.json mis à jour")
+    print("✅ 2026.json mis à jour")
     messages = build_messages_json(matches, scorers)
-    with open("data/messages.json", "w", encoding="utf-8") as f:
+    with open("messages.json", "w", encoding="utf-8") as f:
         json.dump(messages, f, ensure_ascii=False, indent=2)
-    print("✅ data/messages.json mis à jour")
+    print("✅ messages.json mis à jour")
 
 if __name__ == "__main__":
     main()
