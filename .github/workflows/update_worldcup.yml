@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "MUJOS Octopus Bot"
           git config user.email "bot@worldcup2026.mujos"
-          git add data/2026.json data/messages.json
+          git add 2026.json messages.json
           git diff --staged --quiet || git commit -m "Auto-update data $(date -u '+%Y-%m-%d %H:%M') UTC"
           git push
