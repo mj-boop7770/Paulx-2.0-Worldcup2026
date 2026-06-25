@@ -28,7 +28,7 @@ def build_2026_json(matches):
             "team2": m["awayTeam"]["shortName"] or m["awayTeam"]["name"],
             "score1": m["score"]["fullTime"]["home"],
             "score2": m["score"]["fullTime"]["away"],
-            "group": m.get("group", "").replace("GROUP_", "") or "KO",
+            "group": (m.get("group") or "").replace("GROUP_", "") or "KO",
             "status": m["status"]
         }
         result.append(entry)
