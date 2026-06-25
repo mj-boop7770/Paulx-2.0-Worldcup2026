@@ -1,24 +1,93 @@
-[
-  {
-    "id": "news-2026-06-25-scorers",
-    "date": "2026-06-25",
-    "categorie": "stats",
-    "titre_fr": "Top buteurs",
-    "titre_en": "Top scorers",
-    "titre_pt": "Artilheiros",
-    "texte_fr": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
-    "texte_en": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
-    "texte_pt": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts"
-  },
-  {
-    "id": "news-2026-06-25-matches",
-    "date": "2026-06-25",
-    "categorie": "resultats",
-    "titre_fr": "Matchs du 2026-06-25",
-    "titre_en": "Matches on 2026-06-25",
-    "titre_pt": "Jogos de 2026-06-25",
-    "texte_fr": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany à 20:00 UTC | Curaçao vs Ivory Coast à 20:00 UTC | Tunisia vs Netherlands à 23:00 UTC | Japan vs Sweden à 23:00 UTC",
-    "texte_en": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany at 20:00 UTC | Curaçao vs Ivory Coast at 20:00 UTC | Tunisia vs Netherlands at 23:00 UTC | Japan vs Sweden at 23:00 UTC",
-    "texte_pt": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany às 20:00 UTC | Curaçao vs Ivory Coast às 20:00 UTC | Tunisia vs Netherlands às 23:00 UTC | Japan vs Sweden às 23:00 UTC"
-  }
-]
+{
+  "date": "23 JUIN 2026",
+  "articles": [
+    {
+      "badge": "🔥 Record Historique · Choc du jour",
+      "badge_en": "🔥 Historical Record · Shock of the day",
+      "badge_pt": "🔥 Recorde Histórico · Choque do dia",
+      "badge_sw": "🔥 Rekodi ya Kihistoria · Mshangao wa siku",
+      "badge_ar": "🔥 رقم قياسي تاريخي · صدمة اليوم",
+      "badge_rw": "🔥 Agahigo Komeye · Inyuma yo ku nsi",
+      "titre": "Argentine 2-0 Autriche : Lionel Messi devient le meilleur buteur de l'histoire de la Coupe du Monde !",
+      "titre_en": "Argentina 2-0 Austria: Lionel Messi becomes the top scorer in World Cup history!",
+      "titre_pt": "Argentina 2-0 Áustria: Lionel Messi torna-se o maior marcador da história do Mundial!",
+      "titre_sw": "Argentina 2-0 Austria: Lionel Messi anakuwa mfungaji bora wa muda wote wa Kombe la Dunia!",
+      "titre_ar": "الأرجنتين 2-0 النمسا: ليونيل ميسي يصبح الهداف التاريخي لكأس العالم!",
+      "titre_rw": "Arijantine 2-0 Ositiriya: Lionel Messi abaye umukinnyi utsinze ibitego byinshi mu mateka y'Igikombe cy'Isi!",
+      "texte": "Soirée légendaire à Dallas ce 22 juin ! L'Argentine a validé sa qualification en battant l'Autriche 2-0. Après avoir manqué un penalty à la 9ème minute, Lionel Messi s'est racheté de la plus belle des manières en inscrivant un doublé magistral. Avec 18 réalisations au total, le capitaine argentin dépasse officiellement le record historique de Miroslav Klose pour s'installer seul sur le trône des meilleurs buteurs de l'histoire de la compétition. Dans l'autre match du Groupe J, l'Algérie a totalement renversé la Jordanie 2-1 dans les vingt dernières minutes, se relançant complètement dans la course aux seizièmes de finale après sa défaite initiale.",
+      "texte_en": "Legendary night in Dallas on June 22! Argentina secured their qualification by defeating Austria 2-0. Despite missing a penalty in the 9th minute, Lionel Messi redeemed himself in style by scoring a masterclass brace. With 18 total goals, the Argentine captain officially surpasses Miroslav Klose's historic record to stand alone as the all-time top scorer in World Cup history. In the other Group J match, Algeria pulled off a stunning 2-1 comeback against Jordan in the final twenty minutes, reviving their round of 32 hopes after an opening defeat.",
+      "texte_pt": "Noite lendária em Dallas neste 22 de junho! A Argentina garantiu a qualificação ao vencer a Áustria por 2-0. Apesar de falhar um penálti aos 9 minutos, Lionel Messi redimiu-se em grande estilo com um bis magistral. Com 18 golos no total, o capitão argentino ultrapassa oficialmente o recorde histórico de Miroslav Klose e isola-se no topo dos maiores marcadores da história da competição. No outro jogo do Grupo J, a Argélia deu a volta à Jordânia vencendo por 2-1 nos últimos vinte minutos, relançando-se na luta pelos oitavos de final.",
+      "texte_sw": "Usiku wa kihistoria huko Dallas mnamo Juni 22! Argentina walihakikisha kufuzu kwa kuifunga Austria 2-0. Baada ya kukosa penalti dakika ya 9, Lionel Messi alijirekebisha kwa mtindo wa hali ya juu kwa kufunga magoli mawili safi. Akiwa na jumla ya mabao 18, nahodha huyo wa Argentina amevunja rasmi rekodi ya kihistoria ya Miroslav Klose na kuwa mfungaji bora wa muda wote wa Kombe la Dunia. Katika mechi nyingine ya Kundi J, Algeria walipindua matokeo na kuifunga Jordan 2-1 katika dakika 20 za mwisho na kufufua matumaini yao.",
+      "texte_ar": "ليلة أسطورية في دالاس يوم 22 يونيو! ضمنت الأرجنتين تأهلها بفوزها على النمسا 2-0. ورغم إضاعته ركلة جزاء في الدقيقة 9، كفّر ليونيل ميسي عن خطئه بأجمل طريقة مسجلاً ثنائية رائعة. وبـ18 هدفاً في مجمل مشاركاته، تجاوز القائد الأرجنتيني رسمياً الرقم القياسي التاريخي لميروسلاف كلوزه لينفرد بلقب الهداف التاريخي للمسابقة. وفي المباراة الأخرى للمجموعة العاشرة، قلبت الجزائر تأخرها أمام الأردن لتفوز 2-1 في آخر عشرين دقيقة، لتعيد إنعاش آمالها في التأهل.",
+      "texte_rw": "Ijoro ry'amateka i Dallas kuri uyu wa 22 Kamena! Arijantine yabonye itike yo gukomeza itsinze Ositiriya 2-0. Nyuma yo guusha penariti ku munota wa 9, Lionel Messi yikosoye mu buryo budasanzwe atsinda ibitego bibiri by'intangarugero. Bifashisha ibitego 18 byose hamwe, kapiteni wa Arijantine yahise arenga agahigo k'amateka kari gafitwe na Miroslav Klose, aba umukinnyi wa mbere utsinze ibitego byinshi mu mateka y'Igikombe cy'Isi. Mu wundi mukino w'Itsinda J, Alijeriya yatsinze Jorudaniya 2-1 mu minota 20 ya nyuma.",
+      "joueurs_cles": [
+        {
+          "nom": "Lionel Messi (Argentine)",
+          "action": "Doublé historique contre l'Autriche, devenant le seul meilleur buteur de l'histoire du Mondial avec 18 buts."
+        },
+        {
+          "nom": "Kylian Mbappé (France)",
+          "action": "Auteur d'un doublé décisif lors de la victoire 3-0 contre l'Irak, qualifiant officiellement les Bleus."
+        },
+        {
+          "nom": "Erling Haaland (Norvège)",
+          "action": "Un doublé capital face au Sénégal (3-2) pour propulser la Norvège au tour suivant."
+        }
+      ],
+      "statistiques": {
+        "argentine_autriche": "Possession: ARG 63%, AUT 37% | Tirs: ARG 19, AUT 5 | Tirs cadrés: ARG 8, AUT 1 | Record: Messi 18 buts",
+        "france_irak": "Possession: FRA 68%, IRK 32% | Tirs: FRA 21, IRK 4 | Interruption météo: 2h15 | Résultat: France 3-0",
+        "norvege_senegal": "Possession: NOR 46%, SEN 54% | Tirs: NOR 12, SEN 15 | Tirs cadrés: NOR 6, SEN 5 | Résultat: Norvège 3-2",
+        "espagne_arabie": "Possession: ESP 75%, ARS 25% | Tirs: ESP 25, ARS 2 | Tirs cadrés: ESP 11, ARS 0 | Résultat: Espagne 4-0"
+      }
+    },
+    {
+      "badge": "⚡ Actualité · Qualifications",
+      "badge_en": "⚡ Updates · Qualifications",
+      "badge_pt": "⚡ Atualidade · Qualificações",
+      "badge_sw": "⚡ Habari · Kufuzu",
+      "badge_ar": "⚡ آخر الأخبار · التأهلات",
+      "badge_rw": "⚡ Amakuru · Gukomeza",
+      "titre": "La France et la Norvège qualifiées, l'Espagne écrase l'Arabie Saoudite",
+      "titre_en": "France and Norway qualify, Spain crush Saudi Arabia",
+      "titre_pt": "França e Noruega qualificadas, Espanha esmaga Arábia Saudita",
+      "titre_sw": "Ufaransa na Norway zafuzu, Hispania yaiponda Saudi Arabia",
+      "titre_ar": "فرنسا والنرويج تتأهلان، وإسبانيا تسحق السعودية 4-0",
+      "titre_rw": "Ubufaransa na Noruveje zakomeje, Espagne yatsinze Alabi Sawudite",
+      "texte": "Les Groupes I et G ont rendu leur verdict partiel. Dans le Groupe I, la France a surclassé l'Irak 3-0 à Philadelphie lors d'un match marathon interrompu pendant plus de deux heures par un violent orage. La Norvège l'accompagne en seizièmes de finale après sa victoire spectaculaire 3-2 contre le Sénégal grâce à un grand Haaland. Dans le Groupe G, l'Espagne a brillamment rectifié le tir après son premier match nul en écrasant l'Arabie Saoudite 4-0, tandis que l'Uruguay a été surpris par le Cap-Vert avec un match nul mémorable (2-2). Enfin, la Belgique concède un nul frustrant face à l'Iran (0-0).",
+      "texte_en": "Groups I and G have delivered their partial verdicts. In Group I, France outclassed Iraq 3-0 in Philadelphia during a marathon match delayed for over two hours by a severe thunderstorm. Norway joins them in the round of 32 after a thrilling 3-2 victory over Senegal, powered by Haaland. In Group G, Spain bounced back perfectly from their opening draw by crushing Saudi Arabia 4-0, while Uruguay was held to a stunning 2-2 draw by Cape Verde. Elsewhere, Belgium played out a frustrating 0-0 draw against Iran.",
+      "texte_pt": "Os Grupos I e G já têm decisões parciais. No Grupo I, a França superou o Iraque por 3-0 em Filadélfia, num jogo maratona interrompido por mais de duas horas devido a uma forte tempestade. A Noruega acompanha os franceses após uma vitória espetacular por 3-2 sobre o Senegal, liderada por Haaland. No Grupo G, a Espanha reagiu ao empate inicial esmagando a Arábia Saudita por 4-0, enquanto o Uruguai foi travado pelo Cabo Verde (2-2). A Bélgica somou um nulo frustrante contra o Irão (0-0).",
+      "texte_sw": "Vikundi I na G vimeanza kutoa picha ya waliofuzu. Katika Kundi I, Ufaransa waliishinda Iraq 3-0 huko Philadelphia kwenye mechi iliyochukua muda mrefu kufuatia kusimishwa kwa zaidi ya saa mbili kwa sababu ya dhoruba kali ya radi. Norway inaungana nao hatua inayofuata baada ya ushindi wa 3-2 dhidi ya Senegal, shukrani kwa Haaland. Katika Kundi G, Hispania ilirejea kwenye mstari kwa kuiponda Saudi Arabia 4-0, huku Uruguay wakishangazwa na sare ya 2-2 dhidi ya Cape Verde. Ubelgiji walipata sare ya 0-0 dhidi ya Iran.",
+      "texte_ar": "أصدرت المجموعتان الأولى والسابعة أحكامهما الجزئية. ففي المجموعة الأولى، تفوقت فرنسا على العراق 3-0 في فيلادلفيا خلال مباراة ماراثونية توقفت لأكثر من ساعتين بسبب عاصفة رعدية عنيفة. وتأهلت النرويج رفقتها إلى دور الـ32 بعد فوزها المثير 3-2 على السنغال بفضل تألق هالاند. وفي المجموعة السابعة، استعادت إسبانيا بريقها بسحق السعودية 4-0، بينما تعثرت الأوروغواي أمام كاب فيردي بالتعادل 2-2. وحسم التعادل السلبي 0-0 لقاء بلجيكا وإيران.",
+      "texte_rw": "Itsinda I n'irya G ryamaze kugaragaza amakipe akomeza. Mu itsinda I, Ubufaransa bwatsinze Iraki 3-0 i Philadelphia mu mukino wamaze umwanya muremure kuko wasubitswe amasaha arenga abiri kubera imvura ivanze n'inkuba. Noruveje na yo yakomeje nyuma yo gutsinda Senegali 3-2 ku bufatanye bwa Haaland. Mu itsinda G, Espagne yagarutse mu mukino itsinda Alabi Sawudite 4-0, naho Izigwaje (Uruguay) inganya na Kapu Veri 2-2. Ububiligi bwanyanditse ubusa ku busa n'Irani (0-0).",
+      "matchs_en_cours": [
+        {
+          "match": "Portugal vs Ouzbékistan",
+          "score": "4 - 0 (84')",
+          "stade": "NRG Stadium, Houston",
+          "faits_marquants": "Doublé rapide de Cristiano Ronaldo (6', 39'), but de Nuno Mendes et un CSC ouzbek."
+        }
+      ]
+    },
+    {
+      "badge": "😂 Humour & Buzz · Réseaux sociaux",
+      "badge_en": "😂 Humor & Buzz · Social Media",
+      "badge_pt": "😂 Humor & Buzz · Redes Sociais",
+      "badge_sw": "😂 Furaha & Mtindo · Mitandao",
+      "badge_ar": "😂 الفكاهة والترند · منصات التواصل",
+      "badge_rw": "😂 Imikino n'Ibiseko · Imbuga nkoranyambaga",
+      "titre": "Le penalty manqué de Messi devient un mème, l'orage de Philadelphie fatigue les internautes",
+      "titre_en": "Messi's missed penalty turns into a meme, Philadelphia storm exhausts fans",
+      "titre_pt": "O penálti falhado de Messi vira meme, tempestade em Filadélfia cansa internautas",
+      "titre_sw": "Penalti aliyokosa Messi yageuka meme, dhoruba ya Philadelphia yachosha mashabiki",
+      "titre_ar": "ركلة جزاء ميسي الضائعة تتحول إلى 'ميم'، وعاصفة فيلادلفيا ترهق المتابعين",
+      "titre_rw": "Penariti Messi yahushije yabaye urwenya, imvura y'i Philadelphia irambira abafana",
+      "texte": "Le grand huit des émotions pour les fans de Lionel Messi ! Lorsqu'il a manqué son penalty en début de match, les réseaux sociaux ont été inondés de mèmes affirmant que 'l'âge avait enfin rattrapé le GOAT'. Quelques minutes plus tard, après son doublé historique, les mêmes internautes ont supprimé leurs publications pour crier au génie. L'autre buzz de la nuit concerne le match France-Irak : l'interruption de plus de deux heures due aux conditions climatiques a donné lieu à des parodies hilarantes de supporters feignant d'avoir vieilli de dix ans dans les tribunes de Philadelphie.",
+      "texte_en": "An emotional roller coaster for Lionel Messi fans! When he missed his early penalty, social media was flooded with memes claiming 'age had finally caught up with the GOAT'. Minutes later, following his historic brace, those same users deleted their posts to hail his genius. The night's other viral story involved the France-Iraq match, where the two-hour weather delay sparked hilarious parodies of fans pretending to have aged ten years in the Philadelphia stands.",
+      "texte_pt": "Uma montanha-russa de emoções para os adeptos de Lionel Messi! Quando ele falhou o penálti logo no início, as redes sociais encheram-se de memes dizendo que 'a idade finalmente tinha apanhado o GOAT'. Minutos depois, após o bis histórico, os mesmos internautas apagaram os posts para celebrar o génio. O outro buzz da noite foi o jogo França-Iraque: a interrupção de duas horas devido à tempestade gerou paródias hilariantes de adeptos a fingir que envelheceram dez anos nas bancadas de Filadélfia.",
+      "texte_sw": "Mabadiliko makubwa ya hisia kwa mashabiki wa Lionel Messi! Alipokosa penalti mapema mchezo, mitandao ya kijamii ilijaa memes zikisema 'umri hatimaye umemfikia GOAT'. Dakika chache baadaye, kufuatia mabao yake ya kihistoria, watumiaji hao hao walifuta machapisho yao na kumsifu. Habari nyingine kubwa ilikuwa mechi ya Ufaransa na Iraq, ambapo kusimama kwa mechi kwa saa mbili kulisababisha vichekesho vingi vya mashabiki wakijifanya wamezeeka miaka kumi jukwaani.",
+      "texte_ar": "موجة عارمة من المشاعر المتباينة لعشاق ميسي! عندما أضاع ركلة الجزاء في البداية، امتلأت المنصات بـ'ميمز' تسخر وتقول إن 'العمر نال أخيراً من الماعز'. لكن بعد دقائق قليلة وثنائيته التاريخية، سارع المغردون لحذف منشوراتهم والإشادة بعبقريته. الحدث الطريف الآخر كان مباراة فرنسا والعراق، حيث تسبب توقف المباراة لساعتين بسبب الأحوال الجوية في إطلاق قفشات ساخرة عن مشجعين 'شابوا' وهم ينتظرون في المدرجات.",
+      "texte_rw": "Ibintu byahindutse cyane ku bafana ba Lionel Messi! Ubwo yahushaga penariti mu minota ya mbere, imbuga nkoranyambaga zuzuye amashusho y'urwenya bavuga ko 'imyaka imwibasiye'. Nyuma y'iminota mike, amaze gutsinda ibitego by'amateka, ba bafana bahise basiba ibyo bapostye bamyita umuhanga ndatwa. Urwindi rwenya rwaranzwe mu mukino w'Ubufaransa na Iraki aho guhagarara kw'umukino iminsi ibiri byatumye abafana berekana ko basaze bategereje i Philadelphia."
+    }
+  ]
+    }
