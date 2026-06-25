@@ -1,0 +1,24 @@
+[
+  {
+    "id": "news-2026-06-25-scorers",
+    "date": "2026-06-25",
+    "categorie": "stats",
+    "titre_fr": "Top buteurs",
+    "titre_en": "Top scorers",
+    "titre_pt": "Artilheiros",
+    "texte_fr": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
+    "texte_en": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
+    "texte_pt": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts"
+  },
+  {
+    "id": "news-2026-06-25-matches",
+    "date": "2026-06-25",
+    "categorie": "resultats",
+    "titre_fr": "Matchs du 2026-06-25",
+    "titre_en": "Matches on 2026-06-25",
+    "titre_pt": "Jogos de 2026-06-25",
+    "texte_fr": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany à 20:00 UTC | Curaçao vs Ivory Coast à 20:00 UTC | Tunisia vs Netherlands à 23:00 UTC | Japan vs Sweden à 23:00 UTC",
+    "texte_en": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany at 20:00 UTC | Curaçao vs Ivory Coast at 20:00 UTC | Tunisia vs Netherlands at 23:00 UTC | Japan vs Sweden at 23:00 UTC",
+    "texte_pt": "Czechia 0-3 Mexico | South Africa 1-0 Korea Republic | Ecuador vs Germany às 20:00 UTC | Curaçao vs Ivory Coast às 20:00 UTC | Tunisia vs Netherlands às 23:00 UTC | Japan vs Sweden às 23:00 UTC"
+  }
+]

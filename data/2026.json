@@ -1,0 +1,786 @@
+{
+  "mise_a_jour": "2026-06-25T12:44:05Z",
+  "competition": "FIFA World Cup 2026",
+  "groupes": {
+    "Groupe A": {
+      "matchs": [
+        {
+          "date": "2026-06-11",
+          "heure": "19:00",
+          "domicile": "Mexico",
+          "exterieur": "South Africa",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-12",
+          "heure": "02:00",
+          "domicile": "Korea Republic",
+          "exterieur": "Czechia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-18",
+          "heure": "16:00",
+          "domicile": "Czechia",
+          "exterieur": "South Africa",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-19",
+          "heure": "01:00",
+          "domicile": "Mexico",
+          "exterieur": "Korea Republic",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "01:00",
+          "domicile": "Czechia",
+          "exterieur": "Mexico",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 3
+          }
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "01:00",
+          "domicile": "South Africa",
+          "exterieur": "Korea Republic",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 0
+          }
+        }
+      ],
+      "classement": []
+    },
+    "Groupe B": {
+      "matchs": [
+        {
+          "date": "2026-06-12",
+          "heure": "19:00",
+          "domicile": "Canada",
+          "exterieur": "Bosnia-H.",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-13",
+          "heure": "19:00",
+          "domicile": "Qatar",
+          "exterieur": "Switzerland",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-18",
+          "heure": "19:00",
+          "domicile": "Switzerland",
+          "exterieur": "Bosnia-H.",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 4,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-18",
+          "heure": "22:00",
+          "domicile": "Canada",
+          "exterieur": "Qatar",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 6,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "heure": "19:00",
+          "domicile": "Switzerland",
+          "exterieur": "Canada",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "heure": "19:00",
+          "domicile": "Bosnia-H.",
+          "exterieur": "Qatar",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 1
+          }
+        }
+      ],
+      "classement": []
+    },
+    "Groupe D": {
+      "matchs": [
+        {
+          "date": "2026-06-13",
+          "heure": "01:00",
+          "domicile": "USA",
+          "exterieur": "Paraguay",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 4,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-14",
+          "heure": "04:00",
+          "domicile": "Australia",
+          "exterieur": "Turkey",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-19",
+          "heure": "19:00",
+          "domicile": "USA",
+          "exterieur": "Australia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-20",
+          "heure": "03:00",
+          "domicile": "Turkey",
+          "exterieur": "Paraguay",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-26",
+          "heure": "02:00",
+          "domicile": "Turkey",
+          "exterieur": "USA",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-26",
+          "heure": "02:00",
+          "domicile": "Paraguay",
+          "exterieur": "Australia",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe C": {
+      "matchs": [
+        {
+          "date": "2026-06-13",
+          "heure": "22:00",
+          "domicile": "Brazil",
+          "exterieur": "Morocco",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-14",
+          "heure": "01:00",
+          "domicile": "Haiti",
+          "exterieur": "Scotland",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-19",
+          "heure": "22:00",
+          "domicile": "Scotland",
+          "exterieur": "Morocco",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-20",
+          "heure": "00:30",
+          "domicile": "Brazil",
+          "exterieur": "Haiti",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "heure": "22:00",
+          "domicile": "Morocco",
+          "exterieur": "Haiti",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 4,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "heure": "22:00",
+          "domicile": "Scotland",
+          "exterieur": "Brazil",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 3
+          }
+        }
+      ],
+      "classement": []
+    },
+    "Groupe E": {
+      "matchs": [
+        {
+          "date": "2026-06-14",
+          "heure": "17:00",
+          "domicile": "Germany",
+          "exterieur": "Curaçao",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 7,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-14",
+          "heure": "23:00",
+          "domicile": "Ivory Coast",
+          "exterieur": "Ecuador",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-20",
+          "heure": "20:00",
+          "domicile": "Germany",
+          "exterieur": "Ivory Coast",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "heure": "00:00",
+          "domicile": "Ecuador",
+          "exterieur": "Curaçao",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "20:00",
+          "domicile": "Ecuador",
+          "exterieur": "Germany",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "20:00",
+          "domicile": "Curaçao",
+          "exterieur": "Ivory Coast",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe F": {
+      "matchs": [
+        {
+          "date": "2026-06-14",
+          "heure": "20:00",
+          "domicile": "Netherlands",
+          "exterieur": "Japan",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-15",
+          "heure": "02:00",
+          "domicile": "Sweden",
+          "exterieur": "Tunisia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 5,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-20",
+          "heure": "17:00",
+          "domicile": "Netherlands",
+          "exterieur": "Sweden",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 5,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "heure": "04:00",
+          "domicile": "Tunisia",
+          "exterieur": "Japan",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 4
+          }
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "23:00",
+          "domicile": "Tunisia",
+          "exterieur": "Netherlands",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-25",
+          "heure": "23:00",
+          "domicile": "Japan",
+          "exterieur": "Sweden",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe H": {
+      "matchs": [
+        {
+          "date": "2026-06-15",
+          "heure": "16:00",
+          "domicile": "Spain",
+          "exterieur": "Cape Verde",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-15",
+          "heure": "22:00",
+          "domicile": "Saudi Arabia",
+          "exterieur": "Uruguay",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "heure": "16:00",
+          "domicile": "Spain",
+          "exterieur": "Saudi Arabia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 4,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "heure": "22:00",
+          "domicile": "Uruguay",
+          "exterieur": "Cape Verde",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "00:00",
+          "domicile": "Uruguay",
+          "exterieur": "Spain",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "00:00",
+          "domicile": "Cape Verde",
+          "exterieur": "Saudi Arabia",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe G": {
+      "matchs": [
+        {
+          "date": "2026-06-15",
+          "heure": "19:00",
+          "domicile": "Belgium",
+          "exterieur": "Egypt",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-16",
+          "heure": "01:00",
+          "domicile": "Iran",
+          "exterieur": "New Zealand",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "heure": "19:00",
+          "domicile": "Belgium",
+          "exterieur": "Iran",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "heure": "01:00",
+          "domicile": "New Zealand",
+          "exterieur": "Egypt",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 3
+          }
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "03:00",
+          "domicile": "New Zealand",
+          "exterieur": "Belgium",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "03:00",
+          "domicile": "Egypt",
+          "exterieur": "Iran",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe I": {
+      "matchs": [
+        {
+          "date": "2026-06-16",
+          "heure": "19:00",
+          "domicile": "France",
+          "exterieur": "Senegal",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-16",
+          "heure": "22:00",
+          "domicile": "Iraq",
+          "exterieur": "Norway",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 4
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "heure": "21:00",
+          "domicile": "France",
+          "exterieur": "Iraq",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-23",
+          "heure": "00:00",
+          "domicile": "Norway",
+          "exterieur": "Senegal",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-26",
+          "heure": "19:00",
+          "domicile": "Norway",
+          "exterieur": "France",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-26",
+          "heure": "19:00",
+          "domicile": "Senegal",
+          "exterieur": "Iraq",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe J": {
+      "matchs": [
+        {
+          "date": "2026-06-17",
+          "heure": "01:00",
+          "domicile": "Argentina",
+          "exterieur": "Algeria",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-17",
+          "heure": "04:00",
+          "domicile": "Austria",
+          "exterieur": "Jordan",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 3,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "heure": "17:00",
+          "domicile": "Argentina",
+          "exterieur": "Austria",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 2,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-23",
+          "heure": "03:00",
+          "domicile": "Jordan",
+          "exterieur": "Algeria",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-28",
+          "heure": "02:00",
+          "domicile": "Jordan",
+          "exterieur": "Argentina",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-28",
+          "heure": "02:00",
+          "domicile": "Algeria",
+          "exterieur": "Austria",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe K": {
+      "matchs": [
+        {
+          "date": "2026-06-17",
+          "heure": "17:00",
+          "domicile": "Portugal",
+          "exterieur": "Congo DR",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-18",
+          "heure": "02:00",
+          "domicile": "Uzbekistan",
+          "exterieur": "Colombia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 3
+          }
+        },
+        {
+          "date": "2026-06-23",
+          "heure": "17:00",
+          "domicile": "Portugal",
+          "exterieur": "Uzbekistan",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 5,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "heure": "02:00",
+          "domicile": "Colombia",
+          "exterieur": "Congo DR",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "23:30",
+          "domicile": "Colombia",
+          "exterieur": "Portugal",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "23:30",
+          "domicile": "Congo DR",
+          "exterieur": "Uzbekistan",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    },
+    "Groupe L": {
+      "matchs": [
+        {
+          "date": "2026-06-17",
+          "heure": "20:00",
+          "domicile": "England",
+          "exterieur": "Croatia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 4,
+            "exterieur": 2
+          }
+        },
+        {
+          "date": "2026-06-17",
+          "heure": "23:00",
+          "domicile": "Ghana",
+          "exterieur": "Panama",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 1,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-23",
+          "heure": "20:00",
+          "domicile": "England",
+          "exterieur": "Ghana",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 0
+          }
+        },
+        {
+          "date": "2026-06-23",
+          "heure": "23:00",
+          "domicile": "Panama",
+          "exterieur": "Croatia",
+          "statut": "FINISHED",
+          "score": {
+            "domicile": 0,
+            "exterieur": 1
+          }
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "21:00",
+          "domicile": "Panama",
+          "exterieur": "England",
+          "statut": "TIMED"
+        },
+        {
+          "date": "2026-06-27",
+          "heure": "21:00",
+          "domicile": "Croatia",
+          "exterieur": "Ghana",
+          "statut": "TIMED"
+        }
+      ],
+      "classement": []
+    }
+  }
+}
