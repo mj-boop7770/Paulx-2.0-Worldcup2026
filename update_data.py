@@ -83,7 +83,7 @@ def build_messages_json(matches, scorers):
                 existing = existing.get("articles", [])
     except Exception:
         pass
-    existing_ids = {a["id"] for a in existing}
+    existing_ids = {a.get("id") for a in existing if a.get("id")}
     for a in articles:
         if a["id"] not in existing_ids:
             existing.insert(0, a)
