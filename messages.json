@@ -1,6 +1,50 @@
 {
-  "date": "23 JUIN 2026",
+  "date": "2026-06-26",
   "articles": [
+    {
+      "id": "news-2026-06-26-scorers",
+      "date": "2026-06-26",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
+      "texte_en": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
+      "texte_pt": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts"
+    },
+    {
+      "id": "news-2026-06-26-matches",
+      "date": "2026-06-26",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-06-26",
+      "titre_en": "Matches on 2026-06-26",
+      "titre_pt": "Jogos de 2026-06-26",
+      "texte": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
+      "texte_en": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
+      "texte_pt": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Turkey vs USA",
+          "heure": "02:00",
+          "stade": ""
+        },
+        {
+          "match": "Paraguay vs Australia",
+          "heure": "02:00",
+          "stade": ""
+        },
+        {
+          "match": "Norway vs France",
+          "heure": "19:00",
+          "stade": ""
+        },
+        {
+          "match": "Senegal vs Iraq",
+          "heure": "19:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "badge": "🔥 Record Historique · Choc du jour",
       "badge_en": "🔥 Historical Record · Shock of the day",
@@ -90,4 +134,4 @@
       "texte_rw": "Ibintu byahindutse cyane ku bafana ba Lionel Messi! Ubwo yahushaga penariti mu minota ya mbere, imbuga nkoranyambaga zuzuye amashusho y'urwenya bavuga ko 'imyaka imwibasiye'. Nyuma y'iminota mike, amaze gutsinda ibitego by'amateka, ba bafana bahise basiba ibyo bapostye bamyita umuhanga ndatwa. Urwindi rwenya rwaranzwe mu mukino w'Ubufaransa na Iraki aho guhagarara kw'umukino iminsi ibiri byatumye abafana berekana ko basaze bategereje i Philadelphia."
     }
   ]
-    }
+}
