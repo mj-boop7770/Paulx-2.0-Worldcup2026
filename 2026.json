@@ -608,20 +608,20 @@
           "time": "19:00",
           "team1": "Norway",
           "team2": "France",
-          "score1": null,
-          "score2": null,
+          "score1": 1,
+          "score2": 3,
           "group": "I",
-          "status": "TIMED"
+          "status": "IN_PLAY"
         },
         {
           "date": "2026-06-26",
           "time": "19:00",
           "team1": "Senegal",
           "team2": "Iraq",
-          "score1": null,
-          "score2": null,
+          "score1": 1,
+          "score2": 0,
           "group": "I",
-          "status": "TIMED"
+          "status": "IN_PLAY"
         },
         {
           "date": "2026-06-27",
