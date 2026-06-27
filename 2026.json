@@ -668,40 +668,40 @@
           "time": "21:00",
           "team1": "Panama",
           "team2": "England",
-          "score1": null,
-          "score2": null,
+          "score1": 0,
+          "score2": 2,
           "group": "L",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-06-27",
           "time": "21:00",
           "team1": "Croatia",
           "team2": "Ghana",
-          "score1": null,
-          "score2": null,
+          "score1": 2,
+          "score2": 1,
           "group": "L",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-06-27",
           "time": "23:30",
           "team1": "Colombia",
           "team2": "Portugal",
-          "score1": null,
-          "score2": null,
+          "score1": 0,
+          "score2": 0,
           "group": "K",
-          "status": "TIMED"
+          "status": "LIVE"
         },
         {
           "date": "2026-06-27",
           "time": "23:30",
           "team1": "Congo DR",
           "team2": "Uzbekistan",
-          "score1": null,
-          "score2": null,
+          "score1": 0,
+          "score2": 0,
           "group": "K",
-          "status": "TIMED"
+          "status": "LIVE"
         },
         {
           "date": "2026-06-28",
