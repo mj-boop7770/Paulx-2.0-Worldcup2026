@@ -1,6 +1,40 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "articles": [
+    {
+      "id": "news-2026-06-29-scorers",
+      "date": "2026-06-29",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
+      "texte_en": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
+      "texte_pt": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts"
+    },
+    {
+      "id": "news-2026-06-29-matches",
+      "date": "2026-06-29",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-06-29",
+      "titre_en": "Matches on 2026-06-29",
+      "titre_pt": "Jogos de 2026-06-29",
+      "texte": "Brazil vs Japan à 17:00 UTC | Germany vs Paraguay à 20:30 UTC",
+      "texte_en": "Brazil vs Japan à 17:00 UTC | Germany vs Paraguay à 20:30 UTC",
+      "texte_pt": "Brazil vs Japan à 17:00 UTC | Germany vs Paraguay à 20:30 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Brazil vs Japan",
+          "heure": "17:00",
+          "stade": ""
+        },
+        {
+          "match": "Germany vs Paraguay",
+          "heure": "20:30",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-06-28-scorers",
       "date": "2026-06-28",
