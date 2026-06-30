@@ -768,10 +768,10 @@
           "time": "17:00",
           "team1": "Ivory Coast",
           "team2": "Norway",
-          "score1": null,
-          "score2": null,
+          "score1": 1,
+          "score2": 2,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-06-30",
