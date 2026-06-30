@@ -748,8 +748,8 @@
           "time": "20:30",
           "team1": "Germany",
           "team2": "Paraguay",
-          "score1": 5,
-          "score2": 6,
+          "score1": 4,
+          "score2": 5,
           "group": "KO",
           "status": "FINISHED"
         },
@@ -758,10 +758,10 @@
           "time": "01:00",
           "team1": "Netherlands",
           "team2": "Morocco",
-          "score1": null,
-          "score2": null,
+          "score1": 3,
+          "score2": 4,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-06-30",
@@ -887,7 +887,7 @@
           "date": "2026-07-04",
           "time": "17:00",
           "team1": "Canada",
-          "team2": null,
+          "team2": "Morocco",
           "score1": null,
           "score2": null,
           "group": "KO",
@@ -896,7 +896,7 @@
         {
           "date": "2026-07-04",
           "time": "21:00",
-          "team1": null,
+          "team1": "Paraguay",
           "team2": null,
           "score1": null,
           "score2": null,
@@ -906,7 +906,7 @@
         {
           "date": "2026-07-05",
           "time": "20:00",
-          "team1": null,
+          "team1": "Brazil",
           "team2": null,
           "score1": null,
           "score2": null,
