@@ -1,6 +1,45 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "articles": [
+    {
+      "id": "news-2026-07-01-scorers",
+      "date": "2026-07-01",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Ousmane Dembélé (France) - 4 buts",
+      "texte_en": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Ousmane Dembélé (France) - 4 buts",
+      "texte_pt": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Ousmane Dembélé (France) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-01-matches",
+      "date": "2026-07-01",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-01",
+      "titre_en": "Matches on 2026-07-01",
+      "titre_pt": "Jogos de 2026-07-01",
+      "texte": "Mexico 2-0 Ecuador | England vs Congo DR à 16:00 UTC | Belgium vs Senegal à 20:00 UTC",
+      "texte_en": "Mexico 2-0 Ecuador | England vs Congo DR à 16:00 UTC | Belgium vs Senegal à 20:00 UTC",
+      "texte_pt": "Mexico 2-0 Ecuador | England vs Congo DR à 16:00 UTC | Belgium vs Senegal à 20:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Mexico vs Ecuador",
+          "heure": "01:00",
+          "stade": ""
+        },
+        {
+          "match": "England vs Congo DR",
+          "heure": "16:00",
+          "stade": ""
+        },
+        {
+          "match": "Belgium vs Senegal",
+          "heure": "20:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-06-30-scorers",
       "date": "2026-06-30",
