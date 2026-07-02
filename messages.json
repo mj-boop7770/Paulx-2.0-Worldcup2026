@@ -1,6 +1,45 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "articles": [
+    {
+      "id": "news-2026-07-02-scorers",
+      "date": "2026-07-02",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_en": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_pt": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-02-matches",
+      "date": "2026-07-02",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-02",
+      "titre_en": "Matches on 2026-07-02",
+      "titre_pt": "Jogos de 2026-07-02",
+      "texte": "USA 2-0 Bosnia-H. | Spain vs Austria à 19:00 UTC | Portugal vs Croatia à 23:00 UTC",
+      "texte_en": "USA 2-0 Bosnia-H. | Spain vs Austria à 19:00 UTC | Portugal vs Croatia à 23:00 UTC",
+      "texte_pt": "USA 2-0 Bosnia-H. | Spain vs Austria à 19:00 UTC | Portugal vs Croatia à 23:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "USA vs Bosnia-H.",
+          "heure": "00:00",
+          "stade": ""
+        },
+        {
+          "match": "Spain vs Austria",
+          "heure": "19:00",
+          "stade": ""
+        },
+        {
+          "match": "Portugal vs Croatia",
+          "heure": "23:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-01-scorers",
       "date": "2026-07-01",

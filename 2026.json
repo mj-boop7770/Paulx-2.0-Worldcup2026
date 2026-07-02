@@ -785,7 +785,7 @@
         },
         {
           "date": "2026-07-01",
-          "time": "01:00",
+          "time": "02:00",
           "team1": "Mexico",
           "team2": "Ecuador",
           "score1": 2,
@@ -808,20 +808,20 @@
           "time": "20:00",
           "team1": "Belgium",
           "team2": "Senegal",
-          "score1": 0,
-          "score2": 1,
+          "score1": 3,
+          "score2": 2,
           "group": "KO",
-          "status": "IN_PLAY"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-02",
           "time": "00:00",
           "team1": "USA",
           "team2": "Bosnia-H.",
-          "score1": null,
-          "score2": null,
+          "score1": 2,
+          "score2": 0,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-02",
@@ -916,8 +916,8 @@
         {
           "date": "2026-07-06",
           "time": "00:00",
-          "team1": null,
-          "team2": null,
+          "team1": "Mexico",
+          "team2": "England",
           "score1": null,
           "score2": null,
           "group": "KO",
@@ -936,8 +936,8 @@
         {
           "date": "2026-07-07",
           "time": "00:00",
-          "team1": null,
-          "team2": null,
+          "team1": "USA",
+          "team2": "Belgium",
           "score1": null,
           "score2": null,
           "group": "KO",
