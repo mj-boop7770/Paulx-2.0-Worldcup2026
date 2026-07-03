@@ -1,6 +1,45 @@
 {
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "articles": [
+    {
+      "id": "news-2026-07-03-scorers",
+      "date": "2026-07-03",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_en": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_pt": "Kylian Mbappé (France) - 6 buts | Lionel Messi (Argentina) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-03-matches",
+      "date": "2026-07-03",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-03",
+      "titre_en": "Matches on 2026-07-03",
+      "titre_pt": "Jogos de 2026-07-03",
+      "texte": "Switzerland 2-0 Algeria | Australia vs Egypt à 18:00 UTC | Argentina vs Cape Verde à 22:00 UTC",
+      "texte_en": "Switzerland 2-0 Algeria | Australia vs Egypt à 18:00 UTC | Argentina vs Cape Verde à 22:00 UTC",
+      "texte_pt": "Switzerland 2-0 Algeria | Australia vs Egypt à 18:00 UTC | Argentina vs Cape Verde à 22:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Switzerland vs Algeria",
+          "heure": "03:00",
+          "stade": ""
+        },
+        {
+          "match": "Australia vs Egypt",
+          "heure": "18:00",
+          "stade": ""
+        },
+        {
+          "match": "Argentina vs Cape Verde",
+          "heure": "22:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-02-scorers",
       "date": "2026-07-02",
