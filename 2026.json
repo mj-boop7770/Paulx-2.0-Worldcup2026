@@ -858,20 +858,20 @@
           "time": "18:00",
           "team1": "Australia",
           "team2": "Egypt",
-          "score1": 0,
-          "score2": 1,
+          "score1": 3,
+          "score2": 5,
           "group": "KO",
-          "status": "IN_PLAY"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-03",
           "time": "22:00",
           "team1": "Argentina",
           "team2": "Cape Verde",
-          "score1": null,
-          "score2": null,
+          "score1": 1,
+          "score2": 1,
           "group": "KO",
-          "status": "TIMED"
+          "status": "IN_PLAY"
         },
         {
           "date": "2026-07-04",
