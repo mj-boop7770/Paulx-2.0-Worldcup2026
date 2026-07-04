@@ -1,6 +1,45 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "articles": [
+    {
+      "id": "news-2026-07-04-scorers",
+      "date": "2026-07-04",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Lionel Messi (Argentina) - 7 buts | Kylian Mbappé (France) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_en": "Lionel Messi (Argentina) - 7 buts | Kylian Mbappé (France) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_pt": "Lionel Messi (Argentina) - 7 buts | Kylian Mbappé (France) - 6 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-04-matches",
+      "date": "2026-07-04",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-04",
+      "titre_en": "Matches on 2026-07-04",
+      "titre_pt": "Jogos de 2026-07-04",
+      "texte": "Colombia 1-0 Ghana | Canada vs Morocco à 17:00 UTC | Paraguay vs France à 21:00 UTC",
+      "texte_en": "Colombia 1-0 Ghana | Canada vs Morocco à 17:00 UTC | Paraguay vs France à 21:00 UTC",
+      "texte_pt": "Colombia 1-0 Ghana | Canada vs Morocco à 17:00 UTC | Paraguay vs France à 21:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Colombia vs Ghana",
+          "heure": "01:30",
+          "stade": ""
+        },
+        {
+          "match": "Canada vs Morocco",
+          "heure": "17:00",
+          "stade": ""
+        },
+        {
+          "match": "Paraguay vs France",
+          "heure": "21:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-03-scorers",
       "date": "2026-07-03",
