@@ -888,10 +888,10 @@
           "time": "17:00",
           "team1": "Canada",
           "team2": "Morocco",
-          "score1": null,
-          "score2": null,
+          "score1": 0,
+          "score2": 0,
           "group": "KO",
-          "status": "TIMED"
+          "status": "IN_PLAY"
         },
         {
           "date": "2026-07-04",
