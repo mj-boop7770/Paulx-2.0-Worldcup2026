@@ -908,20 +908,20 @@
           "time": "20:00",
           "team1": "Brazil",
           "team2": "Norway",
-          "score1": null,
-          "score2": null,
+          "score1": 1,
+          "score2": 2,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-06",
-          "time": "00:00",
+          "time": "01:00",
           "team1": "Mexico",
           "team2": "England",
           "score1": null,
           "score2": null,
           "group": "KO",
-          "status": "TIMED"
+          "status": "2026-07-06 01:00:00Z"
         },
         {
           "date": "2026-07-06",
