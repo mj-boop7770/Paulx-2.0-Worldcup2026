@@ -1,6 +1,35 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "articles": [
+    {
+      "id": "news-2026-07-05-scorers",
+      "date": "2026-07-05",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 7 buts | Lionel Messi (Argentina) - 7 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_en": "Kylian Mbappé (France) - 7 buts | Lionel Messi (Argentina) - 7 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts",
+      "texte_pt": "Kylian Mbappé (France) - 7 buts | Lionel Messi (Argentina) - 7 buts | Erling Haaland (Norway) - 5 buts | Harry Kane (England) - 5 buts | Vinicius Junior (Brazil) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-05-matches",
+      "date": "2026-07-05",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-05",
+      "titre_en": "Matches on 2026-07-05",
+      "titre_pt": "Jogos de 2026-07-05",
+      "texte": "Brazil vs Norway à 20:00 UTC",
+      "texte_en": "Brazil vs Norway à 20:00 UTC",
+      "texte_pt": "Brazil vs Norway à 20:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Brazil vs Norway",
+          "heure": "20:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-04-scorers",
       "date": "2026-07-04",
