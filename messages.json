@@ -1,6 +1,40 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "articles": [
+    {
+      "id": "news-2026-07-06-scorers",
+      "date": "2026-07-06",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Lionel Messi (Argentina) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts",
+      "texte_en": "Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Lionel Messi (Argentina) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts",
+      "texte_pt": "Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Lionel Messi (Argentina) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-06-matches",
+      "date": "2026-07-06",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-06",
+      "titre_en": "Matches on 2026-07-06",
+      "titre_pt": "Jogos de 2026-07-06",
+      "texte": "Mexico 2-3 England | Portugal vs Spain à 19:00 UTC",
+      "texte_en": "Mexico 2-3 England | Portugal vs Spain à 19:00 UTC",
+      "texte_pt": "Mexico 2-3 England | Portugal vs Spain à 19:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Mexico vs England",
+          "heure": "01:00",
+          "stade": ""
+        },
+        {
+          "match": "Portugal vs Spain",
+          "heure": "19:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-05-scorers",
       "date": "2026-07-05",
