@@ -1,6 +1,35 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "articles": [
+    {
+      "id": "news-2026-07-09-scorers",
+      "date": "2026-07-09",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Lionel Messi (Argentina) - 8 buts | Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts",
+      "texte_en": "Lionel Messi (Argentina) - 8 buts | Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts",
+      "texte_pt": "Lionel Messi (Argentina) - 8 buts | Kylian Mbappé (France) - 7 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Julián Quiñones (Mexico) - 4 buts"
+    },
+    {
+      "id": "news-2026-07-09-matches",
+      "date": "2026-07-09",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-09",
+      "titre_en": "Matches on 2026-07-09",
+      "titre_pt": "Jogos de 2026-07-09",
+      "texte": "France vs Morocco à 20:00 UTC",
+      "texte_en": "France vs Morocco à 20:00 UTC",
+      "texte_pt": "France vs Morocco à 20:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "France vs Morocco",
+          "heure": "20:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-08-scorers",
       "date": "2026-07-08",
