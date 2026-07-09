@@ -968,10 +968,10 @@
           "time": "20:00",
           "team1": "France",
           "team2": "Morocco",
-          "score1": null,
-          "score2": null,
+          "score1": 2,
+          "score2": 0,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-10",
