@@ -1,6 +1,35 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "articles": [
+    {
+      "id": "news-2026-07-11-scorers",
+      "date": "2026-07-11",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Ousmane Dembélé (France) - 5 buts",
+      "texte_en": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Ousmane Dembélé (France) - 5 buts",
+      "texte_pt": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Ousmane Dembélé (France) - 5 buts"
+    },
+    {
+      "id": "news-2026-07-11-matches",
+      "date": "2026-07-11",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-11",
+      "titre_en": "Matches on 2026-07-11",
+      "titre_pt": "Jogos de 2026-07-11",
+      "texte": "Norway vs England à 21:00 UTC",
+      "texte_en": "Norway vs England à 21:00 UTC",
+      "texte_pt": "Norway vs England à 21:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "Norway vs England",
+          "heure": "21:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-10-scorers",
       "date": "2026-07-10",
@@ -514,79 +543,6 @@
       "texte": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
       "texte_en": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts",
       "texte_pt": "Lionel Messi (Argentina) - 5 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ismael Saibari (Morocco) - 3 buts"
-    },
-    {
-      "id": "news-2026-06-26-matches",
-      "date": "2026-06-26",
-      "badge": "🗓️ AUJOURD'HUI",
-      "titre": "Matchs du 2026-06-26",
-      "titre_en": "Matches on 2026-06-26",
-      "titre_pt": "Jogos de 2026-06-26",
-      "texte": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
-      "texte_en": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
-      "texte_pt": "Turkey 3-2 USA | Paraguay 0-0 Australia | Norway vs France à 19:00 UTC | Senegal vs Iraq à 19:00 UTC",
-      "matchs_du_jour": [
-        {
-          "match": "Turkey vs USA",
-          "heure": "02:00",
-          "stade": ""
-        },
-        {
-          "match": "Paraguay vs Australia",
-          "heure": "02:00",
-          "stade": ""
-        },
-        {
-          "match": "Norway vs France",
-          "heure": "19:00",
-          "stade": ""
-        },
-        {
-          "match": "Senegal vs Iraq",
-          "heure": "19:00",
-          "stade": ""
-        }
-      ]
-    },
-    {
-      "badge": "🔥 Record Historique · Choc du jour",
-      "badge_en": "🔥 Historical Record · Shock of the day",
-      "badge_pt": "🔥 Recorde Histórico · Choque do dia",
-      "badge_sw": "🔥 Rekodi ya Kihistoria · Mshangao wa siku",
-      "badge_ar": "🔥 رقم قياسي تاريخي · صدمة اليوم",
-      "badge_rw": "🔥 Agahigo Komeye · Inyuma yo ku nsi",
-      "titre": "Argentine 2-0 Autriche : Lionel Messi devient le meilleur buteur de l'histoire de la Coupe du Monde !",
-      "titre_en": "Argentina 2-0 Austria: Lionel Messi becomes the top scorer in World Cup history!",
-      "titre_pt": "Argentina 2-0 Áustria: Lionel Messi torna-se o maior marcador da história do Mundial!",
-      "titre_sw": "Argentina 2-0 Austria: Lionel Messi anakuwa mfungaji bora wa muda wote wa Kombe la Dunia!",
-      "titre_ar": "الأرجنتين 2-0 النمسا: ليونيل ميسي يصبح الهداف التاريخي لكأس العالم!",
-      "titre_rw": "Arijantine 2-0 Ositiriya: Lionel Messi abaye umukinnyi utsinze ibitego byinshi mu mateka y'Igikombe cy'Isi!",
-      "texte": "Soirée légendaire à Dallas ce 22 juin ! L'Argentine a validé sa qualification en battant l'Autriche 2-0. Après avoir manqué un penalty à la 9ème minute, Lionel Messi s'est racheté de la plus belle des manières en inscrivant un doublé magistral. Avec 18 réalisations au total, le capitaine argentin dépasse officiellement le record historique de Miroslav Klose pour s'installer seul sur le trône des meilleurs buteurs de l'histoire de la compétition. Dans l'autre match du Groupe J, l'Algérie a totalement renversé la Jordanie 2-1 dans les vingt dernières minutes, se relançant complètement dans la course aux seizièmes de finale après sa défaite initiale.",
-      "texte_en": "Legendary night in Dallas on June 22! Argentina secured their qualification by defeating Austria 2-0. Despite missing a penalty in the 9th minute, Lionel Messi redeemed himself in style by scoring a masterclass brace. With 18 total goals, the Argentine captain officially surpasses Miroslav Klose's historic record to stand alone as the all-time top scorer in World Cup history. In the other Group J match, Algeria pulled off a stunning 2-1 comeback against Jordan in the final twenty minutes, reviving their round of 32 hopes after an opening defeat.",
-      "texte_pt": "Noite lendária em Dallas neste 22 de junho! A Argentina garantiu a qualificação ao vencer a Áustria por 2-0. Apesar de falhar um penálti aos 9 minutos, Lionel Messi redimiu-se em grande estilo com um bis magistral. Com 18 golos no total, o capitão argentino ultrapassa oficialmente o recorde histórico de Miroslav Klose e isola-se no topo dos maiores marcadores da história da competição. No outro jogo do Grupo J, a Argélia deu a volta à Jordânia vencendo por 2-1 nos últimos vinte minutos, relançando-se na luta pelos oitavos de final.",
-      "texte_sw": "Usiku wa kihistoria huko Dallas mnamo Juni 22! Argentina walihakikisha kufuzu kwa kuifunga Austria 2-0. Baada ya kukosa penalti dakika ya 9, Lionel Messi alijirekebisha kwa mtindo wa hali ya juu kwa kufunga magoli mawili safi. Akiwa na jumla ya mabao 18, nahodha huyo wa Argentina amevunja rasmi rekodi ya kihistoria ya Miroslav Klose na kuwa mfungaji bora wa muda wote wa Kombe la Dunia. Katika mechi nyingine ya Kundi J, Algeria walipindua matokeo na kuifunga Jordan 2-1 katika dakika 20 za mwisho na kufufua matumaini yao.",
-      "texte_ar": "ليلة أسطورية في دالاس يوم 22 يونيو! ضمنت الأرجنتين تأهلها بفوزها على النمسا 2-0. ورغم إضاعته ركلة جزاء في الدقيقة 9، كفّر ليونيل ميسي عن خطئه بأجمل طريقة مسجلاً ثنائية رائعة. وبـ18 هدفاً في مجمل مشاركاته، تجاوز القائد الأرجنتيني رسمياً الرقم القياسي التاريخي لميروسلاف كلوزه لينفرد بلقب الهداف التاريخي للمسابقة. وفي المباراة الأخرى للمجموعة العاشرة، قلبت الجزائر تأخرها أمام الأردن لتفوز 2-1 في آخر عشرين دقيقة، لتعيد إنعاش آمالها في التأهل.",
-      "texte_rw": "Ijoro ry'amateka i Dallas kuri uyu wa 22 Kamena! Arijantine yabonye itike yo gukomeza itsinze Ositiriya 2-0. Nyuma yo guusha penariti ku munota wa 9, Lionel Messi yikosoye mu buryo budasanzwe atsinda ibitego bibiri by'intangarugero. Bifashisha ibitego 18 byose hamwe, kapiteni wa Arijantine yahise arenga agahigo k'amateka kari gafitwe na Miroslav Klose, aba umukinnyi wa mbere utsinze ibitego byinshi mu mateka y'Igikombe cy'Isi. Mu wundi mukino w'Itsinda J, Alijeriya yatsinze Jorudaniya 2-1 mu minota 20 ya nyuma.",
-      "joueurs_cles": [
-        {
-          "nom": "Lionel Messi (Argentine)",
-          "action": "Doublé historique contre l'Autriche, devenant le seul meilleur buteur de l'histoire du Mondial avec 18 buts."
-        },
-        {
-          "nom": "Kylian Mbappé (France)",
-          "action": "Auteur d'un doublé décisif lors de la victoire 3-0 contre l'Irak, qualifiant officiellement les Bleus."
-        },
-        {
-          "nom": "Erling Haaland (Norvège)",
-          "action": "Un doublé capital face au Sénégal (3-2) pour propulser la Norvège au tour suivant."
-        }
-      ],
-      "statistiques": {
-        "argentine_autriche": "Possession: ARG 63%, AUT 37% | Tirs: ARG 19, AUT 5 | Tirs cadrés: ARG 8, AUT 1 | Record: Messi 18 buts",
-        "france_irak": "Possession: FRA 68%, IRK 32% | Tirs: FRA 21, IRK 4 | Interruption météo: 2h15 | Résultat: France 3-0",
-        "norvege_senegal": "Possession: NOR 46%, SEN 54% | Tirs: NOR 12, SEN 15 | Tirs cadrés: NOR 6, SEN 5 | Résultat: Norvège 3-2",
-        "espagne_arabie": "Possession: ESP 75%, ARS 25% | Tirs: ESP 25, ARS 2 | Tirs cadrés: ESP 11, ARS 0 | Résultat: Espagne 4-0"
-      }
     }
   ]
 }
