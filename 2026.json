@@ -921,7 +921,7 @@
           "score1": 2,
           "score2": 3,
           "group": "KO",
-          "status": "2026-07-06 01:00:00Z"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-06",
@@ -1016,8 +1016,8 @@
         {
           "date": "2026-07-15",
           "time": "19:00",
-          "team1": null,
-          "team2": null,
+          "team1": "England",
+          "team2": "Argentina",
           "score1": null,
           "score2": null,
           "group": "KO",
