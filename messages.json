@@ -1,6 +1,35 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "articles": [
+    {
+      "id": "news-2026-07-14-scorers",
+      "date": "2026-07-14",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts",
+      "texte_en": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts",
+      "texte_pt": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts"
+    },
+    {
+      "id": "news-2026-07-14-matches",
+      "date": "2026-07-14",
+      "badge": "🗓️ AUJOURD'HUI",
+      "titre": "Matchs du 2026-07-14",
+      "titre_en": "Matches on 2026-07-14",
+      "titre_pt": "Jogos de 2026-07-14",
+      "texte": "France vs Spain à 19:00 UTC",
+      "texte_en": "France vs Spain à 19:00 UTC",
+      "texte_pt": "France vs Spain à 19:00 UTC",
+      "matchs_du_jour": [
+        {
+          "match": "France vs Spain",
+          "heure": "19:00",
+          "stade": ""
+        }
+      ]
+    },
     {
       "id": "news-2026-07-13-scorers",
       "date": "2026-07-13",
@@ -466,45 +495,6 @@
         {
           "match": "Germany vs Paraguay",
           "heure": "20:30",
-          "stade": ""
-        }
-      ]
-    },
-    {
-      "id": "news-2026-06-28-scorers",
-      "date": "2026-06-28",
-      "badge": "⚽ STATS",
-      "titre": "Top buteurs",
-      "titre_en": "Top scorers",
-      "titre_pt": "Artilheiros",
-      "texte": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
-      "texte_en": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
-      "texte_pt": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts"
-    },
-    {
-      "id": "news-2026-06-28-matches",
-      "date": "2026-06-28",
-      "badge": "🗓️ AUJOURD'HUI",
-      "titre": "Matchs du 2026-06-28",
-      "titre_en": "Matches on 2026-06-28",
-      "titre_pt": "Jogos de 2026-06-28",
-      "texte": "Jordan 1-3 Argentina | Algeria 3-3 Austria | South Africa vs Canada à 19:00 UTC",
-      "texte_en": "Jordan 1-3 Argentina | Algeria 3-3 Austria | South Africa vs Canada à 19:00 UTC",
-      "texte_pt": "Jordan 1-3 Argentina | Algeria 3-3 Austria | South Africa vs Canada à 19:00 UTC",
-      "matchs_du_jour": [
-        {
-          "match": "Jordan vs Argentina",
-          "heure": "02:00",
-          "stade": ""
-        },
-        {
-          "match": "Algeria vs Austria",
-          "heure": "02:00",
-          "stade": ""
-        },
-        {
-          "match": "South Africa vs Canada",
-          "heure": "19:00",
           "stade": ""
         }
       ]
