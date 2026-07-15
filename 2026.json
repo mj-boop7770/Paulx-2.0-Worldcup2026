@@ -1026,7 +1026,7 @@
         {
           "date": "2026-07-18",
           "time": "21:00",
-          "team1": null,
+          "team1": "France",
           "team2": null,
           "score1": null,
           "score2": null,
@@ -1036,7 +1036,7 @@
         {
           "date": "2026-07-19",
           "time": "19:00",
-          "team1": null,
+          "team1": "Spain",
           "team2": null,
           "score1": null,
           "score2": null,
