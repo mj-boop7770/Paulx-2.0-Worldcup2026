@@ -1019,9 +1019,9 @@
           "team1": "England",
           "team2": "Argentina",
           "score1": 1,
-          "score2": 0,
+          "score2": 2,
           "group": "KO",
-          "status": "IN_PLAY"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-18",
