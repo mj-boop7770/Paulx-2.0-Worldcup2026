@@ -1,6 +1,17 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "articles": [
+    {
+      "id": "news-2026-07-17-scorers",
+      "date": "2026-07-17",
+      "badge": "⚽ STATS",
+      "titre": "Top buteurs",
+      "titre_en": "Top scorers",
+      "titre_pt": "Artilheiros",
+      "texte": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts",
+      "texte_en": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts",
+      "texte_pt": "Kylian Mbappé (France) - 8 buts | Lionel Messi (Argentina) - 8 buts | Erling Haaland (Norway) - 7 buts | Harry Kane (England) - 6 buts | Jude Bellingham (England) - 6 buts"
+    },
     {
       "id": "news-2026-07-16-scorers",
       "date": "2026-07-16",
@@ -465,17 +476,6 @@
           "stade": ""
         }
       ]
-    },
-    {
-      "id": "news-2026-06-30-scorers",
-      "date": "2026-06-30",
-      "badge": "⚽ STATS",
-      "titre": "Top buteurs",
-      "titre_en": "Top scorers",
-      "titre_pt": "Artilheiros",
-      "texte": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
-      "texte_en": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts",
-      "texte_pt": "Lionel Messi (Argentina) - 6 buts | Vinicius Junior (Brazil) - 4 buts | Kylian Mbappé (France) - 4 buts | Erling Haaland (Norway) - 4 buts | Ousmane Dembélé (France) - 4 buts"
     }
   ]
 }
