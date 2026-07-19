@@ -1028,10 +1028,10 @@
           "time": "21:00",
           "team1": "France",
           "team2": "England",
-          "score1": null,
-          "score2": null,
+          "score1": 4,
+          "score2": 6,
           "group": "KO",
-          "status": "TIMED"
+          "status": "FINISHED"
         },
         {
           "date": "2026-07-19",
