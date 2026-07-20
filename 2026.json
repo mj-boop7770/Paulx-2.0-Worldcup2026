@@ -1038,10 +1038,10 @@
           "time": "19:00",
           "team1": "Spain",
           "team2": "Argentina",
-          "score1": 0,
+          "score1": 1,
           "score2": 0,
           "group": "KO",
-          "status": "IN_PLAY"
+          "status": "FINISHED"
         }
       ]
     }
